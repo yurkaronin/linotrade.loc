@@ -37,12 +37,11 @@
 
   // активности
   &:hover {
-    // background-color: var(--GreenOver);
-  }
-  &:hover .decorate {
-    width: 1000px;
-    height: 1000px;
-    pointer-events: none;
+    .decorate {
+      width: 1000px;
+      height: 1000px;
+      pointer-events: none;
+    }
   }
 
   // кнопка с иконкой
@@ -66,9 +65,14 @@
       max-height: 20px;
       display: block;
       margin: auto;
-      transition: all 0.4s;
+      transition: stroke 0.4s;
       overflow: visible;
       z-index: 10;
+
+     path {
+      transition: stroke 0.4s;
+     }
+
     }
 
     &:hover {

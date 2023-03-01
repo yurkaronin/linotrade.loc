@@ -252,9 +252,12 @@ li::marker {
   max-height: 20px;
   display: block;
   margin: auto;
-  transition: all 0.4s;
+  transition: stroke 0.4s;
   overflow: visible;
   z-index: 10;
+}
+.button--icon svg path {
+  transition: stroke 0.4s;
 }
 .button--icon:hover path {
   stroke: var(--white);
