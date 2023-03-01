@@ -280,12 +280,12 @@ li::marker {
   display: block;
   width: 16px;
   height: 16px;
-  background-image: url(../../img/icons/dotted.svg);
+  background-image: url(../img/icons/dotted.svg);
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
   z-index: 10;
 }
 .button--text-icon.active::before {
-  background-image: url(../../img/icons/close.svg);
+  background-image: url(../img/icons/close.svg);
 }
