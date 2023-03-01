@@ -1,0 +1,147 @@
+.button {
+  padding: 12px 12px;
+}
+
+.mobile-nivigation {
+  padding-top: 111px;
+}
+.mobile-nivigation .navigation-list {
+  grid-template-columns: 1fr;
+  margin-bottom: 26px;
+}
+.mobile-nivigation .navigation-list a {
+  font-size: 18px;
+  padding: 9px 0;
+}
+.mobile-nivigation .navigation-list a:after {
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+}
+.mobile-nivigation .navigation-list a:before {
+  border-radius: initial;
+}
+.mobile-nivigation .navigation-list a:hover::before {
+  left: -20px;
+  right: -20px;
+}
+.mobile-nivigation__title {
+  font-size: 18px;
+}
+.mobile-nivigation__support-grid a {
+  font-size: 16px;
+}
+.mobile-nivigation__contact-flex .header__mobile-phone {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 22px;
+}
+
+.hero .title {
+  font-size: 23px;
+}
+.hero .title span {
+  font-size: 36px;
+}
+.hero .title + .button {
+  margin-top: 16px;
+  padding: 11px 24px;
+}
+.hero--inner {
+  padding-top: 111px;
+}
+.hero--inner .hero__video {
+  height: 100%;
+}
+
+.footer {
+  padding: 32px 0 30px;
+}
+.footer__grid {
+  grid-template-columns: 1fr;
+}
+.footer__contacts {
+  grid-column: initial;
+}
+.footer__contacts {
+  display: block;
+  margin-top: 32px;
+}
+.footer .phone {
+  margin-right: initial;
+  margin-bottom: 20px;
+}
+.footer__buttons {
+  margin-right: initial !important;
+}
+
+.promo {
+  padding: 0;
+}
+.promo__grid {
+  padding: 0 20px 20px 20px;
+  padding-bottom: 40px;
+}
+
+.instructions a {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.faq__list li {
+  border-color: transparent;
+}
+
+.faq__answer {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.faq__list li:first-child {
+  border-color: transparent;
+}
+
+.faq__list li::after {
+  background-color: transparent;
+}
+
+@media (max-width: 600px) {
+  .button--slider {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .mobile-nivigation__contact-flex {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: auto;
+    justify-content: flex-start;
+  }
+  .mobile-nivigation__buttons .button {
+    padding: 11px 20px;
+  }
+  .offers {
+    padding: 20px 0;
+  }
+  .offers__list {
+    grid-template-columns: 1fr;
+  }
+  .pagination__link {
+    width: 40px;
+    height: 40px;
+  }
+  .pagination__link--text {
+    position: relative;
+    line-height: 0;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    max-width: 40px;
+  }
+  .pagination__link--text svg {
+    display: block;
+  }
+  .solo-slider .button--slider {
+    opacity: 1;
+    pointer-events: initial;
+  }
+}

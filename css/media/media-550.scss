@@ -1,0 +1,24 @@
+.about {
+  &__list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+// блок с контактами
+.contacts {
+  padding-top: 56px;
+  &__grid {
+    grid-template-columns: 1fr;
+  }
+  .map__content {
+    height: 350px;
+  }
+  .contacts__button {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .button--transparent {
+    margin-top: 20px;
+  }
+}

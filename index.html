@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <!-- <base href="http://127.0.0.12:5500/"> -->
+  <!-- шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./libs/normalize.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <style>
+    .tech-list {
+      padding: 0;
+      margin: 0;
+      padding-left: 32px;
+    }
+
+    .tech-list a {
+      display: block;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.2;
+      color: #28303d;
+      margin-bottom: 0.5em;
+      max-width: max-content;
+    }
+
+    .pulsate {
+      -webkit-animation: pulsate 3s ease-out;
+      -webkit-animation-iteration-count: infinite;
+      opacity: 0.5;
+    }
+
+    .tech-title {
+      margin: 64px 0 12px !important;
+      font-weight: 500;
+      font-size: 30px;
+      /* text-transform: uppercase; */
+      text-decoration: underline;
+    }
+
+    @-webkit-keyframes pulsate {
+      0% {
+        opacity: 0.5;
+        color: #000000;
+      }
+
+      50% {
+        opacity: 1.0;
+      }
+
+      100% {
+        opacity: 0.5;
+        color: #ef3024;
+      }
+    }
+
+    .grid-two {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 1fr 1fr;
+      max-width: max-content;
+
+
+    }
+
+    .grid-two .button {
+      margin: 0;
+      max-width: 100%;
+    }
+
+    main {
+      padding-bottom: 64px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Шапка  -->
+  <header class="header">
+    <div class="wrapper">
+
+    </div>
+  </header>
+
+  <main>
+    <div class="wrapper">
+      <h1>Добро пожаловать на техническую страницу проекта <strong>LINOTRADE</strong></h1>
+
+
+      <a href="#" class="button">
+        <span class="button__text">Ссылка</span>
+        <span class="decorate"></span>
+      </a>
+      <br>
+      <button class="button" type="button"><span>Кнопка</span>
+        <span class="decorate"></span></button>
+      <br>
+      <button class="button button--icon" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" fill="none">
+          <path stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16Z" />
+          <path stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M15.135 14.135 21 20" />
+        </svg>
+        <span class="decorate"></span>
+      </button>
+      <br>
+
+      <button class="button button--icon button--border" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" fill="none">
+          <path stroke="#505050" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+            d="M17 21v-3.2c0-2.642-5.22-4.8-8-4.8-2.78 0-8 2.158-8 4.8V21M9 10.6c-2.33 0-4-1.728-4-4V5c0-2.272 1.67-4 4-4s4 1.728 4 4v1.6c0 2.272-1.67 4-4 4Z" />
+        </svg>
+        <span class="decorate"></span>
+      </button>
+      <br>
+      <a href="#" class="button button--icon button--border">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" fill="none">
+          <path stroke="#505050" stroke-miterlimit="10" stroke-width="2"
+            d="M11 17c6.723-4.587 9.41-6.79 9.92-9.908.259-1.581-.046-3.756-1.902-5.096C16.94.496 12.903 1.488 11 4.377 9.097 1.488 5.06.497 2.982 1.996 1.126 3.336.821 5.511 1.08 7.092 1.589 10.211 4.276 12.413 11 17Z" />
+        </svg>
+        <span class="decorate"></span>
+      </a>
+
+      <br>
+
+      <button class="button button--icon" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" fill="none">
+          <path stroke="#fff" stroke-width="2" d="M10 1 2 8.68 10 17" />
+        </svg>
+        <span class="decorate"></span>
+      </button>
+      <br>
+      <button class="button button--icon" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" fill="none">
+          <path stroke="#fff" stroke-width="2" d="m1 1 8 7.68L1 17" />
+        </svg>
+        <span class="decorate"></span>
+      </button>
+
+      <br>
+
+      <a href="#" class="button button--text-icon">
+        <span>Ссылка</span>
+        <span class="decorate"></span>
+      </a>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+
+    </div>
+  </footer>
+
+  <script src="./js/scripts.js"></script>
+</body>
+
+</html>
