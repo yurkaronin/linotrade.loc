@@ -48,6 +48,8 @@
   --text: #5f5f5f;
   --bg: #ffffff;
   --line: #D9D9D9;
+  --title: #1c1e20;
+  --title2: #373737;
 
   --green: #67CB33;
   --GreenOver: #44A611;
@@ -69,12 +71,20 @@
   // --bdr-op: 0.1;
 }
 
+.grid-mod {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, (minmax(150px, 1fr)));
+}
+
 @import "site/fonts";
 @import "site/global";
 
 @import "bem/wrapper";
 @import "bem/button";
-// @import "bem/title";
+@import "bem/title";
+@import "bem/subtitle";
+
 // @import "bem/social-link";
 // @import "bem/phone";
 

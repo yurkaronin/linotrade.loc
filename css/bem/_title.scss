@@ -1,0 +1,37 @@
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--oswald);
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--title2);
+}
+
+.title {
+  margin: 0;
+  display: block;
+  max-width: max-content;
+  font-family: var(--oswald);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: var(--title);
+
+  &--mid {
+    font-size: 22px;
+    line-height: 1.45;
+    color: var(--title2);
+  }
+
+  &--min {
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--title2);
+  }
+  &--lit {
+    font-size: 18px;
+    line-height: 1.33;
+    color: var(--title2);
+  }
+}
