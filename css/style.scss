@@ -46,14 +46,19 @@
   --rubik: "Rubik", sans-serif;
 
   --text: #5f5f5f;
+  --text2: #909090;
+  --text3: #373737;
+  --menu: #373737;
   --bg: #ffffff;
   --line: #D9D9D9;
+  --line2: #909090;
   --title: #1c1e20;
   --title2: #373737;
 
   --green: #67CB33;
   --GreenOver: #44A611;
   --white: #ffffff;
+  --Yelow: #FFE603;
 
   --font-size: 16px;
 
@@ -77,6 +82,10 @@
   grid-template-columns: repeat(auto-fit, (minmax(150px, 1fr)));
 }
 
+// a:not(.classy) {
+//   color: red;
+// }
+
 @import "site/fonts";
 @import "site/global";
 
@@ -84,14 +93,21 @@
 @import "bem/button";
 @import "bem/title";
 @import "bem/subtitle";
+@import "bem/logo";
+@import "bem/menu";
+@import "bem/tel";
+@import "bem/custom-select";
+@import "bem/search";
+@import "bem/user-panel";
+
 
 // @import "bem/social-link";
 // @import "bem/phone";
 
 // @import "bem/body";
-// @import "bem/visually-hidden";
+@import "bem/visually-hidden";
 // @import "bem/mob-menu-open";
-// @import "bem/list-reset";
+@import "bem/list-reset";
 // @import "bem/tech-list";
 // @import "bem/navigation-list";
 // @import "bem/header-sticky";
@@ -111,6 +127,6 @@
 // @import "bem/container";
 // @import "bem/accordion";
 
-// @import "sections/header";
+@import "sections/header";
 
 // @import "sections/footer";

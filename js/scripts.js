@@ -18,6 +18,9 @@ function includeFiles(url) {
 // Основная рабочая область
 document.addEventListener("DOMContentLoaded", () => {
 
+
+
+
   // Проверяем состояние прокрутки страницы. если прокрутка есть - перекрашиваем шапку
   // headerChange();
   // отслеживаем событие прокрутки страницы > модификация шапки
@@ -26,7 +29,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // });
 
   // подключаем файлы тут
-     includeFiles("./js/parts/buttons-animate.js");
+  includeFiles("./js/parts/buttons-animate.js");
+  includeFiles("./js/parts/custom-select.js");
+  includeFiles("./js/parts/catalog-button.js");
+
+
   // includeFiles("./js/parts/mobile-menu-show.js");
   // includeFiles("./js/parts/smoothscroll.js");
   // includeFiles("./js/parts/yandex.map.js");
