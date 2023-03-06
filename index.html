@@ -38,9 +38,9 @@
                 <li><a href=""><span>Инструкции</span></a></li>
                 <li><a href=""><span>Рекламные материалы</span></a></li>
               </ul>
-
+              <!-- <span class="menu__decorate"></span> -->
             </li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="#"><span>Контакты</span></a></li>
           </ul>
         </div>
 
@@ -89,7 +89,6 @@
                     <path stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
                       d="M15.135 14.135 21 20" />
                   </svg>
-                  <span class="decorate"></span>
                 </button>
               </div>
 
@@ -98,7 +97,7 @@
 
         </div>
 
-        <!-- панель пользователя -->
+        <!-- панель пользователя (Не используется на мобильных)-->
         <div class="user-panel">
           <ul class="list-reset">
             <li>
@@ -160,6 +159,37 @@
             </li>
           </ul>
         </div>
+        <!-- Элементы, которые отражаются только на мобильных устройствах -->
+        <!-- кнопка показа поиска -->
+        <button class="button button--icon button--mobile button--combo" type="button" id="search-button">
+          <svg class="off" xmlns="http://www.w3.org/2000/svg" width="22" height="21" fill="none">
+            <path stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16Z" />
+            <path stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+              d="M15.135 14.135 21 20" />
+          </svg>
+          <svg class="on" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+            <path stroke="#fff" stroke-width="2" d="m1 17 8-8-8-8M17 17 9 9l8-8" />
+          </svg>
+          <span class="decorate"></span>
+        </button>
+        <!-- кнопка для звонка -->
+        <a class="button button--icon button--mobile" href="tel:88002228320">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+            <path fill="#fff"
+              d="M5.647 12.353c4.588 4.588 8.97 5.56 10.588 5.647A11.847 11.847 0 0 0 18 14.118c-1.118-1.088-2.745-2.199-4.235-2.824L12 13.06c-.603-.162-2.257-.845-4.235-2.824C5.787 8.258 5.103 6.603 4.94 6l1.765-1.765C6.08 2.745 4.97 1.118 3.882 0A11.83 11.83 0 0 0 0 1.765c.088 1.617 1.059 6 5.647 10.588Z" />
+          </svg>
+          <span class="decorate"></span>
+        </a>
+        <!-- кнопка вызова меню -->
+        <button class="button button--icon button--combo button--mobile button--menu" type="button" id="menu-button">
+          <svg class="off" xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none">
+            <path fill="#fff" d="M0 0h20v2H0zM0 7h20v2H0zM0 14h20v2H0z" />
+          </svg>
+          <svg class="on" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+            <path stroke="#fff" stroke-width="2" d="m1 17 8-8-8-8M17 17 9 9l8-8" />
+          </svg>
+          <span class="decorate"></span>
+        </button>
 
       </div>
 
@@ -169,6 +199,130 @@
 
     </div>
   </header>
+
+  <!-- мобильная панель пользователя (не используется на десктопных)-->
+  <div class="mobile-user-panel">
+    <ul class="list-reset">
+      <li>
+        <a class="catalog button--combo" href="#" id="mob-catalog-btn-call">
+          <svg class="off" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
+            <path fill="#fff"
+              d="M0 0h2v2H0zM0 7h2v2H0zM0 14h2v2H0zM7 0h2v2H7zM7 7h2v2H7zM7 14h2v2H7zM14 0h2v2h-2zM14 7h2v2h-2zM14 14h2v2h-2z" />
+          </svg>
+          <svg class="on" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+            <path stroke="#fff" stroke-width="2" d="m1 17 8-8-8-8M17 17 9 9l8-8" />
+          </svg>
+          <span>Каталог</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" fill="none">
+            <path stroke="#505050" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+              d="M17 21v-3.2c0-2.642-5.22-4.8-8-4.8-2.78 0-8 2.158-8 4.8V21M9 10.6c-2.33 0-4-1.728-4-4V5c0-2.272 1.67-4 4-4s4 1.728 4 4v1.6c0 2.272-1.67 4-4 4Z" />
+          </svg>
+          <span>Кабинет</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" fill="none">
+            <path stroke="#505050" stroke-miterlimit="10" stroke-width="2"
+              d="M11 17c6.723-4.675 9.41-6.92 9.92-10.099.259-1.611-.046-3.828-1.902-5.194C16.94.18 12.903 1.19 11 4.135 9.097 1.19 5.06.179 2.982 1.707 1.126 3.073.821 5.29 1.08 6.901 1.589 10.081 4.276 12.325 11 17Z" />
+          </svg>
+          <span>Избранное</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" fill="none">
+            <path stroke="#505050" stroke-miterlimit="10" stroke-width="2"
+              d="M7 3h13.455a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7" />
+            <path stroke="#505050" stroke-miterlimit="10" stroke-width="2"
+              d="M20 16H8.769c-.453 0-.85-.305-.967-.742L4.198 1.742A1 1 0 0 0 3.231 1H0M7 19h2M18 19h2" />
+          </svg>
+          <span>Корзина</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" fill="none">
+            <path stroke="#505050" stroke-miterlimit="10" stroke-width="2"
+              d="M9 0v2.222M11.286 17.889C11.286 18.502 10.262 20 9 20s-2.286-1.498-2.286-2.111" />
+            <path stroke="#505050" stroke-miterlimit="10" stroke-width="2"
+              d="M14.714 13.429V7.714a5.715 5.715 0 0 0-11.428 0v5.715L1 16.857V18h16v-1.143l-2.286-3.428Z" />
+          </svg>
+          <span>сообщения</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- мобильное навигационное меню  -->
+  <div class="mobile-menu">
+    <div class="wrapper">
+
+      <ul class="mobile-menu__list list-reset">
+        <li><a href="#"><span>Акции и новости</span></a></li>
+        <li><a href="#"><span>Производители</span></a></li>
+        <li class="mobile-menu__item--mod">
+
+          <a class="mobile-menu__link--mod" href="#"><span>Полезный раздел</span></a>
+          <button class="button button--icon open" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" fill="none">
+              <path stroke="#67CB33" stroke-width="2" d="m1 1 8 7.68L1 17" />
+            </svg>
+            <span class="decorate"></span>
+          </button>
+
+          <ul class="mobile-menu__sublist list-reset">
+            <li><a href=""><span>Документы</span></a></li>
+            <li><a href=""><span>Словарь терминов</span></a></li>
+            <li><a href=""><span>Инструкции</span></a></li>
+            <li><a href=""><span>Рекламные материалы</span></a></li>
+          </ul>
+        </li>
+        <li><a href="#"><span>Контакты</span></a></li>
+      </ul>
+      <div class="tel">
+        <a href="tel:88002228320"><span>8 (800) 222-83-20</span></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- мобильный поиск в шапке -->
+  <div class="mobile-search">
+    <div class="wrapper">
+      <form action="">
+        <!-- селект -->
+        <div class="select">
+          <div class="custom-select" data-default="Все категории">
+            <div class="custom-select__selected">Все категории</div>
+            <div class="custom-select__options">
+              <div class="custom-select__option" value="option1">Категория 1</div>
+              <div class="custom-select__option" value="Категория 2">Категория 2</div>
+              <div class="custom-select__option" value="Категория 3">Категория 3</div>
+              <div class="custom-select__option" value="Категория 4">Категория 4</div>
+            </div>
+            <input class="visually-hidden" type="hidden" name="selecting-category" value="">
+          </div>
+        </div>
+        <!-- поиск -->
+        <div class="search">
+          <div class="search__wrapper">
+            <input type="search" name="" id="" placeholder="Поиск по каталогу">
+          </div>
+        </div>
+        <!-- кнпока отправки поискового запроса -->
+        <button class="button">
+          <span>Найти</span>
+          <span class="decorate"></span>
+        </button>
+      </form>
+    </div>
+  </div>
+  </div>
 
   <main>
     <div class="wrapper">

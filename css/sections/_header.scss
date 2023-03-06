@@ -56,4 +56,61 @@
       background-image: url(../img/icons/close.svg);
     }
   }
+
+  @media (max-width: 1200px) {
+    .top {
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .top {
+      grid-template-columns: 122px 212px;
+      gap: 16px;
+      justify-content: space-between;
+    }
+    .menu {
+      display: none;
+    }
+    .bottom {
+      grid-template-columns: 1fr 48px;
+      gap: 16px;
+    }
+    .catalog-btn {
+      display: none;
+    }
+    .user-panel {
+      display: none;
+    }
+
+    .button--menu {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .wrapper {
+      display: grid;
+      align-items: center;
+      gap: 16px;
+      grid-template-columns: 122px 1fr;
+    }
+    .top {
+      display: block;
+      max-width: max-content;
+    }
+    .tel {
+      display: none;
+    }
+    .bottom {
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: max-content;
+      padding: 0;
+      margin-left: auto;
+      gap: 10px;
+    }
+    .group {
+      display: none;
+    }
+  }
 }

@@ -52,28 +52,16 @@
   --bg: #ffffff;
   --line: #D9D9D9;
   --line2: #909090;
-  --title: #1c1e20;
-  --title2: #373737;
 
   --green: #67CB33;
   --GreenOver: #44A611;
+  --Darkgrey: #373737;
+  --Dark: #1c1e20;
   --white: #ffffff;
   --Yelow: #FFE603;
 
   --font-size: 16px;
 
-  // --green: #00F0C0;
-  // --col02: #007579;
-  // --col03: #fff100;
-  // --col04: #333333;
-  // --col05: #333333;
-  // --white: #ffffff;
-  // --col07: #1b1b1b;
-
-  // --black: #1B1E1E;
-
-  // --fsz: 16px;
-  // --bdr-op: 0.1;
 }
 
 .grid-mod {
@@ -82,51 +70,37 @@
   grid-template-columns: repeat(auto-fit, (minmax(150px, 1fr)));
 }
 
+.mobile-search-open {
+  overflow: hidden;
+}
+.mobile-menu-open {
+  overflow: hidden;
+}
+
 // a:not(.classy) {
 //   color: red;
 // }
 
 @import "site/fonts";
 @import "site/global";
+@import "bem/list-reset";
+@import "bem/visually-hidden";
 
 @import "bem/wrapper";
 @import "bem/button";
 @import "bem/title";
 @import "bem/subtitle";
 @import "bem/logo";
+
 @import "bem/menu";
 @import "bem/tel";
 @import "bem/custom-select";
 @import "bem/search";
 @import "bem/user-panel";
-
-
-// @import "bem/social-link";
-// @import "bem/phone";
-
-// @import "bem/body";
-@import "bem/visually-hidden";
-// @import "bem/mob-menu-open";
-@import "bem/list-reset";
-// @import "bem/tech-list";
-// @import "bem/navigation-list";
-// @import "bem/header-sticky";
-// @import "bem/slider";
-// @import "bem/filter";
-// @import "bem/rate-card";
-// @import "bem/main";
-// @import "bem/section";
-// @import "bem/swiper";
-// @import "bem/tariff-long-item";
-// @import "bem/checkbox-button";
-// @import "bem/premier";
-// @import "bem/connection-request";
-// @import "bem/sticky";
-// @import "bem/equip";
-// @import "bem/instructions";
-// @import "bem/container";
-// @import "bem/accordion";
+@import "bem/menu-button";
 
 @import "sections/header";
-
+@import "sections/mobile-menu";
+@import "sections/mobile-user-panel";
+@import "sections/mobile-search";
 // @import "sections/footer";

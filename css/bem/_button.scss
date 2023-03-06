@@ -66,7 +66,7 @@
       max-height: 20px;
       display: block;
       margin: auto;
-      transition: stroke 0.4s;
+      transition: stroke 0.4s, transform 0.4s;
       overflow: visible;
       z-index: 10;
 
@@ -111,7 +111,6 @@
       position: relative;
       z-index: 10;
     }
-
   }
 
   &--label {
@@ -136,14 +135,36 @@
       top: -10px;
       right: -4px;
       pointer-events: initial;
-
     }
     .decorate {
       display: none;
-
     }
     &:hover {
       background-color: var(--GreenOver);
+    }
+  }
+  &--combo {
+    .on {
+      display: none;
+    }
+    .off {
+      display: block;
+    }
+
+    &.open {
+      .on {
+        display: block;
+      }
+      .off {
+        display: none;
+      }
+    }
+  }
+  &--mobile{
+    display: none;
+
+    @media (max-width: 550px) {
+      display: flex;
     }
   }
 }
