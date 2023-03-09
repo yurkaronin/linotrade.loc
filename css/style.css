@@ -748,6 +748,54 @@ h1, h2, h3, h4, h5, h6 {
 .section {
   padding: 35px 0 45px;
 }
+.section__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.section__header .title {
+  margin-right: 12px;
+  max-width: 85%;
+}
+.section__header .read-more {
+  flex-grow: 0;
+}
+@media (max-width: 650px) {
+  .section__header {
+    max-width: initial;
+  }
+}
+.section--mod {
+  background: var(#f7f7f7, 0.5);
+}
+
+.link-more {
+  display: flex;
+  font-family: var(--roboto);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 2;
+  text-align: right;
+  text-transform: uppercase;
+  color: var(--Darkgrey);
+  position: relative;
+  align-items: center;
+  transition: color 0.3s;
+}
+.link-more::after {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 6px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='7' height='10' viewBox='0 0 7 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 9L5 5L1 1' stroke='%2367CB33' stroke-width='2'/%3e%3c/svg%3e ");
+  background-repeat: no-repeat;
+  margin-left: 8px;
+}
+.link-more:hover {
+  color: var(--GreenOver);
+}
 
 .header {
   border-bottom: 1px solid;
@@ -1245,4 +1293,63 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: initial;
     width: 100%;
   }
+}
+
+.posts-preview__list ul {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
+}
+* + .posts-preview__list {
+  margin-top: 32px;
+}
+@media (max-width: 1300px) {
+  .posts-preview__list ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 550px) {
+  .posts-preview__list ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+.article-preview {
+  font-family: var(--roboto);
+}
+.article-preview__photo {
+  margin-bottom: 20px;
+}
+.article-preview__photo img {
+  display: block;
+  width: 100%;
+}
+.article-preview__title {
+  display: block;
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(var(--menu), 0.9);
+  text-transform: initial;
+  margin-bottom: 2px;
+  font-family: var(--oswald);
+}
+.article-preview__date {
+  display: block;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--text2);
+  margin-bottom: 12px;
+}
+.article-preview__lead {
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(var(--text3), 0.7);
 }

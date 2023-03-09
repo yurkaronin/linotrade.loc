@@ -1,3 +1,26 @@
 .section {
   padding: 35px 0 45px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .title {
+      margin-right: 12px;
+      max-width: 85%;
+    }
+    .read-more {
+      flex-grow: 0;
+    }
+
+    @media (max-width: 650px) {
+      max-width: initial;
+    }
+  }
+
+  &--mod {
+    background: var(#f7f7f7, 0.5);
+  }
 }

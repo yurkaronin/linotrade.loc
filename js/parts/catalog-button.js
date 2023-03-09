@@ -38,11 +38,7 @@ searchBtn.addEventListener('click', () => {
   document.body.classList.toggle('mobile-search-open');
 });
 
-
-
-
-// кнопки в мобильном меню
-// кнопка поиска
+// кнопки для раскрытия подпунктов в мобильном меню
 const mobileSubMenuButtons = document.querySelectorAll('.mobile-menu__item--mod .button');
 for (let item of mobileSubMenuButtons) {
   item.addEventListener('click', () => {
