@@ -52,6 +52,9 @@
 .mobile-search-open {
   overflow: hidden;
 }
+.mobile-search-open .header {
+  border-color: transparent;
+}
 
 .mobile-menu-open {
   overflow: hidden;
@@ -1060,19 +1063,51 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-search {
   display: block;
-  left: -100%;
+  left: 0;
   position: fixed;
-  top: 0;
+  top: -100%;
   width: 100%;
-  height: 100vh;
-  padding-top: 136px;
-  padding-bottom: 75px;
+  height: initial;
+  padding-top: 73px;
   background-color: #ffffff;
   z-index: 15;
   transition-duration: 0.3s;
   overflow: auto;
+  border-bottom: 1px solid;
+  border-color: var(--line);
+  padding-bottom: 21px;
+}
+.mobile-search .custom-select {
+  max-width: 100%;
+}
+.mobile-search__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.mobile-search .custom-select__selected {
+  height: 45px;
+  justify-content: space-between;
+}
+.mobile-search .custom-select__selected:after {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='18' height='11' fill='none'%3e%3cpath stroke='%2367CB33' stroke-width='2' d='M17 1 9.32 9 1 1'/%3e%3c/svg%3e");
+  width: 16px;
+  height: 8px;
+}
+.mobile-search .custom-select__options {
+  overflow: auto;
+  max-height: 130px;
+}
+.mobile-search .search input {
+  height: 45px;
+  border-left: 1px solid;
+  border-color: var(--line);
+}
+.mobile-search .button {
+  height: 45px;
+  max-width: 100%;
 }
 
 .mobile-search-open .mobile-search {
-  left: 0;
+  top: 0;
 }

@@ -72,6 +72,10 @@
 
 .mobile-search-open {
   overflow: hidden;
+
+  .header {
+    border-color: transparent;
+  }
 }
 .mobile-menu-open {
   overflow: hidden;
@@ -83,22 +87,22 @@
 
 @import "site/fonts";
 @import "site/global";
+// служебные
 @import "bem/list-reset";
 @import "bem/visually-hidden";
-
 @import "bem/wrapper";
 @import "bem/button";
+// повторяющиеся
 @import "bem/title";
 @import "bem/subtitle";
 @import "bem/logo";
-
 @import "bem/menu";
 @import "bem/tel";
 @import "bem/custom-select";
 @import "bem/search";
 @import "bem/user-panel";
 @import "bem/menu-button";
-
+// Смысловые секции
 @import "sections/header";
 @import "sections/mobile-menu";
 @import "sections/mobile-user-panel";

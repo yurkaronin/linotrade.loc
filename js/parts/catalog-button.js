@@ -14,25 +14,8 @@ catalogBtnMob.addEventListener('click', () => {
   document.body.classList.toggle('catalog-menu-open');
 });
 
-// // кнопка меню
-// const menuBtn = document.getElementById('menu-button');
-
-// menuBtn.addEventListener('click', () => {
-//   menuBtn.classList.toggle('open');
-//   document.body.classList.toggle('mobile-menu-open');
-// });
-
-// // кнопка поиска
-// const searchBtn = document.getElementById('search-button');
-
-// searchBtn.addEventListener('click', () => {
-//   searchBtn.classList.toggle('open');
-//   document.body.classList.toggle('mobile-search-open');
-// });
-
-// menu button
+// // кнопка меню и кнопка поиска
 const menuBtn = document.getElementById('menu-button');
-// search button
 const searchBtn = document.getElementById('search-button');
 
 menuBtn.addEventListener('click', () => {
