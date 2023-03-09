@@ -767,7 +767,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .section--mod {
-  background: var(#f7f7f7, 0.5);
+  background: rgba(247, 247, 247, 0.5);
 }
 
 .link-more {
@@ -795,6 +795,150 @@ h1, h2, h3, h4, h5, h6 {
 }
 .link-more:hover {
   color: var(--GreenOver);
+}
+
+* + .statistics-panel {
+  margin-top: 32px;
+}
+.statistics-panel__list {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.statistics-panel .statistics-card {
+  min-height: 100%;
+}
+@media (max-width: 1580px) {
+  .statistics-panel__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 750px) {
+  .statistics-panel__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.statistics-card {
+  padding: 23px 32px 28px;
+  padding-right: 16px;
+  background-color: #f7f7f7;
+  transition: background-color 0.3s, color 0.3s;
+  color: var(--line2);
+}
+.statistics-card__label {
+  color: var(--line2);
+  display: block;
+  margin: 0;
+  padding-bottom: 11px;
+  position: relative;
+  margin-bottom: 12px;
+  font-family: var(--roboto);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: initial;
+}
+.statistics-card__label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 32px;
+  background-color: var(--line);
+}
+.statistics-card__details {
+  display: grid;
+  align-items: center;
+  gap: 16px;
+  grid-template-columns: 32px 1fr;
+  color: #373737;
+}
+.statistics-card__details span {
+  font-family: var(--oswald);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+  text-transform: uppercase;
+  display: flex;
+  position: relative;
+  color: inherit;
+}
+.statistics-card__details svg {
+  width: 32px;
+  height: 32px;
+}
+.statistics-card:hover {
+  background-color: var(--GreenOver);
+  color: var(--white);
+}
+.statistics-card:hover .statistics-card__label {
+  color: #ffffff;
+}
+.statistics-card:hover .statistics-card__details {
+  color: #ffffff;
+}
+.statistics-card:hover svg path {
+  stroke: #FFE603;
+}
+@media (max-width: 1580px) {
+  .statistics-card {
+    padding: 23px 16px;
+  }
+  .statistics-card .statistics-card__details span {
+    font-size: 28px;
+  }
+}
+
+.article-preview {
+  font-family: var(--roboto);
+}
+.article-preview__photo {
+  margin-bottom: 20px;
+  transition: scale 0.3s;
+}
+.article-preview__photo img {
+  display: block;
+  width: 100%;
+}
+.article-preview__title {
+  display: block;
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(var(--menu), 0.9);
+  text-transform: initial;
+  margin-bottom: 2px;
+  font-family: var(--oswald);
+  transition: color 0.3s;
+}
+.article-preview__date {
+  display: block;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--text2);
+  margin-bottom: 12px;
+}
+.article-preview__lead {
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(var(--text3), 0.7);
+}
+.article-preview:hover .article-preview__title {
+  color: var(--green);
+}
+.article-preview:hover .article-preview__photo {
+  scale: 1.05;
 }
 
 .header {
@@ -1312,44 +1456,4 @@ h1, h2, h3, h4, h5, h6 {
   .posts-preview__list ul {
     grid-template-columns: 1fr;
   }
-}
-
-.article-preview {
-  font-family: var(--roboto);
-}
-.article-preview__photo {
-  margin-bottom: 20px;
-}
-.article-preview__photo img {
-  display: block;
-  width: 100%;
-}
-.article-preview__title {
-  display: block;
-  margin: 0;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  color: rgba(var(--menu), 0.9);
-  text-transform: initial;
-  margin-bottom: 2px;
-  font-family: var(--oswald);
-}
-.article-preview__date {
-  display: block;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1;
-  color: var(--text2);
-  margin-bottom: 12px;
-}
-.article-preview__lead {
-  padding: 0;
-  margin: 0;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: rgba(var(--text3), 0.7);
 }
