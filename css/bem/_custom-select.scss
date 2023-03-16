@@ -1,9 +1,6 @@
-/* Style the container */
 .custom-select {
   position: relative;
   font-family: var(--Roboto);
-  // width: 200px;
-  // height: 40px;
   max-width: max-content;
 
   &__selected {
@@ -25,7 +22,6 @@
       background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 1L5 5L9 1' stroke='%2344A611' stroke-width='2'/%3e%3c/svg%3e ");
       width: 9px;
       height: 5px;
-      // background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
       margin-left: 7px;

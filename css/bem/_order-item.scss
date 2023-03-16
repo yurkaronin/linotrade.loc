@@ -36,7 +36,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1;
-    color: rgba(var(--Darkgrey), 0, 8);
+    color: rgba(#373737, 0.8);
   }
   &__strong {
     font-family: var(--Oswald);
@@ -46,12 +46,13 @@
     font-size: 30px;
     line-height: 1.33;
     text-transform: uppercase;
-    color: rgba(var(--Black), 0, 9);
+    color: rgba(#000000, 0.9);
   }
 
   &--mod {
     border-bottom: none;
     align-items: center;
+
     .order-item__label {
       text-align: right;
     }

@@ -1,95 +1,33 @@
 .footer {
-  background-color: #28303d;
-  color: #ffffff;
-  padding: 38px 0 42px;
+  background-color: #f7f7f7;
+  color: #909090;
+  padding: 32px 0 26px;
 
-  .navigation-list {
-    a {
-      color: #ffffff;
-      font-weight: 500;
-      font-size: 18px;
-      margin-bottom: 20px;
-      display: block;
-      max-width: max-content;
-    }
-  }
   &__grid {
     display: grid;
-    gap: 0 32px;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: flex-start;
-  }
-  &__navigation {
-    display: grid;
     gap: 32px;
-    grid-template-columns: 1fr 1fr;
-    align-items: flex-start;
+    grid-template-columns: 8fr 4fr;
   }
-  &__support {
-    &-grid {
-      display: grid;
-      gap: 32px;
-      grid-template-columns: 1fr 1fr;
-      align-items: flex-start;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-
-      a {
-        font-size: 16px;
-        color: rgba(#ffffff, 0.7);
-        margin-bottom: 20px;
-        display: block;
-      }
-    }
+  &__right {
+    text-align: right;
+    margin-left: auto;
   }
-  &__title {
-    margin: 0;
-    margin-bottom: 20px;
+  .tel {
+    margin-left: auto;
+  }
+  &__menu-link {
+    display: block;
+    font-family: var(--Oswald);
+    font-style: normal;
     font-weight: 500;
     font-size: 18px;
-  }
-  .phone {
-    color: rgba(#ffffff, 0.9);
-    margin-left: auto;
-    text-align: right;
-    margin-bottom: 20px;
-    &--icon {
-      &:before {
-        background-image: url(../../img/icons/phone-white.svg);
-      }
-    }
-  }
-  &__buttons {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0 16px;
-    margin-bottom: 20px;
+    line-height: 1.56;
+    text-transform: uppercase;
+    color: rgba(#373737, 0.9);
+    transition: all 0.3s;
 
-    .button {
-      max-width: 100%;
-    }
-  }
-  &__copyright {
-    color: rgba(#ffffff, 0.7);
-    font-weight: 400;
-    font-size: 14px;
-    // display: flex;
-    // align-items: flex-start;
-    // justify-content: flex-end;
-    margin-left: auto;
-    text-align: right;
-
-    span {
-      margin-right: 32px;
-    }
-    a {
-      color: #ffffff;
+    &:hover {
+      color: var(--GreenOver);
     }
   }
 }
