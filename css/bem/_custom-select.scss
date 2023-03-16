@@ -1,14 +1,14 @@
 /* Style the container */
 .custom-select {
   position: relative;
-  font-family: var(--roboto);
+  font-family: var(--Roboto);
   // width: 200px;
   // height: 40px;
   max-width: max-content;
 
   &__selected {
-    background-color: var(--white);
-    padding: 11px 24px;
+    background-color: var(--White);
+    padding: 11px 16px;
     cursor: pointer;
     position: relative;
     display: flex;
@@ -37,7 +37,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    background-color: var(--white);
+    background-color: var(--White);
     border: 1px solid;
     border-color: var(--line);
     border-top: 0;
@@ -55,13 +55,13 @@
     transition: color 0.3s, background-color 0.3s;
 
     &:hover {
-      background-color: var(--green);
-      color: var(--white);
+      background-color: var(--Green);
+      color: var(--White);
     }
   }
   // активности
   &.open &__selected {
-    background-color: var(--white);
+    background-color: var(--White);
   }
   &.open &__options {
     display: block;

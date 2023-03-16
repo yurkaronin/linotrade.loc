@@ -1,5 +1,5 @@
 .article-preview {
-  font-family: var(--roboto);
+  font-family: var(--Roboto);
   &__photo {
     margin-bottom: 20px;
     transition: scale 0.3s;
@@ -14,10 +14,10 @@
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    color: rgba(var(--menu), 0.9);
+    color: rgba(var(--Darkgrey), 0.9);
     text-transform: initial;
     margin-bottom: 2px;
-    font-family: var(--oswald);
+    font-family: var(--Oswald);
     transition: color 0.3s;
   }
   &__date {
@@ -42,7 +42,7 @@
   // активности
   &:hover {
     .article-preview__title {
-      color: var(--green);
+      color: var(--Green);
     }
     .article-preview__photo {
       scale: 1.05;

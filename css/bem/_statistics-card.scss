@@ -12,7 +12,7 @@
     padding-bottom: 11px;
     position: relative;
     margin-bottom: 12px;
-    font-family: var(--roboto);
+    font-family: var(--Roboto);
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -37,7 +37,7 @@
     grid-template-columns: 32px 1fr;
     color: #373737;
     span {
-      font-family: var(--oswald);
+      font-family: var(--Oswald);
       font-style: normal;
       font-weight: 700;
       font-size: 30px;
@@ -55,7 +55,7 @@
 
   &:hover {
     background-color: var(--GreenOver);
-    color: var(--white);
+    color: var(--White);
 
     .statistics-card__label {
       color: #ffffff;

@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // includeFiles("./js/parts/smoothscroll.js");
   // includeFiles("./js/parts/yandex.map.js");
   // includeFiles("./js/parts/swiper-collection.js");
-  // includeFiles("./js/parts/accordion.js");
+  includeFiles("./js/parts/accordion.js");
   // includeFiles("./js/parts/input-phone-mask.js");
   // includeFiles("./js/parts/button-add.js");
   // includeFiles("./js/parts/channel-details.js");

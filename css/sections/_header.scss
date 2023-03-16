@@ -56,6 +56,9 @@
       background-image: url(../img/icons/close.svg);
     }
   }
+  .search input {
+    border-left: 0;
+  }
 
   @media (max-width: 1200px) {
     .top {
@@ -83,7 +86,7 @@
       display: none;
     }
 
-    .button--menu {
+    .button--Darkgrey {
       display: flex;
     }
   }

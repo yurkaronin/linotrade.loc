@@ -41,27 +41,32 @@
 }
 // переменные
 :root {
-  --oswald: "Oswald", sans-serif;
-  --roboto: "Roboto", sans-serif;
-  --rubik: "Rubik", sans-serif;
+  --Oswald: "Oswald", sans-serif;
+  --Roboto: "Roboto", sans-serif;
+  --Rubik: "Rubik", sans-serif;
 
   --text: #5f5f5f;
   --text2: #909090;
   --text3: #373737;
-  --menu: #373737;
   --bg: #ffffff;
-  --line: #D9D9D9;
+  --line: #d9d9d9;
   --line2: #909090;
 
-  --green: #67CB33;
-  --GreenOver: #44A611;
   --Darkgrey: #373737;
+  --Gray: #F7F7F7;
+  --Gray2: #EAEAEA;
+
+  --Green: #67cb33;
+  --GreenOver: #44a611;
+
   --Dark: #1c1e20;
-  --white: #ffffff;
-  --Yelow: #FFE603;
+
+  --Yellow: #ffe603;
+
+  --White: #ffffff;
+  --Black: #000000;
 
   --font-size: 16px;
-
 }
 
 .grid-mod {
@@ -107,6 +112,10 @@
 @import "bem/statistics-panel";
 @import "bem/statistics-card";
 @import "bem/article-preview";
+@import "bem/order-search";
+@import "bem/order-list";
+@import "bem/order-item";
+@import "bem/accordion";
 
 // Смысловые секции
 @import "sections/header";
