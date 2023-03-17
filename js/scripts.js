@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // подключаем файлы тут
   includeFiles("./js/parts/buttons-animate.js");
+  includeFiles("./js/parts/hover-animate.js");
   includeFiles("./js/parts/custom-select.js");
   includeFiles("./js/parts/catalog-button.js");
 

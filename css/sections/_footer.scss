@@ -81,7 +81,6 @@
     }
     span {
       flex-grow: 2;
-
     }
     &:hover {
       transform: translateX(8px);
@@ -89,6 +88,37 @@
       span {
         color: var(--GreenOver);
       }
+    }
+  }
+
+  @media (max-width: 1440px) {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+    &__right {
+      margin-left: initial;
+      width: 100%;
+      max-width: 100%;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: space-between;
+      gap: 10px 32px;
+      align-items: center;
+    }
+    .copyright {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .site-developers {
+      grid-column: 2;
+    }
+    .tel {
+      margin-left: initial;
+    }
+    .email {
+      text-align: initial;
+      grid-column: 1;
     }
   }
 }
