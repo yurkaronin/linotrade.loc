@@ -106,11 +106,17 @@
       display: block;
       width: 16px;
       height: 16px;
-      background-image: url(../img/icons/dotted.svg);
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='2' height='2' fill='white'/%3e%3crect y='7' width='2' height='2' fill='white'/%3e%3crect y='14' width='2' height='2' fill='white'/%3e%3crect x='7' width='2' height='2' fill='white'/%3e%3crect x='7' y='7' width='2' height='2' fill='white'/%3e%3crect x='7' y='14' width='2' height='2' fill='white'/%3e%3crect x='14' width='2' height='2' fill='white'/%3e%3crect x='14' y='7' width='2' height='2' fill='white'/%3e%3crect x='14' y='14' width='2' height='2' fill='white'/%3e%3c/svg%3e ");
       background-repeat: no-repeat;
       background-size: contain;
       position: relative;
       z-index: 10;
+    }
+
+    &:hover {
+      &::before {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='2' height='2' fill='%23FFE603'/%3e%3crect y='7' width='2' height='2' fill='%23FFE603'/%3e%3crect y='14' width='2' height='2' fill='%23FFE603'/%3e%3crect x='7' width='2' height='2' fill='%23FFE603'/%3e%3crect x='7' y='7' width='2' height='2' fill='%23FFE603'/%3e%3crect x='7' y='14' width='2' height='2' fill='%23FFE603'/%3e%3crect x='14' width='2' height='2' fill='%23FFE603'/%3e%3crect x='14' y='7' width='2' height='2' fill='%23FFE603'/%3e%3crect x='14' y='14' width='2' height='2' fill='%23FFE603'/%3e%3c/svg%3e ");
+      }
     }
   }
 
