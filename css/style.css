@@ -982,12 +982,23 @@ h1, h2, h3, h4, h5, h6 {
 .order-search .custom-select__selected {
   justify-content: space-between;
 }
-.order-search .button {
+.order-search .order-submit {
   width: 100%;
   max-width: 100%;
 }
 .order-search .search .button {
   max-width: 48px;
+}
+@media (max-width: 1200px) {
+  .order-search__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 26px 32px;
+  }
+  .order-search .order-submit {
+    width: 100%;
+    max-width: max-content;
+    min-width: 224px;
+  }
 }
 
 * + .order-list {
@@ -1299,6 +1310,9 @@ h1, h2, h3, h4, h5, h6 {
   .header .button--Darkgrey {
     display: flex;
   }
+  .header .button--menu {
+    display: flex;
+  }
 }
 @media (max-width: 550px) {
   .header .wrapper {
@@ -1500,7 +1514,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 11px;
     display: block;
     align-items: center;
-    background-color: var(--white);
+    background-color: var(--White);
     color: var(--Darkgrey);
     border-top: 1px solid #d9d9d9;
     height: 60px;
@@ -1592,7 +1606,7 @@ h1, h2, h3, h4, h5, h6 {
 .catalog-preview .title + .catalog-preview__list {
   margin-top: 32px;
 }
-@media (max-width: 850px) {
+@media (max-width: 1200px) {
   .catalog-preview ul {
     grid-template-columns: 1fr 1fr;
     gap: 16px;
@@ -1742,7 +1756,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer__grid {
   display: grid;
   gap: 32px;
-  grid-template-columns: 8fr 4fr;
+  grid-template-columns: 6fr 2fr 4fr;
 }
 .footer__right {
   text-align: right;
@@ -1767,18 +1781,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .footer__menu-list {
   display: grid;
-  gap: 32px;
-  grid-template-columns: 2fr 1fr 1fr;
+  gap: 24px 32px;
+  grid-template-columns: 4fr 2fr;
   align-content: start;
 }
-.footer__menu-item--mod ul {
+.footer__menu-list--mod {
   display: grid;
-  gap: 24px;
   grid-template-columns: 1fr;
-}
-.footer__menu-item:nth-child(n+4) {
-  grid-column: 3;
-  align-self: start;
 }
 .footer__submenu {
   display: grid;
@@ -1843,5 +1852,17 @@ h1, h2, h3, h4, h5, h6 {
   .footer .email {
     text-align: initial;
     grid-column: 1;
+  }
+}
+@media (max-width: 1023px) {
+  .footer {
+    padding-bottom: 84px;
+  }
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer__right {
+    grid-row: 2;
+    grid-column: 2;
   }
 }

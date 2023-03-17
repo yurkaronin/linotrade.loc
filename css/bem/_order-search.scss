@@ -43,11 +43,23 @@
   .custom-select__selected {
     justify-content: space-between;
   }
-  .button {
+  .order-submit {
     width: 100%;
     max-width: 100%;
   }
   .search .button {
     max-width: 48px;
+  }
+
+  @media (max-width: 1200px) {
+    &__grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 26px 32px;
+    }
+    .order-submit {
+      width: 100%;
+      max-width: max-content;
+      min-width: 224px;
+  }
   }
 }

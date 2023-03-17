@@ -9,13 +9,19 @@
   .title + .catalog-preview__list {
     margin-top: 32px;
   }
-
-  @media (max-width: 850px) {
-    ul {
+  @media (max-width: 1200px) {
+    & ul {
       grid-template-columns: 1fr 1fr;
       gap: 16px;
     }
   }
+
+  // @media (max-width: 850px) {
+  //   ul {
+  //     grid-template-columns: 1fr 1fr;
+  //     gap: 16px;
+  //   }
+  // }
 }
 
 .product-preview {

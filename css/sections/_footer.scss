@@ -6,7 +6,7 @@
   &__grid {
     display: grid;
     gap: 32px;
-    grid-template-columns: 8fr 4fr;
+    grid-template-columns: 6fr 2fr 4fr;
   }
   &__right {
     text-align: right;
@@ -32,23 +32,18 @@
   }
   &__menu-list {
     display: grid;
-    gap: 32px;
-    grid-template-columns: 2fr 1fr 1fr;
+    gap: 24px 32px;
+    grid-template-columns: 4fr 2fr;
     align-content: start;
-  }
-  &__menu-item {
     &--mod {
-      ul {
-        display: grid;
-        gap: 24px;
-        grid-template-columns: 1fr;
-      }
-    }
+      display: grid;
+      grid-template-columns: 1fr;
   }
-  &__menu-item:nth-child(n + 4) {
-    grid-column: 3;
-    align-self: start;
   }
+  // &__menu-item:nth-child(n + 4) {
+  //   grid-column: 3;
+  //   align-self: start;
+  // }
   &__submenu {
     display: grid;
     grid-template-columns: 1fr;
@@ -119,6 +114,16 @@
     .email {
       text-align: initial;
       grid-column: 1;
+    }
+  }
+  @media (max-width: 1023px) {
+    padding-bottom: 84px;
+    &__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    &__right {
+      grid-row: 2;
+      grid-column: 2;
     }
   }
 }
