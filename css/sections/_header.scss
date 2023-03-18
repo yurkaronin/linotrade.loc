@@ -9,7 +9,7 @@
   z-index: 60;
 
   .top {
-    padding: 16px 0;
+    padding: 9px 0;
     display: grid;
     gap: 32px;
     grid-template-columns: 122px 1fr 212px;
@@ -24,7 +24,7 @@
     padding: 0;
     padding-bottom: 16px;
     display: grid;
-    gap: 32px;
+    gap: 32px 40px;
     grid-template-columns: 216px 1fr 216px;
     align-items: flex-start;
   }
@@ -41,6 +41,7 @@
   }
   .custom-select__selected {
     justify-content: space-between;
+    padding: 11px 23px;
   }
   .search {
     flex-grow: 2;
@@ -52,6 +53,11 @@
     width: 100%;
   }
   .catalog-btn {
+    .button {
+      max-width: 100%;
+      width: 100%;
+      padding: 16px 60px;
+    }
     .button.open::before {
       background-image: url(../img/icons/close.svg);
     }

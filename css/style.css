@@ -1236,7 +1236,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 60;
 }
 .header .top {
-  padding: 16px 0;
+  padding: 9px 0;
   display: grid;
   gap: 32px;
   grid-template-columns: 122px 1fr 212px;
@@ -1250,7 +1250,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   padding-bottom: 16px;
   display: grid;
-  gap: 32px;
+  gap: 32px 40px;
   grid-template-columns: 216px 1fr 216px;
   align-items: flex-start;
 }
@@ -1267,6 +1267,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header .custom-select__selected {
   justify-content: space-between;
+  padding: 11px 23px;
 }
 .header .search {
   flex-grow: 2;
@@ -1276,6 +1277,11 @@ h1, h2, h3, h4, h5, h6 {
 .header .search__wrapper {
   max-width: 100%;
   width: 100%;
+}
+.header .catalog-btn .button {
+  max-width: 100%;
+  width: 100%;
+  padding: 16px 60px;
 }
 .header .catalog-btn .button.open::before {
   background-image: url(../img/icons/close.svg);
