@@ -40,10 +40,6 @@
       grid-template-columns: 1fr;
   }
   }
-  // &__menu-item:nth-child(n + 4) {
-  //   grid-column: 3;
-  //   align-self: start;
-  // }
   &__submenu {
     display: grid;
     grid-template-columns: 1fr;

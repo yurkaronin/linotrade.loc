@@ -74,21 +74,6 @@
   grid-template-columns: repeat(auto-fit, (minmax(150px, 1fr)));
 }
 
-.mobile-search-open {
-  overflow: hidden;
-
-  .header {
-    border-color: transparent;
-  }
-}
-.mobile-menu-open {
-  overflow: hidden;
-}
-
-// a:not(.classy) {
-//   color: red;
-// }
-
 @import "site/fonts";
 @import "site/global";
 // служебные
@@ -121,6 +106,8 @@
 @import "bem/copyright";
 @import "bem/site-developers";
 @import "bem/ronald";
+@import "bem/clickable-overlay";
+@import "bem/fixed-area";
 
 
 // Смысловые секции
@@ -128,6 +115,33 @@
 @import "sections/mobile-menu";
 @import "sections/mobile-user-panel";
 @import "sections/mobile-search";
+@import "sections/catalog-menu";
 @import "sections/catalog-preview";
 @import "sections/posts-preview";
 @import "sections/footer";
+
+
+// активные состояния компонентов
+.mobile-search-open {
+  overflow: hidden;
+
+  .header {
+    border-color: transparent;
+  }
+}
+.mobile-menu-open {
+  overflow: hidden;
+}
+
+.catalog-menu-open {
+  overflow: hidden;
+  .catalog-menu  {
+    left: 0;
+  }
+  .clickable-overlay {
+    opacity: 1;
+    pointer-events: initial;
+    cursor: pointer;
+
+  }
+}

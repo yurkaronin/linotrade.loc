@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // includeFiles("./js/parts/yandex.map.js");
   // includeFiles("./js/parts/swiper-collection.js");
   includeFiles("./js/parts/accordion.js");
+  includeFiles("./js/parts/catalog-navigation.js");
   // includeFiles("./js/parts/input-phone-mask.js");
   // includeFiles("./js/parts/button-add.js");
   // includeFiles("./js/parts/channel-details.js");
@@ -52,6 +53,18 @@ document.addEventListener("DOMContentLoaded", () => {
   // document.addEventListener('scroll', e => {
   //   headerChange();
   // });
+
+  // Функция-обработчик события прокрутки
+  function handleScroll() {
+    // Получение текущего положения верхнего края окна браузера относительно начала страницы
+    const scrollTop = window.pageYOffset;
+
+    console.log('Текущее положение верхнего края окна:', scrollTop);
+  }
+
+  // Добавление обработчика события прокрутки
+  window.addEventListener('scroll', handleScroll);
+
 
 });
 
