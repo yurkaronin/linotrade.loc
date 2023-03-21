@@ -218,25 +218,32 @@
           <div class="catalog-menu__tabs">
             <ul class="catalog-menu__tabs-list list-reset">
               <li class="catalog-menu__tabs-item">
-                <a class="catalog-menu__tabs-link active" href="#" data-target="#catalog-nav-subcategory-1"><span>Ковры</span></a>
+                <a class="catalog-menu__tabs-link active" href="#"
+                  data-target="#catalog-nav-subcategory-1"><span>Ковры</span></a>
               </li>
               <li class="catalog-menu__tabs-item">
-                <a class="catalog-menu__tabs-link" href="#" data-target="#catalog-nav-subcategory-2"><span>Ламинат</span></a>
+                <a class="catalog-menu__tabs-link" href="#"
+                  data-target="#catalog-nav-subcategory-2"><span>Ламинат</span></a>
               </li>
               <li class="catalog-menu__tabs-item">
-                <a class="catalog-menu__tabs-link" href="#" data-target="#catalog-nav-subcategory-3"><span>Линолеум</span></a>
+                <a class="catalog-menu__tabs-link" href="#"
+                  data-target="#catalog-nav-subcategory-3"><span>Линолеум</span></a>
               </li>
               <li class="catalog-menu__tabs-item">
-                <a class="catalog-menu__tabs-link" href="#" data-target="#catalog-nav-subcategory-4"><span>Ковролин</span></a>
+                <a class="catalog-menu__tabs-link" href="#"
+                  data-target="#catalog-nav-subcategory-4"><span>Ковролин</span></a>
               </li>
               <li class="catalog-menu__tabs-item">
-                <a class="catalog-menu__tabs-link" href="#" data-target="#catalog-nav-subcategory-5"><span>SPC покрытие</span></a>
+                <a class="catalog-menu__tabs-link" href="#" data-target="#catalog-nav-subcategory-5"><span>SPC
+                    покрытие</span></a>
               </li>
               <li class="catalog-menu__tabs-item">
-                <a class="catalog-menu__tabs-link" href="#" data-target="#catalog-nav-subcategory-6"><span>Дорожки</span></a>
+                <a class="catalog-menu__tabs-link" href="#"
+                  data-target="#catalog-nav-subcategory-6"><span>Дорожки</span></a>
               </li>
               <li class="catalog-menu__tabs-item">
-                <a class="catalog-menu__tabs-link" href="#" data-target="#catalog-nav-subcategory-7"><span>Нитки</span></a>
+                <a class="catalog-menu__tabs-link" href="#"
+                  data-target="#catalog-nav-subcategory-7"><span>Нитки</span></a>
               </li>
               <li class="catalog-menu__tabs-item">
                 <a class="catalog-menu__tabs-link" href="#" data-target="#catalog-nav-subcategory-8"><span>Сопутствующие
@@ -4042,7 +4049,17 @@
         <!-- менюха 1  -->
         <ul class="footer__menu-list list-reset">
           <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#"><span>Каталог</span></a>
+            <div class="footer__menu-link-wrap">
+              <a class="footer__menu-link" href="#"><span>Каталог</span></a>
+              <!-- кнопка только для мобильных устройств  -->
+              <button class="footer__button button button--icon" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                  <path fill="#67CB33" d="M20 9v2H0V9z" />
+                  <path class="move" fill="#67CB33" d="M9 0h2v20H9z" />
+                </svg>
+                <span class="decorate"></span>
+              </button>
+            </div>
             <!-- выпадающее меню  -->
             <ul class="footer__submenu list-reset">
               <li class="footer__submenu-item">
@@ -4073,7 +4090,17 @@
             </ul>
           </li>
           <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#"><span>Полезный раздел</span></a>
+            <div class="footer__menu-link-wrap">
+              <a class="footer__menu-link" href="#"><span>Полезный раздел</span></a>
+              <!-- кнопка только для мобильных устройств  -->
+              <button class="footer__button button button--icon" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                  <path fill="#67CB33" d="M20 9v2H0V9z" />
+                  <path class="move" fill="#67CB33" d="M9 0h2v20H9z" />
+                </svg>
+                <span class="decorate"></span>
+              </button>
+            </div>
             <!-- выпадающее меню  -->
             <ul class="footer__submenu list-reset">
               <li class="footer__submenu-item">
@@ -4095,10 +4122,45 @@
         <!-- менюха 2  -->
         <ul class="footer__menu-list footer__menu-list--mod list-reset">
           <li class="footer__menu-item">
-            <a class="footer__menu-link" href="#"><span>Акции и новости</span></a>
+            <div class="footer__menu-link-wrap">
+              <a class="footer__menu-link" href="#"><span>Акции и новости</span></a>
+              <!-- кнопка только для мобильных устройств  -->
+              <button class="footer__button button button--icon" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                  <path fill="#67CB33" d="M20 9v2H0V9z" />
+                  <path class="move" fill="#67CB33" d="M9 0h2v20H9z" />
+                </svg>
+                <span class="decorate"></span>
+              </button>
+            </div>
           </li>
-          <li class="footer__menu-item"><a class="footer__menu-link" href="#"><span>Производители</span></a></li>
-          <li class="footer__menu-item"><a class="footer__menu-link" href="#"><span>Контакты</span></a></li>
+          <li class="footer__menu-item">
+            <div class="footer__menu-link-wrap">
+              <a class="footer__menu-link" href="#"><span>Производители</span></a>
+              <!-- кнопка только для мобильных устройств  -->
+              <button class="footer__button button button--icon" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                  <path fill="#67CB33" d="M20 9v2H0V9z" />
+                  <path class="move" fill="#67CB33" d="M9 0h2v20H9z" />
+                </svg>
+                <!-- <span class="decorate"></span> -->
+              </button>
+            </div>
+          </li>
+          <li class="footer__menu-item">
+
+            <div class="footer__menu-link-wrap">
+              <a class="footer__menu-link" href="#"><span>Контакты</span></a>
+              <!-- кнопка только для мобильных устройств  -->
+              <button class="footer__button button button--icon" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                  <path fill="#67CB33" d="M20 9v2H0V9z" />
+                  <path class="move" fill="#67CB33" d="M9 0h2v20H9z" />
+                </svg>
+                <span class="decorate"></span>
+              </button>
+            </div>
+          </li>
 
         </ul>
         <!-- КОНЕЦ менюха 2  -->
