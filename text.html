@@ -3,156 +3,271 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Интернет-магазин обуви "Шаг"</title>
+  <title>Document</title>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
     }
 
-    header {
-      background-color: #2a2a2a;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    header h1 {
-      color: #fff;
-      font-size: 36px;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-around;
-      padding: 20px 0;
-      background-color: #fff;
-    }
-
-    nav a {
-      color: #2a2a2a;
-      text-decoration: none;
-      font-size: 18px;
-    }
-
-    nav a:hover {
-      color: #f09d0a;
-    }
-
-    .container {
+    .wrapper {
       max-width: 1200px;
       margin: 0 auto;
       padding: 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 20px;
     }
 
-    .product {
-      background-color: #fff;
-      padding: 20px;
-      border: 1px solid #ddd;
-      text-align: center;
+    .catalog-menu {
+      max-height: 100vh;
+      overflow-y: auto;
     }
 
-    .product img {
-      max-width: 100%;
-      height: auto;
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
 
-    .product h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
+    .content__catalog-list {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      max-height: 100vh;
     }
 
-    .product p {
-      font-size: 18px;
-      color: #f09d0a;
+    .content__catalog-item {
+      width: 100%;
+    }
+
+    .content__catalog-link {
+      display: block;
+      font-size: 1.1em;
       font-weight: bold;
-      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #f5f5f5;
+      border: 1px solid #ccc;
+      color: #333;
+      text-decoration: none;
     }
 
-    .product button {
-      background-color: #2a2a2a;
-      color: #fff;
-      font-size: 18px;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
+    .content__catalog-link:hover {
+      background-color: #e0e0e0;
     }
 
-    .product button:hover {
-      background-color: #f09d0a;
+    .content__catalog-sublist {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      max-height: 100vh;
     }
 
-    footer {
-      background-color: #2a2a2a;
-      padding: 20px;
-      text-align: center;
+    .content__catalog-subitem {
+      list-style-type: none;
     }
 
-    footer p {
-      color: #fff;
+    .content__catalog-sublink {
+      display: block;
+      padding: 5px 10px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-top: none;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .content__catalog-sublink:hover {
+      background-color: #e0e0e0;
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <h1>Интернет-магазин обуви "Шаг"</h1>
-  </header>
-  <nav>
-    <a href="#">Главная</a>
-    <a href="#">Мужская обувь</a>
-    <a href="#">Женская обувь</a>
-    <a href="#">Детская обувь</a>
-    <a href="#">О нас</a>
-    <a href="#">Контакты</a>
-  </nav>
-  <section class="container">
-    <div class="product">
-      <img src="mens-shoes1.jpg" alt="Мужские кроссовки">
-      <h3>Мужские кроссовки</h3>
-      <p>4 999 ₽</p>
-      <button>В корзину</button>
-    </div>
-    <div class="product">
-      <img src="womens-shoes1.jpg" alt="Женские туфли">
-      <h3>Женские туфли</h3>
-      <p>3 999 ₽</p>
-      <button>В корзину</button>
-    </div>
-    <div class="product">
-      <img src="mens-shoes2.jpg" alt="Мужские ботинки">
-      <h3>Мужские ботинки</h3>
-      <p>6 499 ₽</p>
-      <button>В корзину</button>
-    </div>
 
-    <div class="product">
-      <img src="womens-shoes2.jpg" alt="Женские сапоги">
-      <h3>Женские сапоги</h3>
-      <p>7 499 ₽</p>
-      <button>В корзину</button>
-    </div>
-
-    <div class="product">
-      <img src="kids-shoes1.jpg" alt="Детские кеды">
-      <h3>Детские кеды</h3>
-      <p>2 999 ₽</p>
-      <button>В корзину</button>
-    </div>
-
-    <div class="product">
-      <img src="kids-shoes2.jpg" alt="Детские сандали">
-      <h3>Детские сандали</h3>
-      <p>1 499 ₽</p>
-      <button>В корзину</button>
+  <section class="catalog-menu">
+    <div class="wrapper">
+      <div class="content">
+        <ul class="content__catalog-list list-reset active" id="catalog-nav-subcategory-1">
+          <li class="content__catalog-item"><a href="#" class="content__catalog-link"><span>Производитель</span></a>
+            <ul class="content__catalog-sublist list-reset">
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#"
+                  class="content__catalog-sublink"><span>Champagne</span></a></li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Fat</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Sheep</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Hermes</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#"
+                  class="content__catalog-sublink"><span>Impressive</span></a></li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Jaddor</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Persian</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Star</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Touch</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="content__catalog-item"><a href="#" class="content__catalog-link"><span>Производитель</span></a>
+            <ul class="content__catalog-sublist list-reset">
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#"
+                  class="content__catalog-sublink"><span>Champagne</span></a></li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Fat</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Sheep</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Hermes</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#"
+                  class="content__catalog-sublink"><span>Impressive</span></a></li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Jaddor</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Persian</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Star</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Touch</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="content__catalog-item"><a href="#" class="content__catalog-link"><span>Производитель</span></a>
+            <ul class="content__catalog-sublist list-reset">
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#"
+                  class="content__catalog-sublink"><span>Champagne</span></a></li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Fat</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Sheep</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Hermes</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#"
+                  class="content__catalog-sublink"><span>Impressive</span></a></li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Jaddor</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Persian</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Star</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Touch</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="content__catalog-item"><a href="#" class="content__catalog-link"><span>Производитель</span></a>
+            <ul class="content__catalog-sublist list-reset">
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#"
+                  class="content__catalog-sublink"><span>Champagne</span></a></li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Fat</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Sheep</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Hermes</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#"
+                  class="content__catalog-sublink"><span>Impressive</span></a></li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Jaddor</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Persian</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Star</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Touch</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="content__catalog-item"><a href="#" class="content__catalog-link"><span>Производитель</span></a>
+            <ul class="content__catalog-sublist list-reset">
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#"
+                  class="content__catalog-sublink"><span>Champagne</span></a></li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Fat</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Sheep</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Hermes</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#"
+                  class="content__catalog-sublink"><span>Impressive</span></a></li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Jaddor</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Persian</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Star</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Touch</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="content__catalog-item"><a href="#" class="content__catalog-link"><span>Производитель</span></a>
+            <ul class="content__catalog-sublist list-reset">
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#"
+                  class="content__catalog-sublink"><span>Champagne</span></a></li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Fat</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Sheep</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Hermes</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#"
+                  class="content__catalog-sublink"><span>Impressive</span></a></li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Jaddor</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Persian</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Star</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Touch</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="content__catalog-item"><a href="#" class="content__catalog-link"><span>Производитель</span></a>
+            <ul class="content__catalog-sublist list-reset">
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#"
+                  class="content__catalog-sublink"><span>Champagne</span></a></li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Fat</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Sheep</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Hermes</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#"
+                  class="content__catalog-sublink"><span>Impressive</span></a></li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Jaddor</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Persian</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Star</span></a>
+              </li>
+              <li class="content__catalog-subitem"><a href="#" class="content__catalog-sublink"><span>Touch</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
-  <footer>
-    <p>© 2023 Интернет-магазин обуви "Шаг". Все права защищены.</p>
-  </footer>
 </body>
 
 </html>
