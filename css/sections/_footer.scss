@@ -26,7 +26,9 @@
     color: rgba(#373737, 0.9);
     transition: all 0.3s;
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
       color: var(--GreenOver);
     }
   }
@@ -73,7 +75,9 @@
     span {
       flex-grow: 2;
     }
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
       transform: translateX(8px);
 
       span {

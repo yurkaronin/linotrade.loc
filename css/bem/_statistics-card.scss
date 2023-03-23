@@ -53,7 +53,9 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     background-color: var(--GreenOver);
     color: var(--White);
 
@@ -65,7 +67,7 @@
     }
     svg {
       path {
-        stroke: #FFE603;
+        stroke: #ffe603;
       }
     }
   }
@@ -77,5 +79,4 @@
       font-size: 28px;
     }
   }
-
 }

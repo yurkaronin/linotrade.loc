@@ -32,7 +32,9 @@
     position: relative;
     z-index: 2;
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
       font-weight: 500;
       color: var(--GreenOver);
     }
@@ -137,11 +139,12 @@
       }
 
       // активность
-      &:hover {
+      &:hover,
+      &:active,
+      &:focus {
         &::before {
           margin-left: 8px;
         }
-
       }
     }
   }

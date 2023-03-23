@@ -95,7 +95,9 @@
   }
 
   // активности
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     background-color: #44a611;
     color: #ffffff;
 

@@ -1,8 +1,8 @@
 // кнопка каталога мобилка
 const catalogBtnMob = document.getElementById('mob-catalog-btn-call');
 
-catalogBtnMob.addEventListener('click', () => {
-
+catalogBtnMob.addEventListener('click', (event) => {
+  event.preventDefault();
   //  если при этом открыто меню мобильной навигации - скрываем его
   document.querySelector('.button--menu').classList.remove('open');
   document.body.classList.remove('mobile-menu-open');
