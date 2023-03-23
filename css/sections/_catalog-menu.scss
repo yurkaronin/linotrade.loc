@@ -171,7 +171,8 @@
   }
 
   .catalog-menu {
-    padding-top: 122px;
+    padding-top: 123px;
+    padding-bottom: 60px;
 
     .content {
       padding-bottom: 60px;
@@ -179,5 +180,8 @@
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 720px) {
+  .content__catalog-item {
+    max-width: 100%;
+}
 }

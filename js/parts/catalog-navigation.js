@@ -1,5 +1,4 @@
-// Найти все элементы с классом .tabs__link
-const tabLinks = document.querySelectorAll('.tabs__link');
+const tabLinks = document.querySelectorAll('.catalog-menu__tabs-link');
 
 // Функция для добавления вспомогательного класса
 function addHelperClass(event) {

@@ -77,6 +77,7 @@
       grid-template-columns: 122px 212px;
       gap: 16px;
       justify-content: space-between;
+      margin-bottom: 12px;
     }
     .menu {
       display: none;
@@ -110,6 +111,7 @@
     .top {
       display: block;
       max-width: max-content;
+      margin-bottom: 0;
     }
     .tel {
       display: none;

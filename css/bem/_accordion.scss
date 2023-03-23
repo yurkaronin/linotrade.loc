@@ -56,6 +56,12 @@
     transition: all 0.3s ease-in-out;
     margin: 0 40px;
   }
+
+  @media (max-width: 550px) {
+    &__title {
+      font-size: 20px;
+    }
+  }
 }
 .accordion__question:hover {
   background-color: var(--Gray2);

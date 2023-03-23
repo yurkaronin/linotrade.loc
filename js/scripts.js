@@ -13,10 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
   includeFiles("./js/parts/buttons-animate.js");
   includeFiles("./js/parts/hover-animate.js");
   includeFiles("./js/parts/custom-select.js");
-  includeFiles("./js/parts/catalog-button.js");
   includeFiles("./js/parts/accordion.js");
   includeFiles("./js/parts/catalog-navigation.js");
   includeFiles("./js/parts/mobile-menu-in-basement.js");
+  includeFiles("./js/parts/button-catalog-desktop.js");
+  includeFiles("./js/parts/button-catalog-mobile.js");
+  includeFiles("./js/parts/button-navigation-mobile.js");
+  includeFiles("./js/parts/button-sub-navigation-mobile.js");
+  includeFiles("./js/parts/button-search-mobile.js");
 
 });
 

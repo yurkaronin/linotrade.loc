@@ -45,8 +45,8 @@
     &:after {
       display: block;
       content: "";
-      width: 9px;
-      height: 19px;
+      width: 10px;
+      height: 20px;
       background-image: url(../../img/icons/menu-arrow-right.svg);
       background-repeat: no-repeat;
       z-index: 2;
@@ -139,6 +139,8 @@
   }
 
   @media (max-width: 550px) {
+    padding-top: 71px;
+
     &__sublist {
       grid-template-columns: 1fr;
     }
