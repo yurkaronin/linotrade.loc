@@ -15,8 +15,9 @@
 </head>
 
 <body>
+
   <div class="fixed-area">
-    <!-- Шапка  -->
+    <!-- Шапка -->
     <header class="header">
       <div class="wrapper">
         <!-- верхняя часть -->
@@ -65,15 +66,15 @@
           <div class="group">
             <!-- селект -->
             <div class="select">
-              <form action="">
+              <form action="javascript:void(0);">
 
                 <div class="custom-select" data-default="Все категории">
                   <div class="custom-select__selected"><span>Выберите категорию</span></div>
                   <div class="custom-select__options">
-                    <div class="custom-select__option" value="option1">Категория 1</div>
-                    <div class="custom-select__option" value="Категория 2">Категория 2</div>
-                    <div class="custom-select__option" value="Категория 3">Категория 3</div>
-                    <div class="custom-select__option" value="Категория 4">Категория 4</div>
+                    <div class="custom-select__option" data-value="Категория 1">Категория 1</div>
+                    <div class="custom-select__option" data-value="Категория 2">Категория 2</div>
+                    <div class="custom-select__option" data-value="Категория 3">Категория 3</div>
+                    <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
                   </div>
                   <input class="visually-hidden" type="hidden" name="selecting-category" value="">
                 </div>
@@ -84,9 +85,9 @@
 
             <!-- поиск -->
             <div class="search">
-              <form action="">
+              <form action="javascript:void(0);">
                 <div class="search__wrapper">
-                  <input type="search" name="" id="" placeholder="Поиск по каталогу">
+                  <input type="search" name="catalog-search"  placeholder="Поиск по каталогу">
                   <button class="button button--icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" fill="none">
                       <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
@@ -132,7 +133,7 @@
                 </a>
               </li>
               <li>
-                <!-- ссылка на корзину  -->
+                <!-- ссылка на корзину -->
                 <a class="cart-button" href="#">
                   <div class="button button--icon button--border">
                     <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -214,7 +215,7 @@
 
       <div class="wrapper">
         <div class="catalog-menu__grid">
-          <!-- табы для переключения менюшек  -->
+          <!-- табы для переключения менюшек -->
           <div class="catalog-menu__tabs">
             <ul class="catalog-menu__tabs-list list-reset">
               <li class="catalog-menu__tabs-item">
@@ -251,10 +252,10 @@
               </li>
             </ul>
           </div>
-          <!-- табы для переключения менюшек  -->
-          <!-- КОНЕЦ содержимое табов - меню каталога  -->
+          <!-- табы для переключения менюшек -->
+          <!-- КОНЕЦ содержимое табов - меню каталога -->
           <div class="catalog-menu__content">
-            <!-- мобильная шапка меню для возврата  -->
+            <!-- мобильная шапка меню для возврата -->
             <div class="catalog-menu__return">
               <a href="#">
                 <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -263,10 +264,10 @@
                 <span>Назад</span>
               </a>
             </div>
-            <!-- КОНЕЦ мобильная шапка меню для возврата  -->
-            <!-- Группа контента для одного таба  -->
+            <!-- КОНЕЦ мобильная шапка меню для возврата -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset active" id="catalog-nav-subcategory-1">
-              <!-- группа или пункт  -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <div class="catalog-menu__link-wrapper">
                   <a href="#" class="content__catalog-link"><span>Производитель 1</span></a>
@@ -278,7 +279,7 @@
                   </button>
                 </div>
 
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -312,12 +313,12 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
-              <!-- группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <div class="catalog-menu__link-wrapper">
                   <a href="#" class="content__catalog-link"><span>Производитель 1</span></a>
@@ -329,7 +330,7 @@
                   </button>
                 </div>
 
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -363,11 +364,11 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
               <li class="content__catalog-item">
                 <div class="catalog-menu__link-wrapper">
                   <a href="#" class="content__catalog-link"><span>Производитель 1</span></a>
@@ -379,7 +380,7 @@
                   </button>
                 </div>
 
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -413,11 +414,11 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
               <li class="content__catalog-item">
                 <div class="catalog-menu__link-wrapper">
                   <a href="#" class="content__catalog-link"><span>Производитель 1</span></a>
@@ -429,7 +430,7 @@
                   </button>
                 </div>
 
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -463,11 +464,11 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
               <li class="content__catalog-item">
                 <div class="catalog-menu__link-wrapper">
                   <a href="#" class="content__catalog-link"><span>Производитель 1</span></a>
@@ -479,7 +480,7 @@
                   </button>
                 </div>
 
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -513,22 +514,22 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
 
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
-            <!-- Группа контента для одного таба  -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-2">
 
-              <!-- группа или пункт  -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <a href="#" class="content__catalog-link"><span>Производитель 2</span></a>
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -562,17 +563,17 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
-            <!-- Группа контента для одного таба  -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-3">
-              <!-- группа или пункт  -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <div class="catalog-menu__link-wrapper">
                   <a href="#" class="content__catalog-link"><span>Производитель 3</span></a>
@@ -584,7 +585,7 @@
                   </button>
                 </div>
 
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -618,15 +619,15 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
-            <!-- Группа контента для одного таба  -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-4">
 
               <li class="content__catalog-item">
@@ -640,7 +641,7 @@
                   </button>
                 </div>
 
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -674,21 +675,21 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
 
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
-            <!-- Группа контента для одного таба  -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-5">
-              <!-- группа или пункт  -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <a href="#" class="content__catalog-link"><span>Производитель 5</span></a>
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -722,21 +723,21 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
 
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
-            <!-- Группа контента для одного таба  -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-6">
-              <!-- группа или пункт  -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <a href="#" class="content__catalog-link"><span>Производитель 6</span></a>
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -770,20 +771,20 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
-            <!-- Группа контента для одного таба  -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-7">
-              <!-- группа или пункт  -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <a href="#" class="content__catalog-link"><span>Производитель 7</span></a>
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -817,20 +818,20 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
-            <!-- Группа контента для одного таба  -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-8">
-              <!-- группа или пункт  -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <a href="#" class="content__catalog-link"><span>Производитель 8</span></a>
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -864,16 +865,16 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
           </div>
-          <!-- КОНЕЦ содержимое табов - меню каталога  -->
+          <!-- КОНЕЦ содержимое табов - меню каталога -->
         </div>
 
       </div>
@@ -885,7 +886,7 @@
 
 
 
-  <!-- подложка под попап  -->
+  <!-- подложка под попап -->
   <div class="clickable-overlay" title="Закрыть окно"></div>
 
 
@@ -952,7 +953,7 @@
   </div>
   <!-- КОНЕЦ мобильная панель пользователя -->
 
-  <!-- мобильное навигационное меню  -->
+  <!-- мобильное навигационное меню -->
   <div class="mobile-menu">
     <div class="wrapper">
 
@@ -984,12 +985,12 @@
     </div>
 
   </div>
-  <!-- КОНЕЦ мобильное навигационное меню  -->
+  <!-- КОНЕЦ мобильное навигационное меню -->
 
   <!-- мобильный поиск в шапке -->
   <div class="mobile-search">
     <div class="wrapper">
-      <form action="">
+      <form action="javascript:void(0);">
 
         <div class="mobile-search__grid">
           <!-- селект -->
@@ -997,19 +998,19 @@
             <div class="custom-select" data-default="Все категории">
               <div class="custom-select__selected">Все категории</div>
               <div class="custom-select__options">
-                <div class="custom-select__option" value="option1">Категория 1</div>
-                <div class="custom-select__option" value="Категория 2">Категория 2</div>
-                <div class="custom-select__option" value="Категория 3">Категория 3</div>
-                <div class="custom-select__option" value="Категория 4">Категория 4</div>
-                <div class="custom-select__option" value="Категория 4">Категория 4</div>
-                <div class="custom-select__option" value="Категория 4">Категория 4</div>
-                <div class="custom-select__option" value="Категория 4">Категория 4</div>
-                <div class="custom-select__option" value="Категория 4">Категория 4</div>
-                <div class="custom-select__option" value="Категория 4">Категория 4</div>
-                <div class="custom-select__option" value="Категория 4">Категория 4</div>
-                <div class="custom-select__option" value="Категория 4">Категория 4</div>
-                <div class="custom-select__option" value="Категория 4">Категория 4</div>
-                <div class="custom-select__option" value="Категория 4">Категория 4</div>
+                <div class="custom-select__option" data-value="option1">Категория 1</div>
+                <div class="custom-select__option" data-value="Категория 2">Категория 2</div>
+                <div class="custom-select__option" data-value="Категория 3">Категория 3</div>
+                <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
+                <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
+                <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
+                <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
+                <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
+                <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
+                <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
+                <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
+                <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
+                <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
               </div>
               <input class="visually-hidden" type="hidden" name="selecting-category" value="">
             </div>
@@ -1017,7 +1018,7 @@
           <!-- поиск -->
           <div class="search">
             <div class="search__wrapper">
-              <input type="search" name="" id="" placeholder="Поиск по каталогу">
+              <input type="search" name="catalog-search-2" placeholder="Поиск по каталогу">
             </div>
           </div>
           <!-- кнпока отправки поискового запроса -->
@@ -1031,12 +1032,11 @@
     </div>
   </div>
   <!-- КОНЕЦ мобильный поиск в шапке -->
-  </div>
 
-  <!-- Основной контент  -->
+  <!-- Основной контент -->
   <main>
 
-    <!-- Анонс каталога  -->
+    <!-- Анонс каталога -->
     <section class="catalog-preview section">
       <div class="wrapper">
         <h2 class="title">Каталог</h2>
@@ -1044,7 +1044,7 @@
         <div class="catalog-preview__list">
           <ul class="list-reset">
             <li>
-              <!-- Анонс товара  -->
+              <!-- Анонс товара -->
               <a class="product-preview" href="#">
                 <div class="product-preview__left">
                   <h3 class="product-preview__name">Ковры</h3>
@@ -1056,10 +1056,10 @@
                   </div>
                 </div>
               </a>
-              <!-- КОНЕЦ Анонс товара  -->
+              <!-- КОНЕЦ Анонс товара -->
             </li>
             <li>
-              <!-- Анонс товара  -->
+              <!-- Анонс товара -->
               <a class="product-preview" href="#">
                 <div class="product-preview__left">
                   <h3 class="product-preview__name">Ламинат</h3>
@@ -1071,10 +1071,10 @@
                   </div>
                 </div>
               </a>
-              <!-- КОНЕЦ Анонс товара  -->
+              <!-- КОНЕЦ Анонс товара -->
             </li>
             <li>
-              <!-- Анонс товара  -->
+              <!-- Анонс товара -->
               <a class="product-preview" href="#">
                 <div class="product-preview__left">
                   <h3 class="product-preview__name">Линолеум</h3>
@@ -1086,10 +1086,10 @@
                   </div>
                 </div>
               </a>
-              <!-- КОНЕЦ Анонс товара  -->
+              <!-- КОНЕЦ Анонс товара -->
             </li>
             <li>
-              <!-- Анонс товара  -->
+              <!-- Анонс товара -->
               <a class="product-preview" href="#">
                 <div class="product-preview__left">
                   <h3 class="product-preview__name">Ковролин</h3>
@@ -1101,10 +1101,10 @@
                   </div>
                 </div>
               </a>
-              <!-- КОНЕЦ Анонс товара  -->
+              <!-- КОНЕЦ Анонс товара -->
             </li>
             <li>
-              <!-- Анонс товара  -->
+              <!-- Анонс товара -->
               <a class="product-preview" href="#">
                 <div class="product-preview__left">
                   <h3 class="product-preview__name">SPC покрытие</h3>
@@ -1116,10 +1116,10 @@
                   </div>
                 </div>
               </a>
-              <!-- КОНЕЦ Анонс товара  -->
+              <!-- КОНЕЦ Анонс товара -->
             </li>
             <li>
-              <!-- Анонс товара  -->
+              <!-- Анонс товара -->
               <a class="product-preview" href="#">
                 <div class="product-preview__left">
                   <h3 class="product-preview__name">Дорожки</h3>
@@ -1131,10 +1131,10 @@
                   </div>
                 </div>
               </a>
-              <!-- КОНЕЦ Анонс товара  -->
+              <!-- КОНЕЦ Анонс товара -->
             </li>
             <li>
-              <!-- Анонс товара  -->
+              <!-- Анонс товара -->
               <a class="product-preview" href="#">
                 <div class="product-preview__left">
                   <h3 class="product-preview__name">Нитки</h3>
@@ -1146,10 +1146,10 @@
                   </div>
                 </div>
               </a>
-              <!-- КОНЕЦ Анонс товара  -->
+              <!-- КОНЕЦ Анонс товара -->
             </li>
             <li>
-              <!-- Анонс товара  -->
+              <!-- Анонс товара -->
               <a class="product-preview" href="#">
                 <div class="product-preview__left">
                   <h3 class="product-preview__name">Сопутствующие товары</h3>
@@ -1161,24 +1161,24 @@
                   </div>
                 </div>
               </a>
-              <!-- КОНЕЦ Анонс товара  -->
+              <!-- КОНЕЦ Анонс товара -->
             </li>
 
           </ul>
         </div>
       </div>
     </section>
-    <!-- КОНЕЦ Анонс каталога  -->
+    <!-- КОНЕЦ Анонс каталога -->
 
-    <!-- Акции и новости  -->
+    <!-- Акции и новости -->
     <section class="posts-preview section section--mod">
       <div class="wrapper">
-        <!-- Шапка секции с заголовком и кнопкой  -->
+        <!-- Шапка секции с заголовком и кнопкой -->
         <div class="section__header">
           <h2 class="title">Акции и новости</h2>
           <a href="#" class="link-more"><span>Смотреть всё</span></a>
         </div>
-        <!-- КОНЕЦ Шапка секции с заголовком и кнопкой  -->
+        <!-- КОНЕЦ Шапка секции с заголовком и кнопкой -->
 
         <div class="posts-preview__list">
           <ul class="list-reset">
@@ -1235,24 +1235,24 @@
 
       </div>
     </section>
-    <!-- КОНЕЦ Акции и новости  -->
+    <!-- КОНЕЦ Акции и новости -->
 
-    <!-- Заказы пользователя  -->
+    <!-- Заказы пользователя -->
     <section class="user-orders section">
       <div class="wrapper">
-        <!-- Шапка секции с заголовком и кнопкой  -->
+        <!-- Шапка секции с заголовком и кнопкой -->
         <div class="section__header">
           <h2 class="title">Заказы</h2>
           <a href="#" class="link-more"><span>Смотреть всё</span></a>
         </div>
-        <!-- КОНЕЦ Шапка секции с заголовком и кнопкой  -->
+        <!-- КОНЕЦ Шапка секции с заголовком и кнопкой -->
 
-        <!-- Статистика пользователя  -->
+        <!-- Статистика пользователя -->
         <div class="statistics-panel">
           <ul class="statistics-panel__list list-reset">
 
             <li class="statistics-panel__item">
-              <!-- Карточка с данными статистики  -->
+              <!-- Карточка с данными статистики -->
               <div class="statistics-card">
                 <h3 class="statistics-card__label">Использовано</h3>
                 <div class="statistics-card__details">
@@ -1272,11 +1272,11 @@
                 </div>
 
               </div>
-              <!-- КОНЕЦ Карточка с данными статистики  -->
+              <!-- КОНЕЦ Карточка с данными статистики -->
 
             </li>
             <li class="statistics-panel__item">
-              <!-- Карточка с данными статистики  -->
+              <!-- Карточка с данными статистики -->
               <div class="statistics-card">
                 <h3 class="statistics-card__label">Лимит</h3>
                 <div class="statistics-card__details">
@@ -1299,11 +1299,11 @@
                 </div>
 
               </div>
-              <!-- КОНЕЦ Карточка с данными статистики  -->
+              <!-- КОНЕЦ Карточка с данными статистики -->
 
             </li>
             <li class="statistics-panel__item">
-              <!-- Карточка с данными статистики  -->
+              <!-- Карточка с данными статистики -->
               <div class="statistics-card">
                 <h3 class="statistics-card__label">Ближайшая оплата</h3>
                 <div class="statistics-card__details">
@@ -1327,11 +1327,11 @@
                 </div>
 
               </div>
-              <!-- КОНЕЦ Карточка с данными статистики  -->
+              <!-- КОНЕЦ Карточка с данными статистики -->
 
             </li>
             <li class="statistics-panel__item">
-              <!-- Карточка с данными статистики  -->
+              <!-- Карточка с данными статистики -->
               <div class="statistics-card">
                 <h3 class="statistics-card__label">Сумма оплаты</h3>
                 <div class="statistics-card__details">
@@ -1351,23 +1351,23 @@
                 </div>
 
               </div>
-              <!-- КОНЕЦ Карточка с данными статистики  -->
+              <!-- КОНЕЦ Карточка с данными статистики -->
 
             </li>
 
           </ul>
         </div>
-        <!-- КОНЕЦ Статистика пользователя  -->
+        <!-- КОНЕЦ Статистика пользователя -->
 
-        <!-- поиск по заказам  -->
+        <!-- поиск по заказам -->
         <div class="order-search">
-          <form action="">
+          <form action="javascript:void(0);">
             <div class="order-search__grid">
               <!-- поле поиска -->
               <div class="search">
                 <label for="order-search-input">Поиск заказов:</label>
                 <div class="search__wrapper">
-                  <input type="search" name="" id="order-search-input" placeholder="Поиск в заказах">
+                  <input type="search" name="order-search" id="order-search-input" placeholder="Поиск в заказах">
                   <button class="button button--icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" fill="none">
                       <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
@@ -1381,25 +1381,25 @@
                 </div>
               </div>
               <!-- КОНЕЦ поле поиска -->
-              <!-- поле выбора периода  -->
+              <!-- поле выбора периода -->
               <div class="period-selection">
                 <label for="period-selection-input">Поиск заказов:</label>
-                <input type="date" name="" id="period-selection-input">
+                <input type="date" id="period-selection-input">
               </div>
-              <!-- КОНЕЦ поле выбора периода  -->
+              <!-- КОНЕЦ поле выбора периода -->
               <!-- селект -->
               <div class="select order-status">
-                <label for="order-status-select">Статус заказа:</label>
+                <label>Статус заказа:</label>
                 <div class="custom-select" data-default="Все">
                   <div class="custom-select__selected"><span>Выберите категорию</span></div>
                   <div class="custom-select__options">
-                    <div class="custom-select__option" value="Все">Все</div>
-                    <div class="custom-select__option" value="Категория 1">Категория 1</div>
-                    <div class="custom-select__option" value="Категория 2">Категория 2</div>
-                    <div class="custom-select__option" value="Категория 3">Категория 3</div>
-                    <div class="custom-select__option" value="Категория 4">Категория 4</div>
+                    <div class="custom-select__option" data-value="Все">Все</div>
+                    <div class="custom-select__option" data-value="Категория 1">Категория 1</div>
+                    <div class="custom-select__option" data-value="Категория 2">Категория 2</div>
+                    <div class="custom-select__option" data-value="Категория 3">Категория 3</div>
+                    <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
                   </div>
-                  <input class="visually-hidden" type="hidden" name="selecting-category" value="">
+                  <input class="visually-hidden" type="hidden" value="">
                 </div>
               </div>
               <!-- КОНЕЦ селект -->
@@ -1412,8 +1412,8 @@
             </div>
           </form>
         </div>
-        <!-- КОНЕЦ поиск по заказам  -->
-        <!-- Список заказов в виде аккордеонов  -->
+        <!-- КОНЕЦ поиск по заказам -->
+        <!-- Список заказов в виде аккордеонов -->
         <div class="order-list">
           <ul class="accordions list-reset">
             <!-- аккордеончик -->
@@ -1429,11 +1429,11 @@
               </div>
 
               <div class="accordion__answer">
-                <!-- список товаров в заказе  -->
+                <!-- список товаров в заказе -->
                 <ul class="list-reset">
 
                   <li>
-                    <!-- анонс заказа в строку  -->
+                    <!-- анонс заказа в строку -->
                     <div class="order-item">
                       <!-- Название -->
                       <div class="order-item__title">
@@ -1441,28 +1441,28 @@
                         <h3 class="order-item__name">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
                       </div>
 
-                      <!-- Цена  -->
+                      <!-- Цена -->
                       <div class="order-item__details">
                         <span class="order-item__label">Цена:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
-                      <!-- Количество  -->
+                      <!-- Количество -->
                       <div class="order-item__details">
                         <span class="order-item__label">Количество:</span>
                         <span class="order-item__strong">1 шт.</span>
                       </div>
-                      <!-- Стоимость  -->
+                      <!-- Стоимость -->
                       <div class="order-item__details">
                         <span class="order-item__label">Стоимость:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
                   <li>
-                    <!-- анонс заказа в строку  -->
+                    <!-- анонс заказа в строку -->
                     <div class="order-item">
                       <!-- Название -->
                       <div class="order-item__title">
@@ -1470,28 +1470,28 @@
                         <h3 class="order-item__name">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
                       </div>
 
-                      <!-- Цена  -->
+                      <!-- Цена -->
                       <div class="order-item__details">
                         <span class="order-item__label">Цена:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
-                      <!-- Количество  -->
+                      <!-- Количество -->
                       <div class="order-item__details">
                         <span class="order-item__label">Количество:</span>
                         <span class="order-item__strong">1 шт.</span>
                       </div>
-                      <!-- Стоимость  -->
+                      <!-- Стоимость -->
                       <div class="order-item__details">
                         <span class="order-item__label">Стоимость:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
                   <li>
-                    <!-- анонс заказа в строку  -->
+                    <!-- анонс заказа в строку -->
                     <div class="order-item">
                       <!-- Название -->
                       <div class="order-item__title">
@@ -1499,23 +1499,23 @@
                         <h3 class="order-item__name">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
                       </div>
 
-                      <!-- Цена  -->
+                      <!-- Цена -->
                       <div class="order-item__details">
                         <span class="order-item__label">Цена:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
-                      <!-- Количество  -->
+                      <!-- Количество -->
                       <div class="order-item__details">
                         <span class="order-item__label">Количество:</span>
                         <span class="order-item__strong">1 шт.</span>
                       </div>
-                      <!-- Стоимость  -->
+                      <!-- Стоимость -->
                       <div class="order-item__details">
                         <span class="order-item__label">Стоимость:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
@@ -1533,13 +1533,14 @@
 
 
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
-                  <a href="#" class="button"><span>скачать счет</span><span class="decorate"></span></a>
+
                 </ul>
-                <!-- КОНЕЦ список товаров в заказе  -->
+                <a href="#" class="button"><span>скачать счет</span><span class="decorate"></span></a>
+                <!-- КОНЕЦ список товаров в заказе -->
               </div>
             </li>
             <!-- КОНЕЦ аккордеончик -->
@@ -1556,11 +1557,11 @@
               </div>
 
               <div class="accordion__answer">
-                <!-- список товаров в заказе  -->
+                <!-- список товаров в заказе -->
                 <ul class="list-reset">
 
                   <li>
-                    <!-- анонс заказа в строку  -->
+                    <!-- анонс заказа в строку -->
                     <div class="order-item">
                       <!-- Название -->
                       <div class="order-item__title">
@@ -1568,28 +1569,28 @@
                         <h3 class="order-item__name">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
                       </div>
 
-                      <!-- Цена  -->
+                      <!-- Цена -->
                       <div class="order-item__details">
                         <span class="order-item__label">Цена:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
-                      <!-- Количество  -->
+                      <!-- Количество -->
                       <div class="order-item__details">
                         <span class="order-item__label">Количество:</span>
                         <span class="order-item__strong">1 шт.</span>
                       </div>
-                      <!-- Стоимость  -->
+                      <!-- Стоимость -->
                       <div class="order-item__details">
                         <span class="order-item__label">Стоимость:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
                   <li>
-                    <!-- анонс заказа в строку  -->
+                    <!-- анонс заказа в строку -->
                     <div class="order-item">
                       <!-- Название -->
                       <div class="order-item__title">
@@ -1597,28 +1598,28 @@
                         <h3 class="order-item__name">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
                       </div>
 
-                      <!-- Цена  -->
+                      <!-- Цена -->
                       <div class="order-item__details">
                         <span class="order-item__label">Цена:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
-                      <!-- Количество  -->
+                      <!-- Количество -->
                       <div class="order-item__details">
                         <span class="order-item__label">Количество:</span>
                         <span class="order-item__strong">1 шт.</span>
                       </div>
-                      <!-- Стоимость  -->
+                      <!-- Стоимость -->
                       <div class="order-item__details">
                         <span class="order-item__label">Стоимость:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
                   <li>
-                    <!-- анонс заказа в строку  -->
+                    <!-- анонс заказа в строку -->
                     <div class="order-item">
                       <!-- Название -->
                       <div class="order-item__title">
@@ -1626,23 +1627,23 @@
                         <h3 class="order-item__name">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
                       </div>
 
-                      <!-- Цена  -->
+                      <!-- Цена -->
                       <div class="order-item__details">
                         <span class="order-item__label">Цена:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
-                      <!-- Количество  -->
+                      <!-- Количество -->
                       <div class="order-item__details">
                         <span class="order-item__label">Количество:</span>
                         <span class="order-item__strong">1 шт.</span>
                       </div>
-                      <!-- Стоимость  -->
+                      <!-- Стоимость -->
                       <div class="order-item__details">
                         <span class="order-item__label">Стоимость:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
@@ -1660,13 +1661,14 @@
 
 
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
-                  <a href="#" class="button"><span>скачать счет</span><span class="decorate"></span></a>
+
                 </ul>
-                <!-- КОНЕЦ список товаров в заказе  -->
+                <a href="#" class="button"><span>скачать счет</span><span class="decorate"></span></a>
+                <!-- КОНЕЦ список товаров в заказе -->
               </div>
             </li>
             <!-- КОНЕЦ аккордеончик -->
@@ -1683,11 +1685,11 @@
               </div>
 
               <div class="accordion__answer">
-                <!-- список товаров в заказе  -->
+                <!-- список товаров в заказе -->
                 <ul class="list-reset">
 
                   <li>
-                    <!-- анонс заказа в строку  -->
+                    <!-- анонс заказа в строку -->
                     <div class="order-item">
                       <!-- Название -->
                       <div class="order-item__title">
@@ -1695,28 +1697,28 @@
                         <h3 class="order-item__name">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
                       </div>
 
-                      <!-- Цена  -->
+                      <!-- Цена -->
                       <div class="order-item__details">
                         <span class="order-item__label">Цена:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
-                      <!-- Количество  -->
+                      <!-- Количество -->
                       <div class="order-item__details">
                         <span class="order-item__label">Количество:</span>
                         <span class="order-item__strong">1 шт.</span>
                       </div>
-                      <!-- Стоимость  -->
+                      <!-- Стоимость -->
                       <div class="order-item__details">
                         <span class="order-item__label">Стоимость:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
                   <li>
-                    <!-- анонс заказа в строку  -->
+                    <!-- анонс заказа в строку -->
                     <div class="order-item">
                       <!-- Название -->
                       <div class="order-item__title">
@@ -1724,28 +1726,28 @@
                         <h3 class="order-item__name">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
                       </div>
 
-                      <!-- Цена  -->
+                      <!-- Цена -->
                       <div class="order-item__details">
                         <span class="order-item__label">Цена:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
-                      <!-- Количество  -->
+                      <!-- Количество -->
                       <div class="order-item__details">
                         <span class="order-item__label">Количество:</span>
                         <span class="order-item__strong">1 шт.</span>
                       </div>
-                      <!-- Стоимость  -->
+                      <!-- Стоимость -->
                       <div class="order-item__details">
                         <span class="order-item__label">Стоимость:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
                   <li>
-                    <!-- анонс заказа в строку  -->
+                    <!-- анонс заказа в строку -->
                     <div class="order-item">
                       <!-- Название -->
                       <div class="order-item__title">
@@ -1753,23 +1755,23 @@
                         <h3 class="order-item__name">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
                       </div>
 
-                      <!-- Цена  -->
+                      <!-- Цена -->
                       <div class="order-item__details">
                         <span class="order-item__label">Цена:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
-                      <!-- Количество  -->
+                      <!-- Количество -->
                       <div class="order-item__details">
                         <span class="order-item__label">Количество:</span>
                         <span class="order-item__strong">1 шт.</span>
                       </div>
-                      <!-- Стоимость  -->
+                      <!-- Стоимость -->
                       <div class="order-item__details">
                         <span class="order-item__label">Стоимость:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
@@ -1787,13 +1789,14 @@
 
 
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
-                  <a href="#" class="button"><span>скачать счет</span><span class="decorate"></span></a>
+
                 </ul>
-                <!-- КОНЕЦ список товаров в заказе  -->
+                <a href="#" class="button"><span>скачать счет</span><span class="decorate"></span></a>
+                <!-- КОНЕЦ список товаров в заказе -->
               </div>
             </li>
             <!-- КОНЕЦ аккордеончик -->
@@ -1810,11 +1813,11 @@
               </div>
 
               <div class="accordion__answer">
-                <!-- список товаров в заказе  -->
+                <!-- список товаров в заказе -->
                 <ul class="list-reset">
 
                   <li>
-                    <!-- анонс заказа в строку  -->
+                    <!-- анонс заказа в строку -->
                     <div class="order-item">
                       <!-- Название -->
                       <div class="order-item__title">
@@ -1822,28 +1825,28 @@
                         <h3 class="order-item__name">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
                       </div>
 
-                      <!-- Цена  -->
+                      <!-- Цена -->
                       <div class="order-item__details">
                         <span class="order-item__label">Цена:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
-                      <!-- Количество  -->
+                      <!-- Количество -->
                       <div class="order-item__details">
                         <span class="order-item__label">Количество:</span>
                         <span class="order-item__strong">1 шт.</span>
                       </div>
-                      <!-- Стоимость  -->
+                      <!-- Стоимость -->
                       <div class="order-item__details">
                         <span class="order-item__label">Стоимость:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
                   <li>
-                    <!-- анонс заказа в строку  -->
+                    <!-- анонс заказа в строку -->
                     <div class="order-item">
                       <!-- Название -->
                       <div class="order-item__title">
@@ -1851,28 +1854,28 @@
                         <h3 class="order-item__name">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
                       </div>
 
-                      <!-- Цена  -->
+                      <!-- Цена -->
                       <div class="order-item__details">
                         <span class="order-item__label">Цена:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
-                      <!-- Количество  -->
+                      <!-- Количество -->
                       <div class="order-item__details">
                         <span class="order-item__label">Количество:</span>
                         <span class="order-item__strong">1 шт.</span>
                       </div>
-                      <!-- Стоимость  -->
+                      <!-- Стоимость -->
                       <div class="order-item__details">
                         <span class="order-item__label">Стоимость:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
                   <li>
-                    <!-- анонс заказа в строку  -->
+                    <!-- анонс заказа в строку -->
                     <div class="order-item">
                       <!-- Название -->
                       <div class="order-item__title">
@@ -1880,23 +1883,23 @@
                         <h3 class="order-item__name">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
                       </div>
 
-                      <!-- Цена  -->
+                      <!-- Цена -->
                       <div class="order-item__details">
                         <span class="order-item__label">Цена:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
-                      <!-- Количество  -->
+                      <!-- Количество -->
                       <div class="order-item__details">
                         <span class="order-item__label">Количество:</span>
                         <span class="order-item__strong">1 шт.</span>
                       </div>
-                      <!-- Стоимость  -->
+                      <!-- Стоимость -->
                       <div class="order-item__details">
                         <span class="order-item__label">Стоимость:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
@@ -1914,13 +1917,14 @@
 
 
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
-                  <a href="#" class="button"><span>скачать счет</span><span class="decorate"></span></a>
+
                 </ul>
-                <!-- КОНЕЦ список товаров в заказе  -->
+                <a href="#" class="button"><span>скачать счет</span><span class="decorate"></span></a>
+                <!-- КОНЕЦ список товаров в заказе -->
               </div>
             </li>
             <!-- КОНЕЦ аккордеончик -->
@@ -1937,11 +1941,11 @@
               </div>
 
               <div class="accordion__answer">
-                <!-- список товаров в заказе  -->
+                <!-- список товаров в заказе -->
                 <ul class="list-reset">
 
                   <li>
-                    <!-- анонс заказа в строку  -->
+                    <!-- анонс заказа в строку -->
                     <div class="order-item">
                       <!-- Название -->
                       <div class="order-item__title">
@@ -1949,28 +1953,28 @@
                         <h3 class="order-item__name">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
                       </div>
 
-                      <!-- Цена  -->
+                      <!-- Цена -->
                       <div class="order-item__details">
                         <span class="order-item__label">Цена:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
-                      <!-- Количество  -->
+                      <!-- Количество -->
                       <div class="order-item__details">
                         <span class="order-item__label">Количество:</span>
                         <span class="order-item__strong">1 шт.</span>
                       </div>
-                      <!-- Стоимость  -->
+                      <!-- Стоимость -->
                       <div class="order-item__details">
                         <span class="order-item__label">Стоимость:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
                   <li>
-                    <!-- анонс заказа в строку  -->
+                    <!-- анонс заказа в строку -->
                     <div class="order-item">
                       <!-- Название -->
                       <div class="order-item__title">
@@ -1978,28 +1982,28 @@
                         <h3 class="order-item__name">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
                       </div>
 
-                      <!-- Цена  -->
+                      <!-- Цена -->
                       <div class="order-item__details">
                         <span class="order-item__label">Цена:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
-                      <!-- Количество  -->
+                      <!-- Количество -->
                       <div class="order-item__details">
                         <span class="order-item__label">Количество:</span>
                         <span class="order-item__strong">1 шт.</span>
                       </div>
-                      <!-- Стоимость  -->
+                      <!-- Стоимость -->
                       <div class="order-item__details">
                         <span class="order-item__label">Стоимость:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
                   <li>
-                    <!-- анонс заказа в строку  -->
+                    <!-- анонс заказа в строку -->
                     <div class="order-item">
                       <!-- Название -->
                       <div class="order-item__title">
@@ -2007,23 +2011,23 @@
                         <h3 class="order-item__name">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
                       </div>
 
-                      <!-- Цена  -->
+                      <!-- Цена -->
                       <div class="order-item__details">
                         <span class="order-item__label">Цена:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
-                      <!-- Количество  -->
+                      <!-- Количество -->
                       <div class="order-item__details">
                         <span class="order-item__label">Количество:</span>
                         <span class="order-item__strong">1 шт.</span>
                       </div>
-                      <!-- Стоимость  -->
+                      <!-- Стоимость -->
                       <div class="order-item__details">
                         <span class="order-item__label">Стоимость:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
@@ -2041,13 +2045,14 @@
 
 
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
-                  <a href="#" class="button"><span>скачать счет</span><span class="decorate"></span></a>
+
                 </ul>
-                <!-- КОНЕЦ список товаров в заказе  -->
+                <a href="#" class="button"><span>скачать счет</span><span class="decorate"></span></a>
+                <!-- КОНЕЦ список товаров в заказе -->
               </div>
             </li>
             <!-- КОНЕЦ аккордеончик -->
@@ -2064,11 +2069,11 @@
               </div>
 
               <div class="accordion__answer">
-                <!-- список товаров в заказе  -->
+                <!-- список товаров в заказе -->
                 <ul class="list-reset">
 
                   <li>
-                    <!-- анонс заказа в строку  -->
+                    <!-- анонс заказа в строку -->
                     <div class="order-item">
                       <!-- Название -->
                       <div class="order-item__title">
@@ -2076,28 +2081,28 @@
                         <h3 class="order-item__name">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
                       </div>
 
-                      <!-- Цена  -->
+                      <!-- Цена -->
                       <div class="order-item__details">
                         <span class="order-item__label">Цена:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
-                      <!-- Количество  -->
+                      <!-- Количество -->
                       <div class="order-item__details">
                         <span class="order-item__label">Количество:</span>
                         <span class="order-item__strong">1 шт.</span>
                       </div>
-                      <!-- Стоимость  -->
+                      <!-- Стоимость -->
                       <div class="order-item__details">
                         <span class="order-item__label">Стоимость:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
                   <li>
-                    <!-- анонс заказа в строку  -->
+                    <!-- анонс заказа в строку -->
                     <div class="order-item">
                       <!-- Название -->
                       <div class="order-item__title">
@@ -2105,28 +2110,28 @@
                         <h3 class="order-item__name">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
                       </div>
 
-                      <!-- Цена  -->
+                      <!-- Цена -->
                       <div class="order-item__details">
                         <span class="order-item__label">Цена:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
-                      <!-- Количество  -->
+                      <!-- Количество -->
                       <div class="order-item__details">
                         <span class="order-item__label">Количество:</span>
                         <span class="order-item__strong">1 шт.</span>
                       </div>
-                      <!-- Стоимость  -->
+                      <!-- Стоимость -->
                       <div class="order-item__details">
                         <span class="order-item__label">Стоимость:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
                   <li>
-                    <!-- анонс заказа в строку  -->
+                    <!-- анонс заказа в строку -->
                     <div class="order-item">
                       <!-- Название -->
                       <div class="order-item__title">
@@ -2134,23 +2139,23 @@
                         <h3 class="order-item__name">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
                       </div>
 
-                      <!-- Цена  -->
+                      <!-- Цена -->
                       <div class="order-item__details">
                         <span class="order-item__label">Цена:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
-                      <!-- Количество  -->
+                      <!-- Количество -->
                       <div class="order-item__details">
                         <span class="order-item__label">Количество:</span>
                         <span class="order-item__strong">1 шт.</span>
                       </div>
-                      <!-- Стоимость  -->
+                      <!-- Стоимость -->
                       <div class="order-item__details">
                         <span class="order-item__label">Стоимость:</span>
                         <span class="order-item__strong">2 680 ₽</span>
                       </div>
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
@@ -2168,37 +2173,41 @@
 
 
                     </div>
-                    <!-- КОНЕЦ анонс заказа в строку  -->
+                    <!-- КОНЕЦ анонс заказа в строку -->
 
 
                   </li>
-                  <a href="#" class="button"><span>скачать счет</span><span class="decorate"></span></a>
+
                 </ul>
-                <!-- КОНЕЦ список товаров в заказе  -->
+                <a href="#" class="button"><span>скачать счет</span><span class="decorate"></span></a>
+                <!-- КОНЕЦ список товаров в заказе -->
               </div>
             </li>
             <!-- КОНЕЦ аккордеончик -->
           </ul>
         </div>
-        <!-- КОНЕЦ Список заказов в виде аккордеонов  -->
+        <!-- КОНЕЦ Список заказов в виде аккордеонов -->
 
-        <!-- мега гига кнопка  -->
+        <!-- мега гига кнопка -->
         <a href="#" class="user-orders__button button button--full"><span>сделать заказ</span><span class="decorate"></span></a>
       </div>
 
     </section>
-    <!-- КОНЕЦ Заказы пользователя  -->
+    <!-- КОНЕЦ Заказы пользователя -->
+
   </main>
-  <!-- КОНЕЦ Основной контент  -->
+  <!-- КОНЕЦ Основной контент -->
+
+  <!-- Подвал -->
   <footer class="footer">
     <div class="wrapper">
       <div class="footer__grid">
-        <!-- менюха 1  -->
+        <!-- менюха 1 -->
         <ul class="footer__menu-list list-reset">
           <li class="footer__menu-item">
             <div class="footer__menu-link-wrap">
               <a class="footer__menu-link" href="#"><span>Каталог</span></a>
-              <!-- кнопка только для мобильных устройств  -->
+              <!-- кнопка только для мобильных устройств -->
               <button class="footer__button button button--icon" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
                   <path fill="#67CB33" d="M20 9v2H0V9z" />
@@ -2207,7 +2216,7 @@
                 <span class="decorate"></span>
               </button>
             </div>
-            <!-- выпадающее меню  -->
+            <!-- выпадающее меню -->
             <ul class="footer__submenu list-reset">
               <li class="footer__submenu-item">
                 <a class="footer__submenu-link" href=""><span>Ковры</span></a>
@@ -2239,7 +2248,7 @@
           <li class="footer__menu-item">
             <div class="footer__menu-link-wrap">
               <a class="footer__menu-link" href="#"><span>Полезный раздел</span></a>
-              <!-- кнопка только для мобильных устройств  -->
+              <!-- кнопка только для мобильных устройств -->
               <button class="footer__button button button--icon" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
                   <path fill="#67CB33" d="M20 9v2H0V9z" />
@@ -2248,7 +2257,7 @@
                 <span class="decorate"></span>
               </button>
             </div>
-            <!-- выпадающее меню  -->
+            <!-- выпадающее меню -->
             <ul class="footer__submenu list-reset">
               <li class="footer__submenu-item">
                 <a class="footer__submenu-link" href=""><span>Документы</span></a>
@@ -2265,13 +2274,13 @@
             </ul>
           </li>
         </ul>
-        <!-- КОНЕЦ менюха 1  -->
-        <!-- менюха 2  -->
+        <!-- КОНЕЦ менюха 1 -->
+        <!-- менюха 2 -->
         <ul class="footer__menu-list footer__menu-list--mod list-reset">
           <li class="footer__menu-item">
             <div class="footer__menu-link-wrap">
               <a class="footer__menu-link" href="#"><span>Акции и новости</span></a>
-              <!-- кнопка только для мобильных устройств  -->
+              <!-- кнопка только для мобильных устройств -->
               <button class="footer__button button button--icon" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
                   <path fill="#67CB33" d="M20 9v2H0V9z" />
@@ -2284,7 +2293,7 @@
           <li class="footer__menu-item">
             <div class="footer__menu-link-wrap">
               <a class="footer__menu-link" href="#"><span>Производители</span></a>
-              <!-- кнопка только для мобильных устройств  -->
+              <!-- кнопка только для мобильных устройств -->
               <button class="footer__button button button--icon" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
                   <path fill="#67CB33" d="M20 9v2H0V9z" />
@@ -2298,7 +2307,7 @@
 
             <div class="footer__menu-link-wrap">
               <a class="footer__menu-link" href="#"><span>Контакты</span></a>
-              <!-- кнопка только для мобильных устройств  -->
+              <!-- кнопка только для мобильных устройств -->
               <button class="footer__button button button--icon" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
                   <path fill="#67CB33" d="M20 9v2H0V9z" />
@@ -2310,7 +2319,7 @@
           </li>
 
         </ul>
-        <!-- КОНЕЦ менюха 2  -->
+        <!-- КОНЕЦ менюха 2 -->
         <div class="footer__right">
           <div class="tel">
             <a href="tel:88002228320"><span>8 (800) 222-83-20</span></a>
@@ -2336,6 +2345,7 @@
 
     </div>
   </footer>
+  <!-- КОНЕЦ Подвал -->
 
   <script src="./js/scripts.js"></script>
 </body>
