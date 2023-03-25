@@ -15,197 +15,878 @@
 </head>
 
 <body>
-  <!-- Шапка  -->
-  <header class="header">
-    <div class="wrapper">
-      <!-- верхняя часть -->
-      <div class="top">
+  <!-- эта обёртка нужна для того что бы мега меню каталога адекватно показывалось относительно зафиксированной на странице шапки.  -->
+  <div class="fixed-area">
+    <!-- Шапка  -->
+    <header class="header">
+      <div class="wrapper">
+        <!-- верхняя часть -->
+        <div class="top">
 
-        <div class="logo">
-          <a href="/">
-            <img src="./img/logo/linotrade.svg" alt="Логотип Линотрейд" width="122" loading="lazy">
-          </a>
+          <div class="logo">
+            <a href="/">
+              <img src="./img/logo/linotrade.svg" alt="Логотип Линотрейд" width="122" loading="lazy">
+            </a>
+          </div>
+
+          <div class="menu">
+            <ul class="menu__list list-reset">
+              <li><a href="#"><span>Акции и новости</span></a></li>
+              <li><a href="#"><span>Производители</span></a></li>
+              <li class="menu__item--mod">
+                <a class="menu__link--mod" href="#"><span>Полезный раздел</span></a>
+                <ul class="menu__sublist list-reset">
+                  <li><a href=""><span>Документы</span></a></li>
+                  <li><a href=""><span>Словарь терминов</span></a></li>
+                  <li><a href=""><span>Инструкции</span></a></li>
+                  <li><a href=""><span>Рекламные материалы</span></a></li>
+                </ul>
+              </li>
+              <li><a href="#"><span>Контакты</span></a></li>
+            </ul>
+          </div>
+
+          <div class="tel">
+            <a href="tel:88002228320"><span>8 (800) 222-83-20</span></a>
+          </div>
+
+
         </div>
+        <!-- КОНЕЦ верхняя часть -->
 
-        <div class="menu">
-          <ul class="menu__list list-reset">
-            <li><a href="#"><span>Акции и новости</span></a></li>
-            <li><a href="#"><span>Производители</span></a></li>
-            <li class="menu__item--mod">
-              <a class="menu__link--mod" href="#"><span>Полезный раздел</span></a>
-              <ul class="menu__sublist list-reset">
-                <li><a href=""><span>Документы</span></a></li>
-                <li><a href=""><span>Словарь терминов</span></a></li>
-                <li><a href=""><span>Инструкции</span></a></li>
-                <li><a href=""><span>Рекламные материалы</span></a></li>
-              </ul>
-            </li>
-            <li><a href="#"><span>Контакты</span></a></li>
-          </ul>
-        </div>
+        <!-- нижняя часть -->
+        <div class="bottom">
+          <div class="catalog-btn">
+            <a href="#" class="button button--text-icon" id="catalog-btn-call">
+              <span>Каталог</span>
+              <span class="decorate"></span>
+            </a>
+          </div>
 
-        <div class="tel">
-          <a href="tel:88002228320"><span>8 (800) 222-83-20</span></a>
-        </div>
+          <div class="group">
+            <!-- селект -->
+            <div class="select">
+              <form action="">
 
+                <div class="custom-select" data-default="Все категории">
+                  <div class="custom-select__selected"><span>Выберите категорию</span></div>
+                  <div class="custom-select__options">
+                    <div class="custom-select__option" value="option1">Категория 1</div>
+                    <div class="custom-select__option" value="Категория 2">Категория 2</div>
+                    <div class="custom-select__option" value="Категория 3">Категория 3</div>
+                    <div class="custom-select__option" value="Категория 4">Категория 4</div>
+                  </div>
+                  <input class="visually-hidden" type="hidden" name="selecting-category" value="">
+                </div>
 
-      </div>
-      <!-- КОНЕЦ верхняя часть -->
+              </form>
+            </div>
+            <!-- КОНЕЦ селект -->
 
-      <!-- нижняя часть -->
-      <div class="bottom">
-        <div class="catalog-btn">
-          <a href="#" class="button button--text-icon" id="catalog-btn-call">
-            <span>Ссылка</span>
+            <!-- поиск -->
+            <div class="search">
+              <form action="">
+                <div class="search__wrapper">
+                  <input type="search" name="" id="" placeholder="Поиск по каталогу">
+                  <button class="button button--icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" fill="none">
+                      <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                        d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16Z" />
+                      <path stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+                        d="M15.135 14.135 21 20" />
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+
+              </form>
+            </div>
+            <!-- КОНЕЦ поиск -->
+
+          </div>
+
+          <!-- панель пользователя (Не используется на мобильных)-->
+          <div class="user-panel">
+            <ul class="list-reset">
+              <li>
+                <a href="#" class="button button--icon button--border">
+                  <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 21V17.8C17 15.1576 11.7792 13 9 13C6.2208 13 1 15.1576 1 17.8V21" stroke="#505050"
+                      stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                    <path
+                      d="M9 10.6C6.6696 10.6 5 8.872 5 6.6V5C5 2.728 6.6696 1 9 1C11.3304 1 13 2.728 13 5V6.6C13 8.872 11.3304 10.6 9 10.6Z"
+                      stroke="#505050" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
+                  </svg>
+
+                  <span class="decorate"></span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="button button--icon button--border">
+                  <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10.9998 17C17.7227 12.4133 20.4108 10.2107 20.9205 7.09201C21.1788 5.51068 20.8738 3.33602 19.0177 1.99602C16.9401 0.496694 12.9033 1.48803 10.9998 4.37736C9.09701 1.48803 5.05954 0.496694 2.98197 1.99602C1.12581 3.33602 0.820865 5.51068 1.07986 7.09201C1.58881 10.2107 4.27628 12.4133 10.9998 17Z"
+                      stroke="#505050" stroke-width="2" stroke-miterlimit="10" />
+                  </svg>
+
+                  <span class="decorate"></span>
+                </a>
+              </li>
+              <li>
+                <!-- ссылка на корзину  -->
+                <a class="cart-button" href="#">
+                  <div class="button button--icon button--border">
+                    <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7 3H20.455C21.08 3 21.552 3.566 21.438 4.181L20.15 11.181C20.063 11.655 19.649 12 19.167 12H7"
+                        stroke="#505050" stroke-width="2" stroke-miterlimit="10" />
+                      <path
+                        d="M20 16H8.76901C8.31601 16 7.919 15.695 7.802 15.258L4.198 1.742C4.081 1.304 3.68399 1 3.23099 1H0"
+                        stroke="#505050" stroke-width="2" stroke-miterlimit="10" />
+                      <path d="M7 19H9" stroke="#505050" stroke-width="2" stroke-miterlimit="10" />
+                      <path d="M18 19H20" stroke="#505050" stroke-width="2" stroke-miterlimit="10" />
+                    </svg>
+
+                    <span class="decorate"></span>
+                  </div>
+                  <span class="number" title="Количество позиций в корзине">2</span>
+                </a>
+
+              </li>
+              <li>
+                <a href="#" class="button button--icon button--border">
+                  <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0V2.22222" stroke="#505050" stroke-width="2" stroke-miterlimit="10" />
+                    <path
+                      d="M11.2858 17.8889C11.2858 18.5022 10.2624 20 9.00007 20C7.73778 20 6.71436 18.5022 6.71436 17.8889"
+                      stroke="#505050" stroke-width="2" stroke-miterlimit="10" />
+                    <path
+                      d="M14.7143 13.4286V7.71429C14.7143 4.55829 12.1554 2 9 2C5.84457 2 3.28571 4.55829 3.28571 7.71429V13.4286L1 16.8571V18H17V16.8571L14.7143 13.4286Z"
+                      stroke="#505050" stroke-width="2" stroke-miterlimit="10" />
+                  </svg>
+
+                  <span class="decorate"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- КОНЕЦ панель пользователя -->
+
+          <!-- Элементы, которые отражаются только на мобильных устройствах -->
+          <!-- кнопка показа поиска -->
+          <button class="button button--icon button--mobile button--combo" type="button" id="search-button">
+            <svg class="off" xmlns="http://www.w3.org/2000/svg" width="22" height="21" fill="none">
+              <path stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16Z" />
+              <path stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+                d="M15.135 14.135 21 20" />
+            </svg>
+            <svg class="on" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+              <path stroke="#fff" stroke-width="2" d="m1 17 8-8-8-8M17 17 9 9l8-8" />
+            </svg>
+            <span class="decorate"></span>
+          </button>
+          <!-- кнопка для звонка -->
+          <a class="button button--icon button--mobile" href="tel:88002228320">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+              <path fill="#fff"
+                d="M5.647 12.353c4.588 4.588 8.97 5.56 10.588 5.647A11.847 11.847 0 0 0 18 14.118c-1.118-1.088-2.745-2.199-4.235-2.824L12 13.06c-.603-.162-2.257-.845-4.235-2.824C5.787 8.258 5.103 6.603 4.94 6l1.765-1.765C6.08 2.745 4.97 1.118 3.882 0A11.83 11.83 0 0 0 0 1.765c.088 1.617 1.059 6 5.647 10.588Z" />
+            </svg>
             <span class="decorate"></span>
           </a>
-        </div>
-
-        <div class="group">
-          <!-- селект -->
-          <div class="select">
-            <form action="">
-
-              <div class="custom-select" data-default="Все категории">
-                <div class="custom-select__selected"><span>Выберите категорию</span></div>
-                <div class="custom-select__options">
-                  <div class="custom-select__option" value="option1">Категория 1</div>
-                  <div class="custom-select__option" value="Категория 2">Категория 2</div>
-                  <div class="custom-select__option" value="Категория 3">Категория 3</div>
-                  <div class="custom-select__option" value="Категория 4">Категория 4</div>
-                </div>
-                <input class="visually-hidden" type="hidden" name="selecting-category" value="">
-              </div>
-
-            </form>
-          </div>
-          <!-- КОНЕЦ селект -->
-
-          <!-- поиск -->
-          <div class="search">
-            <form action="">
-              <div class="search__wrapper">
-                <input type="search" name="" id="" placeholder="Поиск по каталогу">
-                <button class="button button--icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" fill="none">
-                    <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
-                      d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16Z" />
-                    <path stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
-                      d="M15.135 14.135 21 20" />
-                  </svg>
-                </button>
-              </div>
-
-            </form>
-          </div>
-          <!-- КОНЕЦ поиск -->
+          <!-- кнопка вызова меню -->
+          <button class="button button--icon button--combo button--mobile button--menu" type="button" id="menu-button">
+            <svg class="off" xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none">
+              <path fill="#fff" d="M0 0h20v2H0zM0 7h20v2H0zM0 14h20v2H0z" />
+            </svg>
+            <svg class="on" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+              <path stroke="#fff" stroke-width="2" d="m1 17 8-8-8-8M17 17 9 9l8-8" />
+            </svg>
+            <span class="decorate"></span>
+          </button>
 
         </div>
-
-        <!-- панель пользователя (Не используется на мобильных)-->
-        <div class="user-panel">
-          <ul class="list-reset">
-            <li>
-              <a href="#" class="button button--icon button--border">
-                <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M17 21V17.8C17 15.1576 11.7792 13 9 13C6.2208 13 1 15.1576 1 17.8V21" stroke="#505050"
-                    stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
-                  <path
-                    d="M9 10.6C6.6696 10.6 5 8.872 5 6.6V5C5 2.728 6.6696 1 9 1C11.3304 1 13 2.728 13 5V6.6C13 8.872 11.3304 10.6 9 10.6Z"
-                    stroke="#505050" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" />
-                </svg>
-
-                <span class="decorate"></span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="button button--icon button--border">
-                <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M10.9998 17C17.7227 12.4133 20.4108 10.2107 20.9205 7.09201C21.1788 5.51068 20.8738 3.33602 19.0177 1.99602C16.9401 0.496694 12.9033 1.48803 10.9998 4.37736C9.09701 1.48803 5.05954 0.496694 2.98197 1.99602C1.12581 3.33602 0.820865 5.51068 1.07986 7.09201C1.58881 10.2107 4.27628 12.4133 10.9998 17Z"
-                    stroke="#505050" stroke-width="2" stroke-miterlimit="10" />
-                </svg>
-
-                <span class="decorate"></span>
-              </a>
-            </li>
-            <li>
-              <!-- ссылка на корзину  -->
-              <a href="#" class="button button--icon button--border button--label">
-                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M7 3H20.455C21.08 3 21.552 3.566 21.438 4.181L20.15 11.181C20.063 11.655 19.649 12 19.167 12H7"
-                    stroke="#505050" stroke-width="2" stroke-miterlimit="10" />
-                  <path
-                    d="M20 16H8.76901C8.31601 16 7.919 15.695 7.802 15.258L4.198 1.742C4.081 1.304 3.68399 1 3.23099 1H0"
-                    stroke="#505050" stroke-width="2" stroke-miterlimit="10" />
-                  <path d="M7 19H9" stroke="#505050" stroke-width="2" stroke-miterlimit="10" />
-                  <path d="M18 19H20" stroke="#505050" stroke-width="2" stroke-miterlimit="10" />
-                </svg>
-
-                <span class="decorate"></span>
-                <span class="number" title="Количество позиций в корзине">2</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="button button--icon button--border">
-                <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9 0V2.22222" stroke="#505050" stroke-width="2" stroke-miterlimit="10" />
-                  <path
-                    d="M11.2858 17.8889C11.2858 18.5022 10.2624 20 9.00007 20C7.73778 20 6.71436 18.5022 6.71436 17.8889"
-                    stroke="#505050" stroke-width="2" stroke-miterlimit="10" />
-                  <path
-                    d="M14.7143 13.4286V7.71429C14.7143 4.55829 12.1554 2 9 2C5.84457 2 3.28571 4.55829 3.28571 7.71429V13.4286L1 16.8571V18H17V16.8571L14.7143 13.4286Z"
-                    stroke="#505050" stroke-width="2" stroke-miterlimit="10" />
-                </svg>
-
-                <span class="decorate"></span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- КОНЕЦ панель пользователя -->
-
-        <!-- Элементы, которые отражаются только на мобильных устройствах -->
-        <!-- кнопка показа поиска -->
-        <button class="button button--icon button--mobile button--combo" type="button" id="search-button">
-          <svg class="off" xmlns="http://www.w3.org/2000/svg" width="22" height="21" fill="none">
-            <path stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16Z" />
-            <path stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
-              d="M15.135 14.135 21 20" />
-          </svg>
-          <svg class="on" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
-            <path stroke="#fff" stroke-width="2" d="m1 17 8-8-8-8M17 17 9 9l8-8" />
-          </svg>
-          <span class="decorate"></span>
-        </button>
-        <!-- кнопка для звонка -->
-        <a class="button button--icon button--mobile" href="tel:88002228320">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
-            <path fill="#fff"
-              d="M5.647 12.353c4.588 4.588 8.97 5.56 10.588 5.647A11.847 11.847 0 0 0 18 14.118c-1.118-1.088-2.745-2.199-4.235-2.824L12 13.06c-.603-.162-2.257-.845-4.235-2.824C5.787 8.258 5.103 6.603 4.94 6l1.765-1.765C6.08 2.745 4.97 1.118 3.882 0A11.83 11.83 0 0 0 0 1.765c.088 1.617 1.059 6 5.647 10.588Z" />
-          </svg>
-          <span class="decorate"></span>
-        </a>
-        <!-- кнопка вызова меню -->
-        <button class="button button--icon button--combo button--mobile button--menu" type="button" id="menu-button">
-          <svg class="off" xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none">
-            <path fill="#fff" d="M0 0h20v2H0zM0 7h20v2H0zM0 14h20v2H0z" />
-          </svg>
-          <svg class="on" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
-            <path stroke="#fff" stroke-width="2" d="m1 17 8-8-8-8M17 17 9 9l8-8" />
-          </svg>
-          <span class="decorate"></span>
-        </button>
+        <!-- КОНЕЦ нижняя часть -->
 
       </div>
-      <!-- КОНЕЦ нижняя часть -->
+    </header>
+    <!-- Меню каталога -->
+    <section class="catalog-menu">
+      <h2 class="visually-hidden">Навигация по каталогу товаров</h2>
 
-    </div>
-  </header>
+      <div class="wrapper">
+        <div class="catalog-menu__grid">
+          <!-- табы для переключения менюшек  -->
+          <div class="catalog-menu__tabs">
+            <ul class="catalog-menu__tabs-list list-reset">
+              <li class="catalog-menu__tabs-item">
+                <a class="catalog-menu__tabs-link active" href="#"
+                  data-target="#catalog-nav-subcategory-1"><span>Ковры</span></a>
+              </li>
+              <li class="catalog-menu__tabs-item">
+                <a class="catalog-menu__tabs-link" href="#"
+                  data-target="#catalog-nav-subcategory-2"><span>Ламинат</span></a>
+              </li>
+              <li class="catalog-menu__tabs-item">
+                <a class="catalog-menu__tabs-link" href="#"
+                  data-target="#catalog-nav-subcategory-3"><span>Линолеум</span></a>
+              </li>
+              <li class="catalog-menu__tabs-item">
+                <a class="catalog-menu__tabs-link" href="#"
+                  data-target="#catalog-nav-subcategory-4"><span>Ковролин</span></a>
+              </li>
+              <li class="catalog-menu__tabs-item">
+                <a class="catalog-menu__tabs-link" href="#" data-target="#catalog-nav-subcategory-5"><span>SPC
+                    покрытие</span></a>
+              </li>
+              <li class="catalog-menu__tabs-item">
+                <a class="catalog-menu__tabs-link" href="#"
+                  data-target="#catalog-nav-subcategory-6"><span>Дорожки</span></a>
+              </li>
+              <li class="catalog-menu__tabs-item">
+                <a class="catalog-menu__tabs-link" href="#"
+                  data-target="#catalog-nav-subcategory-7"><span>Нитки</span></a>
+              </li>
+              <li class="catalog-menu__tabs-item">
+                <a class="catalog-menu__tabs-link" href="#" data-target="#catalog-nav-subcategory-8"><span>Сопутствующие
+                    товары</span></a>
+              </li>
+            </ul>
+          </div>
+          <!-- табы для переключения менюшек  -->
+          <!-- КОНЕЦ содержимое табов - меню каталога  -->
+          <div class="catalog-menu__content">
+            <!-- мобильная шапка меню для возврата  -->
+            <div class="catalog-menu__return">
+              <a href="#">
+                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 1.21857L2 8.92157L10 17.2665" stroke="#67CB33" stroke-width="2" />
+                </svg>
+                <span>Назад</span>
+              </a>
+            </div>
+            <!-- КОНЕЦ мобильная шапка меню для возврата  -->
+            <!-- Группа контента для одного таба  -->
+            <ul class="content__catalog-list list-reset active" id="catalog-nav-subcategory-1">
+              <!-- группа или пункт  -->
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="#" class="content__catalog-link"><span>Производитель 1</span></a>
+                  <button class="catalog-menu__button button button--icon" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8" />
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+
+                <!-- подкатегории  -->
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Champagne</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Fat</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Sheep</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Hermes</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Impressive</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Jaddor</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Persian</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Star</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Touch</span></a>
+                  </li>
+
+                </ul>
+                <!-- КОНЕЦ подкатегории  -->
+
+
+              </li>
+              <!-- КОНЕЦ группа или пункт  -->
+              <!-- группа или пункт  -->
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="#" class="content__catalog-link"><span>Производитель 1</span></a>
+                  <button class="catalog-menu__button button button--icon" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8" />
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+
+                <!-- подкатегории  -->
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Champagne</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Fat</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Sheep</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Hermes</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Impressive</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Jaddor</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Persian</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Star</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Touch</span></a>
+                  </li>
+
+                </ul>
+                <!-- КОНЕЦ подкатегории  -->
+
+
+              </li>
+              <!-- КОНЕЦ группа или пункт  -->
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="#" class="content__catalog-link"><span>Производитель 1</span></a>
+                  <button class="catalog-menu__button button button--icon" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8" />
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+
+                <!-- подкатегории  -->
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Champagne</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Fat</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Sheep</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Hermes</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Impressive</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Jaddor</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Persian</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Star</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Touch</span></a>
+                  </li>
+
+                </ul>
+                <!-- КОНЕЦ подкатегории  -->
+
+
+              </li>
+              <!-- КОНЕЦ группа или пункт  -->
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="#" class="content__catalog-link"><span>Производитель 1</span></a>
+                  <button class="catalog-menu__button button button--icon" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8" />
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+
+                <!-- подкатегории  -->
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Champagne</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Fat</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Sheep</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Hermes</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Impressive</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Jaddor</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Persian</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Star</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Touch</span></a>
+                  </li>
+
+                </ul>
+                <!-- КОНЕЦ подкатегории  -->
+
+
+              </li>
+              <!-- КОНЕЦ группа или пункт  -->
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="#" class="content__catalog-link"><span>Производитель 1</span></a>
+                  <button class="catalog-menu__button button button--icon" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8" />
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+
+                <!-- подкатегории  -->
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Champagne</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Fat</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Sheep</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Hermes</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Impressive</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Jaddor</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Persian</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Star</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Touch</span></a>
+                  </li>
+
+                </ul>
+                <!-- КОНЕЦ подкатегории  -->
+
+
+              </li>
+              <!-- КОНЕЦ группа или пункт  -->
+
+            </ul>
+            <!-- КОНЕЦ Группа контента для одного таба  -->
+
+            <!-- Группа контента для одного таба  -->
+            <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-2">
+
+              <!-- группа или пункт  -->
+              <li class="content__catalog-item">
+                <a href="#" class="content__catalog-link"><span>Производитель 2</span></a>
+                <!-- подкатегории  -->
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Champagne</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Fat</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Sheep</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Hermes</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Impressive</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Jaddor</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Persian</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Star</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Touch</span></a>
+                  </li>
+
+                </ul>
+                <!-- КОНЕЦ подкатегории  -->
+
+
+              </li>
+              <!-- КОНЕЦ группа или пункт  -->
+            </ul>
+            <!-- КОНЕЦ Группа контента для одного таба  -->
+
+            <!-- Группа контента для одного таба  -->
+            <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-3">
+              <!-- группа или пункт  -->
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="#" class="content__catalog-link"><span>Производитель 3</span></a>
+                  <button class="catalog-menu__button button button--icon" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8" />
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+
+                <!-- подкатегории  -->
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Champagne</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Fat</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Sheep</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Hermes</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Impressive</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Jaddor</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Persian</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Star</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Touch</span></a>
+                  </li>
+
+                </ul>
+                <!-- КОНЕЦ подкатегории  -->
+
+
+              </li>
+              <!-- КОНЕЦ группа или пункт  -->
+            </ul>
+            <!-- КОНЕЦ Группа контента для одного таба  -->
+
+            <!-- Группа контента для одного таба  -->
+            <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-4">
+
+              <li class="content__catalog-item">
+                <div class="catalog-menu__link-wrapper">
+                  <a href="#" class="content__catalog-link"><span>Производитель 4</span></a>
+                  <button class="catalog-menu__button button button--icon" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8" />
+                    </svg>
+                    <span class="decorate"></span>
+                  </button>
+                </div>
+
+                <!-- подкатегории  -->
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Champagne</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Fat</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Sheep</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Hermes</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Impressive</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Jaddor</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Persian</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Star</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Touch</span></a>
+                  </li>
+
+                </ul>
+                <!-- КОНЕЦ подкатегории  -->
+
+
+              </li>
+              <!-- КОНЕЦ группа или пункт  -->
+
+            </ul>
+            <!-- КОНЕЦ Группа контента для одного таба  -->
+
+            <!-- Группа контента для одного таба  -->
+            <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-5">
+              <!-- группа или пункт  -->
+              <li class="content__catalog-item">
+                <a href="#" class="content__catalog-link"><span>Производитель 5</span></a>
+                <!-- подкатегории  -->
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Champagne</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Fat</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Sheep</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Hermes</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Impressive</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Jaddor</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Persian</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Star</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Touch</span></a>
+                  </li>
+
+                </ul>
+                <!-- КОНЕЦ подкатегории  -->
+
+
+              </li>
+              <!-- КОНЕЦ группа или пункт  -->
+
+            </ul>
+            <!-- КОНЕЦ Группа контента для одного таба  -->
+
+            <!-- Группа контента для одного таба  -->
+            <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-6">
+              <!-- группа или пункт  -->
+              <li class="content__catalog-item">
+                <a href="#" class="content__catalog-link"><span>Производитель 6</span></a>
+                <!-- подкатегории  -->
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Champagne</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Fat</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Sheep</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Hermes</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Impressive</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Jaddor</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Persian</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Star</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Touch</span></a>
+                  </li>
+
+                </ul>
+                <!-- КОНЕЦ подкатегории  -->
+
+
+              </li>
+              <!-- КОНЕЦ группа или пункт  -->
+            </ul>
+            <!-- КОНЕЦ Группа контента для одного таба  -->
+
+            <!-- Группа контента для одного таба  -->
+            <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-7">
+              <!-- группа или пункт  -->
+              <li class="content__catalog-item">
+                <a href="#" class="content__catalog-link"><span>Производитель 7</span></a>
+                <!-- подкатегории  -->
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Champagne</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Fat</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Sheep</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Hermes</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Impressive</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Jaddor</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Persian</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Star</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Touch</span></a>
+                  </li>
+
+                </ul>
+                <!-- КОНЕЦ подкатегории  -->
+
+
+              </li>
+              <!-- КОНЕЦ группа или пункт  -->
+            </ul>
+            <!-- КОНЕЦ Группа контента для одного таба  -->
+
+            <!-- Группа контента для одного таба  -->
+            <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-8">
+              <!-- группа или пункт  -->
+              <li class="content__catalog-item">
+                <a href="#" class="content__catalog-link"><span>Производитель 8</span></a>
+                <!-- подкатегории  -->
+                <ul class="content__catalog-sublist list-reset">
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Champagne</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Fat</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Sheep</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Hermes</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Impressive</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Jaddor</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Persian</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Star</span></a>
+                  </li>
+                  <li class="content__catalog-subitem">
+                    <a href="#" class="content__catalog-sublink"><span>Touch</span></a>
+                  </li>
+
+                </ul>
+                <!-- КОНЕЦ подкатегории  -->
+
+
+              </li>
+              <!-- КОНЕЦ группа или пункт  -->
+            </ul>
+            <!-- КОНЕЦ Группа контента для одного таба  -->
+
+          </div>
+          <!-- КОНЕЦ содержимое табов - меню каталога  -->
+        </div>
+
+      </div>
+
+
+    </section>
+    <!-- КОНЕЦ Меню каталога для компа -->
+  </div>
 
   <!-- мобильная панель пользователя (не используется на десктопных)-->
   <div class="mobile-user-panel">
+
     <ul class="list-reset">
       <li>
         <a class="catalog button--combo" href="#" id="mob-catalog-btn-call">
@@ -248,6 +929,7 @@
           <span>Корзина</span>
         </a>
       </li>
+
       <li>
         <a href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" fill="none">
@@ -260,6 +942,7 @@
         </a>
       </li>
     </ul>
+
   </div>
   <!-- КОНЕЦ мобильная панель пользователя -->
 
@@ -342,113 +1025,188 @@
     </div>
   </div>
   <!-- КОНЕЦ мобильный поиск в шапке -->
-  </div>
 
   <!-- Основной контент  -->
   <main>
     <div class="wrapper">
 
-      <ul>
+      <ol>
         <li><a href="./home.html">Главная</a></li>
-      </ul>
+        <li><a href="./home.html">ковры список</a></li>
+        <li><a href="./home.html">ковер</a></li>
+        <li><a href="./home.html">ламинат список</a></li>
+        <li><a href="./home.html">ламинат</a></li>
+        <li><a href="./home.html">акции и новости</a></li>
+        <li><a href="./home.html">акция-новость</a></li>
+        <li><a href="./home.html">длинная статья</a></li>
+        <li><a href="./home.html">производители</a></li>
+        <li><a href="./home.html">производитель</a></li>
+        <li><a href="./home.html">документы</a></li>
+        <li><a href="./home.html">словарь терминов</a></li>
+        <li><a href="./home.html">избранное</a></li>
+        <li><a href="./home.html">корзина</a></li>
+        <li><a href="./home.html">личный кабинет_профиль</a></li>
+        <li><a href="./home.html">личный кабинет_ваш менеджер</a></li>
+        <li><a href="./home.html">личный кабинет_документы</a></li>
+        <li><a href="./home.html">личный кабинет_заказы</a></li>
+        <li><a href="./home.html">уведомления</a></li>
 
-      <hgroup class="section__header">
-        <h2 class="title">Добро пожаловать на техническую страницу проекта LINOTRADE</h2>
-        <p class="subtitle">БЭМ блоки используемые на сайте</p>
-      </hgroup>
-
-      <section class="section">
-        <h3>Кнопки</h3>
-        <div class="grid-mod">
-          <a href="#" class="button">
-            <span class="button__text">Ссылка</span>
-            <span class="decorate"></span>
-          </a>
-
-          <button class="button" type="button"><span>Кнопка</span>
-            <span class="decorate"></span></button>
-
-          <button class="button button--icon" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" fill="none">
-              <path stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16Z" />
-              <path stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
-                d="M15.135 14.135 21 20" />
-            </svg>
-            <span class="decorate"></span>
-          </button>
-
-          <button class="button button--icon button--border" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" fill="none">
-              <path stroke="#505050" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
-                d="M17 21v-3.2c0-2.642-5.22-4.8-8-4.8-2.78 0-8 2.158-8 4.8V21M9 10.6c-2.33 0-4-1.728-4-4V5c0-2.272 1.67-4 4-4s4 1.728 4 4v1.6c0 2.272-1.67 4-4 4Z" />
-            </svg>
-            <span class="decorate"></span>
-          </button>
-
-          <a href="#" class="button button--icon button--border">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" fill="none">
-              <path stroke="#505050" stroke-miterlimit="10" stroke-width="2"
-                d="M11 17c6.723-4.587 9.41-6.79 9.92-9.908.259-1.581-.046-3.756-1.902-5.096C16.94.496 12.903 1.488 11 4.377 9.097 1.488 5.06.497 2.982 1.996 1.126 3.336.821 5.511 1.08 7.092 1.589 10.211 4.276 12.413 11 17Z" />
-            </svg>
-            <span class="decorate"></span>
-          </a>
-
-          <button class="button button--icon" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" fill="none">
-              <path stroke="#fff" stroke-width="2" d="M10 1 2 8.68 10 17" />
-            </svg>
-            <span class="decorate"></span>
-          </button>
-
-          <button class="button button--icon" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" fill="none">
-              <path stroke="#fff" stroke-width="2" d="m1 1 8 7.68L1 17" />
-            </svg>
-            <span class="decorate"></span>
-          </button>
-
-          <a href="#" class="button button--text-icon">
-            <span>Ссылка</span>
-            <span class="decorate"></span>
-          </a>
-        </div>
-      </section>
+        <li><a href="./home.html">окно</a></li>
 
 
-      <section>
-        <h3>Заголовки</h3>
-        <p>простые</p>
-        <h1>Заголовок</h1>
-        <h2>Заголовок</h2>
-        <h3>Заголовок</h3>
-        <h4>Заголовок</h4>
-        <h5>Заголовок</h5>
-        <h6>Заголовок</h6>
-        <br>
-        <p>стилизованные</p>
-        <h2 class="title">Заголовок</h2>
-        <h2 class="title title--mid">Заголовок</h2>
-        <h2 class="title title--min">Заголовок</h2>
-        <h2 class="title title--lit">Заголовок</h2>
-        <!-- <h5 class="title">Заголовок</h5>
-      <h6 class="title">Заголовок</h6> -->
+      </ol>
 
-        <hgroup>
-
-          <h2 class="title">Заголовок</h2>
-          <p class="subtitle">ТК Линотрейд была основана в 2009 году. Начиная свою работу с оптовых продаж линолеума, за
-            непродолжительный период времени компания значительно увеличила ассортимент предлагаемой продукции.</p>
-
-        </hgroup>
-      </section>
     </div>
   </main>
   <!-- КОНЕЦ Основной контент  -->
+  <!-- Подвал -->
   <footer class="footer">
     <div class="wrapper">
+      <div class="footer__grid">
+        <!-- менюха 1 -->
+        <ul class="footer__menu-list list-reset">
+          <li class="footer__menu-item">
+            <div class="footer__menu-link-wrap">
+              <a class="footer__menu-link" href="#"><span>Каталог</span></a>
+              <!-- кнопка только для мобильных устройств -->
+              <button class="footer__button button button--icon" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                  <path fill="#67CB33" d="M20 9v2H0V9z" />
+                  <path class="move" fill="#67CB33" d="M9 0h2v20H9z" />
+                </svg>
+                <span class="decorate"></span>
+              </button>
+            </div>
+            <!-- выпадающее меню -->
+            <ul class="footer__submenu list-reset">
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link" href=""><span>Ковры</span></a>
+              </li>
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link" href=""><span>Ламинат</span></a>
+              </li>
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link" href=""><span>Линолеум</span></a>
+              </li>
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link" href=""><span>Ковролин</span></a>
+              </li>
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link" href=""><span>SPC покрытие</span></a>
+              </li>
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link" href=""><span>Нитки</span></a>
+              </li>
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link" href=""><span>Дорожки</span></a>
+              </li>
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link" href=""><span>Сопутствующие товары</span></a>
+              </li>
+
+            </ul>
+          </li>
+          <li class="footer__menu-item">
+            <div class="footer__menu-link-wrap">
+              <a class="footer__menu-link" href="#"><span>Полезный раздел</span></a>
+              <!-- кнопка только для мобильных устройств -->
+              <button class="footer__button button button--icon" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                  <path fill="#67CB33" d="M20 9v2H0V9z" />
+                  <path class="move" fill="#67CB33" d="M9 0h2v20H9z" />
+                </svg>
+                <span class="decorate"></span>
+              </button>
+            </div>
+            <!-- выпадающее меню -->
+            <ul class="footer__submenu list-reset">
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link" href=""><span>Документы</span></a>
+              </li>
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link" href=""><span>Словарь терминов</span></a>
+              </li>
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link" href=""><span>Инструкции</span></a>
+              </li>
+              <li class="footer__submenu-item">
+                <a class="footer__submenu-link" href=""><span>Рекламные материалы</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!-- КОНЕЦ менюха 1 -->
+        <!-- менюха 2 -->
+        <ul class="footer__menu-list footer__menu-list--mod list-reset">
+          <li class="footer__menu-item">
+            <div class="footer__menu-link-wrap">
+              <a class="footer__menu-link" href="#"><span>Акции и новости</span></a>
+              <!-- кнопка только для мобильных устройств -->
+              <button class="footer__button button button--icon" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                  <path fill="#67CB33" d="M20 9v2H0V9z" />
+                  <path class="move" fill="#67CB33" d="M9 0h2v20H9z" />
+                </svg>
+                <span class="decorate"></span>
+              </button>
+            </div>
+          </li>
+          <li class="footer__menu-item">
+            <div class="footer__menu-link-wrap">
+              <a class="footer__menu-link" href="#"><span>Производители</span></a>
+              <!-- кнопка только для мобильных устройств -->
+              <button class="footer__button button button--icon" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                  <path fill="#67CB33" d="M20 9v2H0V9z" />
+                  <path class="move" fill="#67CB33" d="M9 0h2v20H9z" />
+                </svg>
+                <span class="decorate"></span>
+              </button>
+            </div>
+          </li>
+          <li class="footer__menu-item">
+
+            <div class="footer__menu-link-wrap">
+              <a class="footer__menu-link" href="#"><span>Контакты</span></a>
+              <!-- кнопка только для мобильных устройств -->
+              <button class="footer__button button button--icon" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                  <path fill="#67CB33" d="M20 9v2H0V9z" />
+                  <path class="move" fill="#67CB33" d="M9 0h2v20H9z" />
+                </svg>
+                <span class="decorate"></span>
+              </button>
+            </div>
+          </li>
+
+        </ul>
+        <!-- КОНЕЦ менюха 2 -->
+        <div class="footer__right">
+          <div class="tel">
+            <a href="tel:88002228320"><span>8 (800) 222-83-20</span></a>
+          </div>
+          <div class="email">
+            <a href="mailto:info@linotrade.ru"><span>info@linotrade.ru</span></a>
+          </div>
+
+          <p class="copyright">© ТК «ЛИНОТРЕЙД» 2023. Все права защищены.</p>
+          <div class="site-developers">
+            <span>Создание сайта -</span>
+            <a class="site-developers__link" href="https://very-good.ru/" target="_blank">Very-good</a>
+            <a class="site-developers__logo" href="https://very-good.ru/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none">
+                <rect width="48" height="48" fill="#67CB33" rx="24" />
+                <path fill="#fff"
+                  d="M15.742 24.07s.66-.075 1.91-2.256c0 0 .028-.038.075-.112.62 2.982 3.604 2.5 3.604 2.5l.287-1.157c-2.005.451-2.031-2.002-2.031-2.002l3.072 1.1c.273-.31.447-.697.52-1.111.029.993-.058 2.064-.337 3.17 0 0 1.857-.734 3.142.545 0 0-.123-2.221-.765-4.517.368-.235 1.155-.58 1.294.644.183 1.607 2.265 3.835 4.218 1.071 0 0-1.223.733-1.9-.79-.634-1.424-.88-3.29-2.592-2.743.98-.805 1.897-2.108.743-3.32-1.54-1.615-3.939.314-4.362.677a3.112 3.112 0 0 0-.898-.423s.99 1.76 1.341 4.302a2.942 2.942 0 0 0-1.42-1.65c-.86-.46-2.006-.377-2.854.238.18-1.538.138-3.598-.478-6.236l-2.985 1.617s2.326 4.813.208 8.009c0 0-2.708-1.767-1.007-5.34l-1.736-.338s-.895 1.093-.781 2.81c.132 1.986 1.41 4.672 3.732 5.312Zm10.069-7.912c.676.9-.337 1.707-1.216 1.882 0 0-.161-1.063-.746-1.755 0 0 1.285-1.028 1.962-.127Zm-4.457 2.656c.563.207.87.893.762 1.611l-2.247-.885c.326-.61.938-.928 1.485-.726Zm10.775 2.51h.038c-.334 1.241-.929 1.949-1.67 2.464-1.354.94-3.125.414-3.125.414.4 1.202 4.757 3.458 6.11-.527 1.355-3.986-1.093-6.712-1.093-6.712.126 1.65.077 2.899-.109 3.865-.357.057-2.252.172-1.401-3.94l-1.944-.79s-.972 5.64 3.194 5.227ZM33.535 27.134c-2.309-.601-3.785.17-3.785.17s1.39.47 1.632 2.895c.243 2.425-2.205 4.098-2.205 4.098s2.709.545 4.74-.376C35.947 33 36 30.744 36 30.424c0-.32-.157-2.688-2.465-3.29Zm-.585 5.115c-.04.002-.08.001-.121-.002.353-.394.57-1.015.542-1.705-.033-.841-.418-1.548-.942-1.85a1.23 1.23 0 0 1 .378-.08c.814-.039 1.506.745 1.545 1.75.04 1.005-.587 1.85-1.402 1.887Zm-2.635-1.76c0-1.822-1.382-3.299-3.086-3.299a2.9 2.9 0 0 0-.495.044c-.447-1.184-1.52-2.017-2.773-2.017-1.523 0-2.78 1.233-2.969 2.827-1.321.263-2.75 1.173-3.228 3.743l1.589.395s.316-.957 1.166-1.818l.031.098s.209 2.82-1.9 3.159c-2.11.338-3.386-2.172-2.734-3.836.65-1.664 1.979-1.222 1.979-1.222l2.568-2.613-.963-.433c-2.717-1.034-6.214.884-6.423 5.086-.208 4.202 4.14 6.768 7.161 4.625 1.636-1.161 1.958-2.868 1.91-4.189a2.834 2.834 0 0 0 2.202.636c.446 1.235 1.567 2.11 2.88 2.11 1.703 0 3.085-1.475 3.085-3.296Zm-5.69-1.769c-.03.05-.058.101-.086.153a1.055 1.055 0 0 1-.877.489 1.03 1.03 0 0 1-.694-.273c.216-.035.442-.06.68-.065l-.077-.846s-.39-.127-.972-.191c.09-.548.53-.965 1.063-.965.597 0 1.08.523 1.08 1.17 0 .19-.042.37-.117.528Zm1.94 2.729c-.322 0-.61-.152-.81-.392a3.282 3.282 0 0 0 1.135-1.923c.446.15.769.6.769 1.13 0 .654-.49 1.185-1.094 1.185Z" />
+              </svg></a>
+          </div>
+        </div>
+      </div>
+
 
     </div>
   </footer>
+  <!-- КОНЕЦ Подвал -->
 
   <script src="./js/scripts.js"></script>
 </body>
