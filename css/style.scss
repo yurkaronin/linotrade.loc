@@ -146,3 +146,15 @@
 
   }
 }
+
+.catalog-menu-step-2 {
+  .catalog-menu__tabs {
+    left: -100vh;
+    z-index: 0;
+  }
+  .catalog-menu__content {
+    opacity: 1;
+    pointer-events: initial;
+    left: 0;
+  }
+}
