@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Price Range Slider | CodingNepal</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <div class="price-range">
+    <div class="price-range__header">
+      <h2 class="price-range__title">Price Range</h2>
+      <p class="price-range__description">Use slider or enter min and max price</p>
+    </div>
+    <div class="price-range__inputs">
+      <div class="price-range__field">
+        <span class="price-range__label">Min</span>
+        <input type="number" class="price-range__input price-range__input--min" value="2500">
+      </div>
+      <div class="price-range__separator">-</div>
+      <div class="price-range__field">
+        <span class="price-range__label">Max</span>
+        <input type="number" class="price-range__input price-range__input--max" value="7500">
+      </div>
+    </div>
+    <div class="price-range__slider">
+      <div class="price-range__progress"></div>
+    </div>
+    <div class="price-range__ranges">
+      <input type="range" class="price-range__range price-range__range--min" min="0" max="10000" value="2500"
+        step="100">
+      <input type="range" class="price-range__range price-range__range--max" min="0" max="10000" value="7500"
+        step="100">
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
