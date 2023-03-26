@@ -1027,7 +1027,7 @@
   <!-- КОНЕЦ мобильный поиск в шапке -->
 
   <!-- Основной контент  -->
-  <main>
+  <main class="section">
     <div class="wrapper">
 
       <ol>
@@ -1052,6 +1052,10 @@
         <li><a href="./notices.html" target="_blank">Уведомления</a></li>
 
       </ol>
+      <!-- кнопка вызова диалогового окна -->
+      <!-- дата атрибут data-dialog-button обязателен - по нему собираем в коллекцию и идентифицируем соответствующее окно для показа -->
+      <a href="#" class="button" data-dialog-button="modal-2"><span>Диалоговое окно</span><span
+          class="decorate"></span></a>
 
     </div>
   </main>
@@ -1204,6 +1208,83 @@
     </div>
   </footer>
   <!-- КОНЕЦ Подвал -->
+
+  <!-- оверлей  -->
+  <!-- Обязателен на всех страницах с диалоговыми окнами. Лучше всего просто добавить его в шаблон всех страниц сайта  -->
+  <div class="overlay"></div>
+  <!-- КОНЕЦ оверлей  -->
+
+  <!-- Диалоговые окна -->
+  <!-- Задать вопрос -->
+  <section class="modal" data-dialog-modal="modal-2">
+    <form action="javascript:void(0);" method="post">
+      <div class="modal__wrapper">
+
+        <!-- шапка диалогового окна -->
+        <div class="modal__header">
+          <h2 class="modal__title">Задать вопрос</h2>
+          <p class="modal__subtitle">Заполните простую форму указав телефон и e-mail, для ответа. Наши специалисты
+            ответят
+            в ближайшее время.</p>
+        </div>
+        <!-- КОНЕЦ шапка диалогового окна -->
+
+        <!-- тело диалогового окна  -->
+        <div class="modal__body">
+
+          <div class="modal__form-item">
+            <label for="question-form-tel">ФИО:</label>
+            <input id="question-form-tel" type="text" placeholder="Введите имя">
+          </div>
+
+          <div class="modal__form-item">
+            <label for="question-form-name">Телефон:</label>
+            <input id="question-form-name" type="tel" placeholder="Введите телефон" required>
+          </div>
+
+          <div class="modal__form-item">
+            <label for="question-form-email">E-mail:</label>
+            <input id="question-form-email" type="text" placeholder="Для ответа">
+          </div>
+
+          <div class="modal__form-item">
+            <label for="question-form-texarea">Сообщение:</label>
+            <textarea id="question-form-texarea" cols="30" rows="10" placeholder="Введите Ваш вопрос или сообщение"></textarea>
+          </div>
+
+        </div>
+        <!-- КОНЕЦ тело диалогового окна  -->
+
+        <!-- Подвал диалогового окна -->
+        <div class="modal__footer">
+          <div class="promo__form-item promo__form-item--check">
+            <input type="checkbox" name="user-consent" id="promo-form-consent" checked="">
+            <label for="promo-form-consent">Я согласен с условиями обработки <a href="#" target="_blank">персональных
+                данных</a></label>
+          </div>
+
+          <button class="button" type="submit">
+            <span>Отправить</span>
+            <span class="decorate"></span>
+          </button>
+        </div>
+        <!-- КОНЕЦ Подвал диалогового окна -->
+
+        <!-- кнопка закрытия диалогового окна -->
+        <!-- класс close-btn - обязателен!  -->
+        <button class="button button--icon close-btn" type="button">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 1L1 21" stroke="white" stroke-width="2"/>
+            <path d="M21 21L1 0.999999" stroke="white" stroke-width="2"/>
+            </svg>
+          <span class="decorate"></span>
+        </button>
+        <!-- КОНЕЦ кнопка закрытия диалогового окна -->
+      </div>
+
+    </form>
+  </section>
+  <!-- КОНЕЦ Диалоговые окна  -->
 
   <script src="./js/scripts.js"></script>
 </body>

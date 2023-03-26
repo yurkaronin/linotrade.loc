@@ -11,7 +11,7 @@ if (dialogButtons && overlay) {
       const dialog = document.querySelector(`[data-dialog-modal='${dialogId}']`);
       document.body.style.overflow = 'hidden';
       dialog.classList.add('modal-show');
-      overlay.classList.add('overlay-show');
+      overlay.classList.add('show');
     });
   });
 
@@ -19,7 +19,7 @@ if (dialogButtons && overlay) {
     modals.forEach(modal => {
       modal.classList.remove('modal-show');
     });
-    overlay.classList.remove('overlay-show');
+    overlay.classList.remove('show');
     document.body.style.overflow = 'auto';
   });
 
@@ -28,7 +28,7 @@ if (dialogButtons && overlay) {
       const modal = button.closest('.modal');
       document.body.style.overflow = 'auto';
       modal.classList.remove('modal-show');
-      overlay.classList.remove('overlay-show');
+      overlay.classList.remove('show');
     });
   });
 };

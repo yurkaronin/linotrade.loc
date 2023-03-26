@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   includeFiles("./js/parts/button-navigation-mobile.js");
   includeFiles("./js/parts/button-sub-navigation-mobile.js");
   includeFiles("./js/parts/button-search-mobile.js");
+  includeFiles("./js/parts/modals.js");
 
 });
 
