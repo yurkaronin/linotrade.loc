@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Главная</title>
+  <title>Ковры список</title>
   <!-- <base href="http://127.0.0.12:5500/"> -->
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
@@ -17,7 +17,7 @@
 <body>
   <!-- эта обёртка нужна для того что бы мега меню каталога адекватно показывалось относительно зафиксированной на странице шапки.  -->
   <div class="fixed-area">
-    <!-- Шапка  -->
+    <!-- Шапка -->
     <header class="header">
       <div class="wrapper">
         <!-- верхняя часть -->
@@ -66,15 +66,15 @@
           <div class="group">
             <!-- селект -->
             <div class="select">
-              <form action="">
+              <form action="javascript:void(0);">
 
                 <div class="custom-select" data-default="Все категории">
                   <div class="custom-select__selected"><span>Выберите категорию</span></div>
                   <div class="custom-select__options">
-                    <div class="custom-select__option" value="option1">Категория 1</div>
-                    <div class="custom-select__option" value="Категория 2">Категория 2</div>
-                    <div class="custom-select__option" value="Категория 3">Категория 3</div>
-                    <div class="custom-select__option" value="Категория 4">Категория 4</div>
+                    <div class="custom-select__option" data-value="Категория 1">Категория 1</div>
+                    <div class="custom-select__option" data-value="Категория 2">Категория 2</div>
+                    <div class="custom-select__option" data-value="Категория 3">Категория 3</div>
+                    <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
                   </div>
                   <input class="visually-hidden" type="hidden" name="selecting-category" value="">
                 </div>
@@ -85,9 +85,9 @@
 
             <!-- поиск -->
             <div class="search">
-              <form action="">
+              <form action="javascript:void(0);">
                 <div class="search__wrapper">
-                  <input type="search" name="" id="" placeholder="Поиск по каталогу">
+                  <input type="search" name="catalog-search"  placeholder="Поиск по каталогу">
                   <button class="button button--icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" fill="none">
                       <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
@@ -133,7 +133,7 @@
                 </a>
               </li>
               <li>
-                <!-- ссылка на корзину  -->
+                <!-- ссылка на корзину -->
                 <a class="cart-button" href="#">
                   <div class="button button--icon button--border">
                     <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -215,7 +215,7 @@
 
       <div class="wrapper">
         <div class="catalog-menu__grid">
-          <!-- табы для переключения менюшек  -->
+          <!-- табы для переключения менюшек -->
           <div class="catalog-menu__tabs">
             <ul class="catalog-menu__tabs-list list-reset">
               <li class="catalog-menu__tabs-item">
@@ -252,34 +252,34 @@
               </li>
             </ul>
           </div>
-          <!-- табы для переключения менюшек  -->
-          <!-- КОНЕЦ содержимое табов - меню каталога  -->
+          <!-- табы для переключения менюшек -->
+          <!-- КОНЕЦ содержимое табов - меню каталога -->
           <div class="catalog-menu__content">
-            <!-- мобильная шапка меню для возврата  -->
+            <!-- мобильная шапка меню для возврата -->
             <div class="catalog-menu__return">
               <a href="#">
                 <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 1.21857L2 8.92157L10 17.2665" stroke="#67CB33" stroke-width="2" />
-                </svg>
+                  <path d="M10 1.21857L2 8.92157L10 17.2665" stroke="#67CB33" stroke-width="2"/>
+                  </svg>
                 <span>Назад</span>
               </a>
             </div>
-            <!-- КОНЕЦ мобильная шапка меню для возврата  -->
-            <!-- Группа контента для одного таба  -->
+            <!-- КОНЕЦ мобильная шапка меню для возврата -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset active" id="catalog-nav-subcategory-1">
-              <!-- группа или пункт  -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <div class="catalog-menu__link-wrapper">
                   <a href="#" class="content__catalog-link"><span>Производитель 1</span></a>
                   <button class="catalog-menu__button button button--icon" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
-                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8" />
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"/>
                     </svg>
                     <span class="decorate"></span>
                   </button>
                 </div>
 
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -313,24 +313,24 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
-              <!-- группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <div class="catalog-menu__link-wrapper">
                   <a href="#" class="content__catalog-link"><span>Производитель 1</span></a>
                   <button class="catalog-menu__button button button--icon" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
-                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8" />
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"/>
                     </svg>
                     <span class="decorate"></span>
                   </button>
                 </div>
 
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -364,23 +364,23 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
               <li class="content__catalog-item">
                 <div class="catalog-menu__link-wrapper">
                   <a href="#" class="content__catalog-link"><span>Производитель 1</span></a>
                   <button class="catalog-menu__button button button--icon" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
-                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8" />
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"/>
                     </svg>
                     <span class="decorate"></span>
                   </button>
                 </div>
 
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -414,23 +414,23 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
               <li class="content__catalog-item">
                 <div class="catalog-menu__link-wrapper">
                   <a href="#" class="content__catalog-link"><span>Производитель 1</span></a>
                   <button class="catalog-menu__button button button--icon" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
-                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8" />
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"/>
                     </svg>
                     <span class="decorate"></span>
                   </button>
                 </div>
 
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -464,23 +464,23 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
               <li class="content__catalog-item">
                 <div class="catalog-menu__link-wrapper">
                   <a href="#" class="content__catalog-link"><span>Производитель 1</span></a>
                   <button class="catalog-menu__button button button--icon" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
-                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8" />
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"/>
                     </svg>
                     <span class="decorate"></span>
                   </button>
                 </div>
 
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -514,22 +514,22 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
 
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
-            <!-- Группа контента для одного таба  -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-2">
 
-              <!-- группа или пункт  -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <a href="#" class="content__catalog-link"><span>Производитель 2</span></a>
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -563,29 +563,29 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
-            <!-- Группа контента для одного таба  -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-3">
-              <!-- группа или пункт  -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <div class="catalog-menu__link-wrapper">
                   <a href="#" class="content__catalog-link"><span>Производитель 3</span></a>
                   <button class="catalog-menu__button button button--icon" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
-                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8" />
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"/>
                     </svg>
                     <span class="decorate"></span>
                   </button>
                 </div>
 
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -619,15 +619,15 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
-            <!-- Группа контента для одного таба  -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-4">
 
               <li class="content__catalog-item">
@@ -635,13 +635,13 @@
                   <a href="#" class="content__catalog-link"><span>Производитель 4</span></a>
                   <button class="catalog-menu__button button button--icon" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
-                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8" />
+                      <path stroke="#67CB33" stroke-width="2" d="m16.976 1-7.68 8-8.32-8"/>
                     </svg>
                     <span class="decorate"></span>
                   </button>
                 </div>
 
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -675,21 +675,21 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
 
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
-            <!-- Группа контента для одного таба  -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-5">
-              <!-- группа или пункт  -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <a href="#" class="content__catalog-link"><span>Производитель 5</span></a>
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -723,21 +723,21 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
 
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
-            <!-- Группа контента для одного таба  -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-6">
-              <!-- группа или пункт  -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <a href="#" class="content__catalog-link"><span>Производитель 6</span></a>
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -771,20 +771,20 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
-            <!-- Группа контента для одного таба  -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-7">
-              <!-- группа или пункт  -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <a href="#" class="content__catalog-link"><span>Производитель 7</span></a>
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -818,20 +818,20 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
-            <!-- Группа контента для одного таба  -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-8">
-              <!-- группа или пункт  -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <a href="#" class="content__catalog-link"><span>Производитель 8</span></a>
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -865,16 +865,16 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
           </div>
-          <!-- КОНЕЦ содержимое табов - меню каталога  -->
+          <!-- КОНЕЦ содержимое табов - меню каталога -->
         </div>
 
       </div>
@@ -883,6 +883,9 @@
     </section>
     <!-- КОНЕЦ Меню каталога для компа -->
   </div>
+
+  <!-- подложка под попап -->
+  <div class="clickable-overlay" title="Закрыть окно"></div>
 
   <!-- мобильная панель пользователя (не используется на десктопных)-->
   <div class="mobile-user-panel">
@@ -946,7 +949,7 @@
   </div>
   <!-- КОНЕЦ мобильная панель пользователя -->
 
-  <!-- мобильное навигационное меню  -->
+  <!-- мобильное навигационное меню -->
   <div class="mobile-menu">
     <div class="wrapper">
 
@@ -978,12 +981,12 @@
     </div>
 
   </div>
-  <!-- КОНЕЦ мобильное навигационное меню  -->
+  <!-- КОНЕЦ мобильное навигационное меню -->
 
   <!-- мобильный поиск в шапке -->
   <div class="mobile-search">
     <div class="wrapper">
-      <form action="">
+      <form action="javascript:void(0);">
 
         <div class="mobile-search__grid">
           <!-- селект -->
@@ -991,19 +994,19 @@
             <div class="custom-select" data-default="Все категории">
               <div class="custom-select__selected">Все категории</div>
               <div class="custom-select__options">
-                <div class="custom-select__option" value="option1">Категория 1</div>
-                <div class="custom-select__option" value="Категория 2">Категория 2</div>
-                <div class="custom-select__option" value="Категория 3">Категория 3</div>
-                <div class="custom-select__option" value="Категория 4">Категория 4</div>
-                <div class="custom-select__option" value="Категория 4">Категория 4</div>
-                <div class="custom-select__option" value="Категория 4">Категория 4</div>
-                <div class="custom-select__option" value="Категория 4">Категория 4</div>
-                <div class="custom-select__option" value="Категория 4">Категория 4</div>
-                <div class="custom-select__option" value="Категория 4">Категория 4</div>
-                <div class="custom-select__option" value="Категория 4">Категория 4</div>
-                <div class="custom-select__option" value="Категория 4">Категория 4</div>
-                <div class="custom-select__option" value="Категория 4">Категория 4</div>
-                <div class="custom-select__option" value="Категория 4">Категория 4</div>
+                <div class="custom-select__option" data-value="option1">Категория 1</div>
+                <div class="custom-select__option" data-value="Категория 2">Категория 2</div>
+                <div class="custom-select__option" data-value="Категория 3">Категория 3</div>
+                <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
+                <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
+                <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
+                <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
+                <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
+                <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
+                <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
+                <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
+                <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
+                <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
               </div>
               <input class="visually-hidden" type="hidden" name="selecting-category" value="">
             </div>
@@ -1011,7 +1014,7 @@
           <!-- поиск -->
           <div class="search">
             <div class="search__wrapper">
-              <input type="search" name="" id="" placeholder="Поиск по каталогу">
+              <input type="search" name="catalog-search-2" placeholder="Поиск по каталогу">
             </div>
           </div>
           <!-- кнпока отправки поискового запроса -->
@@ -1026,36 +1029,12 @@
   </div>
   <!-- КОНЕЦ мобильный поиск в шапке -->
 
-  <!-- Основной контент  -->
+  <!-- Основной контент -->
   <main>
-    <div class="wrapper">
 
-      <ol>
-        <li><a href="./home.html" target="_blank">Главная</a></li>
-        <li><a href="./rugs-list.html" target="_blank">Ковры список</a></li>
-        <li><a href="./rug.html" target="_blank">Ковер</a></li>
-        <li><a href="./laminate-list.html" target="_blank">Ламинат список</a></li>
-        <li><a href="./laminate.html" target="_blank">Ламинат</a></li>
-        <li><a href="./promotions-news.html" target="_blank">Акции и новости</a></li>
-        <li><a href="./action-news.html" target="_blank">Акция-новость</a></li>
-        <li><a href="./long-article.html" target="_blank">Длинная статья</a></li>
-        <li><a href="./manufacturer-list.html" target="_blank">Производители список</a></li>
-        <li><a href="./manufacturer.html" target="_blank">Производитель</a></li>
-        <li><a href="./documents.html" target="_blank">Документы</a></li>
-        <li><a href="./glossary-terms.html" target="_blank">Словарь терминов</a></li>
-        <li><a href="./favorites.html" target="_blank">Избранное</a></li>
-        <li><a href="./shopping-cart.html" target="_blank">Корзина</a></li>
-        <li><a href="./personal-cabinet-profile.html" target="_blank">Личный кабинет_профиль</a></li>
-        <li><a href="./personal-cabinet-your-manager.html" target="_blank">Личный кабинет_ваш менеджер</a></li>
-        <li><a href="./personal-cabinet-documents.html" target="_blank">Личный кабинет_документы</a></li>
-        <li><a href="./personal-cabinet-orders.html" target="_blank">Личный кабинет_заказы</a></li>
-        <li><a href="./notices.html" target="_blank">Уведомления</a></li>
-
-      </ol>
-
-    </div>
   </main>
-  <!-- КОНЕЦ Основной контент  -->
+  <!-- КОНЕЦ Основной контент -->
+
   <!-- Подвал -->
   <footer class="footer">
     <div class="wrapper">
