@@ -1051,92 +1051,204 @@
         <div class="product-catalog__title">
           <h2 class="title">Ковры</h2>
         </div>
-        <!-- КОНЕЦ заголовок -->
-        <div class="product-catalog__aside">
-          <!-- фильтры каталога  -->
-          <form action="javascript:void(0);" class="catalog-filter" method="get">
-            <!-- отдельная группа фильтров -->
-            <fieldset class="catalog-filter__group">
-              <legend class="catalog-filter__group-label">Цена</legend>
 
-              <!-- слайдер диапазона с двумя ручками -->
-              <div class="price-range">
+        <div class="product-catalog__grid">
+          <!-- левая часть  -->
+          <div class="product-catalog__aside">
+            <!-- фильтры каталога  -->
+            <form action="javascript:void(0);" method="get">
+              <div class="catalog-filter">
+                <!-- отдельная группа фильтров -->
+                <fieldset class="catalog-filter__group">
+                  <legend class="catalog-filter__group-label">Цена</legend>
 
-                <!-- полоска с ручками  -->
-                <div class="price-range__slider-wrapper">
-                  <div class="price-range__slider">
-                    <div class="price-range__progress"></div>
-                  </div>
-                  <div class="price-range__ranges">
-                    <input type="range" class="price-range__range price-range__range--min" min="0" max="10000"
-                      value="2500" step="100">
-                    <input type="range" class="price-range__range price-range__range--max" min="0" max="10000"
-                      value="7500" step="100">
-                  </div>
-                </div>
-                <!-- КОНЕЦ полоска с ручками  -->
+                  <!-- слайдер диапазона с двумя ручками -->
+                  <div class="price-range">
 
-                <!-- поля ввода  -->
-                <div class="price-range__inputs">
-                  <div class="price-range__field">
-                    <input type="number" class="price-range__input price-range__input--min" value="2500">
-                  </div>
-                  <div class="price-range__separator">-</div>
-                  <div class="price-range__field">
-                    <input type="number" class="price-range__input price-range__input--max" value="7500">
-                  </div>
-                </div>
-                <!-- поля ввода  -->
+                    <!-- полоска с ручками  -->
+                    <div class="price-range__slider-wrapper">
+                      <div class="price-range__slider">
+                        <div class="price-range__progress"></div>
+                      </div>
+                      <div class="price-range__ranges">
+                        <input type="range" class="price-range__range price-range__range--min" min="0" max="10000"
+                          value="2500" step="100">
+                        <input type="range" class="price-range__range price-range__range--max" min="0" max="10000"
+                          value="7500" step="100">
+                      </div>
+                    </div>
+                    <!-- КОНЕЦ полоска с ручками  -->
 
+                    <!-- поля ввода  -->
+                    <div class="price-range__inputs">
+
+                      <div class="price-range__field">
+                        <input type="number" class="price-range__input price-range__input--min" value="2500">
+                      </div>
+
+                      <div class="price-range__field">
+                        <input type="number" class="price-range__input price-range__input--max" value="7500">
+                      </div>
+                    </div>
+                    <!-- поля ввода  -->
+
+                  </div>
+                  <!-- КОНЕЦ слайдер диапазона с двумя ручками -->
+
+                </fieldset>
+                <!-- КОНЕЦ отдельная группа фильтров -->
+                <fieldset class="catalog-filter__group">
+                  <legend class="catalog-filter__group-label">Общее</legend>
+
+                  <ul class="catalog-filter__checkbox-list list-reset">
+                    <li>
+                      <input type="checkbox" class="visually-hidden" name="availability" id="availability" checked>
+                      <label class="catalog-filter__checkbox-label" for="availability">Показывать в наличии</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="visually-hidden" name="pre-order" id="pre-order">
+                      <label class="catalog-filter__checkbox-label" for="pre-order">Показывать под заказ</label>
+                    </li>
+                  </ul>
+
+                  <ul class="catalog-filter__checkbox-list list-reset">
+                    <li>
+                      <input type="checkbox" class="visually-hidden" name="new" id="new" checked>
+                      <label class="catalog-filter__checkbox-label" for="new">Новинка</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="visually-hidden" name="hit" id="hit" />
+                      <label class="catalog-filter__checkbox-label" for="hit">Хит</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="visually-hidden" name="promo" id="promo" />
+                      <label class="catalog-filter__checkbox-label" for="promo">Акция</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="visually-hidden" name="sale" id="sale" />
+                      <label class="catalog-filter__checkbox-label" for="sale">Распродажа</label>
+                    </li>
+                  </ul>
+                </fieldset>
+
+                <fieldset class="catalog-filter__group">
+                  <legend class="catalog-filter__group-label">Страна</legend>
+                  <ul class="catalog-filter__checkbox-list list-reset">
+                    <li>
+                      <input type="checkbox" class="visually-hidden" name="iran" id="iran" />
+                      <label class="catalog-filter__checkbox-label" for="iran">Иран</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="visually-hidden" name="china" id="china" />
+                      <label class="catalog-filter__checkbox-label" for="china">Китай</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="visually-hidden" name="belarus" id="belarus" />
+                      <label class="catalog-filter__checkbox-label" for="belarus">Беларусь</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="visually-hidden" name="moldova" id="moldova" />
+                      <label class="catalog-filter__checkbox-label" for="moldova">Молдовва</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="visually-hidden" name="turkey" id="turkey" />
+                      <label class="catalog-filter__checkbox-label" for="turkey">Турция</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="visually-hidden" name="india" id="india" />
+                      <label class="catalog-filter__checkbox-label" for="india">Индия</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="visually-hidden" name="usa" id="usa" />
+                      <label class="catalog-filter__checkbox-label" for="usa">США</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="visually-hidden" name="germany" id="germany" />
+                      <label class="catalog-filter__checkbox-label " for="germany">Германия</label>
+                    </li>
+                  </ul>
+                </fieldset>
+
+                <fieldset class="catalog-filter__group filter__group_brand">
+                  <legend class="catalog-filter__group-label">Производитель</legend>
+                  <ul class="catalog-filter__checkbox-list list-reset">
+                    <li>
+                      <input type="checkbox" class="visually-hidden" name="tarkett" id="tarkett" />
+                      <label class="catalog-filter__checkbox-label" for="tarkett">Tarkett</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="visually-hidden" name="balterio" id="balterio" />
+                      <label class="catalog-filter__checkbox-label" for="balterio">Balterio</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="visually-hidden" name="kronospan" id="kronospan" />
+                      <label class="catalog-filter__checkbox-label" for="kronospan">Kronospan</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="visually-hidden" name="egger" id="egger" />
+                      <label class="catalog-filter__checkbox-label " for="egger">Egger</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="visually-hidden" name="quick-step" id="quick-step" />
+                      <label class="catalog-filter__checkbox-label " for="quick-step">Quick-Step</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="visually-hidden" name="kaindl" id="kaindl" />
+                      <label class="catalog-filter__checkbox-label " for="kaindl">Kaindl</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="visually-hidden" name="kronotex" id="kronotex" />
+                      <label class="catalog-filter__checkbox-label " for="kronotex">Kronotex</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" class="visually-hidden" name="berryalloc" id="berryalloc" />
+                      <label class="catalog-filter__checkbox-label " for="berryalloc">BerryAlloc</label>
+                    </li>
+                  </ul>
+                </fieldset>
+
+
+                <button class="catalog-filter__clear-button button"><span>Очистить фильтр</span><span
+                    class="decorate"></span></button>
+
+                <button class="catalog-filter__button button" type="submit"><span>Показать</span><span
+                    class="decorate"></span></button>
               </div>
-              <!-- КОНЕЦ слайдер диапазона с двумя ручками -->
 
-            </fieldset>
-            <!-- КОНЕЦ отдельная группа фильтров -->
-            <fieldset class="filter__group  color-group  flex">
-              <legend class="filter__view">Цвет</legend>
+            </form>
+            <!-- КОНЕЦ фильтры каталога -->
+          </div>
+          <!-- КОНЕЦ левая часть  -->
+          <!-- правая часть  -->
+          <div class="product-catalog__main">
+            <div class="product-catalog__order sort-order">
+              <h3 class="sort-order__subtitle">Сортировка:</h3>
 
-              <input class="visually-hidden" type="checkbox" name="color-black" id="filter-col-black" value="Чёрный"
-                checked="">
-              <label class="filter__color-label" for="filter-col-black">Чёрный</label>
+              <ul class="list-reset">
+                <li class="sort-order__item">
+                  <a class="sort-order__link active" href="">По цене</a>
+                </li>
+                <li class="sort-order__item">
+                  <a class="sort-order__link" href="">По типу</a>
+                </li>
+                <li class="sort-order__item">
+                  <a class="sort-order__link" href="">По популярности</a>
+                </li>
+              </ul>
 
-              <input class="visually-hidden" type="checkbox" name="color-white" id="filter-col-white" value="Белый">
-              <label class="filter__color-label" for="filter-col-white">Белый</label>
-
-              <input class="visually-hidden" type="checkbox" name="color-blue" id="filter-col-blue" value="Синий"
-                checked="">
-              <label class="filter__color-label" for="filter-col-blue">Синий</label>
-
-              <input class="visually-hidden" type="checkbox" name="color-red" id="filter-col-red" value="Красный"
-                checked="">
-              <label class="filter__color-label" for="filter-col-red">Красный</label>
-
-              <input class="visually-hidden" type="checkbox" name="color-pink" id="filter-col-pink" value="Розовый">
-              <label class="filter__color-label" for="filter-col-pink">Розовый</label>
-            </fieldset>
-
-            <fieldset class="filter__group options-group  flex">
-              <legend class="filter__view">Bluetooth</legend>
-
-              <input class="visually-hidden" type="radio" name="Bluetooth" id="filter-radio-yes" value="Bluetooth Есть"
-                checked="">
-              <label class="filter__color-label" for="filter-radio-yes">Есть</label>
-
-              <input class="visually-hidden" type="radio" name="Bluetooth" id="filter-radio-no" value="Bluetooth Нет">
-              <label class="filter__color-label" for="filter-radio-no">Нет</label>
-            </fieldset>
-            <button class="filter__button button" type="submit">Показать</button>
-          </form>
-          <!-- КОНЕЦ фильтры каталога -->
-        </div>
-        <div class="product-catalog__main">
-
+              <ul class="sort-sequence__list  list  flex">
+                <li><a class="sort-sequence__item  icon-up" title="По возрастанию" href="">По возрастанию</a></li>
+                <li><a class="sort-sequence__item  icon-down  active" title="По убыванию" href="">По убыванию</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- КОНЕЦ правая часть -->
         </div>
 
       </div>
 
     </section>
-    <!-- КОНЕЦкаталог товаров  -->
+    <!-- КОНЕЦ каталог товаров  -->
 
   </main>
   <!-- КОНЕЦ Основной контент -->

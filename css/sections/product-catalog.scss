@@ -1,0 +1,11 @@
+.product-catalog {
+  &__title {
+    margin: 0;
+    margin-bottom: 27px;
+  }
+  &__grid {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr 3fr;
+  }
+}
