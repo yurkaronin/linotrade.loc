@@ -1,7 +1,8 @@
 .product-catalog {
+  padding-top: 0;
   &__title {
     margin: 0;
-    margin-bottom: 27px;
+    margin-bottom: 15px;
   }
   &__grid {
     display: grid;
@@ -23,5 +24,13 @@
     display: grid;
     gap: 32px;
     grid-template-columns: 2fr 1fr;
+  }
+  &__main {
+    padding-top: 14px;
+  }
+
+  .product-card {
+    max-width: 100%;
+    width: 100%;
   }
 }

@@ -87,8 +87,6 @@
     position: relative;
     cursor: pointer;
 
-    // max-width: 100%;
-    // width: 100%;
     border: none;
     background-color: transparent;
     text-align: left;
@@ -117,6 +115,7 @@
 
     }
   }
+
 }
 
 input[type="checkbox"] + label::before {
