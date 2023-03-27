@@ -116,6 +116,19 @@
     }
   }
 
+  @media (max-width: 1300px) {
+    &__checkbox-label {
+      padding-left: 32px;
+    }
+    &__checkbox-label strong {
+      font-size: 16px;
+      padding-left: 6px;
+  }
+  &__checkbox-label span {
+    font-size: 14px;
+  }
+  }
+
 }
 
 input[type="checkbox"] + label::before {

@@ -132,3 +132,16 @@
     left: 0;
   }
 }
+
+.filter-open {
+  .product-catalog__aside {
+    left: 0;
+  }
+  .clickable-overlay {
+    opacity: 1;
+    pointer-events: initial;
+    cursor: pointer;
+    z-index: 999;
+
+  }
+}

@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   includeFiles("./js/parts/add-favorite.js");
   includeFiles("./js/parts/product-card-options.js");
   includeFiles("./js/parts/show-more-product-cards.js");
-
+  includeFiles("./js/parts/filter-mobile-show.js");
 
 });
 

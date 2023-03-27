@@ -1,10 +1,13 @@
-// кнопка каталога десктоп
-const catalogBtn = document.getElementById('catalog-btn-call');
+// Найти все кнопки каталога
+const catalogBtns = document.querySelectorAll('.catalog-btn-call');
 
-catalogBtn.addEventListener('click', (event) => {
+// Функция обработчика клика по кнопке
+function handleCatalogButtonClick(event) {
   event.preventDefault();
 
-  //  если при этом открыто меню мобильной навигации - скрываем его
+  const catalogBtn = event.currentTarget;
+
+  // Если при этом открыто меню мобильной навигации - скрываем его
   document.querySelector('.button--menu').classList.remove('open');
   document.body.classList.remove('mobile-menu-open');
 
@@ -26,4 +29,9 @@ catalogBtn.addEventListener('click', (event) => {
     // Удалить обработчик событий после закрытия меню, чтобы избежать повторной регистрации
     overlay.removeEventListener('click', closeMenu);
   });
+}
+
+// Добавить обработчики событий для всех найденных кнопок
+catalogBtns.forEach((catalogBtn) => {
+  catalogBtn.addEventListener('click', handleCatalogButtonClick);
 });
