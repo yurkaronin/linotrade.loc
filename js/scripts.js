@@ -26,6 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
   includeFiles("./js/parts/catalog-filter.js");
   includeFiles("./js/parts/add-favorite.js");
   includeFiles("./js/parts/product-card-options.js");
+  includeFiles("./js/parts/show-more-product-cards.js");
+
 
 });
 

@@ -86,6 +86,15 @@
       }
     }
   }
+  &--ghost {
+    background-color: #F7F7F7;
+    color: black;
+    max-width: 100%;
+
+    &:hover {
+      color: #F7F7F7;
+    }
+  }
   &--full {
     max-width: 100%;
     width: 100%;
