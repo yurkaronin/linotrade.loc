@@ -350,7 +350,6 @@ input[type=radio].visually-hidden {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  line-height: 1;
   text-align: center;
   color: var(--White);
   width: 22px;
@@ -1195,7 +1194,7 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  line-height: 1;
+  line-height: 17px;
   text-align: center;
   color: var(--White);
   background: var(--Green);
