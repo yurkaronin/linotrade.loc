@@ -74,7 +74,8 @@
 @import "bem/overlay";
 @import "bem/breadcrumbs";
 @import "bem/price-range";
-
+@import "bem/sort-order";
+@import "bem/product-card";
 
 // Смысловые секции
 @import "sections/header";
@@ -88,6 +89,8 @@
 @import "sections/footer";
 @import "sections/catalog-filter";
 @import "sections/product-catalog";
+
+
 
 
 // активные состояния компонентов

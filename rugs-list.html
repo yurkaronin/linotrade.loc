@@ -1058,9 +1058,13 @@
             <!-- фильтры каталога  -->
             <form action="javascript:void(0);" method="get">
               <div class="catalog-filter">
-                <!-- отдельная группа фильтров -->
+                <!-- ценовой диапазон  -->
                 <fieldset class="catalog-filter__group">
-                  <legend class="catalog-filter__group-label">Цена</legend>
+                  <legend class="catalog-filter__group-label"><span>Цена</span><svg xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="18" fill="none">
+                      <path fill="#67CB33" d="M0 8h16v2H0z" />
+                      <path class="move" fill="#67CB33" d="m9.011 1.001-.022 16-2-.002.022-16z" />
+                    </svg></legend>
 
                   <!-- слайдер диапазона с двумя ручками -->
                   <div class="price-range">
@@ -1096,9 +1100,14 @@
                   <!-- КОНЕЦ слайдер диапазона с двумя ручками -->
 
                 </fieldset>
-                <!-- КОНЕЦ отдельная группа фильтров -->
+                <!-- КОНЕЦ ценовой диапазон  -->
+
                 <fieldset class="catalog-filter__group">
-                  <legend class="catalog-filter__group-label">Общее</legend>
+                  <legend class="catalog-filter__group-label"><span>Общее</span><svg xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="18" fill="none">
+                      <path fill="#67CB33" d="M0 8h16v2H0z" />
+                      <path class="move" fill="#67CB33" d="m9.011 1.001-.022 16-2-.002.022-16z" />
+                    </svg></legend>
 
                   <ul class="catalog-filter__checkbox-list list-reset">
                     <li>
@@ -1132,7 +1141,11 @@
                 </fieldset>
 
                 <fieldset class="catalog-filter__group">
-                  <legend class="catalog-filter__group-label">Страна</legend>
+                  <legend class="catalog-filter__group-label"><span>Страна</span><svg xmlns="http://www.w3.org/2000/svg"
+                      width="16" height="18" fill="none">
+                      <path fill="#67CB33" d="M0 8h16v2H0z" />
+                      <path class="move" fill="#67CB33" d="m9.011 1.001-.022 16-2-.002.022-16z" />
+                    </svg></legend>
                   <ul class="catalog-filter__checkbox-list list-reset">
                     <li>
                       <input type="checkbox" class="visually-hidden" name="iran" id="iran" />
@@ -1169,8 +1182,12 @@
                   </ul>
                 </fieldset>
 
-                <fieldset class="catalog-filter__group filter__group_brand">
-                  <legend class="catalog-filter__group-label">Производитель</legend>
+                <fieldset class="catalog-filter__group">
+                  <legend class="catalog-filter__group-label"><span>Производитель</span><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="none">
+                      <path fill="#67CB33" d="M0 8h16v2H0z" />
+                      <path class="move" fill="#67CB33" d="m9.011 1.001-.022 16-2-.002.022-16z" />
+                    </svg></legend>
                   <ul class="catalog-filter__checkbox-list list-reset">
                     <li>
                       <input type="checkbox" class="visually-hidden" name="tarkett" id="tarkett" />
@@ -1207,6 +1224,36 @@
                   </ul>
                 </fieldset>
 
+                <fieldset class="catalog-filter__group">
+                  <legend class="catalog-filter__group-label"><span>Размеры</span><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="none">
+                      <path fill="#67CB33" d="M0 8h16v2H0z" />
+                      <path class="move" fill="#67CB33" d="m9.011 1.001-.022 16-2-.002.022-16z" />
+                    </svg></legend>
+                  <div class="catalog-filter__select-grid">
+                    <div class="custom-select" data-default="Все категории">
+                      <div class="custom-select__selected"><span>Длинна</span></div>
+                      <div class="custom-select__options">
+                        <div class="custom-select__option" data-value="Категория 1">Категория 1</div>
+                        <div class="custom-select__option" data-value="Категория 2">Категория 2</div>
+                        <div class="custom-select__option" data-value="Категория 3">Категория 3</div>
+                        <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
+                      </div>
+                      <input class="visually-hidden" type="hidden" name="selecting-category" value="">
+                    </div>
+                    <div class="custom-select" data-default="Все категории">
+                      <div class="custom-select__selected"><span>Ширина</span></div>
+                      <div class="custom-select__options">
+                        <div class="custom-select__option" data-value="Категория 1">Категория 1</div>
+                        <div class="custom-select__option" data-value="Категория 2">Категория 2</div>
+                        <div class="custom-select__option" data-value="Категория 3">Категория 3</div>
+                        <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
+                      </div>
+                      <input class="visually-hidden" type="hidden" name="selecting-category" value="">
+                    </div>
+                  </div>
+
+                </fieldset>
 
                 <button class="catalog-filter__clear-button button"><span>Очистить фильтр</span><span
                     class="decorate"></span></button>
@@ -1221,24 +1268,79 @@
           <!-- КОНЕЦ левая часть  -->
           <!-- правая часть  -->
           <div class="product-catalog__main">
+            <!-- сортировка  -->
             <div class="product-catalog__order sort-order">
-              <h3 class="sort-order__subtitle">Сортировка:</h3>
-
+              <span class="sort-order__subtitle">Сортировать по: </span>
               <ul class="list-reset">
                 <li class="sort-order__item">
-                  <a class="sort-order__link active" href="">По цене</a>
+                  <a class="sort-order__link active" href="">Новинки</a>
                 </li>
                 <li class="sort-order__item">
-                  <a class="sort-order__link" href="">По типу</a>
-                </li>
-                <li class="sort-order__item">
-                  <a class="sort-order__link" href="">По популярности</a>
+                  <a class="sort-order__link" href="">цена</a>
                 </li>
               </ul>
 
-              <ul class="sort-sequence__list  list  flex">
+              <!-- <ul class="sort-sequence__list  list  flex">
                 <li><a class="sort-sequence__item  icon-up" title="По возрастанию" href="">По возрастанию</a></li>
                 <li><a class="sort-sequence__item  icon-down  active" title="По убыванию" href="">По убыванию</a></li>
+              </ul> -->
+
+            </div>
+            <!-- КОНЕЦ сортировка  -->
+
+            <div class="product-catalog__items-list">
+              <ul class="list-reset">
+                <li class="product-card">
+                  <div class="product-card__header">
+                    <a href="#" class="product-card__label product-card__label--action button"><span>Акция</span><span
+                        class="decorate"></span></a>
+                    <a href="#" class="product-card__label product-card__label--new button"><span>новинка</span><span
+                        class="decorate"></span></a>
+                    <!-- класс .add-favorite обязателен. по нему идёт поиск и сборка коллекции, для отслеживания клика  -->
+                    <a href="#"
+                      class="product-card__label product-card__label--heart button button--icon add-favorite"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                        <path stroke="#fff" stroke-width="2"
+                          d="m11.247 5.699.753.86.753-.86A5.063 5.063 0 0 1 16.5 4C19.047 4 21 5.936 21 8.395c0 1.514-.687 2.974-2.112 4.684-1.435 1.722-3.508 3.57-6.103 5.879l-.001.001-.784.7-.784-.7-.001-.001c-2.595-2.308-4.668-4.157-6.103-5.88C3.687 11.369 3 9.91 3 8.396 3 5.935 4.953 4 7.5 4c1.445 0 2.843.665 3.747 1.699Z" />
+                      </svg><span class="decorate"></span></a>
+                  </div>
+
+
+                  <a class="product-card__link" href="#">
+
+                    <div class="product-card__image">
+                      <img src="./img/catalog/product-catalog/carpets/1.jpg" alt="фото товара" loading="lazy"
+                        width="256">
+                      <span class="product-card__image-label button"><span>В наличии</span><span
+                          class="decorate"></span></span>
+                    </div>
+                    <div class="product-card__subtitle">Коллекция, может быть артикул</div>
+                    <h3 class="product-card__title">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
+                  </a>
+                  <div class="product-card__footer">
+                    <span class="product-card__price">от 2 680 ₽</span>
+                    <button class="product-card__options" type="button">в 3х размерах</button>
+
+                    <!-- детали -->
+                    <div class="product-card__details">
+                      <form action="javascript:void(0);">
+                      <ul class="product-card__details-list list-reset">
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="120х180" checked="">
+                          <label class="catalog-filter__checkbox-label" for="120х180">120х180 см <strong>2 680 ₽</strong></label>
+                        </li>
+
+                      </ul>
+                      <a class="button button--cart button--icon" href="#">
+                        <span>в корзину</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none"><path stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M18.273 4.5h2.454a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.272"/><path stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M20.273 17.5H9.04c-.453 0-.85-.305-.967-.742L4.47 3.242a1 1 0 0 0-.967-.742H.273M7.272 20.5h2M18.273 20.5h2M8.272 4.5h8M12.273 8.5v-8"/></svg>
+                        <span class="decorate"></span>
+                      </a>
+                    </form>
+                    </div>
+
+                  </div>
+                </li>
               </ul>
             </div>
           </div>

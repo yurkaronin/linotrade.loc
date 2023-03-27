@@ -179,14 +179,25 @@
       }
     }
   }
-  &--mobile{
+  &--mobile {
     display: none;
 
     @media (max-width: 550px) {
       display: flex;
     }
   }
+  &--cart {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: auto 21px;
+
+    svg {
+      position: initial;
+    }
+  }
 }
+
+
 
 @media (max-width: 550px) {
   .button {

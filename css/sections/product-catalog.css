@@ -1,9 +1,0 @@
-.product-catalog__title {
-  margin: 0;
-  margin-bottom: 27px;
-}
-.product-catalog__grid {
-  display: grid;
-  gap: 32px;
-  grid-template-columns: 1fr 3fr;
-}

@@ -23,7 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
   includeFiles("./js/parts/button-search-mobile.js");
   includeFiles("./js/parts/modals.js");
   includeFiles("./js/parts/price-range.js");
-
+  includeFiles("./js/parts/catalog-filter.js");
+  includeFiles("./js/parts/add-favorite.js");
+  includeFiles("./js/parts/product-card-options.js");
 
 });
 

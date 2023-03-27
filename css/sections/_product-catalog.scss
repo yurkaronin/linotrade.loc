@@ -8,4 +8,8 @@
     gap: 32px;
     grid-template-columns: 1fr 3fr;
   }
+  &__order {
+    // display: block;
+    margin-bottom: 32px;
+  }
 }
