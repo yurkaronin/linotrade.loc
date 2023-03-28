@@ -3,7 +3,8 @@
 }
 
 .pagination__list {
-  display: flex;
+  display: flex !important;
+  gap: 0 !important;
   align-items: center;
   flex-wrap: wrap;
   // justify-content: space-between;

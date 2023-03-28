@@ -793,6 +793,26 @@ h1, h2, h3, h4, h5, h6 {
 .section--mod {
   background: rgba(247, 247, 247, 0.5);
 }
+.section__footer {
+  margin-top: 32px;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 2fr 1fr;
+}
+@media (max-width: 768px) {
+  .section__footer {
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+  }
+  .section__footer .pagination {
+    margin: 0 auto;
+  }
+  .section__footer .amount-to-show {
+    grid-template-columns: auto auto;
+    max-width: max-content;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 650px) {
   .section__header {
     max-width: initial;
@@ -1762,7 +1782,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pagination__list {
-  display: flex;
+  display: flex !important;
+  gap: 0 !important;
   align-items: center;
   flex-wrap: wrap;
 }
