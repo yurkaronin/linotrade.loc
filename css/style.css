@@ -3088,9 +3088,15 @@ input[type=checkbox]:checked + label::before {
 .product-catalog .filter-call {
   display: none;
 }
+.product-catalog .filter-close {
+  display: none;
+}
 @media (max-width: 1300px) {
   .product-catalog__grid {
     display: block;
+  }
+  .product-catalog .filter-close {
+    display: flex;
   }
   .product-catalog .filter-call {
     display: grid;

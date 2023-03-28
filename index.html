@@ -17,7 +17,7 @@
 <body>
   <!-- эта обёртка нужна для того что бы мега меню каталога адекватно показывалось относительно зафиксированной на странице шапки.  -->
   <div class="fixed-area">
-    <!-- Шапка  -->
+    <!-- Шапка -->
     <header class="header">
       <div class="wrapper">
         <!-- верхняя часть -->
@@ -56,25 +56,24 @@
 
         <!-- нижняя часть -->
         <div class="bottom">
-          <div class="catalog-btn">
+
             <a href="#" class="button button--catalog catalog-btn-call">
               <span>Каталог</span>
               <span class="decorate"></span>
             </a>
-          </div>
 
           <div class="group">
             <!-- селект -->
             <div class="select">
-              <form action="">
+              <form action="javascript:void(0);">
 
                 <div class="custom-select" data-default="Все категории">
                   <div class="custom-select__selected"><span>Выберите категорию</span></div>
                   <div class="custom-select__options">
-                    <div class="custom-select__option" value="option1">Категория 1</div>
-                    <div class="custom-select__option" value="Категория 2">Категория 2</div>
-                    <div class="custom-select__option" value="Категория 3">Категория 3</div>
-                    <div class="custom-select__option" value="Категория 4">Категория 4</div>
+                    <div class="custom-select__option" data-value="Категория 1">Категория 1</div>
+                    <div class="custom-select__option" data-value="Категория 2">Категория 2</div>
+                    <div class="custom-select__option" data-value="Категория 3">Категория 3</div>
+                    <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
                   </div>
                   <input class="visually-hidden" type="hidden" name="selecting-category" value="">
                 </div>
@@ -85,9 +84,9 @@
 
             <!-- поиск -->
             <div class="search">
-              <form action="">
+              <form action="javascript:void(0);">
                 <div class="search__wrapper">
-                  <input type="search" name="" id="" placeholder="Поиск по каталогу">
+                  <input type="search" name="catalog-search" placeholder="Поиск по каталогу">
                   <button class="button button--icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" fill="none">
                       <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
@@ -122,18 +121,24 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="button button--icon button--border">
-                  <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M10.9998 17C17.7227 12.4133 20.4108 10.2107 20.9205 7.09201C21.1788 5.51068 20.8738 3.33602 19.0177 1.99602C16.9401 0.496694 12.9033 1.48803 10.9998 4.37736C9.09701 1.48803 5.05954 0.496694 2.98197 1.99602C1.12581 3.33602 0.820865 5.51068 1.07986 7.09201C1.58881 10.2107 4.27628 12.4133 10.9998 17Z"
-                      stroke="#505050" stroke-width="2" stroke-miterlimit="10" />
-                  </svg>
+                <!-- избранное -->
+                <a class="cart-button" href="#">
+                  <div class="button button--icon button--border">
+                    <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.9998 17C17.7227 12.4133 20.4108 10.2107 20.9205 7.09201C21.1788 5.51068 20.8738 3.33602 19.0177 1.99602C16.9401 0.496694 12.9033 1.48803 10.9998 4.37736C9.09701 1.48803 5.05954 0.496694 2.98197 1.99602C1.12581 3.33602 0.820865 5.51068 1.07986 7.09201C1.58881 10.2107 4.27628 12.4133 10.9998 17Z"
+                        stroke="#505050" stroke-width="2" stroke-miterlimit="10" />
+                    </svg>
 
-                  <span class="decorate"></span>
+                    <span class="decorate"></span>
+                  </div>
+                  <!-- служебный класс .i-like-it по которому мы находим элемент и меняем в нем число  -->
+                  <span class="number i-like-it" title="Количество позиций в избранном">2</span>
                 </a>
+
               </li>
               <li>
-                <!-- ссылка на корзину  -->
+                <!-- ссылка на корзину -->
                 <a class="cart-button" href="#">
                   <div class="button button--icon button--border">
                     <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -215,7 +220,7 @@
 
       <div class="wrapper">
         <div class="catalog-menu__grid">
-          <!-- табы для переключения менюшек  -->
+          <!-- табы для переключения менюшек -->
           <div class="catalog-menu__tabs">
             <ul class="catalog-menu__tabs-list list-reset">
               <li class="catalog-menu__tabs-item">
@@ -252,10 +257,10 @@
               </li>
             </ul>
           </div>
-          <!-- табы для переключения менюшек  -->
-          <!-- КОНЕЦ содержимое табов - меню каталога  -->
+          <!-- табы для переключения менюшек -->
+          <!-- КОНЕЦ содержимое табов - меню каталога -->
           <div class="catalog-menu__content">
-            <!-- мобильная шапка меню для возврата  -->
+            <!-- мобильная шапка меню для возврата -->
             <div class="catalog-menu__return">
               <a href="#">
                 <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -264,10 +269,10 @@
                 <span>Назад</span>
               </a>
             </div>
-            <!-- КОНЕЦ мобильная шапка меню для возврата  -->
-            <!-- Группа контента для одного таба  -->
+            <!-- КОНЕЦ мобильная шапка меню для возврата -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset active" id="catalog-nav-subcategory-1">
-              <!-- группа или пункт  -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <div class="catalog-menu__link-wrapper">
                   <a href="#" class="content__catalog-link"><span>Производитель 1</span></a>
@@ -279,7 +284,7 @@
                   </button>
                 </div>
 
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -313,12 +318,12 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
-              <!-- группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <div class="catalog-menu__link-wrapper">
                   <a href="#" class="content__catalog-link"><span>Производитель 1</span></a>
@@ -330,7 +335,7 @@
                   </button>
                 </div>
 
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -364,11 +369,11 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
               <li class="content__catalog-item">
                 <div class="catalog-menu__link-wrapper">
                   <a href="#" class="content__catalog-link"><span>Производитель 1</span></a>
@@ -380,7 +385,7 @@
                   </button>
                 </div>
 
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -414,11 +419,11 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
               <li class="content__catalog-item">
                 <div class="catalog-menu__link-wrapper">
                   <a href="#" class="content__catalog-link"><span>Производитель 1</span></a>
@@ -430,7 +435,7 @@
                   </button>
                 </div>
 
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -464,11 +469,11 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
               <li class="content__catalog-item">
                 <div class="catalog-menu__link-wrapper">
                   <a href="#" class="content__catalog-link"><span>Производитель 1</span></a>
@@ -480,7 +485,7 @@
                   </button>
                 </div>
 
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -514,22 +519,22 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
 
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
-            <!-- Группа контента для одного таба  -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-2">
 
-              <!-- группа или пункт  -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <a href="#" class="content__catalog-link"><span>Производитель 2</span></a>
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -563,17 +568,17 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
-            <!-- Группа контента для одного таба  -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-3">
-              <!-- группа или пункт  -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <div class="catalog-menu__link-wrapper">
                   <a href="#" class="content__catalog-link"><span>Производитель 3</span></a>
@@ -585,7 +590,7 @@
                   </button>
                 </div>
 
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -619,15 +624,15 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
-            <!-- Группа контента для одного таба  -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-4">
 
               <li class="content__catalog-item">
@@ -641,7 +646,7 @@
                   </button>
                 </div>
 
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -675,21 +680,21 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
 
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
-            <!-- Группа контента для одного таба  -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-5">
-              <!-- группа или пункт  -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <a href="#" class="content__catalog-link"><span>Производитель 5</span></a>
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -723,21 +728,21 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
 
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
-            <!-- Группа контента для одного таба  -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-6">
-              <!-- группа или пункт  -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <a href="#" class="content__catalog-link"><span>Производитель 6</span></a>
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -771,20 +776,20 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
-            <!-- Группа контента для одного таба  -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-7">
-              <!-- группа или пункт  -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <a href="#" class="content__catalog-link"><span>Производитель 7</span></a>
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -818,20 +823,20 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
-            <!-- Группа контента для одного таба  -->
+            <!-- Группа контента для одного таба -->
             <ul class="content__catalog-list list-reset" id="catalog-nav-subcategory-8">
-              <!-- группа или пункт  -->
+              <!-- группа или пункт -->
               <li class="content__catalog-item">
                 <a href="#" class="content__catalog-link"><span>Производитель 8</span></a>
-                <!-- подкатегории  -->
+                <!-- подкатегории -->
                 <ul class="content__catalog-sublist list-reset">
                   <li class="content__catalog-subitem">
                     <a href="#" class="content__catalog-sublink"><span>Cameo</span></a>
@@ -865,16 +870,16 @@
                   </li>
 
                 </ul>
-                <!-- КОНЕЦ подкатегории  -->
+                <!-- КОНЕЦ подкатегории -->
 
 
               </li>
-              <!-- КОНЕЦ группа или пункт  -->
+              <!-- КОНЕЦ группа или пункт -->
             </ul>
-            <!-- КОНЕЦ Группа контента для одного таба  -->
+            <!-- КОНЕЦ Группа контента для одного таба -->
 
           </div>
-          <!-- КОНЕЦ содержимое табов - меню каталога  -->
+          <!-- КОНЕЦ содержимое табов - меню каталога -->
         </div>
 
       </div>

@@ -47,10 +47,17 @@
   .filter-call {
     display: none;
   }
+  .filter-close {
+    display: none;
+  }
 
   @media (max-width: 1300px) {
     &__grid {
       display: block;
+    }
+
+    .filter-close {
+      display: flex;
     }
 
     .filter-call {
