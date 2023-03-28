@@ -1,9 +1,10 @@
 .order-item {
-  display: grid;
-  gap: 32px;
-  grid-template-columns: 3fr 2fr 2fr 2fr;
+  display: flex;
   padding: 16px 0;
   border-bottom: 1px solid #d9d9d9;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap ;
   &__title {
   }
   &__number {
@@ -50,6 +51,9 @@
     .order-item__label {
       text-align: right;
     }
+  }
+  &__button {
+    max-width: max-content;
   }
 }
 

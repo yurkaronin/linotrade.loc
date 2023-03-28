@@ -897,10 +897,6 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: 1fr 2fr 1fr;
   text-align: center;
 }
-.section .button--text-icon {
-  max-width: 100%;
-  width: 100%;
-}
 @media (max-width: 768px) {
   .section__footer {
     grid-template-columns: 1fr;
@@ -1175,11 +1171,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .order-item {
-  display: grid;
-  gap: 32px;
-  grid-template-columns: 3fr 2fr 2fr 2fr;
+  display: flex;
   padding: 16px 0;
   border-bottom: 1px solid #d9d9d9;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .order-item__number {
   display: block;
@@ -1222,6 +1219,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .order-item--mod .order-item__label {
   text-align: right;
+}
+.order-item__button {
+  max-width: max-content;
 }
 
 @media (max-width: 1024px) {
