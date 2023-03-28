@@ -99,6 +99,13 @@
     max-width: 100%;
     width: 100%;
   }
+  &--text-icon {
+    display: grid;
+    grid-template-columns: auto 22px;
+    gap: 24px;
+    align-items: center;
+    padding: 12px 10px;
+  }
 
   &--border {
     background-color: var(--White);

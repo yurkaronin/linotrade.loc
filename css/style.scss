@@ -13,8 +13,8 @@
   --line2: #909090;
 
   --Darkgrey: #373737;
-  --Gray: #F7F7F7;
-  --Gray2: #EAEAEA;
+  --Gray: #f7f7f7;
+  --Gray2: #eaeaea;
 
   --Green: #67cb33;
   --GreenOver: #44a611;
@@ -82,7 +82,11 @@
 @import "bem/catalog-grid";
 @import "bem/message";
 @import "bem/document";
-
+@import "bem/swiper";
+@import "bem/image";
+@import "bem/backup";
+@import "bem/item-article";
+@import "bem/order-choise";
 
 // Смысловые секции
 @import "sections/header";
@@ -99,6 +103,29 @@
 @import "sections/brands";
 @import "sections/article";
 
+.card-label__list {
+  * + & {
+    margin-top: 16px;
+  }
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .card-label {
+    margin-right: 16px;
+  }
+}
+
+.card-label {
+  font-family: var(--Roboto);
+  height: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
 // активные состояния компонентов
 .mobile-search-open {
   overflow: hidden;
@@ -113,14 +140,13 @@
 
 .catalog-menu-open {
   overflow: hidden;
-  .catalog-menu  {
+  .catalog-menu {
     left: 0;
   }
   .clickable-overlay {
     opacity: 1;
     pointer-events: initial;
     cursor: pointer;
-
   }
 }
 
@@ -145,6 +171,20 @@
     pointer-events: initial;
     cursor: pointer;
     z-index: 999;
-
   }
+}
+
+.order-choise li:first-child {
+  border-top: 1px solid #d9d9d9;
+}
+
+.section--bb {
+  .wrapper {
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+
+.sticky {
+  position: sticky;
+  top: 170px;
 }

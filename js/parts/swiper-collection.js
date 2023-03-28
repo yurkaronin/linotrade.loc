@@ -1,120 +1,87 @@
-// слайдер со спец предложениями 
-if (document.querySelector('.slider-promo .swiper')) {
-  const swiper = new Swiper(".slider-promo .swiper", {
-    slidesPerView: 3,
+if (document.querySelector('.mySwiper')) {
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 6,
     spaceBetween: 32,
-    grabCursor: true,
-    // autoHeight: true,
-    navigation: {
-      nextEl: ".slider-promo .button--slider.next",
-      prevEl: ".slider-promo .button--slider.prev",
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1.2,
-        spaceBetween: 10,
-      },
-      600: {
-        slidesPerView: 2,
-      },
-      1200: {
-        slidesPerView: 3,
-      }
-    }
-  });
-};
-
-// Наши тарифы 
-if (document.querySelector('.rates .swiper')) {
-  const swiper2 = new Swiper(".rates .swiper", {
-    slidesPerView: 4,
-    spaceBetween: 32,
-    grabCursor: true,
-    // autoHeight: true,
-    // calculateHeight:true,
-    navigation: {
-      nextEl: ".rates .button--slider.next",
-      prevEl: ".rates .button--slider.prev",
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1.2,
-        spaceBetween: 10,
-      },
-      600: {
-        slidesPerView: 2,
-      },
-      1200: {
-        slidesPerView: 3,
-      },
-      1600: {
-        slidesPerView: 4,
-      }
-    }
-  });
-};
-
-// Оборудование
-if (document.querySelector('.equips .swiper')) {
-  const swiper3 = new Swiper(".equips .swiper", {
-    slidesPerView: 4,
-    spaceBetween: 32,
-    grabCursor: true,
-    // autoHeight: true,
-    // calculateHeight:true,
-    // autoHeight: true,
-    navigation: {
-      nextEl: ".equips .button--slider.next",
-      prevEl: ".equips .button--slider.prev",
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1.2,
-        spaceBetween: 10,
-      },
-      600: {
-        slidesPerView: 2,
-        spaceBetween: 32,
-      },
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 32,
-      },
-      1600: {
-        slidesPerView: 4,
-        spaceBetween: 32,
-      }
-    }
-  });
-};
-
-// мелкий слайдер 
-if (document.querySelector('.mySwiper2')) {
-  const swiper4 = new Swiper(".mySwiper2", {
-    slidesPerView: 12,
     // loop: true,
-    spaceBetween: 8,
-    clickable: true,
-    direction: 'vertical',
     freeMode: true,
-    watchSlidesProgress: true,
-
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    // },
+    navigation: {
+      nextEl: ".mySwiper .swiper-button-next",
+      prevEl: ".mySwiper .swiper-button-prev",
+    },
+    // scrollbar: {
+    //   el: ".swiper-scrollbar",
+    // },
+    breakpoints: {
+      0: { // при 0px и выше
+        // direction: 'horizontal',
+        spaceBetween: 16,
+        slidesPerView: 2,
+      },
+      600: { // при 0px и выше
+        // direction: 'horizontal',
+        slidesPerView: 3,
+      },
+      1024: { // при 0px и выше
+        // direction: 'horizontal',
+        slidesPerView: 4,
+      },
+      1370: { // при 0px и выше
+        // direction: 'horizontal',
+        slidesPerView: 5,
+      },
+      1610: { // при 768px и выше
+        // direction: 'vertical',
+        slidesPerView: 6,
+      }
+    },
   });
 };
 
-// большой слайдер 
-if (document.querySelector('.mySwiper1')) {
-  const swiper5 = new Swiper(".mySwiper1", {
-    slidesPerView: 1,
+if (document.querySelector('.mySwiper-2')) {
+
+  var swiper2 = new Swiper(".mySwiper-2", {
+    slidesPerView: 6,
     spaceBetween: 32,
-    grabCursor: true,
-    loop: true,
+    // loop: true,
+    freeMode: true,
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    // },
     navigation: {
-      nextEl: ".mySwiper1 .button--slider.next",
-      prevEl: ".mySwiper1 .button--slider.prev",
+      nextEl: ".mySwiper-2 .swiper-button-next",
+      prevEl: ".mySwiper-2 .swiper-button-prev",
     },
-    thumbs: {
-      swiper: swiper4,
+    // scrollbar: {
+    //   el: ".swiper-scrollbar",
+    // },
+    breakpoints: {
+      0: { // при 0px и выше
+        // direction: 'horizontal',
+        spaceBetween: 16,
+        slidesPerView: 2,
+      },
+      600: { // при 0px и выше
+        // direction: 'horizontal',
+        slidesPerView: 3,
+      },
+      1024: { // при 0px и выше
+        // direction: 'horizontal',
+        slidesPerView: 4,
+      },
+      1370: { // при 0px и выше
+        // direction: 'horizontal',
+        slidesPerView: 5,
+      },
+      1610: { // при 768px и выше
+        // direction: 'vertical',
+        slidesPerView: 6,
+      }
     },
   });
+
 };
