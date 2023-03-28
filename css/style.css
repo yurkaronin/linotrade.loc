@@ -3505,7 +3505,7 @@ input[type=checkbox]:checked + label::before {
   display: flex;
   max-width: max-content;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 14px;
 }
 .article__backup::before {
   content: "";
