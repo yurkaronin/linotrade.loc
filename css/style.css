@@ -1503,6 +1503,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .breadcrumbs {
   padding: 22px 0 15px;
+  max-width: 100%;
+  overflow-x: auto;
 }
 .breadcrumbs ul {
   display: flex;
@@ -1513,6 +1515,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   display: flex;
   align-items: center;
+  white-space: nowrap;
 }
 .breadcrumbs li:not(:last-child):after {
   content: "";
@@ -1529,6 +1532,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   font-size: 14px;
   color: #909090;
+  white-space: nowrap;
 }
 .breadcrumbs a:not([href]) {
   color: #373737;
@@ -3484,6 +3488,92 @@ input[type=checkbox]:checked + label::before {
   }
 }
 
+.article {
+  padding-bottom: 40px;
+}
+.article .title {
+  display: inline-block;
+}
+.article__backup {
+  font-family: var(--Roboto);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #373737;
+  position: relative;
+  display: flex;
+  max-width: max-content;
+  align-items: center;
+  padding-top: 10px;
+}
+.article__backup::before {
+  content: "";
+  display: block;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='12' fill='none'%3e%3cpath stroke='%2367CB33' stroke-width='2' d='M7 11 2 6l5-5'/%3e%3c/svg%3e");
+  width: 10px;
+  height: 10px;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  transition: all 0.3s;
+  margin-right: 12px;
+}
+
+.to-left {
+  float: left;
+  padding: 16px;
+  background-color: #fff;
+  border: 1px solid #D9D9D9;
+  max-width: 50%;
+  margin: 32px;
+  margin-left: 0;
+}
+.to-left--top {
+  margin-top: 0;
+}
+
+.to-right {
+  float: right;
+  max-width: 50%;
+  padding: 16px;
+  background-color: #fff;
+  border: 1px solid #D9D9D9;
+  margin: 32px;
+  margin-right: 0;
+}
+.to-right--top {
+  margin-top: 0;
+}
+
+.lead {
+  font-weight: 600;
+  font-size: 20px;
+  color: #373737;
+}
+
+.breadcrumbs + .section {
+  padding-top: 17px;
+}
+
+@media (max-width: 1300px) {
+  .article {
+    padding-top: 32px;
+  }
+  .to-right,
+  .to-left {
+    float: initial;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+  img {
+    max-height: 500px;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+  }
+}
 .mobile-search-open {
   overflow: hidden;
 }

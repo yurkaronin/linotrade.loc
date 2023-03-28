@@ -1,5 +1,7 @@
 .breadcrumbs {
   padding: 22px 0 15px;
+  max-width: 100%;
+  overflow-x: auto;
 
   ul {
     display: flex;
@@ -11,6 +13,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    white-space: nowrap;
 
     &:after {
       content: '';
@@ -28,6 +31,7 @@
     font-weight: 400;
     font-size: 14px;
     color: #909090;
+    white-space: nowrap;
   }
 
   a:not([href]) {
