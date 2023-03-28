@@ -28,6 +28,14 @@
     grid-template-columns: 2fr 1fr;
   }
 
+  .title + * {
+    margin-top: 32px;
+  }
+
+  * .show-more {
+    margin-top: 40px;
+  }
+
   @media (max-width: 768px) {
     &__footer {
       grid-template-columns: 1fr;
