@@ -1227,8 +1227,8 @@
 
         <!-- шапка диалогового окна -->
         <div class="modal__header">
-          <h2 class="modal__title">Задать вопрос</h2>
-          <p class="modal__subtitle">Заполните простую форму указав телефон и e-mail, для ответа. Наши специалисты
+          <h2 class="title">Задать вопрос</h2>
+          <p class="subtitle">Заполните простую форму указав телефон и e-mail, для ответа. Наши специалисты
             ответят
             в ближайшее время.</p>
         </div>
@@ -1236,7 +1236,7 @@
 
         <!-- тело диалогового окна  -->
         <div class="modal__body">
-
+          <div class="modal__grid">
           <div class="modal__form-item">
             <label for="question-form-tel">ФИО:</label>
             <input id="question-form-tel" type="text" placeholder="Введите имя">
@@ -1252,18 +1252,19 @@
             <input id="question-form-email" type="text" placeholder="Для ответа">
           </div>
 
-          <div class="modal__form-item">
+          <div class="modal__form-item modal__form-item--textarea">
             <label for="question-form-texarea">Сообщение:</label>
             <textarea id="question-form-texarea" cols="30" rows="10" placeholder="Введите Ваш вопрос или сообщение"></textarea>
           </div>
+        </div>
 
         </div>
         <!-- КОНЕЦ тело диалогового окна  -->
 
         <!-- Подвал диалогового окна -->
         <div class="modal__footer">
-          <div class="promo__form-item promo__form-item--check">
-            <input type="checkbox" name="user-consent" id="promo-form-consent" checked="">
+          <div class="modal__form-item--check">
+            <input class="visually-hidden" type="checkbox" name="user-consent" id="promo-form-consent" checked>
             <label for="promo-form-consent">Я согласен с условиями обработки <a href="#" target="_blank">персональных
                 данных</a></label>
           </div>
