@@ -1641,6 +1641,20 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   position: relative;
 }
+.product-card__footer--mod {
+  grid-template-columns: 1fr 48px !important;
+}
+.product-card__price-wrapper span {
+  display: block;
+}
+.product-card__mini-price {
+  font-family: var(--Roboto);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color: #909090;
+}
 .product-card__options {
   padding: 0;
   border: none;

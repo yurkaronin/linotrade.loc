@@ -57,10 +57,10 @@
         <!-- нижняя часть -->
         <div class="bottom">
 
-            <a href="#" class="button button--catalog catalog-btn-call">
-              <span>Каталог</span>
-              <span class="decorate"></span>
-            </a>
+          <a href="#" class="button button--catalog catalog-btn-call">
+            <span>Каталог</span>
+            <span class="decorate"></span>
+          </a>
 
           <div class="group">
             <!-- селект -->
@@ -1036,6 +1036,564 @@
 
   <!-- Основной контент -->
   <main>
+
+    <!-- хлебные крошки  -->
+    <div class="breadcrumbs">
+      <div class="wrapper">
+        <ul class="list-reset">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a>Ламинат</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- КОНЕЦ хлебные крошки  -->
+
+    <!-- Каталог товаров  -->
+    <section class="section product-catalog">
+      <div class="wrapper">
+
+        <!-- заголовок -->
+        <div class="product-catalog__title">
+          <h2 class="title">Ламинат</h2>
+        </div>
+        <!-- кнопка для планшетных устройств (скрыта на ПК) -->
+        <a href="#" class="filter-call button button--icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none">
+            <path stroke="#fff" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+              d="M2.5 5.854V16M8.5 16v-3.5M14.5 16V8M2.5 0v4M8.5 10V0M14.5 6V0M.5 3h4M6.5 9.5h4M12.5 5h4" />
+          </svg>
+          <span>Фильтр</span>
+          <span class="decorate"></span>
+        </a>
+
+        <!-- сетка для списка товаров с сайдбаром слева  -->
+        <div class="product-catalog__grid">
+          <!-- левая часть  -->
+          <div class="product-catalog__aside">
+            <div class="sticky-content">
+
+              <a href="#" class="button button--icon filter-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+                  <path stroke="#fff" stroke-width="2" d="m1 17 8-8-8-8M17 17 9 9l8-8" />
+                </svg>
+                <span>Закрыть фильтр</span>
+                <span class="decorate"></span>
+              </a>
+
+              <!-- фильтры каталога  -->
+              <div class="catalog-filter">
+                <form action="javascript:void(0);" method="get">
+                  <!-- ценовой диапазон  -->
+                  <fieldset class="catalog-filter__group">
+                    <legend class="catalog-filter__group-label"><span>Цена</span><svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="18" fill="none">
+                        <path fill="#67CB33" d="M0 8h16v2H0z" />
+                        <path class="move" fill="#67CB33" d="m9.011 1.001-.022 16-2-.002.022-16z" />
+                      </svg></legend>
+
+                    <!-- слайдер диапазона с двумя ручками -->
+                    <div class="price-range">
+
+                      <!-- полоска с ручками  -->
+                      <div class="price-range__slider-wrapper">
+                        <div class="price-range__slider">
+                          <div class="price-range__progress"></div>
+                        </div>
+                        <div class="price-range__ranges">
+                          <input type="range" class="price-range__range price-range__range--min" min="0" max="10000"
+                            value="2500" step="100">
+                          <input type="range" class="price-range__range price-range__range--max" min="0" max="10000"
+                            value="7500" step="100">
+                        </div>
+                      </div>
+                      <!-- КОНЕЦ полоска с ручками  -->
+
+                      <!-- поля ввода  -->
+                      <div class="price-range__inputs">
+
+                        <div class="price-range__field">
+                          <input type="number" class="price-range__input price-range__input--min" value="2500">
+                        </div>
+
+                        <div class="price-range__field">
+                          <input type="number" class="price-range__input price-range__input--max" value="7500">
+                        </div>
+                      </div>
+                      <!-- поля ввода  -->
+
+                    </div>
+                    <!-- КОНЕЦ слайдер диапазона с двумя ручками -->
+
+                  </fieldset>
+                  <!-- КОНЕЦ ценовой диапазон  -->
+
+                  <fieldset class="catalog-filter__group">
+                    <legend class="catalog-filter__group-label"><span>Общее</span><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="none">
+                        <path fill="#67CB33" d="M0 8h16v2H0z" />
+                        <path class="move" fill="#67CB33" d="m9.011 1.001-.022 16-2-.002.022-16z" />
+                      </svg></legend>
+
+                    <ul class="catalog-filter__checkbox-list list-reset">
+                      <li>
+                        <input type="checkbox" class="visually-hidden" name="availability" id="availability" checked>
+                        <label class="catalog-filter__checkbox-label" for="availability">Показывать в наличии</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" class="visually-hidden" name="pre-order" id="pre-order">
+                        <label class="catalog-filter__checkbox-label" for="pre-order">Показывать под заказ</label>
+                      </li>
+                    </ul>
+
+                    <ul class="catalog-filter__checkbox-list list-reset">
+                      <li>
+                        <input type="checkbox" class="visually-hidden" name="new" id="new" checked>
+                        <label class="catalog-filter__checkbox-label" for="new">Новинка</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" class="visually-hidden" name="hit" id="hit" />
+                        <label class="catalog-filter__checkbox-label" for="hit">Хит</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" class="visually-hidden" name="promo" id="promo" />
+                        <label class="catalog-filter__checkbox-label" for="promo">Акция</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" class="visually-hidden" name="sale" id="sale" />
+                        <label class="catalog-filter__checkbox-label" for="sale">Распродажа</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+
+                  <fieldset class="catalog-filter__group">
+                    <legend class="catalog-filter__group-label"><span>Страна</span><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="none">
+                        <path fill="#67CB33" d="M0 8h16v2H0z" />
+                        <path class="move" fill="#67CB33" d="m9.011 1.001-.022 16-2-.002.022-16z" />
+                      </svg></legend>
+                    <ul class="catalog-filter__checkbox-list list-reset">
+                      <li>
+                        <input type="checkbox" class="visually-hidden" name="iran" id="iran" />
+                        <label class="catalog-filter__checkbox-label" for="iran">Иран</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" class="visually-hidden" name="china" id="china" />
+                        <label class="catalog-filter__checkbox-label" for="china">Китай</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" class="visually-hidden" name="belarus" id="belarus" />
+                        <label class="catalog-filter__checkbox-label" for="belarus">Беларусь</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" class="visually-hidden" name="moldova" id="moldova" />
+                        <label class="catalog-filter__checkbox-label" for="moldova">Молдовва</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" class="visually-hidden" name="turkey" id="turkey" />
+                        <label class="catalog-filter__checkbox-label" for="turkey">Турция</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" class="visually-hidden" name="india" id="india" />
+                        <label class="catalog-filter__checkbox-label" for="india">Индия</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" class="visually-hidden" name="usa" id="usa" />
+                        <label class="catalog-filter__checkbox-label" for="usa">США</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" class="visually-hidden" name="germany" id="germany" />
+                        <label class="catalog-filter__checkbox-label " for="germany">Германия</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+
+                  <fieldset class="catalog-filter__group">
+                    <legend class="catalog-filter__group-label"><span>Производитель</span><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="none">
+                        <path fill="#67CB33" d="M0 8h16v2H0z" />
+                        <path class="move" fill="#67CB33" d="m9.011 1.001-.022 16-2-.002.022-16z" />
+                      </svg></legend>
+                    <ul class="catalog-filter__checkbox-list list-reset">
+                      <li>
+                        <input type="checkbox" class="visually-hidden" name="tarkett" id="tarkett" />
+                        <label class="catalog-filter__checkbox-label" for="tarkett">Tarkett</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" class="visually-hidden" name="balterio" id="balterio" />
+                        <label class="catalog-filter__checkbox-label" for="balterio">Balterio</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" class="visually-hidden" name="kronospan" id="kronospan" />
+                        <label class="catalog-filter__checkbox-label" for="kronospan">Kronospan</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" class="visually-hidden" name="egger" id="egger" />
+                        <label class="catalog-filter__checkbox-label " for="egger">Egger</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" class="visually-hidden" name="quick-step" id="quick-step" />
+                        <label class="catalog-filter__checkbox-label " for="quick-step">Quick-Step</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" class="visually-hidden" name="kaindl" id="kaindl" />
+                        <label class="catalog-filter__checkbox-label " for="kaindl">Kaindl</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" class="visually-hidden" name="kronotex" id="kronotex" />
+                        <label class="catalog-filter__checkbox-label " for="kronotex">Kronotex</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" class="visually-hidden" name="berryalloc" id="berryalloc" />
+                        <label class="catalog-filter__checkbox-label " for="berryalloc">BerryAlloc</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+
+                  <fieldset class="catalog-filter__group">
+                    <legend class="catalog-filter__group-label"><span>Размеры</span><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="18" fill="none">
+                        <path fill="#67CB33" d="M0 8h16v2H0z" />
+                        <path class="move" fill="#67CB33" d="m9.011 1.001-.022 16-2-.002.022-16z" />
+                      </svg></legend>
+                    <div class="catalog-filter__select-grid">
+                      <div class="custom-select" data-default="Все категории">
+                        <div class="custom-select__selected"><span>Длинна</span></div>
+                        <div class="custom-select__options">
+                          <div class="custom-select__option" data-value="Категория 1">Категория 1</div>
+                          <div class="custom-select__option" data-value="Категория 2">Категория 2</div>
+                          <div class="custom-select__option" data-value="Категория 3">Категория 3</div>
+                          <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
+                        </div>
+                        <input class="visually-hidden" type="hidden" name="selecting-category" value="">
+                      </div>
+                      <div class="custom-select" data-default="Все категории">
+                        <div class="custom-select__selected"><span>Ширина</span></div>
+                        <div class="custom-select__options">
+                          <div class="custom-select__option" data-value="Категория 1">Категория 1</div>
+                          <div class="custom-select__option" data-value="Категория 2">Категория 2</div>
+                          <div class="custom-select__option" data-value="Категория 3">Категория 3</div>
+                          <div class="custom-select__option" data-value="Категория 4">Категория 4</div>
+                        </div>
+                        <input class="visually-hidden" type="hidden" name="selecting-category" value="">
+                      </div>
+                    </div>
+
+                  </fieldset>
+
+                  <button class="catalog-filter__clear-button button button--ghost" type="reset"><span>Очистить
+                      фильтр</span><span class="decorate"></span></button>
+
+                  <button class="catalog-filter__button button" type="submit"><span>Показать</span><span
+                      class="decorate"></span></button>
+                </form>
+              </div>
+              <!-- КОНЕЦ фильтры каталога -->
+            </div>
+
+          </div>
+          <!-- КОНЕЦ левая часть  -->
+
+          <!-- правая часть  -->
+          <div class="product-catalog__main">
+            <!-- сортировка товаров-->
+            <div class="product-catalog__order sort-order">
+              <span class="sort-order__subtitle">Сортировать по: </span>
+              <ul class="list-reset">
+                <li class="sort-order__item">
+                  <a class="sort-order__link active" href="">Новинки</a>
+                </li>
+                <li class="sort-order__item">
+                  <a class="sort-order__link" href="">цена</a>
+                </li>
+              </ul>
+
+              <!-- <ul class="sort-sequence__list  list  flex">
+                <li><a class="sort-sequence__item  icon-up" title="По возрастанию" href="">По возрастанию</a></li>
+                <li><a class="sort-sequence__item  icon-down  active" title="По убыванию" href="">По убыванию</a></li>
+              </ul> -->
+
+            </div>
+            <!-- КОНЕЦ сортировка товаров -->
+
+            <div class="product-catalog__items-list">
+              <ul class="product-catalog__card-list list-reset">
+
+                <!-- карточка Анонс товара  -->
+                <li class="product-card">
+                  <!-- верхняя часть отдельно, потому что основная карточка - ссылка  -->
+                  <div class="product-card__header">
+                    <a href="#" class="product-card__label product-card__label--action button"><span>Акция</span><span
+                        class="decorate"></span></a>
+                    <a href="#" class="product-card__label product-card__label--new button"><span>новинка</span><span
+                        class="decorate"></span></a>
+                    <!-- класс .add-favorite обязателен. по нему идёт поиск и сборка коллекции, для отслеживания клика  -->
+                    <a href="#"
+                      class="product-card__label product-card__label--heart button button--icon add-favorite"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                        <path stroke="#fff" stroke-width="2"
+                          d="m11.247 5.699.753.86.753-.86A5.063 5.063 0 0 1 16.5 4C19.047 4 21 5.936 21 8.395c0 1.514-.687 2.974-2.112 4.684-1.435 1.722-3.508 3.57-6.103 5.879l-.001.001-.784.7-.784-.7-.001-.001c-2.595-2.308-4.668-4.157-6.103-5.88C3.687 11.369 3 9.91 3 8.396 3 5.935 4.953 4 7.5 4c1.445 0 2.843.665 3.747 1.699Z" />
+                      </svg><span class="decorate"></span></a>
+                  </div>
+                  <!-- основная часть  -->
+                  <a class="product-card__link" href="#">
+                    <!-- картинка  -->
+                    <div class="product-card__image">
+                      <img src="./img/catalog/laminate/1.jpg" alt="фото товара" loading="lazy" width="256">
+                      <span class="product-card__image-label button"><span>В наличии</span><span
+                          class="decorate"></span></span>
+                    </div>
+                    <!-- подзаголовок  -->
+                    <div class="product-card__subtitle">Коллекция, может быть артикул</div>
+                    <!-- заголовок  -->
+                    <h3 class="product-card__title">CLASSEN CHOICE WR 54980 Дуб Вивьеро рустик 33кл 8мм</h3>
+                  </a>
+                  <!-- нижняя часть -->
+                  <!-- ОБРАТИ внимание что тут в подвале карточки модификатор! (доп класс) -->
+                  <div class="product-card__footer product-card__footer--mod">
+                    <!-- а еще тут доп обёртка, для группировки цены и корзины  -->
+                    <div class="product-card__price-wrapper">
+                      <span class="product-card__price">640 ₽/м<sup>2</sup></span>
+                    <span class="product-card__mini-price">1 680 ₽/уп.</span>
+                    </div>
+
+                    <button class="product-card__cart button button--icon" type="button"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
+                        <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                          d="M18.273 4h2.454a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.272" />
+                        <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                          d="M20.273 17H9.04c-.453 0-.85-.305-.967-.742L4.47 2.742A1 1 0 0 0 3.503 2H.273M7.272 20h2M18.273 20h2M8.272 4h8M12.273 8V0" />
+                      </svg><span class="decorate"></span></button>
+
+                  </div>
+                </li>
+                <!-- КОНЕЦ карточка Анонс товара  -->
+
+                <!-- карточка Анонс товара  -->
+                <li class="product-card">
+                  <!-- верхняя часть отдельно, потому что основная карточка - ссылка  -->
+                  <div class="product-card__header">
+                    <a href="#" class="product-card__label product-card__label--action button"><span>Акция</span><span
+                        class="decorate"></span></a>
+                    <a href="#" class="product-card__label product-card__label--new button"><span>новинка</span><span
+                        class="decorate"></span></a>
+                    <!-- класс .add-favorite обязателен. по нему идёт поиск и сборка коллекции, для отслеживания клика  -->
+                    <a href="#"
+                      class="product-card__label product-card__label--heart button button--icon add-favorite"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                        <path stroke="#fff" stroke-width="2"
+                          d="m11.247 5.699.753.86.753-.86A5.063 5.063 0 0 1 16.5 4C19.047 4 21 5.936 21 8.395c0 1.514-.687 2.974-2.112 4.684-1.435 1.722-3.508 3.57-6.103 5.879l-.001.001-.784.7-.784-.7-.001-.001c-2.595-2.308-4.668-4.157-6.103-5.88C3.687 11.369 3 9.91 3 8.396 3 5.935 4.953 4 7.5 4c1.445 0 2.843.665 3.747 1.699Z" />
+                      </svg><span class="decorate"></span></a>
+                  </div>
+                  <!-- основная часть  -->
+                  <a class="product-card__link" href="#">
+                    <!-- картинка  -->
+                    <div class="product-card__image">
+                      <img src="./img/catalog/laminate/2.jpg" alt="фото товара" loading="lazy" width="256">
+                      <span class="product-card__image-label button"><span>В наличии</span><span
+                          class="decorate"></span></span>
+                    </div>
+                    <!-- подзаголовок  -->
+                    <div class="product-card__subtitle">Коллекция, может быть артикул</div>
+                    <!-- заголовок  -->
+                    <h3 class="product-card__title">CLASSEN CHOICE WR 54980 Дуб Вивьеро рустик 33кл 8мм</h3>
+                  </a>
+                  <!-- нижняя часть -->
+                  <!-- ОБРАТИ внимание что тут в подвале карточки модификатор! (доп класс) -->
+                  <div class="product-card__footer product-card__footer--mod">
+                    <!-- а еще тут доп обёртка, для группировки цены и корзины  -->
+                    <div class="product-card__price-wrapper">
+                      <span class="product-card__price">640 ₽/м<sup>2</sup></span>
+                    <span class="product-card__mini-price">1 680 ₽/уп.</span>
+                    </div>
+
+                    <button class="product-card__cart button button--icon" type="button"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
+                        <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                          d="M18.273 4h2.454a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.272" />
+                        <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                          d="M20.273 17H9.04c-.453 0-.85-.305-.967-.742L4.47 2.742A1 1 0 0 0 3.503 2H.273M7.272 20h2M18.273 20h2M8.272 4h8M12.273 8V0" />
+                      </svg><span class="decorate"></span></button>
+
+                  </div>
+                </li>
+                <!-- КОНЕЦ карточка Анонс товара  -->
+
+                <!-- карточка Анонс товара  -->
+                <li class="product-card">
+                  <!-- верхняя часть отдельно, потому что основная карточка - ссылка  -->
+                  <div class="product-card__header">
+                    <a href="#" class="product-card__label product-card__label--action button"><span>Акция</span><span
+                        class="decorate"></span></a>
+                    <a href="#" class="product-card__label product-card__label--new button"><span>новинка</span><span
+                        class="decorate"></span></a>
+                    <!-- класс .add-favorite обязателен. по нему идёт поиск и сборка коллекции, для отслеживания клика  -->
+                    <a href="#"
+                      class="product-card__label product-card__label--heart button button--icon add-favorite"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                        <path stroke="#fff" stroke-width="2"
+                          d="m11.247 5.699.753.86.753-.86A5.063 5.063 0 0 1 16.5 4C19.047 4 21 5.936 21 8.395c0 1.514-.687 2.974-2.112 4.684-1.435 1.722-3.508 3.57-6.103 5.879l-.001.001-.784.7-.784-.7-.001-.001c-2.595-2.308-4.668-4.157-6.103-5.88C3.687 11.369 3 9.91 3 8.396 3 5.935 4.953 4 7.5 4c1.445 0 2.843.665 3.747 1.699Z" />
+                      </svg><span class="decorate"></span></a>
+                  </div>
+                  <!-- основная часть  -->
+                  <a class="product-card__link" href="#">
+                    <!-- картинка  -->
+                    <div class="product-card__image">
+                      <img src="./img/catalog/laminate/3.jpg" alt="фото товара" loading="lazy" width="256">
+                      <span class="product-card__image-label button"><span>В наличии</span><span
+                          class="decorate"></span></span>
+                    </div>
+                    <!-- подзаголовок  -->
+                    <div class="product-card__subtitle">Коллекция, может быть артикул</div>
+                    <!-- заголовок  -->
+                    <h3 class="product-card__title">CLASSEN CHOICE WR 54980 Дуб Вивьеро рустик 33кл 8мм</h3>
+                  </a>
+                  <!-- нижняя часть -->
+                  <!-- ОБРАТИ внимание что тут в подвале карточки модификатор! (доп класс) -->
+                  <div class="product-card__footer product-card__footer--mod">
+                    <!-- а еще тут доп обёртка, для группировки цены и корзины  -->
+                    <div class="product-card__price-wrapper">
+                      <span class="product-card__price">640 ₽/м<sup>2</sup></span>
+                    <span class="product-card__mini-price">1 680 ₽/уп.</span>
+                    </div>
+
+                    <button class="product-card__cart button button--icon" type="button"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
+                        <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                          d="M18.273 4h2.454a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.272" />
+                        <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                          d="M20.273 17H9.04c-.453 0-.85-.305-.967-.742L4.47 2.742A1 1 0 0 0 3.503 2H.273M7.272 20h2M18.273 20h2M8.272 4h8M12.273 8V0" />
+                      </svg><span class="decorate"></span></button>
+
+                  </div>
+                </li>
+                <!-- КОНЕЦ карточка Анонс товара  -->
+
+                <!-- карточка Анонс товара  -->
+                <li class="product-card">
+                  <!-- верхняя часть отдельно, потому что основная карточка - ссылка  -->
+                  <div class="product-card__header">
+                    <a href="#" class="product-card__label product-card__label--action button"><span>Акция</span><span
+                        class="decorate"></span></a>
+                    <a href="#" class="product-card__label product-card__label--new button"><span>новинка</span><span
+                        class="decorate"></span></a>
+                    <!-- класс .add-favorite обязателен. по нему идёт поиск и сборка коллекции, для отслеживания клика  -->
+                    <a href="#"
+                      class="product-card__label product-card__label--heart button button--icon add-favorite"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                        <path stroke="#fff" stroke-width="2"
+                          d="m11.247 5.699.753.86.753-.86A5.063 5.063 0 0 1 16.5 4C19.047 4 21 5.936 21 8.395c0 1.514-.687 2.974-2.112 4.684-1.435 1.722-3.508 3.57-6.103 5.879l-.001.001-.784.7-.784-.7-.001-.001c-2.595-2.308-4.668-4.157-6.103-5.88C3.687 11.369 3 9.91 3 8.396 3 5.935 4.953 4 7.5 4c1.445 0 2.843.665 3.747 1.699Z" />
+                      </svg><span class="decorate"></span></a>
+                  </div>
+                  <!-- основная часть  -->
+                  <a class="product-card__link" href="#">
+                    <!-- картинка  -->
+                    <div class="product-card__image">
+                      <img src="./img/catalog/laminate/4.jpg" alt="фото товара" loading="lazy" width="256">
+                      <span class="product-card__image-label button"><span>В наличии</span><span
+                          class="decorate"></span></span>
+                    </div>
+                    <!-- подзаголовок  -->
+                    <div class="product-card__subtitle">Коллекция, может быть артикул</div>
+                    <!-- заголовок  -->
+                    <h3 class="product-card__title">CLASSEN CHOICE WR 54980 Дуб Вивьеро рустик 33кл 8мм</h3>
+                  </a>
+                  <!-- нижняя часть -->
+                  <!-- ОБРАТИ внимание что тут в подвале карточки модификатор! (доп класс) -->
+                  <div class="product-card__footer product-card__footer--mod">
+                    <!-- а еще тут доп обёртка, для группировки цены и корзины  -->
+                    <div class="product-card__price-wrapper">
+                      <span class="product-card__price">640 ₽/м<sup>2</sup></span>
+                    <span class="product-card__mini-price">1 680 ₽/уп.</span>
+                    </div>
+
+                    <button class="product-card__cart button button--icon" type="button"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
+                        <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                          d="M18.273 4h2.454a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.272" />
+                        <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                          d="M20.273 17H9.04c-.453 0-.85-.305-.967-.742L4.47 2.742A1 1 0 0 0 3.503 2H.273M7.272 20h2M18.273 20h2M8.272 4h8M12.273 8V0" />
+                      </svg><span class="decorate"></span></button>
+
+                  </div>
+                </li>
+                <!-- КОНЕЦ карточка Анонс товара  -->
+
+
+
+              </ul>
+
+              <!-- большая и бледная кнопка -->
+              <a href="#" class="button button--ghost show-more-product-cards"><span>Показать еще</span><span
+                  class="decorate"></span></a>
+            </div>
+
+            <div class="product-catalog__footer">
+              <!-- Пагинация -->
+              <div class="pagination">
+                <ul class="pagination__list list-reset">
+                  <li class="pagination__item">
+                    <a class="pagination__link button button--icon pagination__link--prev" href="#"
+                      title="Предыдущая страница">
+                      <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 1L2 8.68L10 17" stroke="white" stroke-width="2" />
+                      </svg>
+                      <span class="decorate"></span>
+                    </a>
+                  </li>
+
+                  <li class="pagination__item"><a class="pagination__link button" href="#"><span>1</span><span
+                        class="decorate"></span></a></li>
+                  <li class="pagination__item"><a class="pagination__link button active" href="#"><span>2</span><span
+                        class="decorate"></span></a></li>
+                  <li class="pagination__item"><a class="pagination__link button" href="#"><span>3</span><span
+                        class="decorate"></span></a></li>
+                  <li class="pagination__item pagination__item--768"><a class="pagination__link button"
+                      href="#"><span>4</span><span class="decorate"></span></a></li>
+                  <li class="pagination__item pagination__item--1440"><a class="pagination__link button"
+                      href="#"><span>5</span><span class="decorate"></span></a></li>
+                  <li class="pagination__item"><a class="pagination__link pagination__link--dotted" href="#">...</a>
+                  </li>
+                  <li class="pagination__item"><a class="pagination__link button" href="#"><span>24</span><span
+                        class="decorate"></span></a></li>
+                  <li class="pagination__item"><a
+                      class="pagination__link button pagination__link--next button button--icon" href="#"
+                      title="Следующая страница">
+                      <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.999999 1L9 8.68L1 17" stroke="white" stroke-width="2" />
+                      </svg>
+                      <span class="decorate"></span>
+                    </a></li>
+                </ul>
+              </div>
+              <!-- КОНЕЦ Пагинация -->
+
+              <!-- показать по  -->
+              <div class="amount-to-show">
+                <span class="amount-to-show__label">Показывать по:</span>
+                <div class="custom-select" data-default="18">
+                  <div class="custom-select__selected">18</div>
+                  <div class="custom-select__options">
+                    <div class="custom-select__option" data-value="6">6</div>
+                    <div class="custom-select__option" data-value="9">9</div>
+                    <div class="custom-select__option" data-value="12">12</div>
+                    <div class="custom-select__option" data-value="18">18</div>
+                  </div>
+                  <input class="visually-hidden" type="hidden" name="selecting-category" value="">
+                </div>
+              </div>
+              <!-- КОНЕЦ показать по  -->
+            </div>
+
+
+          </div>
+          <!-- КОНЕЦ правая часть -->
+        </div>
+
+      </div>
+
+    </section>
+    <!-- КОНЕЦ Каталог товаров  -->
 
   </main>
   <!-- КОНЕЦ Основной контент -->

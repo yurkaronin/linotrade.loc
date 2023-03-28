@@ -125,6 +125,25 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     position: relative;
+
+    &--mod {
+      grid-template-columns: 1fr 48px !important;
+    }
+  }
+
+  &__price-wrapper {
+    span {
+      display: block;
+    }
+  }
+
+  &__mini-price {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    color: #909090;
   }
 
   &__options {
@@ -233,9 +252,6 @@
       color: var(--GreenOver);
     }
 
-    // .product-card__options {
-    //   color: var(--GreenOver);
-    // }
   }
 
   @media (max-width: 1300px) {
@@ -252,17 +268,6 @@
 
   @media (max-width: 768px) {
 
-    // &__label {
-    //   height: 30px;
-    // }
-    // &__label--heart {
-    //   min-height: 30px !important;
-    //   min-width: 30px !important;
-    // }
-
-    // .button--icon svg {
-    //   scale: 0.8;
-    // }
     .product-card__label--new {
       display: none;
     }
