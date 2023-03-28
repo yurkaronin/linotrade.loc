@@ -2101,6 +2101,36 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.document {
+  max-width: 1248px;
+  margin: 0 auto;
+}
+.document__link {
+  display: grid;
+  gap: 28px;
+  align-items: center;
+  grid-template-columns: 40px 1fr;
+}
+.document__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #373737;
+}
+.document__size {
+  font-weight: 400;
+  font-size: 16px;
+  color: #5F5F5F;
+  margin: 0;
+}
+
+.active .document {
+  padding-bottom: 32px;
+  padding-top: 35px;
+  border-bottom: 1px solid #D9D9D9;
+}
+
 .header {
   border-bottom: 1px solid;
   border-color: var(--line);
