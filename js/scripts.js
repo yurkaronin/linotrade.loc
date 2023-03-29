@@ -31,6 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
   includeFiles("./js/parts/swiper-collection.js");
   includeFiles("./js/parts/input-number.js");
   includeFiles("./js/parts/scroll-to-anchor.js");
+  includeFiles("./js/parts/yandex.map.js");
+  includeFiles("./js/parts/changing-height-map.js");
 
 
 });

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Название</title>
+  <title>Контакты</title>
   <!-- <base href="http://127.0.0.12:5500/"> -->
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
@@ -57,10 +57,10 @@
         <!-- нижняя часть -->
         <div class="bottom">
 
-            <a href="#" class="button button--catalog catalog-btn-call">
-              <span>Каталог</span>
-              <span class="decorate"></span>
-            </a>
+          <a href="#" class="button button--catalog catalog-btn-call">
+            <span>Каталог</span>
+            <span class="decorate"></span>
+          </a>
 
           <div class="group">
             <!-- селект -->
@@ -1037,6 +1037,422 @@
   <!-- Основной контент -->
   <main>
 
+    <!-- хлебные крошки  -->
+    <div class="breadcrumbs">
+      <div class="wrapper">
+        <ul class="list-reset">
+          <li><a href="#">Главная</a></li>
+          <li><a>Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- КОНЕЦ хлебные крошки  -->
+
+    <section class="section contacts">
+      <div class="wrapper">
+        <div class="section__grid">
+          <div class="section__grid-left">
+            <!-- карта  -->
+            <div class="contacts__map map">
+              <div class="map__content" id="map"></div>
+            </div>
+            <!-- КОНЕЦ карта  -->
+          </div>
+          <div class="section__grid-right">
+            <a class="backup" href="#">Назад к списку</a>
+            <h2 class="title">Контакты</h2>
+            <!-- контактная информация  -->
+            <ul class="contacts__list list-reset">
+              <li>
+                <h3 class="contacts__title">Центральный офис:</h3>
+                <address class="contacts__text">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="26" fill="none">
+                    <path stroke="#67CB33" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                      d="M10 25c2.262-7.229 9-8.728 9-15.36C19 4.99 14.694 1 10 1S1 4.99 1 9.64c0 6.632 6.738 8.131 9 15.36Z" />
+                    <path stroke="#67CB33" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                      d="M10.014 12.976c1.663 0 3.012-1.338 3.012-2.988S11.677 7 10.014 7C8.35 7 7.002 8.338 7.002 9.988s1.348 2.988 3.012 2.988Z" />
+                  </svg>
+                  <span>350018, Краснодар, Онежская 33</span>
+                </address>
+              </li>
+
+              <li>
+                <h3 class="contacts__title">Справочная служба:</h3>
+                <p class="contacts__text">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+                    <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                      d="M7.647 14.353c4.588 4.588 8.97 5.56 10.588 5.647A11.847 11.847 0 0 0 20 16.118c-1.118-1.088-2.745-2.199-4.235-2.824L14 15.06c-.603-.162-2.257-.845-4.235-2.824C7.787 10.258 7.103 8.603 6.94 8l1.765-1.765C8.08 4.745 6.97 3.118 5.882 2A11.83 11.83 0 0 0 2 3.765c.088 1.617 1.059 6 5.647 10.588Z" />
+                  </svg>
+                  <a href="tel:+79283320468">+7 928 332-04-68</a>
+                </p>
+              </li>
+
+              <li>
+                <h3 class="contacts__title">E-mail:</h3>
+                <p class="contacts__text">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none">
+                    <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                      d="M19 14.097c0 .498-.366.903-.818.903H1.818C1.367 15 1 14.595 1 14.097V1.903C1 1.405 1.367 1 1.818 1h16.364c.452 0 .818.405.818.903v12.194Z" />
+                    <path stroke="#67CB33" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+                      d="m17.773 2.525-5.748 7.138c-1.119 1.388-2.932 1.388-4.05 0L1.75 1.875M2.637 13.843 6.319 9.27M17.363 13.843 13.682 9.27" />
+                  </svg>
+                  <a href="mailto:info@linotrade.ru">info@linotrade.ru</a>
+                </p>
+              </li>
+
+            </ul>
+            <!-- КОНЕЦ контактная информация  -->
+
+            <!-- кнопки  -->
+            <div class="contacts__buttons">
+              <a href="#" class="button" data-dialog-button="modal-2"><span>Проложить маршрут</span><span
+                  class="decorate"></span></a>
+              <a href="#" class="button" data-dialog-button="modal-2"><span>Задать вопрос</span><span
+                  class="decorate"></span></a>
+            </div>
+            <!-- КОНЕЦ кнопки  -->
+
+            <!-- аккордеоны  -->
+            <div class="contacts__accordions">
+
+              <ul class="accordions list-reset">
+
+                <li class="accordion">
+                  <div class="accordion__question">
+                    <div class="accordion__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                        <path fill="#fff" d="M24 11v2H0v-2z"></path>
+                        <path class="move" fill="#fff" d="M11 0h2v24h-2z"></path>
+                      </svg>
+                    </div>
+                    <h3 class="accordion__title">Краснодарский край</h3>
+                  </div>
+
+                  <div class="accordion__answer">
+
+                    <!-- контактная информация  -->
+                    <ul class="contacts__list list-reset">
+                      <li>
+                        <h3 class="contacts__title">Центральный офис:</h3>
+                        <address class="contacts__text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="26" fill="none">
+                            <path stroke="#67CB33" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                              d="M10 25c2.262-7.229 9-8.728 9-15.36C19 4.99 14.694 1 10 1S1 4.99 1 9.64c0 6.632 6.738 8.131 9 15.36Z" />
+                            <path stroke="#67CB33" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                              d="M10.014 12.976c1.663 0 3.012-1.338 3.012-2.988S11.677 7 10.014 7C8.35 7 7.002 8.338 7.002 9.988s1.348 2.988 3.012 2.988Z" />
+                          </svg>
+                          <span>350018, Краснодар, Онежская 33</span>
+                        </address>
+                      </li>
+
+                      <li>
+                        <h3 class="contacts__title">Справочная служба:</h3>
+                        <p class="contacts__text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M7.647 14.353c4.588 4.588 8.97 5.56 10.588 5.647A11.847 11.847 0 0 0 20 16.118c-1.118-1.088-2.745-2.199-4.235-2.824L14 15.06c-.603-.162-2.257-.845-4.235-2.824C7.787 10.258 7.103 8.603 6.94 8l1.765-1.765C8.08 4.745 6.97 3.118 5.882 2A11.83 11.83 0 0 0 2 3.765c.088 1.617 1.059 6 5.647 10.588Z" />
+                          </svg>
+                          <a href="tel:+79283320468">+7 928 332-04-68</a>
+                        </p>
+                      </li>
+
+                      <li>
+                        <h3 class="contacts__title">E-mail:</h3>
+                        <p class="contacts__text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none">
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M19 14.097c0 .498-.366.903-.818.903H1.818C1.367 15 1 14.595 1 14.097V1.903C1 1.405 1.367 1 1.818 1h16.364c.452 0 .818.405.818.903v12.194Z" />
+                            <path stroke="#67CB33" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+                              d="m17.773 2.525-5.748 7.138c-1.119 1.388-2.932 1.388-4.05 0L1.75 1.875M2.637 13.843 6.319 9.27M17.363 13.843 13.682 9.27" />
+                          </svg>
+                          <a href="mailto:info@linotrade.ru">info@linotrade.ru</a>
+                        </p>
+                      </li>
+
+                      <li>
+                        <h3 class="contacts__title">Пн - Пт:</h3>
+                        <p class="contacts__text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M10 19a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" />
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M10 7.545V10l2.864 2.864M10 3.864V5.5M10 14.5v1.636M3.863 10H5.5M14.5 10h1.636" />
+                          </svg>
+                          <span>с 8:00 до 17:00 часов</span>
+                        </p>
+                      </li>
+
+                      <li>
+                        <h3 class="contacts__title">Cб-Вс:</h3>
+                        <p class="contacts__text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M10 19a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" />
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M10 7.545V10l2.864 2.864M10 3.864V5.5M10 14.5v1.636M3.863 10H5.5M14.5 10h1.636" />
+                          </svg>
+                          <span>Выходные</span>
+                        </p>
+                      </li>
+
+                    </ul>
+                    <!-- КОНЕЦ контактная информация  -->
+                  </div>
+                </li>
+                <li class="accordion">
+                  <div class="accordion__question">
+                    <div class="accordion__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                        <path fill="#fff" d="M24 11v2H0v-2z"></path>
+                        <path class="move" fill="#fff" d="M11 0h2v24h-2z"></path>
+                      </svg>
+                    </div>
+                    <h3 class="accordion__title">Московская область</h3>
+                  </div>
+
+                  <div class="accordion__answer">
+
+                    <!-- контактная информация  -->
+                    <ul class="contacts__list list-reset">
+                      <li>
+                        <h3 class="contacts__title">Центральный офис:</h3>
+                        <address class="contacts__text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="26" fill="none">
+                            <path stroke="#67CB33" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                              d="M10 25c2.262-7.229 9-8.728 9-15.36C19 4.99 14.694 1 10 1S1 4.99 1 9.64c0 6.632 6.738 8.131 9 15.36Z" />
+                            <path stroke="#67CB33" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                              d="M10.014 12.976c1.663 0 3.012-1.338 3.012-2.988S11.677 7 10.014 7C8.35 7 7.002 8.338 7.002 9.988s1.348 2.988 3.012 2.988Z" />
+                          </svg>
+                          <span>350018, Краснодар, Онежская 33</span>
+                        </address>
+                      </li>
+
+                      <li>
+                        <h3 class="contacts__title">Справочная служба:</h3>
+                        <p class="contacts__text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M7.647 14.353c4.588 4.588 8.97 5.56 10.588 5.647A11.847 11.847 0 0 0 20 16.118c-1.118-1.088-2.745-2.199-4.235-2.824L14 15.06c-.603-.162-2.257-.845-4.235-2.824C7.787 10.258 7.103 8.603 6.94 8l1.765-1.765C8.08 4.745 6.97 3.118 5.882 2A11.83 11.83 0 0 0 2 3.765c.088 1.617 1.059 6 5.647 10.588Z" />
+                          </svg>
+                          <a href="tel:+79283320468">+7 928 332-04-68</a>
+                        </p>
+                      </li>
+
+                      <li>
+                        <h3 class="contacts__title">E-mail:</h3>
+                        <p class="contacts__text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none">
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M19 14.097c0 .498-.366.903-.818.903H1.818C1.367 15 1 14.595 1 14.097V1.903C1 1.405 1.367 1 1.818 1h16.364c.452 0 .818.405.818.903v12.194Z" />
+                            <path stroke="#67CB33" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+                              d="m17.773 2.525-5.748 7.138c-1.119 1.388-2.932 1.388-4.05 0L1.75 1.875M2.637 13.843 6.319 9.27M17.363 13.843 13.682 9.27" />
+                          </svg>
+                          <a href="mailto:info@linotrade.ru">info@linotrade.ru</a>
+                        </p>
+                      </li>
+
+                      <li>
+                        <h3 class="contacts__title">Пн - Пт:</h3>
+                        <p class="contacts__text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M10 19a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" />
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M10 7.545V10l2.864 2.864M10 3.864V5.5M10 14.5v1.636M3.863 10H5.5M14.5 10h1.636" />
+                          </svg>
+                          <span>с 8:00 до 17:00 часов</span>
+                        </p>
+                      </li>
+
+                      <li>
+                        <h3 class="contacts__title">Cб-Вс:</h3>
+                        <p class="contacts__text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M10 19a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" />
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M10 7.545V10l2.864 2.864M10 3.864V5.5M10 14.5v1.636M3.863 10H5.5M14.5 10h1.636" />
+                          </svg>
+                          <span>Выходные</span>
+                        </p>
+                      </li>
+
+                    </ul>
+                    <!-- КОНЕЦ контактная информация  -->
+                  </div>
+                </li>
+                <li class="accordion">
+                  <div class="accordion__question">
+                    <div class="accordion__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                        <path fill="#fff" d="M24 11v2H0v-2z"></path>
+                        <path class="move" fill="#fff" d="M11 0h2v24h-2z"></path>
+                      </svg>
+                    </div>
+                    <h3 class="accordion__title">Республика Крым</h3>
+                  </div>
+
+                  <div class="accordion__answer">
+
+                    <!-- контактная информация  -->
+                    <ul class="contacts__list list-reset">
+                      <li>
+                        <h3 class="contacts__title">Центральный офис:</h3>
+                        <address class="contacts__text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="26" fill="none">
+                            <path stroke="#67CB33" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                              d="M10 25c2.262-7.229 9-8.728 9-15.36C19 4.99 14.694 1 10 1S1 4.99 1 9.64c0 6.632 6.738 8.131 9 15.36Z" />
+                            <path stroke="#67CB33" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                              d="M10.014 12.976c1.663 0 3.012-1.338 3.012-2.988S11.677 7 10.014 7C8.35 7 7.002 8.338 7.002 9.988s1.348 2.988 3.012 2.988Z" />
+                          </svg>
+                          <span>350018, Краснодар, Онежская 33</span>
+                        </address>
+                      </li>
+
+                      <li>
+                        <h3 class="contacts__title">Справочная служба:</h3>
+                        <p class="contacts__text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M7.647 14.353c4.588 4.588 8.97 5.56 10.588 5.647A11.847 11.847 0 0 0 20 16.118c-1.118-1.088-2.745-2.199-4.235-2.824L14 15.06c-.603-.162-2.257-.845-4.235-2.824C7.787 10.258 7.103 8.603 6.94 8l1.765-1.765C8.08 4.745 6.97 3.118 5.882 2A11.83 11.83 0 0 0 2 3.765c.088 1.617 1.059 6 5.647 10.588Z" />
+                          </svg>
+                          <a href="tel:+79283320468">+7 928 332-04-68</a>
+                        </p>
+                      </li>
+
+                      <li>
+                        <h3 class="contacts__title">E-mail:</h3>
+                        <p class="contacts__text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none">
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M19 14.097c0 .498-.366.903-.818.903H1.818C1.367 15 1 14.595 1 14.097V1.903C1 1.405 1.367 1 1.818 1h16.364c.452 0 .818.405.818.903v12.194Z" />
+                            <path stroke="#67CB33" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+                              d="m17.773 2.525-5.748 7.138c-1.119 1.388-2.932 1.388-4.05 0L1.75 1.875M2.637 13.843 6.319 9.27M17.363 13.843 13.682 9.27" />
+                          </svg>
+                          <a href="mailto:info@linotrade.ru">info@linotrade.ru</a>
+                        </p>
+                      </li>
+
+                      <li>
+                        <h3 class="contacts__title">Пн - Пт:</h3>
+                        <p class="contacts__text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M10 19a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" />
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M10 7.545V10l2.864 2.864M10 3.864V5.5M10 14.5v1.636M3.863 10H5.5M14.5 10h1.636" />
+                          </svg>
+                          <span>с 8:00 до 17:00 часов</span>
+                        </p>
+                      </li>
+
+                      <li>
+                        <h3 class="contacts__title">Cб-Вс:</h3>
+                        <p class="contacts__text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M10 19a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" />
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M10 7.545V10l2.864 2.864M10 3.864V5.5M10 14.5v1.636M3.863 10H5.5M14.5 10h1.636" />
+                          </svg>
+                          <span>Выходные</span>
+                        </p>
+                      </li>
+
+                    </ul>
+                    <!-- КОНЕЦ контактная информация  -->
+                  </div>
+                </li>
+                <li class="accordion">
+                  <div class="accordion__question">
+                    <div class="accordion__icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                        <path fill="#fff" d="M24 11v2H0v-2z"></path>
+                        <path class="move" fill="#fff" d="M11 0h2v24h-2z"></path>
+                      </svg>
+                    </div>
+                    <h3 class="accordion__title">Ростовская область</h3>
+                  </div>
+
+                  <div class="accordion__answer">
+
+                    <!-- контактная информация  -->
+                    <ul class="contacts__list list-reset">
+                      <li>
+                        <h3 class="contacts__title">Центральный офис:</h3>
+                        <address class="contacts__text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="26" fill="none">
+                            <path stroke="#67CB33" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                              d="M10 25c2.262-7.229 9-8.728 9-15.36C19 4.99 14.694 1 10 1S1 4.99 1 9.64c0 6.632 6.738 8.131 9 15.36Z" />
+                            <path stroke="#67CB33" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                              d="M10.014 12.976c1.663 0 3.012-1.338 3.012-2.988S11.677 7 10.014 7C8.35 7 7.002 8.338 7.002 9.988s1.348 2.988 3.012 2.988Z" />
+                          </svg>
+                          <span>350018, Краснодар, Онежская 33</span>
+                        </address>
+                      </li>
+
+                      <li>
+                        <h3 class="contacts__title">Справочная служба:</h3>
+                        <p class="contacts__text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M7.647 14.353c4.588 4.588 8.97 5.56 10.588 5.647A11.847 11.847 0 0 0 20 16.118c-1.118-1.088-2.745-2.199-4.235-2.824L14 15.06c-.603-.162-2.257-.845-4.235-2.824C7.787 10.258 7.103 8.603 6.94 8l1.765-1.765C8.08 4.745 6.97 3.118 5.882 2A11.83 11.83 0 0 0 2 3.765c.088 1.617 1.059 6 5.647 10.588Z" />
+                          </svg>
+                          <a href="tel:+79283320468">+7 928 332-04-68</a>
+                        </p>
+                      </li>
+
+                      <li>
+                        <h3 class="contacts__title">E-mail:</h3>
+                        <p class="contacts__text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none">
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M19 14.097c0 .498-.366.903-.818.903H1.818C1.367 15 1 14.595 1 14.097V1.903C1 1.405 1.367 1 1.818 1h16.364c.452 0 .818.405.818.903v12.194Z" />
+                            <path stroke="#67CB33" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+                              d="m17.773 2.525-5.748 7.138c-1.119 1.388-2.932 1.388-4.05 0L1.75 1.875M2.637 13.843 6.319 9.27M17.363 13.843 13.682 9.27" />
+                          </svg>
+                          <a href="mailto:info@linotrade.ru">info@linotrade.ru</a>
+                        </p>
+                      </li>
+
+                      <li>
+                        <h3 class="contacts__title">Пн - Пт:</h3>
+                        <p class="contacts__text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M10 19a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" />
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M10 7.545V10l2.864 2.864M10 3.864V5.5M10 14.5v1.636M3.863 10H5.5M14.5 10h1.636" />
+                          </svg>
+                          <span>с 8:00 до 17:00 часов</span>
+                        </p>
+                      </li>
+
+                      <li>
+                        <h3 class="contacts__title">Cб-Вс:</h3>
+                        <p class="contacts__text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M10 19a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" />
+                            <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                              d="M10 7.545V10l2.864 2.864M10 3.864V5.5M10 14.5v1.636M3.863 10H5.5M14.5 10h1.636" />
+                          </svg>
+                          <span>Выходные</span>
+                        </p>
+                      </li>
+
+                    </ul>
+                    <!-- КОНЕЦ контактная информация  -->
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- КОНЕЦ аккордеоны  -->
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
   <!-- КОНЕЦ Основной контент -->
 
@@ -1189,6 +1605,9 @@
   </footer>
   <!-- КОНЕЦ Подвал -->
 
+  <!-- подключаем эту библиотеку только на странице с контактами  -->
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=99d7675e-f984-459d-a854-2fe51340a298&lang=ru_RU"
+    type="text/javascript"></script>
   <script src="./js/scripts.js"></script>
 </body>
 
