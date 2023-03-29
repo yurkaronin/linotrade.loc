@@ -1,7 +1,7 @@
 // Функция для обновления количества товаров в корзине
 function updateNumberOfProducts() {
   const numberOfProductsElement = document.querySelector('.number-of-products');
-  const shoppingList = document.querySelector('.shopping-list');
+  const shoppingList = document.querySelector('.my-cart__shopping-list');
   const numberOfProducts = shoppingList.querySelectorAll('.order-item--cart').length;
 
   numberOfProductsElement.textContent = numberOfProducts;

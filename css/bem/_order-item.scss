@@ -154,6 +154,10 @@
     margin: 0;
     text-align: right;
   }
+
+  &:last-of-type {
+    border-bottom: none;
+  }
 }
 
 .order-item--cart {

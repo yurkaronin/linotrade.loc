@@ -1050,21 +1050,21 @@
     <!-- КОНЕЦ хлебные крошки  -->
 
     <!-- Каталог товаров  -->
-    <section class="section product-catalog">
+    <section class="section my-cart">
       <div class="wrapper">
 
         <!-- заголовок -->
         <div class="section__title">
-          <h2 class="title">Ковры</h2>
+          <h2 class="title">корзина</h2>
         </div>
         <!-- Класс shopping-list обязателен. по нему скрипт считает количество товаров в корзине. и выводит их кол-во в шапке  -->
-        <ul class="shopping-list list-reset">
+        <ul class="my-cart__shopping-list list-reset">
 
           <li class="order-item order-item--cart">
             <!-- ссылка на товар  -->
             <a href="#" class="order-item__link">
               <!-- картинка товара  -->
-              <div class="shopping-list__picture">
+              <div class="my-cart__picture">
                 <img src="./img/cart/1.jpg" alt="фото товара" width="85" loading="lazy">
               </div>
               <!-- Название -->
@@ -1100,7 +1100,7 @@
               <span class="order-item__strong">2 680 ₽</span>
             </div>
             <!-- Кнопка УДАЛИТЬ  CSS-класс js-delete у кнопки обязателен-->
-            <button class="button button--icon-text order-item__button js-delete" type="button"><span>удалить</span><svg
+            <button class="button button--icon-text order-item__button js-delete" type="button"><span class="hide">удалить</span><svg
                 xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
                 <path stroke="#fff" stroke-width="2" d="m21.5 1-20 20M21.5 21 1.5 1" />
               </svg><span class="decorate"></span></button>
@@ -1145,7 +1145,7 @@
               <span class="order-item__strong">2 680 ₽</span>
             </div>
             <!-- Кнопка УДАЛИТЬ  CSS-класс js-delete у кнопки обязателен-->
-            <button class="button button--icon-text order-item__button js-delete" type="button"><span>удалить</span><svg
+            <button class="button button--icon-text order-item__button js-delete" type="button"><span class="hide">удалить</span><svg
                 xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
                 <path stroke="#fff" stroke-width="2" d="m21.5 1-20 20M21.5 21 1.5 1" />
               </svg><span class="decorate"></span></button>
@@ -1190,14 +1190,14 @@
               <span class="order-item__strong">2 680 ₽</span>
             </div>
             <!-- Кнопка УДАЛИТЬ  CSS-класс js-delete у кнопки обязателен-->
-            <button class="button button--icon-text order-item__button js-delete" type="button"><span>удалить</span><svg
+            <button class="button button--icon-text order-item__button js-delete" type="button"><span class="hide">удалить</span><svg
                 xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
                 <path stroke="#fff" stroke-width="2" d="m21.5 1-20 20M21.5 21 1.5 1" />
               </svg><span class="decorate"></span></button>
           </li>
           <li>
             <!-- итого -->
-            <div class="order-item">
+            <div class="order-item order-item--finish">
 
               <div class="order-item__details order-item__details--long">
                 <span class="order-item__label">Итого стоимость заказа:</span>
@@ -1215,30 +1215,26 @@
 
         </ul>
 
-
-      </div>
-    </section>
-
-    <section class="section contact-form">
-      <div class="wrapper">
         <form action="javascript:void(0);">
           <div class="custom-form">
             <!-- адрес доставки -->
-            <div class="custom-form__select custom-select" data-default="Выберите адрес">
-              <div class="custom-select__selected">Выберите адрес</div>
-              <div class="custom-select__options">
-                <div class="custom-select__option" data-value="Адрес 1">Адрес 1</div>
-                <div class="custom-select__option" data-value="Адрес 2">Адрес 2</div>
-                <div class="custom-select__option" data-value="Адрес 3">Адрес 3</div>
-                <div class="custom-select__option" data-value="Адрес 4">Адрес 4</div>
+            <div class="custom-form__item">
+              <div class="custom-form__select custom-select" data-default="Выберите адрес">
+                <p class="custom-form__label">Адрес доставки:<sup>*</sup></p>
+                <div class="custom-select__selected">Выберите адрес</div>
+                <div class="custom-select__options">
+                  <div class="custom-select__option" data-value="Адрес 1">Адрес 1</div>
+                  <div class="custom-select__option" data-value="Адрес 2">Адрес 2</div>
+                  <div class="custom-select__option" data-value="Адрес 3">Адрес 3</div>
+                  <div class="custom-select__option" data-value="Адрес 4">Адрес 4</div>
+                </div>
+                <input class="visually-hidden" type="hidden" name="selecting-category" value="">
               </div>
-              <input class="visually-hidden" type="hidden" name="selecting-category" value="">
             </div>
             <!-- комментарий -->
             <div class="custom-form__item">
-              <label for="custom-form-texarea">Комментарий:</label>
-              <textarea id="custom-form-texarea" cols="30" rows="10"
-                placeholder="Введите Ваш комментарий"></textarea>
+              <label class="custom-form__label" for="custom-form-texarea">Комментарий:</label>
+              <textarea id="custom-form-texarea" cols="30" rows="10" placeholder="Введите Ваш комментарий"></textarea>
             </div>
 
             <button class="button button--full" type="submit">
@@ -1246,11 +1242,18 @@
               <span class="decorate"></span>
             </button>
 
+            <p class="custom-form__helper">Поля отмеченные “<span class="sup">*</span>” обязательны для заполнения</p>
+
 
           </div>
         </form>
+
+
       </div>
     </section>
+
+
+
 
   </main>
   <!-- КОНЕЦ Основной контент -->
