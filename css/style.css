@@ -817,48 +817,8 @@ h1, h2, h3, h4, h5, h6 {
   gap: 32px;
   grid-template-columns: 1fr 1fr;
 }
-.section__grid__left .swiper {
-  width: 100%;
-  height: 100%;
-}
-.section__grid__left .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.section__grid__left .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.section .features-group {
-  display: grid;
-  gap: 32px;
-  grid-template-columns: 1fr 1fr;
-  align-items: flex-start;
+.section__grid-left .image {
   margin-bottom: 32px;
-  width: 100%;
-  max-width: 100%;
-}
-.section .product-features__item {
-  font-size: 16px;
-  text-align: right;
-  color: #000000;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding: 10px 0;
-}
-.section .product-features__item:not(:last-of-type) {
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.1803921569);
-}
-.section .product-features__name {
-  color: #909090;
-  margin-right: auto;
 }
 .section .input-number {
   display: inline-flex;
@@ -1455,7 +1415,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9999;
   padding: 20px;
   width: 100%;
-  max-width: 776px;
+  max-width: 1032px;
   max-height: 100vh;
   overflow: auto;
 }
@@ -2293,9 +2253,35 @@ h1, h2, h3, h4, h5, h6 {
   color: #1C1E20;
 }
 
-.order-choise {
+.order-choice {
   max-width: 100%;
   width: 100%;
+}
+
+.features-group {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  margin-bottom: 32px;
+  width: 100%;
+  max-width: 100%;
+}
+.features-group__item {
+  font-size: 16px;
+  text-align: right;
+  color: #000000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+.features-group__item:not(:last-of-type) {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1803921569);
+}
+.features-group__name {
+  color: #909090;
+  margin-right: auto;
 }
 
 .header {
@@ -3836,7 +3822,7 @@ input[type=checkbox]:checked + label::before {
   z-index: 999;
 }
 
-.order-choise li:first-child {
+.order-choice li:first-child {
   border-top: 1px solid #d9d9d9;
 }
 
