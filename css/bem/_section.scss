@@ -16,6 +16,10 @@
       flex-grow: 0;
     }
   }
+  &__title {
+    margin: 0;
+    margin-bottom: 15px;
+  }
 
   &--mod {
     background: rgba(#f7f7f7, 0.5);

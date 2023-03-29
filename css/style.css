@@ -810,6 +810,10 @@ h1, h2, h3, h4, h5, h6 {
 .section__header .read-more {
   flex-grow: 0;
 }
+.section__title {
+  margin: 0;
+  margin-bottom: 15px;
+}
 .section--mod {
   background: rgba(247, 247, 247, 0.5);
 }
