@@ -3916,10 +3916,12 @@ input[type=checkbox]:checked + label::before {
   font-weight: 600;
   line-height: 1;
   font-family: var(--Oswald);
+  background-color: transparent;
 }
-.glossary-terms__navigation a.active {
+.glossary-terms__navigation a:hover {
   border-color: #67cb33;
-  color: #67cb33;
+  color: #ffffff !important;
+  background-color: transparent;
 }
 .glossary-terms__list-item {
   padding-bottom: 32px;

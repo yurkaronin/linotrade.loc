@@ -30,6 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
   includeFiles("./js/parts/filter-mobile-show.js");
   includeFiles("./js/parts/swiper-collection.js");
   includeFiles("./js/parts/input-number.js");
+  includeFiles("./js/parts/scroll-to-anchor.js");
+
 
 });
 
