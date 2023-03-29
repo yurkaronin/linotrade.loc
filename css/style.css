@@ -3855,6 +3855,45 @@ input[type=checkbox]:checked + label::before {
   }
 }
 
+.manufacturer__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  min-height: 200px;
+  max-width: 352px;
+  margin-right: auto;
+  margin-bottom: 32px;
+  position: sticky;
+  top: 170px;
+}
+.manufacturer__logo img {
+  display: block;
+  max-height: 40px;
+  object-fit: contain;
+}
+.manufacturer .section__grid {
+  grid-template-columns: 1fr 2fr;
+}
+.manufacturer__text {
+  margin-bottom: 42px;
+}
+.manufacturer + .slider {
+  padding-top: 0;
+}
+@media (max-width: 1250px) {
+  .manufacturer__logo {
+    position: initial;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .manufacturer .section__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .card-label__list {
   display: flex;
   align-items: center;

@@ -10,6 +10,7 @@
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="./libs/normalize.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -57,10 +58,10 @@
         <!-- нижняя часть -->
         <div class="bottom">
 
-            <a href="#" class="button button--catalog catalog-btn-call">
-              <span>Каталог</span>
-              <span class="decorate"></span>
-            </a>
+          <a href="#" class="button button--catalog catalog-btn-call">
+            <span>Каталог</span>
+            <span class="decorate"></span>
+          </a>
 
           <div class="group">
             <!-- селект -->
@@ -1037,6 +1038,650 @@
   <!-- Основной контент -->
   <main>
 
+    <!-- хлебные крошки  -->
+    <div class="breadcrumbs">
+      <div class="wrapper">
+        <ul class="list-reset">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Производители</a></li>
+          <li><a>Название производителя</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- КОНЕЦ хлебные крошки  -->
+
+    <section class="section section--bb manufacturer">
+      <div class="wrapper">
+        <h2 class="title">Название производителя</h2>
+
+        <div class="section__grid">
+          <div class="section__grid-left">
+            <!-- картинка товара  -->
+            <div class="manufacturer__logo">
+              <img src="./img/logo/3.png" alt="Логотип" width="150" loading="lazy">
+            </div>
+            <!-- КОНЕЦ картинка товара  -->
+          </div>
+
+          <div class="section__grid-right">
+            <a class="backup" href="#">Назад к списку</a>
+            <div class="manufacturer__text">
+
+              <p class="lead">
+                Группа компаний ЭГГЕР – занимает лидирующую позицию в мировом рейтинге объединений по деревообработке.
+                Предприятия (в количестве 20) находятся в различных странах мира. Месторасположение головного
+                производства
+                – город Ст. Иоганн (Тироль).
+              </p>
+              <p>Напольные покрытия ЭГГЕР разработаны на основе высокотехнологических решений и предлагаются для
+                архитекторов, представителей строительной сферы, дистрибьютеров и точек розничной продажи. География
+                производств и продаж продукции из дерева – Европа и Америка. На рынках, которые важны для компании
+                стратегически (отсутствие собственных производств) – организовываются офисы (пункты) продаж. Где таковых
+                торговых точек нет (экспортные рынки), компания налаживает контакты с приоритетными клиентами.</p>
+              <p>Количество персонала ЭГГЕР в Российской федерации насчитывает примерно 1200 сотрудников. Они работают
+                на
+                предприятиях в г. Шуя (Иваново) и г. Гагарин (Смоленск).</p>
+              <p>Продукция ЭГГЕР разнообразна и соответствуют девизу компании – «Лучшее из дерева».</p>
+              <strong>Группа компаний предлагает потребителям древесные изделия:</strong>
+              <ul>
+                <li>ДСП</li>
+                <li>ЛДСП</li>
+                <li>тонкие ДСП</li>
+                <li>легкие Eurolight</li>
+                <li>плиты МДФ.</li>
+              </ul>
+              <p>Объем продукции Российского рынка ЭГГЕР - 850.000 м3 различных плит.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="section slider">
+      <div class="wrapper">
+
+        <div class="section__header">
+          <h2 class="title">Другие дизайны коллекции</h2>
+          <a href="#" class="link-more"><span>Смотреть всё</span></a>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper-3">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <!-- карточка Анонс товара  -->
+              <li class="product-card">
+                <!-- верхняя часть отдельно, потому что основная карточка - ссылка  -->
+                <div class="product-card__header">
+                  <a href="#" class="product-card__label product-card__label--action button"><span>Акция</span><span
+                      class="decorate"></span></a>
+                  <a href="#" class="product-card__label product-card__label--new button"><span>новинка</span><span
+                      class="decorate"></span></a>
+                  <!-- класс .add-favorite обязателен. по нему идёт поиск и сборка коллекции, для отслеживания клика  -->
+                  <a href="#"
+                    class="product-card__label product-card__label--heart button button--icon add-favorite"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                      <path stroke="#fff" stroke-width="2"
+                        d="m11.247 5.699.753.86.753-.86A5.063 5.063 0 0 1 16.5 4C19.047 4 21 5.936 21 8.395c0 1.514-.687 2.974-2.112 4.684-1.435 1.722-3.508 3.57-6.103 5.879l-.001.001-.784.7-.784-.7-.001-.001c-2.595-2.308-4.668-4.157-6.103-5.88C3.687 11.369 3 9.91 3 8.396 3 5.935 4.953 4 7.5 4c1.445 0 2.843.665 3.747 1.699Z" />
+                    </svg><span class="decorate"></span></a>
+                </div>
+                <!-- основная часть  -->
+                <a class="product-card__link" href="#">
+                  <!-- картинка  -->
+                  <div class="product-card__image">
+                    <img src="./img/catalog/carpets/1.jpg" alt="фото товара" loading="lazy" width="256">
+                    <span class="product-card__image-label button"><span>В наличии</span><span
+                        class="decorate"></span></span>
+                  </div>
+                  <!-- подзаголовок  -->
+                  <div class="product-card__subtitle">Коллекция, может быть артикул</div>
+                  <!-- заголовок  -->
+                  <h3 class="product-card__title">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
+                </a>
+                <!-- нижняя часть -->
+                <div class="product-card__footer">
+                  <span class="product-card__price">от 2 680 ₽</span>
+                  <button class="product-card__options" type="button">в 3х размерах</button>
+
+                  <!-- детали показываются при клике по кнопочке размеров -->
+                  <div class="product-card__details">
+                    <form action="javascript:void(0);">
+                      <ul class="catalog-filter list-reset">
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="120х180">
+                          <label class="catalog-filter__checkbox-label" for="120х180"><span>120х180 см</span><strong>2
+                              680 ₽</strong></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="140х200">
+                          <label class="catalog-filter__checkbox-label" for="140х200"><span>140х200 см</span><strong>3
+                              680 ₽</strong></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="200х200">
+                          <label class="catalog-filter__checkbox-label" for="200х200"><span>200х200 см</span><strong>4
+                              680 ₽</strong></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="240х240">
+                          <label class="catalog-filter__checkbox-label" for="240х240"><span>240х240 см</span><strong>5
+                              680 ₽</strong></label>
+                        </li>
+
+                      </ul>
+                      <a class="button button--cart button--icon" href="#">
+                        <span>в корзину</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
+                          <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                            d="M18.273 4.5h2.454a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.272" />
+                          <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                            d="M20.273 17.5H9.04c-.453 0-.85-.305-.967-.742L4.47 3.242a1 1 0 0 0-.967-.742H.273M7.272 20.5h2M18.273 20.5h2M8.272 4.5h8M12.273 8.5v-8" />
+                        </svg>
+                        <span class="decorate"></span>
+                      </a>
+                    </form>
+                  </div>
+
+                </div>
+              </li>
+              <!-- КОНЕЦ карточка Анонс товара  -->
+            </div>
+
+            <div class="swiper-slide">
+              <!-- карточка Анонс товара  -->
+              <li class="product-card">
+                <!-- верхняя часть отдельно, потому что основная карточка - ссылка  -->
+                <div class="product-card__header">
+                  <a href="#" class="product-card__label product-card__label--action button"><span>Акция</span><span
+                      class="decorate"></span></a>
+                  <a href="#" class="product-card__label product-card__label--new button"><span>новинка</span><span
+                      class="decorate"></span></a>
+                  <!-- класс .add-favorite обязателен. по нему идёт поиск и сборка коллекции, для отслеживания клика  -->
+                  <a href="#"
+                    class="product-card__label product-card__label--heart button button--icon add-favorite"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                      <path stroke="#fff" stroke-width="2"
+                        d="m11.247 5.699.753.86.753-.86A5.063 5.063 0 0 1 16.5 4C19.047 4 21 5.936 21 8.395c0 1.514-.687 2.974-2.112 4.684-1.435 1.722-3.508 3.57-6.103 5.879l-.001.001-.784.7-.784-.7-.001-.001c-2.595-2.308-4.668-4.157-6.103-5.88C3.687 11.369 3 9.91 3 8.396 3 5.935 4.953 4 7.5 4c1.445 0 2.843.665 3.747 1.699Z" />
+                    </svg><span class="decorate"></span></a>
+                </div>
+                <!-- основная часть  -->
+                <a class="product-card__link" href="#">
+                  <!-- картинка  -->
+                  <div class="product-card__image">
+                    <img src="./img/catalog/carpets/1.jpg" alt="фото товара" loading="lazy" width="256">
+                    <span class="product-card__image-label button"><span>В наличии</span><span
+                        class="decorate"></span></span>
+                  </div>
+                  <!-- подзаголовок  -->
+                  <div class="product-card__subtitle">Коллекция, может быть артикул</div>
+                  <!-- заголовок  -->
+                  <h3 class="product-card__title">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
+                </a>
+                <!-- нижняя часть -->
+                <div class="product-card__footer">
+                  <span class="product-card__price">от 2 680 ₽</span>
+                  <button class="product-card__options" type="button">в 3х размерах</button>
+
+                  <!-- детали показываются при клике по кнопочке размеров -->
+                  <div class="product-card__details">
+                    <form action="javascript:void(0);">
+                      <ul class="catalog-filter list-reset">
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="120х180">
+                          <label class="catalog-filter__checkbox-label" for="120х180"><span>120х180 см</span><strong>2
+                              680 ₽</strong></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="140х200">
+                          <label class="catalog-filter__checkbox-label" for="140х200"><span>140х200 см</span><strong>3
+                              680 ₽</strong></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="200х200">
+                          <label class="catalog-filter__checkbox-label" for="200х200"><span>200х200 см</span><strong>4
+                              680 ₽</strong></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="240х240">
+                          <label class="catalog-filter__checkbox-label" for="240х240"><span>240х240 см</span><strong>5
+                              680 ₽</strong></label>
+                        </li>
+
+                      </ul>
+                      <a class="button button--cart button--icon" href="#">
+                        <span>в корзину</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
+                          <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                            d="M18.273 4.5h2.454a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.272" />
+                          <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                            d="M20.273 17.5H9.04c-.453 0-.85-.305-.967-.742L4.47 3.242a1 1 0 0 0-.967-.742H.273M7.272 20.5h2M18.273 20.5h2M8.272 4.5h8M12.273 8.5v-8" />
+                        </svg>
+                        <span class="decorate"></span>
+                      </a>
+                    </form>
+                  </div>
+
+                </div>
+              </li>
+              <!-- КОНЕЦ карточка Анонс товара  -->
+            </div>
+
+            <div class="swiper-slide">
+              <!-- карточка Анонс товара  -->
+              <li class="product-card">
+                <!-- верхняя часть отдельно, потому что основная карточка - ссылка  -->
+                <div class="product-card__header">
+                  <a href="#" class="product-card__label product-card__label--action button"><span>Акция</span><span
+                      class="decorate"></span></a>
+                  <a href="#" class="product-card__label product-card__label--new button"><span>новинка</span><span
+                      class="decorate"></span></a>
+                  <!-- класс .add-favorite обязателен. по нему идёт поиск и сборка коллекции, для отслеживания клика  -->
+                  <a href="#"
+                    class="product-card__label product-card__label--heart button button--icon add-favorite"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                      <path stroke="#fff" stroke-width="2"
+                        d="m11.247 5.699.753.86.753-.86A5.063 5.063 0 0 1 16.5 4C19.047 4 21 5.936 21 8.395c0 1.514-.687 2.974-2.112 4.684-1.435 1.722-3.508 3.57-6.103 5.879l-.001.001-.784.7-.784-.7-.001-.001c-2.595-2.308-4.668-4.157-6.103-5.88C3.687 11.369 3 9.91 3 8.396 3 5.935 4.953 4 7.5 4c1.445 0 2.843.665 3.747 1.699Z" />
+                    </svg><span class="decorate"></span></a>
+                </div>
+                <!-- основная часть  -->
+                <a class="product-card__link" href="#">
+                  <!-- картинка  -->
+                  <div class="product-card__image">
+                    <img src="./img/catalog/carpets/1.jpg" alt="фото товара" loading="lazy" width="256">
+                    <span class="product-card__image-label button"><span>В наличии</span><span
+                        class="decorate"></span></span>
+                  </div>
+                  <!-- подзаголовок  -->
+                  <div class="product-card__subtitle">Коллекция, может быть артикул</div>
+                  <!-- заголовок  -->
+                  <h3 class="product-card__title">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
+                </a>
+                <!-- нижняя часть -->
+                <div class="product-card__footer">
+                  <span class="product-card__price">от 2 680 ₽</span>
+                  <button class="product-card__options" type="button">в 3х размерах</button>
+
+                  <!-- детали показываются при клике по кнопочке размеров -->
+                  <div class="product-card__details">
+                    <form action="javascript:void(0);">
+                      <ul class="catalog-filter list-reset">
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="120х180">
+                          <label class="catalog-filter__checkbox-label" for="120х180"><span>120х180 см</span><strong>2
+                              680 ₽</strong></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="140х200">
+                          <label class="catalog-filter__checkbox-label" for="140х200"><span>140х200 см</span><strong>3
+                              680 ₽</strong></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="200х200">
+                          <label class="catalog-filter__checkbox-label" for="200х200"><span>200х200 см</span><strong>4
+                              680 ₽</strong></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="240х240">
+                          <label class="catalog-filter__checkbox-label" for="240х240"><span>240х240 см</span><strong>5
+                              680 ₽</strong></label>
+                        </li>
+
+                      </ul>
+                      <a class="button button--cart button--icon" href="#">
+                        <span>в корзину</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
+                          <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                            d="M18.273 4.5h2.454a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.272" />
+                          <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                            d="M20.273 17.5H9.04c-.453 0-.85-.305-.967-.742L4.47 3.242a1 1 0 0 0-.967-.742H.273M7.272 20.5h2M18.273 20.5h2M8.272 4.5h8M12.273 8.5v-8" />
+                        </svg>
+                        <span class="decorate"></span>
+                      </a>
+                    </form>
+                  </div>
+
+                </div>
+              </li>
+              <!-- КОНЕЦ карточка Анонс товара  -->
+            </div>
+
+            <div class="swiper-slide">
+              <!-- карточка Анонс товара  -->
+              <li class="product-card">
+                <!-- верхняя часть отдельно, потому что основная карточка - ссылка  -->
+                <div class="product-card__header">
+                  <a href="#" class="product-card__label product-card__label--action button"><span>Акция</span><span
+                      class="decorate"></span></a>
+                  <a href="#" class="product-card__label product-card__label--new button"><span>новинка</span><span
+                      class="decorate"></span></a>
+                  <!-- класс .add-favorite обязателен. по нему идёт поиск и сборка коллекции, для отслеживания клика  -->
+                  <a href="#"
+                    class="product-card__label product-card__label--heart button button--icon add-favorite"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                      <path stroke="#fff" stroke-width="2"
+                        d="m11.247 5.699.753.86.753-.86A5.063 5.063 0 0 1 16.5 4C19.047 4 21 5.936 21 8.395c0 1.514-.687 2.974-2.112 4.684-1.435 1.722-3.508 3.57-6.103 5.879l-.001.001-.784.7-.784-.7-.001-.001c-2.595-2.308-4.668-4.157-6.103-5.88C3.687 11.369 3 9.91 3 8.396 3 5.935 4.953 4 7.5 4c1.445 0 2.843.665 3.747 1.699Z" />
+                    </svg><span class="decorate"></span></a>
+                </div>
+                <!-- основная часть  -->
+                <a class="product-card__link" href="#">
+                  <!-- картинка  -->
+                  <div class="product-card__image">
+                    <img src="./img/catalog/carpets/1.jpg" alt="фото товара" loading="lazy" width="256">
+                    <span class="product-card__image-label button"><span>В наличии</span><span
+                        class="decorate"></span></span>
+                  </div>
+                  <!-- подзаголовок  -->
+                  <div class="product-card__subtitle">Коллекция, может быть артикул</div>
+                  <!-- заголовок  -->
+                  <h3 class="product-card__title">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
+                </a>
+                <!-- нижняя часть -->
+                <div class="product-card__footer">
+                  <span class="product-card__price">от 2 680 ₽</span>
+                  <button class="product-card__options" type="button">в 3х размерах</button>
+
+                  <!-- детали показываются при клике по кнопочке размеров -->
+                  <div class="product-card__details">
+                    <form action="javascript:void(0);">
+                      <ul class="catalog-filter list-reset">
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="120х180">
+                          <label class="catalog-filter__checkbox-label" for="120х180"><span>120х180 см</span><strong>2
+                              680 ₽</strong></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="140х200">
+                          <label class="catalog-filter__checkbox-label" for="140х200"><span>140х200 см</span><strong>3
+                              680 ₽</strong></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="200х200">
+                          <label class="catalog-filter__checkbox-label" for="200х200"><span>200х200 см</span><strong>4
+                              680 ₽</strong></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="240х240">
+                          <label class="catalog-filter__checkbox-label" for="240х240"><span>240х240 см</span><strong>5
+                              680 ₽</strong></label>
+                        </li>
+
+                      </ul>
+                      <a class="button button--cart button--icon" href="#">
+                        <span>в корзину</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
+                          <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                            d="M18.273 4.5h2.454a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.272" />
+                          <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                            d="M20.273 17.5H9.04c-.453 0-.85-.305-.967-.742L4.47 3.242a1 1 0 0 0-.967-.742H.273M7.272 20.5h2M18.273 20.5h2M8.272 4.5h8M12.273 8.5v-8" />
+                        </svg>
+                        <span class="decorate"></span>
+                      </a>
+                    </form>
+                  </div>
+
+                </div>
+              </li>
+              <!-- КОНЕЦ карточка Анонс товара  -->
+            </div>
+
+            <div class="swiper-slide">
+              <!-- карточка Анонс товара  -->
+              <li class="product-card">
+                <!-- верхняя часть отдельно, потому что основная карточка - ссылка  -->
+                <div class="product-card__header">
+                  <a href="#" class="product-card__label product-card__label--action button"><span>Акция</span><span
+                      class="decorate"></span></a>
+                  <a href="#" class="product-card__label product-card__label--new button"><span>новинка</span><span
+                      class="decorate"></span></a>
+                  <!-- класс .add-favorite обязателен. по нему идёт поиск и сборка коллекции, для отслеживания клика  -->
+                  <a href="#"
+                    class="product-card__label product-card__label--heart button button--icon add-favorite"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                      <path stroke="#fff" stroke-width="2"
+                        d="m11.247 5.699.753.86.753-.86A5.063 5.063 0 0 1 16.5 4C19.047 4 21 5.936 21 8.395c0 1.514-.687 2.974-2.112 4.684-1.435 1.722-3.508 3.57-6.103 5.879l-.001.001-.784.7-.784-.7-.001-.001c-2.595-2.308-4.668-4.157-6.103-5.88C3.687 11.369 3 9.91 3 8.396 3 5.935 4.953 4 7.5 4c1.445 0 2.843.665 3.747 1.699Z" />
+                    </svg><span class="decorate"></span></a>
+                </div>
+                <!-- основная часть  -->
+                <a class="product-card__link" href="#">
+                  <!-- картинка  -->
+                  <div class="product-card__image">
+                    <img src="./img/catalog/carpets/1.jpg" alt="фото товара" loading="lazy" width="256">
+                    <span class="product-card__image-label button"><span>В наличии</span><span
+                        class="decorate"></span></span>
+                  </div>
+                  <!-- подзаголовок  -->
+                  <div class="product-card__subtitle">Коллекция, может быть артикул</div>
+                  <!-- заголовок  -->
+                  <h3 class="product-card__title">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
+                </a>
+                <!-- нижняя часть -->
+                <div class="product-card__footer">
+                  <span class="product-card__price">от 2 680 ₽</span>
+                  <button class="product-card__options" type="button">в 3х размерах</button>
+
+                  <!-- детали показываются при клике по кнопочке размеров -->
+                  <div class="product-card__details">
+                    <form action="javascript:void(0);">
+                      <ul class="catalog-filter list-reset">
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="120х180">
+                          <label class="catalog-filter__checkbox-label" for="120х180"><span>120х180 см</span><strong>2
+                              680 ₽</strong></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="140х200">
+                          <label class="catalog-filter__checkbox-label" for="140х200"><span>140х200 см</span><strong>3
+                              680 ₽</strong></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="200х200">
+                          <label class="catalog-filter__checkbox-label" for="200х200"><span>200х200 см</span><strong>4
+                              680 ₽</strong></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="240х240">
+                          <label class="catalog-filter__checkbox-label" for="240х240"><span>240х240 см</span><strong>5
+                              680 ₽</strong></label>
+                        </li>
+
+                      </ul>
+                      <a class="button button--cart button--icon" href="#">
+                        <span>в корзину</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
+                          <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                            d="M18.273 4.5h2.454a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.272" />
+                          <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                            d="M20.273 17.5H9.04c-.453 0-.85-.305-.967-.742L4.47 3.242a1 1 0 0 0-.967-.742H.273M7.272 20.5h2M18.273 20.5h2M8.272 4.5h8M12.273 8.5v-8" />
+                        </svg>
+                        <span class="decorate"></span>
+                      </a>
+                    </form>
+                  </div>
+
+                </div>
+              </li>
+              <!-- КОНЕЦ карточка Анонс товара  -->
+            </div>
+
+            <div class="swiper-slide">
+              <!-- карточка Анонс товара  -->
+              <li class="product-card">
+                <!-- верхняя часть отдельно, потому что основная карточка - ссылка  -->
+                <div class="product-card__header">
+                  <a href="#" class="product-card__label product-card__label--action button"><span>Акция</span><span
+                      class="decorate"></span></a>
+                  <a href="#" class="product-card__label product-card__label--new button"><span>новинка</span><span
+                      class="decorate"></span></a>
+                  <!-- класс .add-favorite обязателен. по нему идёт поиск и сборка коллекции, для отслеживания клика  -->
+                  <a href="#"
+                    class="product-card__label product-card__label--heart button button--icon add-favorite"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                      <path stroke="#fff" stroke-width="2"
+                        d="m11.247 5.699.753.86.753-.86A5.063 5.063 0 0 1 16.5 4C19.047 4 21 5.936 21 8.395c0 1.514-.687 2.974-2.112 4.684-1.435 1.722-3.508 3.57-6.103 5.879l-.001.001-.784.7-.784-.7-.001-.001c-2.595-2.308-4.668-4.157-6.103-5.88C3.687 11.369 3 9.91 3 8.396 3 5.935 4.953 4 7.5 4c1.445 0 2.843.665 3.747 1.699Z" />
+                    </svg><span class="decorate"></span></a>
+                </div>
+                <!-- основная часть  -->
+                <a class="product-card__link" href="#">
+                  <!-- картинка  -->
+                  <div class="product-card__image">
+                    <img src="./img/catalog/carpets/1.jpg" alt="фото товара" loading="lazy" width="256">
+                    <span class="product-card__image-label button"><span>В наличии</span><span
+                        class="decorate"></span></span>
+                  </div>
+                  <!-- подзаголовок  -->
+                  <div class="product-card__subtitle">Коллекция, может быть артикул</div>
+                  <!-- заголовок  -->
+                  <h3 class="product-card__title">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
+                </a>
+                <!-- нижняя часть -->
+                <div class="product-card__footer">
+                  <span class="product-card__price">от 2 680 ₽</span>
+                  <button class="product-card__options" type="button">в 3х размерах</button>
+
+                  <!-- детали показываются при клике по кнопочке размеров -->
+                  <div class="product-card__details">
+                    <form action="javascript:void(0);">
+                      <ul class="catalog-filter list-reset">
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="120х180">
+                          <label class="catalog-filter__checkbox-label" for="120х180"><span>120х180 см</span><strong>2
+                              680 ₽</strong></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="140х200">
+                          <label class="catalog-filter__checkbox-label" for="140х200"><span>140х200 см</span><strong>3
+                              680 ₽</strong></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="200х200">
+                          <label class="catalog-filter__checkbox-label" for="200х200"><span>200х200 см</span><strong>4
+                              680 ₽</strong></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="240х240">
+                          <label class="catalog-filter__checkbox-label" for="240х240"><span>240х240 см</span><strong>5
+                              680 ₽</strong></label>
+                        </li>
+
+                      </ul>
+                      <a class="button button--cart button--icon" href="#">
+                        <span>в корзину</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
+                          <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                            d="M18.273 4.5h2.454a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.272" />
+                          <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                            d="M20.273 17.5H9.04c-.453 0-.85-.305-.967-.742L4.47 3.242a1 1 0 0 0-.967-.742H.273M7.272 20.5h2M18.273 20.5h2M8.272 4.5h8M12.273 8.5v-8" />
+                        </svg>
+                        <span class="decorate"></span>
+                      </a>
+                    </form>
+                  </div>
+
+                </div>
+              </li>
+              <!-- КОНЕЦ карточка Анонс товара  -->
+            </div>
+
+            <div class="swiper-slide">
+              <!-- карточка Анонс товара  -->
+              <li class="product-card">
+                <!-- верхняя часть отдельно, потому что основная карточка - ссылка  -->
+                <div class="product-card__header">
+                  <a href="#" class="product-card__label product-card__label--action button"><span>Акция</span><span
+                      class="decorate"></span></a>
+                  <a href="#" class="product-card__label product-card__label--new button"><span>новинка</span><span
+                      class="decorate"></span></a>
+                  <!-- класс .add-favorite обязателен. по нему идёт поиск и сборка коллекции, для отслеживания клика  -->
+                  <a href="#"
+                    class="product-card__label product-card__label--heart button button--icon add-favorite"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                      <path stroke="#fff" stroke-width="2"
+                        d="m11.247 5.699.753.86.753-.86A5.063 5.063 0 0 1 16.5 4C19.047 4 21 5.936 21 8.395c0 1.514-.687 2.974-2.112 4.684-1.435 1.722-3.508 3.57-6.103 5.879l-.001.001-.784.7-.784-.7-.001-.001c-2.595-2.308-4.668-4.157-6.103-5.88C3.687 11.369 3 9.91 3 8.396 3 5.935 4.953 4 7.5 4c1.445 0 2.843.665 3.747 1.699Z" />
+                    </svg><span class="decorate"></span></a>
+                </div>
+                <!-- основная часть  -->
+                <a class="product-card__link" href="#">
+                  <!-- картинка  -->
+                  <div class="product-card__image">
+                    <img src="./img/catalog/carpets/1.jpg" alt="фото товара" loading="lazy" width="256">
+                    <span class="product-card__image-label button"><span>В наличии</span><span
+                        class="decorate"></span></span>
+                  </div>
+                  <!-- подзаголовок  -->
+                  <div class="product-card__subtitle">Коллекция, может быть артикул</div>
+                  <!-- заголовок  -->
+                  <h3 class="product-card__title">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
+                </a>
+                <!-- нижняя часть -->
+                <div class="product-card__footer">
+                  <span class="product-card__price">от 2 680 ₽</span>
+                  <button class="product-card__options" type="button">в 3х размерах</button>
+
+                  <!-- детали показываются при клике по кнопочке размеров -->
+                  <div class="product-card__details">
+                    <form action="javascript:void(0);">
+                      <ul class="catalog-filter list-reset">
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="120х180">
+                          <label class="catalog-filter__checkbox-label" for="120х180"><span>120х180 см</span><strong>2
+                              680 ₽</strong></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="140х200">
+                          <label class="catalog-filter__checkbox-label" for="140х200"><span>140х200 см</span><strong>3
+                              680 ₽</strong></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="200х200">
+                          <label class="catalog-filter__checkbox-label" for="200х200"><span>200х200 см</span><strong>4
+                              680 ₽</strong></label>
+                        </li>
+                        <li>
+                          <input type="checkbox" class="visually-hidden" name="new" id="240х240">
+                          <label class="catalog-filter__checkbox-label" for="240х240"><span>240х240 см</span><strong>5
+                              680 ₽</strong></label>
+                        </li>
+
+                      </ul>
+                      <a class="button button--cart button--icon" href="#">
+                        <span>в корзину</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
+                          <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                            d="M18.273 4.5h2.454a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.272" />
+                          <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                            d="M20.273 17.5H9.04c-.453 0-.85-.305-.967-.742L4.47 3.242a1 1 0 0 0-.967-.742H.273M7.272 20.5h2M18.273 20.5h2M8.272 4.5h8M12.273 8.5v-8" />
+                        </svg>
+                        <span class="decorate"></span>
+                      </a>
+                    </form>
+                  </div>
+
+                </div>
+              </li>
+              <!-- КОНЕЦ карточка Анонс товара  -->
+            </div>
+          </div>
+          <button class="swiper-button-next button button--icon" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" fill="none">
+              <path stroke="#fff" stroke-width="2" d="m1 1 8 7.68L1 17" />
+            </svg>
+            <span class="decorate"></span></button>
+          <button class="swiper-button-prev button button--icon" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" fill="none">
+              <path stroke="#fff" stroke-width="2" d="M10 1 2 8.68 10 17" />
+            </svg>
+            <span class="decorate"></span></button>
+          <!-- <div class="swiper-pagination"></div>
+          <div class="swiper-scrollbar"></div> -->
+        </div>
+
+      </div>
+    </section>
+
   </main>
   <!-- КОНЕЦ Основной контент -->
 
@@ -1188,7 +1833,8 @@
     </div>
   </footer>
   <!-- КОНЕЦ Подвал -->
-
+  <script src="./libs/fslightbox.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./js/scripts.js"></script>
 </body>
 
