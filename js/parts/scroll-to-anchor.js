@@ -1,6 +1,6 @@
 
 var headerHeight = document.querySelector('.header').offsetHeight; // Замените '.header' на селектор вашей шапки
-var anchorLinks = document.querySelectorAll('a[href^="#"]');
+var anchorLinks = document.querySelectorAll('.glossary-terms__navigation a[href^="#"]');
 
 anchorLinks.forEach(function (link) {
   link.addEventListener('click', function (event) {
