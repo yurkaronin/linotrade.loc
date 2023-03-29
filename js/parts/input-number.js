@@ -1,4 +1,3 @@
-
 var inputNumberList = document.querySelectorAll(".input-number");
 
 inputNumberList.forEach(function (inputNumber) {
@@ -8,7 +7,9 @@ inputNumberList.forEach(function (inputNumber) {
 
   minusBtn.addEventListener("click", function () {
     var currentValue = parseInt(input.value, 10) || 0;
-    input.value = currentValue - 1;
+    if (currentValue > 0) { // Добавляем проверку на минимальное значение
+      input.value = currentValue - 1;
+    }
   });
 
   plusBtn.addEventListener("click", function () {
@@ -16,4 +17,3 @@ inputNumberList.forEach(function (inputNumber) {
     input.value = currentValue + 1;
   });
 });
-

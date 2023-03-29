@@ -373,6 +373,15 @@ input[type=radio].visually-hidden {
   padding: 16px 24px;
   position: relative;
 }
+.button--icon-text {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  position: relative;
+}
 .button--label {
   overflow: visible;
 }
@@ -848,32 +857,6 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   border: none;
   outline: none;
-}
-.section .input-number__button {
-  width: 30px;
-  height: 30px;
-  background-color: #f0f0f0;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  user-select: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.section .input-number__button--minus {
-  border: none;
-  background-color: transparent;
-}
-.section .input-number__button--plus {
-  border: none;
-  background-color: transparent;
-}
-.section .input-number {
-  height: 48px;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  text-align: center;
 }
 @media (max-width: 1250px) {
   .section {
@@ -2378,6 +2361,35 @@ h1, h2, h3, h4, h5, h6 {
 
 [class*=copyrights-pane] {
   display: none !important;
+}
+
+.input-number {
+  height: 48px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  text-align: center;
+  max-width: 170px;
+}
+.input-number__button {
+  width: 30px;
+  height: 30px;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 16px;
+}
+.input-number__button--minus {
+  border: none;
+  background-color: transparent;
+}
+.input-number__button--plus {
+  border: none;
+  background-color: transparent;
 }
 
 .header {
