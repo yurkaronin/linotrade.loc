@@ -1051,16 +1051,19 @@
     </div>
     <!-- КОНЕЦ хлебные крошки  -->
 
-    <section class="section section--bb">
+    <section class="section section--bb full-product-card">
       <div class="wrapper">
         <div class="section__grid">
           <div class="section__grid-left">
-            <div class="image sticky">
-
-              <a data-fslightbox="gallery" href="./img/catalog/laminate/11.jpg">
-                <img src="./img/catalog/laminate/11.jpg" alt="фото товара" loading="lazy">
-              </a>
+            <!-- картинка товара  -->
+            <div class="full-product-card__image sticky">
+              <div class="image">
+                <a data-fslightbox="gallery" href="./img/catalog/laminate/11.jpg">
+                  <img src="./img/catalog/laminate/11.jpg" alt="фото товара" loading="lazy">
+                </a>
+              </div>
             </div>
+            <!-- КОНЕЦ картинка товара  -->
           </div>
 
           <div class="section__grid-right">
@@ -1122,190 +1125,158 @@
 
             </div>
             <!-- выбор заказа  -->
-            <ul class="list-reset order-choice">
+            <ul class="list-reset full-product-card__choice-list">
+              <!-- заказ в строку -->
+              <li class="order-item order-item--mod">
+                <!-- левая часть с данными по цене и остатку  -->
 
-              <li>
-                <!-- заказ в строку -->
-                <div class="order-item">
-                  <!-- Цена -->
-                  <div class="order-item__details">
-                    <span class="order-item__label">120х180 см</span>
-                    <span class="order-item__strong">640 ₽/м<sup>2</sup></span>
-                  </div>
-                  <!-- Количество -->
-                  <div class="order-item__details">
-                    <span class="order-item__label">Остаток:</span>
-                    <span class="order-item__strong">12 шт.</span>
-                  </div>
-
-                  <div class="input-number">
-                    <button class="input-number__button input-number__button--minus" type="button"><svg width="16"
-                        height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33" />
-                      </svg>
-                    </button>
-                    <input class="input-number__input" type="number" value="0" />
-                    <button class="input-number__button input-number__button--plus" type="button"><svg width="16"
-                        height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="7" width="2" height="16" fill="#67CB33" />
-                        <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33" />
-                      </svg>
-                    </button>
-                  </div>
-
-
-                  <a href="#" class="order-item__button button button--text-icon">
-                    <span>в корзину</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
-                      <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
-                        d="M18.273 4h2.455a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.273" />
-                      <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
-                        d="M20.273 17H9.043c-.454 0-.85-.305-.968-.742L4.471 2.742A1 1 0 0 0 3.504 2H.274M7.273 20h2M18.273 20h2M8.273 4h8M12.273 8V0" />
-                    </svg><span class="decorate"></span></a>
+                <!-- Цена -->
+                <div class="order-item__details">
+                  <span class="order-item__label">120х180 см</span>
+                  <span class="order-item__strong">640 ₽/м<sup>2</sup></span>
                 </div>
-                <!-- КОНЕЦ анонс заказа в строку -->
-
-
-              </li>
-              <li>
-                <!-- заказ в строку -->
-                <div class="order-item">
-                  <!-- Цена -->
-                  <div class="order-item__details">
-                    <span class="order-item__label">120х180 см</span>
-                    <span class="order-item__strong">640 ₽/м<sup>2</sup></span>
-                  </div>
-                  <!-- Количество -->
-                  <div class="order-item__details">
-                    <span class="order-item__label">Остаток:</span>
-                    <span class="order-item__strong">12 шт.</span>
-                  </div>
-
-                  <div class="input-number">
-                    <button class="input-number__button input-number__button--minus" type="button"><svg width="16"
-                        height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33" />
-                      </svg>
-                    </button>
-                    <input class="input-number__input" type="number" value="0" />
-                    <button class="input-number__button input-number__button--plus" type="button"><svg width="16"
-                        height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="7" width="2" height="16" fill="#67CB33" />
-                        <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33" />
-                      </svg>
-                    </button>
-                  </div>
-
-
-                  <a href="#" class="order-item__button button button--text-icon">
-                    <span>в корзину</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
-                      <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
-                        d="M18.273 4h2.455a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.273" />
-                      <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
-                        d="M20.273 17H9.043c-.454 0-.85-.305-.968-.742L4.471 2.742A1 1 0 0 0 3.504 2H.274M7.273 20h2M18.273 20h2M8.273 4h8M12.273 8V0" />
-                    </svg><span class="decorate"></span></a>
+                <!-- Количество -->
+                <div class="order-item__details">
+                  <span class="order-item__label">Остаток:</span>
+                  <span class="order-item__strong">12 шт.</span>
                 </div>
-                <!-- КОНЕЦ анонс заказа в строку -->
 
+                <!-- левая часть с данными по цене и остатку  -->
+                <!-- правая часть с полем ввода и кнопкой  -->
 
-              </li>
-              <li>
-                <!-- заказ в строку -->
-                <div class="order-item">
-                  <!-- Цена -->
-                  <div class="order-item__details">
-                    <span class="order-item__label">120х180 см</span>
-                    <span class="order-item__strong">640 ₽/м<sup>2</sup></span>
-                  </div>
-                  <!-- Количество -->
-                  <div class="order-item__details">
-                    <span class="order-item__label">Остаток:</span>
-                    <span class="order-item__strong">12 шт.</span>
-                  </div>
-
-                  <div class="input-number">
-                    <button class="input-number__button input-number__button--minus" type="button"><svg width="16"
-                        height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33" />
-                      </svg>
-                    </button>
-                    <input class="input-number__input" type="number" value="0" />
-                    <button class="input-number__button input-number__button--plus" type="button"><svg width="16"
-                        height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="7" width="2" height="16" fill="#67CB33" />
-                        <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33" />
-                      </svg>
-                    </button>
-                  </div>
-
-
-                  <a href="#" class="order-item__button button button--text-icon">
-                    <span>в корзину</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
-                      <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
-                        d="M18.273 4h2.455a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.273" />
-                      <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
-                        d="M20.273 17H9.043c-.454 0-.85-.305-.968-.742L4.471 2.742A1 1 0 0 0 3.504 2H.274M7.273 20h2M18.273 20h2M8.273 4h8M12.273 8V0" />
-                    </svg><span class="decorate"></span></a>
+                <div class="input-number">
+                  <button class="input-number__button input-number__button--minus" type="button"><svg width="16"
+                      height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33" />
+                    </svg>
+                  </button>
+                  <input class="input-number__input" type="number" value="0" />
+                  <button class="input-number__button input-number__button--plus" type="button"><svg width="16"
+                      height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="7" width="2" height="16" fill="#67CB33" />
+                      <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33" />
+                    </svg>
+                  </button>
                 </div>
-                <!-- КОНЕЦ анонс заказа в строку -->
 
 
+                <a href="#" class="order-item__button button button--text-icon">
+                  <span>в корзину</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
+                    <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                      d="M18.273 4h2.455a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.273" />
+                    <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                      d="M20.273 17H9.043c-.454 0-.85-.305-.968-.742L4.471 2.742A1 1 0 0 0 3.504 2H.274M7.273 20h2M18.273 20h2M8.273 4h8M12.273 8V0" />
+                  </svg><span class="decorate"></span></a>
+
+                <!-- КОНЕЦ правая часть с полем ввода и кнопкой  -->
               </li>
-              <li>
-                <!-- заказ в строку -->
-                <div class="order-item">
-                  <!-- Цена -->
-                  <div class="order-item__details">
-                    <span class="order-item__label">120х180 см</span>
-                    <span class="order-item__strong">640 ₽/м<sup>2</sup></span>
-                  </div>
-                  <!-- Количество -->
-                  <div class="order-item__details">
-                    <span class="order-item__label">Остаток:</span>
-                    <span class="order-item__strong">12 шт.</span>
-                  </div>
+              <!-- КОНЕЦ анонс заказа в строку -->
+              <!-- заказ в строку -->
+              <li class="order-item order-item--mod">
+                <!-- левая часть с данными по цене и остатку  -->
 
-                  <div class="input-number">
-                    <button class="input-number__button input-number__button--minus" type="button"><svg width="16"
-                        height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33" />
-                      </svg>
-                    </button>
-                    <input class="input-number__input" type="number" value="0" />
-                    <button class="input-number__button input-number__button--plus" type="button"><svg width="16"
-                        height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="7" width="2" height="16" fill="#67CB33" />
-                        <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33" />
-                      </svg>
-                    </button>
-                  </div>
-
-
-                  <a href="#" class="order-item__button button button--text-icon">
-                    <span>в корзину</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
-                      <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
-                        d="M18.273 4h2.455a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.273" />
-                      <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
-                        d="M20.273 17H9.043c-.454 0-.85-.305-.968-.742L4.471 2.742A1 1 0 0 0 3.504 2H.274M7.273 20h2M18.273 20h2M8.273 4h8M12.273 8V0" />
-                    </svg><span class="decorate"></span></a>
+                <!-- Цена -->
+                <div class="order-item__details">
+                  <span class="order-item__label">120х180 см</span>
+                  <span class="order-item__strong">640 ₽/м<sup>2</sup></span>
                 </div>
-                <!-- КОНЕЦ анонс заказа в строку -->
+                <!-- Количество -->
+                <div class="order-item__details">
+                  <span class="order-item__label">Остаток:</span>
+                  <span class="order-item__strong">12 шт.</span>
+                </div>
+
+                <!-- левая часть с данными по цене и остатку  -->
+                <!-- правая часть с полем ввода и кнопкой  -->
+
+                <div class="input-number">
+                  <button class="input-number__button input-number__button--minus" type="button"><svg width="16"
+                      height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33" />
+                    </svg>
+                  </button>
+                  <input class="input-number__input" type="number" value="0" />
+                  <button class="input-number__button input-number__button--plus" type="button"><svg width="16"
+                      height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="7" width="2" height="16" fill="#67CB33" />
+                      <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33" />
+                    </svg>
+                  </button>
+                </div>
 
 
+                <a href="#" class="order-item__button button button--text-icon">
+                  <span>в корзину</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
+                    <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                      d="M18.273 4h2.455a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.273" />
+                    <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                      d="M20.273 17H9.043c-.454 0-.85-.305-.968-.742L4.471 2.742A1 1 0 0 0 3.504 2H.274M7.273 20h2M18.273 20h2M8.273 4h8M12.273 8V0" />
+                  </svg><span class="decorate"></span></a>
+
+                <!-- КОНЕЦ правая часть с полем ввода и кнопкой  -->
               </li>
+              <!-- КОНЕЦ анонс заказа в строку -->
+              <!-- заказ в строку -->
+              <li class="order-item order-item--mod">
+                <!-- левая часть с данными по цене и остатку  -->
+
+                <!-- Цена -->
+                <div class="order-item__details">
+                  <span class="order-item__label">120х180 см</span>
+                  <span class="order-item__strong">640 ₽/м<sup>2</sup></span>
+                </div>
+                <!-- Количество -->
+                <div class="order-item__details">
+                  <span class="order-item__label">Остаток:</span>
+                  <span class="order-item__strong">12 шт.</span>
+                </div>
+
+                <!-- левая часть с данными по цене и остатку  -->
+                <!-- правая часть с полем ввода и кнопкой  -->
+
+                <div class="input-number">
+                  <button class="input-number__button input-number__button--minus" type="button"><svg width="16"
+                      height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33" />
+                    </svg>
+                  </button>
+                  <input class="input-number__input" type="number" value="0" />
+                  <button class="input-number__button input-number__button--plus" type="button"><svg width="16"
+                      height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="7" width="2" height="16" fill="#67CB33" />
+                      <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33" />
+                    </svg>
+                  </button>
+                </div>
+
+
+                <a href="#" class="order-item__button button button--text-icon">
+                  <span>в корзину</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
+                    <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                      d="M18.273 4h2.455a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.273" />
+                    <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                      d="M20.273 17H9.043c-.454 0-.85-.305-.968-.742L4.471 2.742A1 1 0 0 0 3.504 2H.274M7.273 20h2M18.273 20h2M8.273 4h8M12.273 8V0" />
+                  </svg><span class="decorate"></span></a>
+
+                <!-- КОНЕЦ правая часть с полем ввода и кнопкой  -->
+              </li>
+              <!-- КОНЕЦ анонс заказа в строку -->
 
             </ul>
             <!-- КОНЕЦ выбор заказа  -->
-            <p>ТК Линотрейд была основана в 2009 году. Начиная свою работу с оптовых продаж линолеума, за
-              непродолжительный период времени компания значительно увеличила ассортимент предлагаемой продукции.</p>
-            <p>Миссия компании - удовлетворение потребностей населения в напольных покрытиях путем предоставления
-              ассортимента качественной продукции по приемлемым ценам. Для её достижения нами регулярно проводится
-              работа над оптимизацией актуального ассортимента, мониторинг рынка отделочных материалов, принимаются во
-              внимание все изменения в производственных программах производителей, тенденции развития российского и
-              европейского потребительских рынков.</p>
+            <div class="full-product-card__description">
+              <p>ТК Линотрейд была основана в 2009 году. Начиная свою работу с оптовых продаж линолеума, за
+                непродолжительный период времени компания значительно увеличила ассортимент предлагаемой продукции.</p>
+              <p>Миссия компании - удовлетворение потребностей населения в напольных покрытиях путем предоставления
+                ассортимента качественной продукции по приемлемым ценам. Для её достижения нами регулярно проводится
+                работа над оптимизацией актуального ассортимента, мониторинг рынка отделочных материалов, принимаются во
+                внимание все изменения в производственных программах производителей, тенденции развития российского и
+                европейского потребительских рынков.</p>
+            </div>
+
           </div>
         </div>
       </div>

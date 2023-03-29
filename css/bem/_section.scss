@@ -40,15 +40,12 @@
     display: grid;
     gap: 32px;
     grid-template-columns: 1fr 1fr;
-
   }
   &__grid-left {
     .image {
       margin-bottom: 32px;
     }
   }
-
-
 
   .input-number {
     display: inline-flex;
@@ -57,7 +54,8 @@
   }
 
   .input-number__input {
-    width: 60px;
+    width: 100%;
+    max-width: 100%;
     text-align: center;
     border: none;
     outline: none;
@@ -91,6 +89,18 @@
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     text-align: center;
+  }
+
+  @media (max-width: 1250px) {
+    padding: 35px 0;
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+    &__grid-left {}
+
+    .sticky {
+      position: initial;
+    }
   }
 
   @media (max-width: 768px) {

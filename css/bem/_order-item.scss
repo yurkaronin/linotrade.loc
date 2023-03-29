@@ -4,7 +4,7 @@
   border-bottom: 1px solid #d9d9d9;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
   &__title {
   }
   &__number {
@@ -55,32 +55,85 @@
   &__button {
     max-width: max-content;
   }
-}
 
-@media (max-width: 1024px) {
-  .order-item {
+  @media (max-width: 1024px) {
     grid-template-columns: 1fr 1fr 1fr;
     padding: 24px 0;
     gap: 12px 32px;
+
+    .order-item__title {
+      grid-column: span 3;
+    }
+    .accordion__answer {
+      margin: 0 !important;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
-  .order-item__title {
-    grid-column: span 3;
-  }
-  .accordion__answer {
-    margin: 0 !important;
-    padding-left: 20px;
-    padding-right: 20px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+    .order-item__details:last-child {
+      grid-column: span 2;
+    }
+    .order-item__title {
+      grid-column: span 2;
+    }
   }
 }
 
-@media (max-width: 1024px) {
-  .order-item {
+.order-item--mod {
+  flex-wrap: nowrap;
+  gap: 0;
+  &:first-child {
+    border-top: 1px solid #d9d9d9;
+  }
+  &:last-child {
+    border-bottom: 1px solid #d9d9d9;
+  }
+  & + & {
+    border-top: 1px solid #d9d9d9;
+  }
+  .order-item__details {
+    max-width: 168px;
+    width: 100%;
+    margin-right: 12px;
+  }
+  .order-item__label {
+    text-align: left;
+  }
+  .input-number {
+    max-width: 168px;
+    width: 100%;
+  }
+  .button {
+    max-width: 152px;
+    padding: 10px 16px;
+    width: 100%;
+    margin-left: 32px;
+    flex-grow: 2;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 1250px) {
+    .input-number {
+      margin-left: auto;
+    }
+  }
+  @media (max-width: 700px) {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-  .order-item__details:last-child {
-    grid-column: span 2;
-  }
-  .order-item__title {
-    grid-column: span 2;
+    gap: 12px 32px;
+
+    .order-item__details {
+      margin: 0;
+    }
+    .input-number {
+      margin-left: initial;
+      max-width: 100%;
+    }
+    .button {
+      margin-left: initial;
+    }
   }
 }

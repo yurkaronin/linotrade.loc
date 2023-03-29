@@ -86,7 +86,6 @@
 @import "bem/image";
 @import "bem/backup";
 @import "bem/item-article";
-@import "bem/order-choice";
 @import "bem/features-group";
 
 // Смысловые секции
@@ -103,6 +102,8 @@
 @import "sections/product-catalog";
 @import "sections/brands";
 @import "sections/article";
+@import "sections/full-product-card";
+
 
 .card-label__list {
   * + & {
