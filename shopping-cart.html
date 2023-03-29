@@ -154,7 +154,7 @@
 
                     <span class="decorate"></span>
                   </div>
-                  <span class="number" title="Количество позиций в корзине">2</span>
+                  <span class="number number-of-products" title="Количество позиций в корзине">2</span>
                 </a>
 
               </li>
@@ -1057,49 +1057,158 @@
         <div class="section__title">
           <h2 class="title">Ковры</h2>
         </div>
-
+        <!-- Класс shopping-list обязателен. по нему скрипт считает количество товаров в корзине. и выводит их кол-во в шапке  -->
         <ul class="shopping-list list-reset">
-          <li class="shopping-list__item">
 
-              <div class="order-item">
-                <!-- картинка товара  -->
-                <div class="shopping-list__picture">
-                  <img src="./img/cart/1.jpg" alt="фото товара" width="85" loading="lazy">
-                </div>
-                <!-- Название -->
-                <div class="order-item__title">
-                  <span class="order-item__number">Коллекция, может быть артикул</span>
-                  <h3 class="order-item__name">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
-                </div>
-
-                <!-- Цена -->
-                <div class="order-item__details">
-                  <span class="order-item__label">Цена:</span>
-                  <span class="order-item__strong">2 680 ₽</span>
-                </div>
-                <!-- Выбор количества  -->
-                <div class="input-number">
-                  <button class="input-number__button input-number__button--minus" type="button"><svg width="16" height="2"
-                      viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                    </svg>
-                  </button>
-                  <input class="input-number__input" type="number" value="0">
-                  <button class="input-number__button input-number__button--plus" type="button"><svg width="16" height="16"
-                      viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                      <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33"></rect>
-                    </svg>
-                  </button>
-                </div>
-                <!-- Стоимость -->
-                <div class="order-item__details">
-                  <span class="order-item__label">Стоимость:</span>
-                  <span class="order-item__strong">2 680 ₽</span>
-                </div>
-
-                <a href="#" class="button button--icon-text order-item__button"><span>удалить</span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none"><path stroke="#fff" stroke-width="2" d="m21.5 1-20 20M21.5 21 1.5 1"/></svg><span class="decorate"></span></a>
+          <li class="order-item order-item--cart">
+            <!-- ссылка на товар  -->
+            <a href="#" class="order-item__link">
+              <!-- картинка товара  -->
+              <div class="shopping-list__picture">
+                <img src="./img/cart/1.jpg" alt="фото товара" width="85" loading="lazy">
               </div>
+              <!-- Название -->
+              <div class="order-item__title">
+                <span class="order-item__number">Коллекция, может быть артикул1</span>
+                <h3 class="order-item__name">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
+              </div>
+            </a>
+
+            <!-- Цена -->
+            <div class="order-item__details">
+              <span class="order-item__label">Цена:</span>
+              <span class="order-item__strong">2 680 ₽</span>
+            </div>
+            <!-- Выбор количества  -->
+            <div class="input-number">
+              <button class="input-number__button input-number__button--minus" type="button"><svg width="16" height="2"
+                  viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                </svg>
+              </button>
+              <input class="input-number__input" type="text" value="1" type="text" value="1" data-prefix=" шт.">
+              <button class="input-number__button input-number__button--plus" type="button"><svg width="16" height="16"
+                  viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33"></rect>
+                </svg>
+              </button>
+            </div>
+            <!-- Стоимость -->
+            <div class="order-item__details">
+              <span class="order-item__label">Стоимость:</span>
+              <span class="order-item__strong">2 680 ₽</span>
+            </div>
+            <!-- Кнопка УДАЛИТЬ  CSS-класс js-delete у кнопки обязателен-->
+            <button class="button button--icon-text order-item__button js-delete" type="button"><span>удалить</span><svg
+                xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
+                <path stroke="#fff" stroke-width="2" d="m21.5 1-20 20M21.5 21 1.5 1" />
+              </svg><span class="decorate"></span></button>
+          </li>
+          <li class="order-item order-item--cart">
+            <!-- ссылка на товар  -->
+            <a href="#" class="order-item__link">
+              <!-- картинка товара  -->
+              <div class="shopping-list__picture">
+                <img src="./img/cart/1.jpg" alt="фото товара" width="85" loading="lazy">
+              </div>
+              <!-- Название -->
+              <div class="order-item__title">
+                <span class="order-item__number">Коллекция, может быть артикул2</span>
+                <h3 class="order-item__name">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
+              </div>
+            </a>
+
+            <!-- Цена -->
+            <div class="order-item__details">
+              <span class="order-item__label">Цена:</span>
+              <span class="order-item__strong">2 680 ₽</span>
+            </div>
+            <!-- Выбор количества  -->
+            <div class="input-number">
+              <button class="input-number__button input-number__button--minus" type="button"><svg width="16" height="2"
+                  viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                </svg>
+              </button>
+              <input class="input-number__input" type="text" value="1" type="text" value="1" data-prefix=" шт.">
+              <button class="input-number__button input-number__button--plus" type="button"><svg width="16" height="16"
+                  viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33"></rect>
+                </svg>
+              </button>
+            </div>
+            <!-- Стоимость -->
+            <div class="order-item__details">
+              <span class="order-item__label">Стоимость:</span>
+              <span class="order-item__strong">2 680 ₽</span>
+            </div>
+            <!-- Кнопка УДАЛИТЬ  CSS-класс js-delete у кнопки обязателен-->
+            <button class="button button--icon-text order-item__button js-delete" type="button"><span>удалить</span><svg
+                xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
+                <path stroke="#fff" stroke-width="2" d="m21.5 1-20 20M21.5 21 1.5 1" />
+              </svg><span class="decorate"></span></button>
+          </li>
+          <li class="order-item order-item--cart">
+            <!-- ссылка на товар  -->
+            <a href="#" class="order-item__link">
+              <!-- картинка товара  -->
+              <div class="shopping-list__picture">
+                <img src="./img/cart/1.jpg" alt="фото товара" width="85" loading="lazy">
+              </div>
+              <!-- Название -->
+              <div class="order-item__title">
+                <span class="order-item__number">Коллекция, может быть артикул3</span>
+                <h3 class="order-item__name">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
+              </div>
+            </a>
+
+            <!-- Цена -->
+            <div class="order-item__details">
+              <span class="order-item__label">Цена:</span>
+              <span class="order-item__strong">2 680 ₽</span>
+            </div>
+            <!-- Выбор количества  -->
+            <div class="input-number">
+              <button class="input-number__button input-number__button--minus" type="button"><svg width="16" height="2"
+                  viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                </svg>
+              </button>
+              <input class="input-number__input" type="text" value="1" type="text" value="1" data-prefix=" шт.">
+              <button class="input-number__button input-number__button--plus" type="button"><svg width="16" height="16"
+                  viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33"></rect>
+                </svg>
+              </button>
+            </div>
+            <!-- Стоимость -->
+            <div class="order-item__details">
+              <span class="order-item__label">Стоимость:</span>
+              <span class="order-item__strong">2 680 ₽</span>
+            </div>
+            <!-- Кнопка УДАЛИТЬ  CSS-класс js-delete у кнопки обязателен-->
+            <button class="button button--icon-text order-item__button js-delete" type="button"><span>удалить</span><svg
+                xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
+                <path stroke="#fff" stroke-width="2" d="m21.5 1-20 20M21.5 21 1.5 1" />
+              </svg><span class="decorate"></span></button>
+          </li>
+          <li>
+            <!-- итого -->
+            <div class="order-item">
+
+              <div class="order-item__details order-item__details--long">
+                <span class="order-item__label">Итого стоимость заказа:</span>
+              </div>
+              <div class="order-item__details">
+                <span class="order-item__strong">37 520 ₽</span>
+              </div>
+
+
+            </div>
+            <!-- КОНЕЦ анонс заказа в строку -->
 
 
           </li>
@@ -1107,6 +1216,39 @@
         </ul>
 
 
+      </div>
+    </section>
+
+    <section class="section contact-form">
+      <div class="wrapper">
+        <form action="javascript:void(0);">
+          <div class="custom-form">
+            <!-- адрес доставки -->
+            <div class="custom-form__select custom-select" data-default="Выберите адрес">
+              <div class="custom-select__selected">Выберите адрес</div>
+              <div class="custom-select__options">
+                <div class="custom-select__option" data-value="Адрес 1">Адрес 1</div>
+                <div class="custom-select__option" data-value="Адрес 2">Адрес 2</div>
+                <div class="custom-select__option" data-value="Адрес 3">Адрес 3</div>
+                <div class="custom-select__option" data-value="Адрес 4">Адрес 4</div>
+              </div>
+              <input class="visually-hidden" type="hidden" name="selecting-category" value="">
+            </div>
+            <!-- комментарий -->
+            <div class="custom-form__item">
+              <label for="custom-form-texarea">Комментарий:</label>
+              <textarea id="custom-form-texarea" cols="30" rows="10"
+                placeholder="Введите Ваш комментарий"></textarea>
+            </div>
+
+            <button class="button button--full" type="submit">
+              <span>Заказать</span>
+              <span class="decorate"></span>
+            </button>
+
+
+          </div>
+        </form>
       </div>
     </section>
 

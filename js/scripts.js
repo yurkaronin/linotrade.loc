@@ -33,6 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
   includeFiles("./js/parts/scroll-to-anchor.js");
   includeFiles("./js/parts/yandex.map.js");
   includeFiles("./js/parts/changing-height-map.js");
+  includeFiles("./js/parts/removing-item-from-cart.js");
+
 
 
 });
