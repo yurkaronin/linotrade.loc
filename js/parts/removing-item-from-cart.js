@@ -1,4 +1,5 @@
-// Функция для обновления количества товаров в корзине
+if(document.querySelector('.number-of-products') && document.querySelector('.my-cart__shopping-list')) {
+  // Функция для обновления количества товаров в корзине
 function updateNumberOfProducts() {
   const numberOfProductsElement = document.querySelector('.number-of-products');
   const shoppingList = document.querySelector('.my-cart__shopping-list');
@@ -20,12 +21,14 @@ function removeOrderItem(event) {
 // Вызываем функцию после загрузки страницы
 // Находим все товары с классом .order-item--cart и кнопкой .js-delete
 const orderItems = document.querySelectorAll('.order-item--cart .js-delete');
-
-// Добавляем слушатель события клика на каждую кнопку удаления товара
+  // Добавляем слушатель события клика на каждую кнопку удаления товара
 orderItems.forEach((button) => {
   button.addEventListener('click', removeOrderItem);
 });
 
 // Обновляем количество товаров в корзине сразу после загрузки страницы
 updateNumberOfProducts();
+
+}
+
 

@@ -56,4 +56,11 @@
   .custom-select__selected {
     justify-content: space-between;
   }
+
+  &__solo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
 }

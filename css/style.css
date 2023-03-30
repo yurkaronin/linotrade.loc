@@ -2474,6 +2474,11 @@ h1, h2, h3, h4, h5, h6 {
 .custom-form .custom-select__selected {
   justify-content: space-between;
 }
+.custom-form__solo {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
 
 .header {
   border-bottom: 1px solid;
@@ -4181,7 +4186,7 @@ input[type=checkbox]:checked + label::before {
     margin-bottom: 12px;
   }
 }
-@media (max-width: 5500px) {
+@media (max-width: 550px) {
   .my-cart .order-item {
     gap: 0;
   }
@@ -4216,6 +4221,170 @@ input[type=checkbox]:checked + label::before {
   .my-cart .order-item--finish .order-item__details--long {
     max-width: max-content;
   }
+}
+
+.user-cabinet__grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 3fr;
+}
+.user-cabinet__tabs ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  max-width: 100%;
+  width: 100%;
+}
+.user-cabinet__tabs a {
+  background-color: #f7f7f7;
+  color: #373737;
+  transition: all 0.3s;
+  padding: 12px 24px;
+  height: 48px;
+  max-width: 100%;
+  width: 100%;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 20px;
+  align-items: center;
+  text-align: left;
+}
+.user-cabinet__tabs a svg path {
+  transition: all 0.3s;
+}
+.user-cabinet__tabs a:hover {
+  background-color: #44a611;
+  color: #ffffff;
+}
+.user-cabinet__tabs a:hover svg path {
+  stroke: #ffe603;
+}
+.user-cabinet .statistics-panel__list {
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 44px;
+}
+.user-cabinet .custom-form {
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+.user-cabinet .custom-form__grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 44px;
+}
+.user-cabinet .custom-form .button--full {
+  max-width: 608px;
+  margin: 0 auto;
+}
+.user-cabinet .custom-form__item {
+  margin-bottom: 0;
+}
+.user-cabinet__address-list {
+  margin-bottom: 22px;
+}
+.user-cabinet__address-item {
+  max-width: 100%;
+  position: relative;
+  padding: 14px 0;
+  border-bottom: 1px solid #d9d9d9;
+  display: grid;
+  gap: 12px;
+  align-items: center;
+  grid-template-columns: 1fr 40px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #373737;
+}
+.user-cabinet__address-item p {
+  margin: 0;
+}
+.user-cabinet__address-item:first-of-type {
+  border-top: 1px solid #d9d9d9;
+}
+.user-cabinet__address-item .button {
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+}
+.user-cabinet .accordion__question {
+  background-color: #f7f7f7;
+  transition: all 0.3s;
+  padding: 12px 24px;
+  height: 45px;
+  max-width: 100%;
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 18px 1fr 18px;
+  align-items: center;
+  text-align: left;
+  font-family: var(--Oswald);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #373737;
+}
+.user-cabinet .accordion.active svg path {
+  stroke: #ffffff;
+}
+.user-cabinet .accordion.active .icon path {
+  stroke: #ffe603;
+}
+.user-cabinet .accordion__question {
+  display: none;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.user-cabinet .accordion {
+  background: transparent;
+}
+.user-cabinet .accordion__answer {
+  max-height: initial;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+@media (max-width: 1024px) {
+  .user-cabinet .accordion__question {
+    display: grid;
+    pointer-events: initial;
+    opacity: 1;
+    visibility: initial;
+    background-color: #f7f7f7;
+  }
+  .user-cabinet .accordion {
+    background: transparent;
+  }
+  .user-cabinet .active .accordion__answer {
+    max-height: 100000px;
+    padding-bottom: 40px;
+    padding-top: 30px;
+  }
+  .user-cabinet .active .accordion__question {
+    color: #ffffff;
+  }
+  .user-cabinet .user-cabinet__grid {
+    display: block;
+  }
+  .user-cabinet .user-cabinet__grid-left {
+    display: none;
+  }
+  .user-cabinet .accordion__answer {
+    margin: 0;
+  }
+  .user-cabinet .custom-form .button--full {
+    max-width: 100%;
+    margin: initial;
+  }
+}
+.user-cabinet .user-cabinet .accordion__question {
+  height: 48px;
+  padding: 10px 20px;
 }
 
 .card-label__list {
