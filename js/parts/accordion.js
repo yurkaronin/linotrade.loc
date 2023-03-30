@@ -30,3 +30,39 @@ if (document.querySelector('.accordions')) {
     }
   });
 };
+
+
+
+
+if (window.innerWidth <= 1024) {
+  console.log('111');
+  const accordions = document.querySelector('.user-cabinet__accordions');
+  if (document.querySelector('.user-cabinet__accordions')) {
+
+    const faqItems = document.querySelectorAll('.user-cabinet__accordion');
+    const accordionHeaders = document.querySelectorAll('.user-cabinet__accordion-question'); // Добавить эту строку
+
+    // Expand the first accordion by default
+    faqItems[0].classList.add('active');
+
+    accordions.addEventListener('click', (event) => {
+      const item = event.target.closest('.user-cabinet__accordion');
+
+      // Добавить проверку на то, что клик произошел на заголовке аккордеона
+      const isHeaderClicked = [...accordionHeaders].some(header => header.contains(event.target));
+
+      // Если клик произошел на заголовке, то обрабатываем событие
+      if (isHeaderClicked) {
+
+        // Expand/collapse the clicked accordion
+        if (item.classList.contains('active')) {
+          item.classList.remove('active');
+        } else {
+          item.classList.add('active');
+        }
+      }
+    });
+  };
+}
+
+

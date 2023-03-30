@@ -1095,18 +1095,31 @@
           </div>
           <div class="user-cabinet__grid-right">
 
-            <!-- аккордеон профиль на компе аккордеоны не работают - у всех стоит доп класс active -->
-            <ul class="list-reset accordions">
-              <li class="accordion active">
+            <ul class="list-reset user-cabinet__accordions">
+
+              <!-- Аккордеон Профиль пользователя  -->
+              <li class="user-cabinet__accordion">
                 <!-- верх -->
-                <div class="accordion__question active">
-                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="22" height="25" fill="none"><path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2" d="M8 14.277v2.042h-.5L6 17.851l-2.504 1.204c-1.35.358-2.47 1.361-2.496 2.37V25"/><path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2" d="M16.001 5.596v1.021l1 .51v2.007c0 .342-.167.66-.445.85l-.555.718v1.021c0 1.98-2.562 2.841-3 3.064-.437.223-1.187.51-2 .51-.812 0-1.562-.287-2-.51-.437-.223-3-1.085-3-3.064v-1.02l-.555-.719a1.026 1.026 0 0 1-.445-.85V7.128l1-.511V5.596C6.001 3.057 8.016 1 10.501 1h1c2.486 0 4.5 2.057 4.5 4.596ZM8 16.32l3 2.552M11 18.872l-2.5 2.043L6 17.85"/><path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2" d="M14 14.277v2.042h.5l1.5 1.532 2.504 1.204c1.35.358 2.47 1.361 2.496 2.37V25M14 16.32l-3 2.552"/><path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2" d="m11 18.872 2.5 2.043L16 17.85"/><path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2" d="m12.5 19.894-.5 2.553H9.998l-.5-2.553M12.5 24.49l-.5-2.043H9.998l-.5 2.042"/></svg>
+                <div class="user-cabinet__accordion-question">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="22" height="25" fill="none">
+                    <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                      d="M8 14.277v2.042h-.5L6 17.851l-2.504 1.204c-1.35.358-2.47 1.361-2.496 2.37V25" />
+                    <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                      d="M16.001 5.596v1.021l1 .51v2.007c0 .342-.167.66-.445.85l-.555.718v1.021c0 1.98-2.562 2.841-3 3.064-.437.223-1.187.51-2 .51-.812 0-1.562-.287-2-.51-.437-.223-3-1.085-3-3.064v-1.02l-.555-.719a1.026 1.026 0 0 1-.445-.85V7.128l1-.511V5.596C6.001 3.057 8.016 1 10.501 1h1c2.486 0 4.5 2.057 4.5 4.596ZM8 16.32l3 2.552M11 18.872l-2.5 2.043L6 17.85" />
+                    <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                      d="M14 14.277v2.042h.5l1.5 1.532 2.504 1.204c1.35.358 2.47 1.361 2.496 2.37V25M14 16.32l-3 2.552" />
+                    <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2" d="m11 18.872 2.5 2.043L16 17.85" />
+                    <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                      d="m12.5 19.894-.5 2.553H9.998l-.5-2.553M12.5 24.49l-.5-2.043H9.998l-.5 2.042" />
+                  </svg>
                   <span>Профиль</span>
 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none"><path stroke="#44A611" stroke-width="2" d="M17 1 9.32 9 1 1"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                    <path stroke="#44A611" stroke-width="2" d="M17 1 9.32 9 1 1" />
+                  </svg>
                 </div>
                 <!-- содержимое -->
-                <div class="accordion__answer">
+                <div class="user-cabinet__accordion-answer">
                   <!-- аккордеон/контент  -->
                   <h3 class="title">профиль</h3>
                   <!-- группа статистики  -->
@@ -1119,15 +1132,15 @@
                           <h3 class="statistics-card__label">Использовано</h3>
                           <div class="statistics-card__details">
                             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="34" fill="none">
-                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                stroke-width="2"
+                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="2"
                                 d="M23.629 28.022V33H3.057C1.921 33 1 32.045 1 30.867v-15.29M18.829 25.178h.685"></path>
-                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                stroke-width="2"
+                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="2"
                                 d="M23.628 20.911c0 .711-.456 1.422-1.37 1.422h-3.43c-1.514 0-2.742 1.274-2.742 2.845 0 1.57 1.228 2.844 2.743 2.844h4.8c.757 0 1.371-.637 1.371-1.422v-4.267c0-.76-.686-1.422-1.372-1.422ZM11.971 1 5.8 7.4M11.972 1l6.17 6.4M11.972 1v13.511M20.886 17.355V13.8h-6.172">
                               </path>
-                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                stroke-width="2"
+                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="2"
                                 d="M9.229 13.8H2.714C1.767 13.8 1 14.596 1 15.578s.767 1.777 1.714 1.777H23.63v3.556">
                               </path>
                             </svg>
@@ -1145,20 +1158,20 @@
                           <h3 class="statistics-card__label">Лимит</h3>
                           <div class="statistics-card__details">
                             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="34" fill="none">
-                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                stroke-width="2"
+                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="2"
                                 d="M1 12.573V2.651M23.703 14.564v5.168H13.324M19.162 11.98h.649M21.108 1H2.622C1.726 1 1 1.723 1 2.615S1.726 4 2.622 4h21.08v4.105M11.378 26.54c2.508 0 4.54-.867 4.54-1.937s-2.032-1.938-4.54-1.938c-2.507 0-4.54.868-4.54 1.938 0 1.07 2.033 1.938 4.54 1.938Z">
                               </path>
-                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                stroke-width="2"
+                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="2"
                                 d="M6.838 24.603v3.23c0 1.07 2.033 1.937 4.54 1.937 2.508 0 4.54-.867 4.54-1.937v-3.23">
                               </path>
-                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                stroke-width="2"
+                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="2"
                                 d="M15.919 27.833v3.23c0 1.07-2.033 1.937-4.54 1.937-2.508 0-4.541-.867-4.541-1.938v-3.23M1 21.373v3.23c0 .976 1.691 1.784 3.892 1.918M5.54 20.082c2.508 0 4.541-.868 4.541-1.938 0-1.07-2.033-1.938-4.54-1.938-2.508 0-4.541.868-4.541 1.938 0 1.07 2.033 1.938 4.54 1.938ZM10.081 20.727v-2.583">
                               </path>
-                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                stroke-width="2"
+                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="2"
                                 d="M1 18.144v3.23c0 1.01 1.818 1.842 4.135 1.93M4.893 29.751C2.692 29.617 1 28.809 1 27.833v-3.23M23.703 8.105c0 .646-.432 1.292-1.298 1.292h-3.243a2.59 2.59 0 0 0-2.594 2.584 2.59 2.59 0 0 0 2.594 2.583h4.54c.717 0 1.298-.578 1.298-1.291V9.397c0-.691-.649-1.292-1.297-1.292Z">
                               </path>
                             </svg>
@@ -1176,8 +1189,8 @@
                           <h3 class="statistics-card__label">Ближайшая оплата</h3>
                           <div class="statistics-card__details">
                             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="32" fill="none">
-                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                stroke-width="2"
+                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="2"
                                 d="M8.072 16.865H1.567A.567.567 0 0 1 1 16.3v-13.6c0-.312.254-.566.567-.566h.701M16.743 2.133h.7c.314 0 .568.254.568.567v11.064M14.042 1v2.266M7.67 2.133h3.67M4.97 1v2.266">
                               </path>
                               <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
@@ -1185,12 +1198,12 @@
                               </path>
                               <path stroke="#67CB33" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
                                 d="M1 5.533h17.01"></path>
-                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                stroke-width="2"
+                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="2"
                                 d="m14.48 18.703 1.023-.49c.322-.154.925-.192 1.268.02l1.022-.49c.48-.23 1.237-.043 1.513.532l1.022-.49c.48-.23 1.238-.044 1.513.531l2.553 5.317c.497 1.033-.226 2.148.105 2.836L25 27.696">
                               </path>
-                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                stroke-width="2"
+                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="2"
                                 d="m15.462 20.747-2.454-5.109a1.134 1.134 0 0 0-2.044.98l3.434 7.152a.866.866 0 0 1-1.264.434l-1.434-.88c-1.36-.733-2.308.5-2.071.993 0 0 3.29 2.878 3.679 3.118.625.388 3.679 1.726 3.889 2.163L18.12 31M16.77 18.233l.982 2.044M19.306 18.275l.736 1.533">
                               </path>
                             </svg>
@@ -1208,15 +1221,15 @@
                           <h3 class="statistics-card__label">Сумма оплаты</h3>
                           <div class="statistics-card__details">
                             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="34" fill="none">
-                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                stroke-width="2"
+                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="2"
                                 d="M23.629 28.022V33H3.057C1.921 33 1 32.045 1 30.867v-15.29M18.829 25.178h.685"></path>
-                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                stroke-width="2"
+                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="2"
                                 d="M23.628 20.911c0 .711-.456 1.422-1.37 1.422h-3.43c-1.514 0-2.742 1.274-2.742 2.845 0 1.57 1.228 2.844 2.743 2.844h4.8c.757 0 1.371-.637 1.371-1.422v-4.267c0-.76-.686-1.422-1.372-1.422ZM11.972 14.511l6.17-6.4M11.971 14.511 5.8 8.111M11.971 14.511V1M20.886 17.355V13.8h-4.172">
                               </path>
-                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                                stroke-width="2"
+                              <path stroke="#67CB33" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="2"
                                 d="M7.229 13.8H2.714C1.767 13.8 1 14.596 1 15.578s.767 1.778 1.714 1.778H23.63v3.555">
                               </path>
                             </svg>
@@ -1279,7 +1292,8 @@
                       <li class="user-cabinet__address-item">
                         <p>г. Краснодар, ул. Лизюкова, 16</p>
                         <button class="button button--icon" type="button">
-                          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path d="M21 1L1 21" stroke="white" stroke-width="2"></path>
                             <path d="M21 21L1 0.999999" stroke="white" stroke-width="2"></path>
                           </svg>
@@ -1289,7 +1303,8 @@
                       <li class="user-cabinet__address-item">
                         <p>г. Краснодар, ул. Лизюкова, 16</p>
                         <button class="button button--icon" type="button">
-                          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path d="M21 1L1 21" stroke="white" stroke-width="2"></path>
                             <path d="M21 21L1 0.999999" stroke="white" stroke-width="2"></path>
                           </svg>
@@ -1299,7 +1314,8 @@
                       <li class="user-cabinet__address-item">
                         <p>г. Краснодар, ул. Лизюкова, 16</p>
                         <button class="button button--icon" type="button">
-                          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path d="M21 1L1 21" stroke="white" stroke-width="2"></path>
                             <path d="M21 21L1 0.999999" stroke="white" stroke-width="2"></path>
                           </svg>
@@ -1331,7 +1347,106 @@
                   <!-- КОНЕЦ добавить новый адрес  -->
                 </div>
               </li>
+              <!-- КОНЕЦ аккордеон профиль пользователя  -->
+              <!-- Аккордеон персонального менеджера  -->
+              <li class="user-cabinet__accordion">
+                <!-- верх -->
+                <div class="user-cabinet__accordion-question">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="22" height="25" fill="none">
+                    <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                      d="M8 14.277v2.042h-.5L6 17.851l-2.504 1.204c-1.35.358-2.47 1.361-2.496 2.37V25" />
+                    <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                      d="M16.001 5.596v1.021l1 .51v2.007c0 .342-.167.66-.445.85l-.555.718v1.021c0 1.98-2.562 2.841-3 3.064-.437.223-1.187.51-2 .51-.812 0-1.562-.287-2-.51-.437-.223-3-1.085-3-3.064v-1.02l-.555-.719a1.026 1.026 0 0 1-.445-.85V7.128l1-.511V5.596C6.001 3.057 8.016 1 10.501 1h1c2.486 0 4.5 2.057 4.5 4.596ZM8 16.32l3 2.552M11 18.872l-2.5 2.043L6 17.85" />
+                    <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                      d="M14 14.277v2.042h.5l1.5 1.532 2.504 1.204c1.35.358 2.47 1.361 2.496 2.37V25M14 16.32l-3 2.552" />
+                    <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2" d="m11 18.872 2.5 2.043L16 17.85" />
+                    <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                      d="m12.5 19.894-.5 2.553H9.998l-.5-2.553M12.5 24.49l-.5-2.043H9.998l-.5 2.042" />
+                  </svg>
+                  <span>Ваш менеджер</span>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                    <path stroke="#44A611" stroke-width="2" d="M17 1 9.32 9 1 1" />
+                  </svg>
+                </div>
+                <!-- содержание  -->
+                <div class="user-cabinet__accordion-answer">
+                  <div class="manager-card">
+                    <div class="manager-card__grid">
+                      <div class="manager-card__grid-left">
+                        <div class="manager-card__photo image">
+                          <img src="./img/manager/1.jpg" alt="фото менеджера" loading="lazy" width="320">
+                        </div>
+                      </div>
+                      <div class="manager-card__grid-right">
+                        <h3 class="title">Ваш менеджер Калугина Людмила Прокофьевна</h3>
+
+                        <ul class="contacts__list list-reset">
+
+                          <li>
+                            <h4 class="contacts__title">Телефон менеджера:</h4>
+                            <p class="contacts__text">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+                                <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                                  d="M7.647 14.353c4.588 4.588 8.97 5.56 10.588 5.647A11.847 11.847 0 0 0 20 16.118c-1.118-1.088-2.745-2.199-4.235-2.824L14 15.06c-.603-.162-2.257-.845-4.235-2.824C7.787 10.258 7.103 8.603 6.94 8l1.765-1.765C8.08 4.745 6.97 3.118 5.882 2A11.83 11.83 0 0 0 2 3.765c.088 1.617 1.059 6 5.647 10.588Z" />
+                              </svg>
+                              <a href="tel:+79283320468">+7 928 332-04-68</a>
+                            </p>
+                          </li>
+
+                          <li>
+                            <h4 class="contacts__title">E-mail:</h4>
+                            <p class="contacts__text">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none">
+                                <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
+                                  d="M19 14.097c0 .498-.366.903-.818.903H1.818C1.367 15 1 14.595 1 14.097V1.903C1 1.405 1.367 1 1.818 1h16.364c.452 0 .818.405.818.903v12.194Z">
+                                </path>
+                                <path stroke="#67CB33" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+                                  d="m17.773 2.525-5.748 7.138c-1.119 1.388-2.932 1.388-4.05 0L1.75 1.875M2.637 13.843 6.319 9.27M17.363 13.843 13.682 9.27">
+                                </path>
+                              </svg>
+                              <a href="mailto:info@linotrade.ru">info@linotrade.ru</a>
+                            </p>
+                          </li>
+                        </ul>
+                        <a href="#" class="manager-card__button button">
+                          <span>написать в Telegram</span>
+                          <span class="decorate"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- КОНЕЦ Аккордеон персонального менеджера  -->
+
+              <li class="user-cabinet__accordion">
+                <div class="user-cabinet__accordion-question">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="26" fill="none"><path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2" d="M1 1h15.385L21 5.5V25H1V1Z"/><path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2" d="M18.25 8.25h-5v-5"/></svg>
+                  <span>Акты-сверки</span>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                    <path stroke="#44A611" stroke-width="2" d="M17 1 9.32 9 1 1" />
+                  </svg>
+                </div>
+                <div class="user-cabinet__accordion-answer"></div>
+              </li>
+              <!-- Заказы  -->
+              <li class="user-cabinet__accordion">
+                <div class="user-cabinet__accordion-question">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" fill="none"><path stroke="#67CB33" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M9 19.15c.204-.21.414-.55 1.067-.55h8c.593 0 3.852-3.37 4.267-3.85.398-.46 2.174-3.213 2.666-4.4-.309-.43-1.145-.786-2.133-.55-.943.226-1.498.924-2.133 2.2l-2.445 1.309"/><path stroke="#67CB33" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M12.2 15.3H17c2.133 0 2.133-2.75 0-2.75h-3.352c-.444 0-1.278-1.1-1.982-1.1H8.999c-.72 0-1.616.603-2.133 1.1l-2.134 2.2"/><path stroke="#67CB33" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="m7.4 23 2.666-2.75-6.4-6.6L1 16.4 7.4 23Z"/><path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2" d="M23.4 9.8V1H8.468v10.45"/><path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2" d="M17.799 1v3h-4V1M11 9h1M13 9h1M15 9h1"/></svg>
+                  <span>Заказы</span>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="11" fill="none">
+                    <path stroke="#44A611" stroke-width="2" d="M17 1 9.32 9 1 1" />
+                  </svg>
+                </div>
+                <div class="user-cabinet__accordion-answer"></div>
+              </li>
             </ul>
+            <!-- Выход  -->
+            <a href="#" class="user-cabinet__logout button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" fill="none"><path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2" d="M23.5 17H13v6L2 13 13 3v6h10.5"/></svg>
+              <span>Выход</span><span class="decorate"></span></a>
 
 
 
