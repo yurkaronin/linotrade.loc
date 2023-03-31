@@ -1879,7 +1879,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: max-content;
 }
 .product-card__label:not(:last-of-type) {
-  margin-right: 1px;
+  margin-right: 11px;
 }
 .product-card__label:last-of-type {
   margin-left: auto;
