@@ -1078,7 +1078,7 @@
               </li>
 
               <li>
-                <h3 class="contacts__title">Справочная служба:</h3>
+                <h3 class="contacts__title">Телефон:</h3>
                 <p class="contacts__text">
                   <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
                     <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
@@ -1108,8 +1108,8 @@
             <div class="contacts__buttons">
               <a href="#" class="button"><span>Проложить маршрут</span><span
                   class="decorate"></span></a>
-              <a href="#" class="button" data-dialog-button="modal-2"><span>Задать вопрос</span><span
-                  class="decorate"></span></a>
+              <!-- <a href="#" class="button" data-dialog-button="modal-2"><span>Задать вопрос</span><span
+                  class="decorate"></span></a> -->
             </div>
             <!-- КОНЕЦ кнопки  -->
 
@@ -1147,7 +1147,7 @@
                       </li>
 
                       <li>
-                        <h3 class="contacts__title">Справочная служба:</h3>
+                        <h3 class="contacts__title">Телефон:</h3>
                         <p class="contacts__text">
                           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
                             <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
@@ -1229,7 +1229,7 @@
                       </li>
 
                       <li>
-                        <h3 class="contacts__title">Справочная служба:</h3>
+                        <h3 class="contacts__title">Телефон:</h3>
                         <p class="contacts__text">
                           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
                             <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
@@ -1311,7 +1311,7 @@
                       </li>
 
                       <li>
-                        <h3 class="contacts__title">Справочная служба:</h3>
+                        <h3 class="contacts__title">Телефон:</h3>
                         <p class="contacts__text">
                           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
                             <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
@@ -1393,7 +1393,7 @@
                       </li>
 
                       <li>
-                        <h3 class="contacts__title">Справочная служба:</h3>
+                        <h3 class="contacts__title">Телефон:</h3>
                         <p class="contacts__text">
                           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
                             <path stroke="#67CB33" stroke-miterlimit="10" stroke-width="2"
@@ -1587,7 +1587,7 @@
             <a href="mailto:info@linotrade.ru"><span>info@linotrade.ru</span></a>
           </div>
 
-          <p class="copyright">© ТК «ЛИНОТРЕЙД» 2023. Все права защищены.</p>
+          <p class="copyright"><span>© ТК «ЛИНОТРЕЙД» 2023.</span> Все права защищены.</p>
           <div class="site-developers">
             <span>Создание сайта -</span>
             <a class="site-developers__link" href="https://very-good.ru/" target="_blank">Very-good</a>
@@ -1605,85 +1605,6 @@
     </div>
   </footer>
   <!-- КОНЕЦ Подвал -->
-
-
-  <!-- оверлей  -->
-  <!-- Обязателен на всех страницах с диалоговыми окнами. Лучше всего просто добавить его в шаблон всех страниц сайта  -->
-  <div class="overlay"></div>
-  <!-- КОНЕЦ оверлей  -->
-  <!-- Диалоговые окна -->
-  <!-- Задать вопрос -->
-  <section class="modal" data-dialog-modal="modal-2">
-    <form action="javascript:void(0);" method="post">
-      <div class="modal__wrapper">
-
-        <!-- шапка диалогового окна -->
-        <div class="modal__header">
-          <h2 class="title">Задать вопрос</h2>
-          <p class="subtitle">Заполните простую форму указав телефон и e-mail, для ответа. Наши специалисты
-            ответят
-            в ближайшее время.</p>
-        </div>
-        <!-- КОНЕЦ шапка диалогового окна -->
-
-        <!-- тело диалогового окна  -->
-        <div class="modal__body">
-          <div class="modal__grid">
-            <div class="modal__form-item">
-              <label for="question-form-tel">ФИО:</label>
-              <input id="question-form-tel" type="text" placeholder="Введите имя">
-            </div>
-
-            <div class="modal__form-item">
-              <label for="question-form-name">Телефон:</label>
-              <input id="question-form-name" type="tel" placeholder="Введите телефон" required>
-            </div>
-
-            <div class="modal__form-item">
-              <label for="question-form-email">E-mail:</label>
-              <input id="question-form-email" type="text" placeholder="Для ответа">
-            </div>
-
-            <div class="modal__form-item modal__form-item--textarea">
-              <label for="question-form-texarea">Сообщение:</label>
-              <textarea id="question-form-texarea" cols="30" rows="10"
-                placeholder="Введите Ваш вопрос или сообщение"></textarea>
-            </div>
-          </div>
-
-        </div>
-        <!-- КОНЕЦ тело диалогового окна  -->
-
-        <!-- Подвал диалогового окна -->
-        <div class="modal__footer">
-          <div class="modal__form-item--check">
-            <input class="visually-hidden" type="checkbox" name="user-consent" id="promo-form-consent" checked>
-            <label for="promo-form-consent">Я согласен с условиями обработки <a href="#" target="_blank">персональных
-                данных</a></label>
-          </div>
-
-          <button class="button" type="submit">
-            <span>Отправить</span>
-            <span class="decorate"></span>
-          </button>
-        </div>
-        <!-- КОНЕЦ Подвал диалогового окна -->
-
-        <!-- кнопка закрытия диалогового окна -->
-        <!-- класс close-btn - обязателен!  -->
-        <button class="button button--icon close-btn" type="button">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M21 1L1 21" stroke="white" stroke-width="2" />
-            <path d="M21 21L1 0.999999" stroke="white" stroke-width="2" />
-          </svg>
-          <span class="decorate"></span>
-        </button>
-        <!-- КОНЕЦ кнопка закрытия диалогового окна -->
-      </div>
-
-    </form>
-  </section>
-  <!-- КОНЕЦ Диалоговые окна  -->
 
   <!-- подключаем эту библиотеку только на странице с контактами  -->
   <script src="https://api-maps.yandex.ru/2.1/?apikey=99d7675e-f984-459d-a854-2fe51340a298&lang=ru_RU"

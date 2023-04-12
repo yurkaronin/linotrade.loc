@@ -81,9 +81,7 @@
       padding-left: 20px;
       padding-right: 20px;
     }
-  }
 
-  @media (max-width: 1024px) {
     grid-template-columns: 1fr 1fr;
     .order-item__details:last-child {
       grid-column: span 2;
@@ -178,4 +176,20 @@
   }
 
 
+}
+
+@media (max-width: 450px) {
+  .order-item__strong {
+    font-size: 25px;
+  }
+  .order-item__link {
+    // grid-template-columns: 110px 1fr;
+  }
+  .order-item__name {
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  .order-item__number {
+    margin-bottom: 6px;
+  }
 }

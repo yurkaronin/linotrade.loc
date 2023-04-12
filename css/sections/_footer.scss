@@ -246,3 +246,9 @@
     transform: translateX(100%) rotate(90deg);
   }
 }
+
+@media (max-width: 450px) {
+  .footer .copyright span {
+    display: block;
+  }
+}

@@ -305,7 +305,7 @@
       .product-card__details {
         left: -10px;
         &::after {
-          left: 10%;
+          left: 10% !important;
         }
       }
     }
@@ -389,6 +389,7 @@
     opacity: 1;
     pointer-events: initial;
   }
+
 }
 
 .product-card__footer--mod + .product-card__details li {
