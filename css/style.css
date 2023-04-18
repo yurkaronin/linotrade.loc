@@ -2072,8 +2072,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (max-width: 620px) {
+  .product-card .product-card__details .catalog-filter {
+    max-height: 320px;
+  }
   .product-card .product-card__details {
-    bottom: 50%;
     width: calc(200% + 32px);
     left: calc(-100% - 24px);
   }
