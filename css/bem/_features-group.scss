@@ -24,4 +24,8 @@
     color: #909090;
     margin-right: auto;
   }
+
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+  }
 }
