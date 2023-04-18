@@ -9,6 +9,12 @@
   <!-- <base href="http://127.0.0.12:5500/"> -->
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
+  <!-- Вставьте этот код в раздел <head> вашего HTML-файла -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.ru.js"></script>
+
   <link rel="stylesheet" href="./libs/normalize.min.css">
   <link rel="stylesheet" href="./css/style.css">
 
@@ -1730,8 +1736,9 @@
                       <div class="custom-form__grid">
 
                         <div class="custom-form__item">
-                          <label for="custom-form-date">Поиск заказов:</label>
-                          <input type="date" id="custom-form-date">
+                          <label for="custom-form-date">Период заказа:</label>
+                          <!-- Вставьте этот код туда, где должно располагаться поле с выбором диапазона дат -->
+                          <input type="text" id="datepicker" placeholder="Выберите диапазон">
                         </div>
 
 
@@ -2548,48 +2555,50 @@
                       </ul>
 
                       <a href="#" class="button button--ghost show-more"><span>Показать еще</span><span
-                        class="decorate"></span></a>
+                          class="decorate"></span></a>
 
-                    <div class="pagination">
-                      <ul class="pagination__list list-reset">
-                        <li class="pagination__item">
-                          <a class="pagination__link button button--icon pagination__link--prev" href="#"
-                            title="Предыдущая страница">
-                            <svg width="11" height="18" viewBox="0 0 11 18" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path d="M10 1L2 8.68L10 17" stroke="white" stroke-width="2"></path>
-                            </svg>
-                            <span class="decorate"></span>
-                          </a>
-                        </li>
+                      <div class="pagination">
+                        <ul class="pagination__list list-reset">
+                          <li class="pagination__item">
+                            <a class="pagination__link button button--icon pagination__link--prev" href="#"
+                              title="Предыдущая страница">
+                              <svg width="11" height="18" viewBox="0 0 11 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 1L2 8.68L10 17" stroke="white" stroke-width="2"></path>
+                              </svg>
+                              <span class="decorate"></span>
+                            </a>
+                          </li>
 
-                        <li class="pagination__item"><a class="pagination__link button" href="#"><span>1</span><span
-                              class="decorate"></span></a></li>
-                        <li class="pagination__item"><a class="pagination__link button active"
-                            href="#"><span>2</span><span class="decorate"></span></a></li>
-                        <li class="pagination__item"><a class="pagination__link button" href="#"><span>3</span><span
-                              class="decorate"></span></a></li>
-                        <li class="pagination__item pagination__item--768"><a class="pagination__link button"
-                            href="#"><span>4</span><span class="decorate"></span></a></li>
-                        <li class="pagination__item pagination__item--1440"><a class="pagination__link button"
-                            href="#"><span>5</span><span class="decorate"></span></a></li>
-                        <li class="pagination__item"><a class="pagination__link pagination__link--dotted"
-                            href="#">...</a>
-                        </li>
-                        <li class="pagination__item"><a class="pagination__link button" href="#"><span>24</span><span
-                              class="decorate" style="left: 31.5px; top: 0.5625px; width: 0px; height: 0px;"></span></a>
-                        </li>
-                        <li class="pagination__item"><a
-                            class="pagination__link button pagination__link--next button button--icon" href="#"
-                            title="Следующая страница">
-                            <svg width="11" height="18" viewBox="0 0 11 18" fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path d="M0.999999 1L9 8.68L1 17" stroke="white" stroke-width="2"></path>
-                            </svg>
-                            <span class="decorate" style="left: 0.5px; top: 30.5625px; width: 0px; height: 0px;"></span>
-                          </a></li>
-                      </ul>
-                    </div>
+                          <li class="pagination__item"><a class="pagination__link button" href="#"><span>1</span><span
+                                class="decorate"></span></a></li>
+                          <li class="pagination__item"><a class="pagination__link button active"
+                              href="#"><span>2</span><span class="decorate"></span></a></li>
+                          <li class="pagination__item"><a class="pagination__link button" href="#"><span>3</span><span
+                                class="decorate"></span></a></li>
+                          <li class="pagination__item pagination__item--768"><a class="pagination__link button"
+                              href="#"><span>4</span><span class="decorate"></span></a></li>
+                          <li class="pagination__item pagination__item--1440"><a class="pagination__link button"
+                              href="#"><span>5</span><span class="decorate"></span></a></li>
+                          <li class="pagination__item"><a class="pagination__link pagination__link--dotted"
+                              href="#">...</a>
+                          </li>
+                          <li class="pagination__item"><a class="pagination__link button" href="#"><span>24</span><span
+                                class="decorate"
+                                style="left: 31.5px; top: 0.5625px; width: 0px; height: 0px;"></span></a>
+                          </li>
+                          <li class="pagination__item"><a
+                              class="pagination__link button pagination__link--next button button--icon" href="#"
+                              title="Следующая страница">
+                              <svg width="11" height="18" viewBox="0 0 11 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.999999 1L9 8.68L1 17" stroke="white" stroke-width="2"></path>
+                              </svg>
+                              <span class="decorate"
+                                style="left: 0.5px; top: 30.5625px; width: 0px; height: 0px;"></span>
+                            </a></li>
+                        </ul>
+                      </div>
                     </div>
 
                   </div>
@@ -2762,6 +2771,19 @@
     </div>
   </footer>
   <!-- КОНЕЦ Подвал -->
+
+  <script>
+    $(document).ready(function() {
+        $('#datepicker').datepicker({
+            language: 'ru', // Замените 'en' на 'ru'
+            range: true,
+            multipleDatesSeparator: ' - ',
+            onSelect: function(formattedDate, date, inst) {
+                // Здесь можно обработать выбранные даты, если это необходимо
+            }
+        });
+    });
+    </script>
 
   <script src="./js/scripts.js"></script>
 </body>
