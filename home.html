@@ -9,8 +9,18 @@
   <!-- <base href="http://127.0.0.12:5500/"> -->
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
+
+
+  <!-- Вставьте этот код в раздел <head> вашего HTML-файла -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.ru.js"></script>
+
+
   <link rel="stylesheet" href="./libs/normalize.min.css">
   <link rel="stylesheet" href="./css/style.css">
+
 
 </head>
 
@@ -57,10 +67,10 @@
         <!-- нижняя часть -->
         <div class="bottom">
 
-            <a href="#" class="button button--catalog catalog-btn-call">
-              <span>Каталог</span>
-              <span class="decorate"></span>
-            </a>
+          <a href="#" class="button button--catalog catalog-btn-call">
+            <span>Каталог</span>
+            <span class="decorate"></span>
+          </a>
 
           <div class="group">
             <!-- селект -->
@@ -1387,7 +1397,11 @@
               <!-- поле выбора периода -->
               <div class="period-selection">
                 <label for="period-selection-input">Период заказа:</label>
-                <input type="date" id="period-selection-input">
+                <!-- <input type="date" id="period-selection-input"> -->
+
+                <!-- Вставьте этот код туда, где должно располагаться поле с выбором диапазона дат -->
+                <input type="text" id="datepicker" placeholder="Выберите диапазон">
+
               </div>
               <!-- КОНЕЦ поле выбора периода -->
               <!-- селект -->
@@ -2180,7 +2194,8 @@
         <!-- КОНЕЦ Список заказов в виде аккордеонов -->
 
         <!-- мега гига кнопка -->
-        <a href="#" class="user-orders__button button button--full"><span>сделать заказ</span><span class="decorate"></span></a>
+        <a href="#" class="user-orders__button button button--full"><span>сделать заказ</span><span
+            class="decorate"></span></a>
       </div>
 
     </section>
@@ -2337,6 +2352,21 @@
     </div>
   </footer>
   <!-- КОНЕЦ Подвал -->
+
+  <script>
+    $(document).ready(function() {
+        $('#datepicker').datepicker({
+            language: 'ru', // Замените 'en' на 'ru'
+            range: true,
+            multipleDatesSeparator: ' - ',
+            onSelect: function(formattedDate, date, inst) {
+                // Здесь можно обработать выбранные даты, если это необходимо
+            }
+        });
+    });
+    </script>
+
+
 
   <script src="./js/scripts.js"></script>
 </body>
