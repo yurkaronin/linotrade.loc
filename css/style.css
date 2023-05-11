@@ -2662,6 +2662,7 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: cover;
   display: block;
   max-height: 152px;
+  height: 152px;
   margin: auto;
 }
 .mini-gallery .image a {
@@ -2670,23 +2671,48 @@ h1, h2, h3, h4, h5, h6 {
 .mini-gallery .image {
   transition: all 0.3s;
   overflow: hidden;
+  flex-shrink: 0;
 }
 .mini-gallery .image:hover, .mini-gallery .image:focus, .mini-gallery .image:hover {
-  border-color: #67CB33;
+  border-color: #67cb33;
 }
 .mini-gallery .image:hover img, .mini-gallery .image:focus img, .mini-gallery .image:hover img {
   transition: all 0.3s;
   scale: 1.1;
 }
 .mini-gallery .image.active {
-  border-color: #67CB33;
+  border-color: #67cb33;
 }
 @media (max-width: 1250px) {
   .mini-gallery li {
     width: calc(25% - 17px);
   }
   .mini-gallery li:nth-child(3n) {
+    width: calc(25% - 17px);
+    margin-right: 17px;
+  }
+  .mini-gallery li:nth-child(4n) {
     width: 25%;
+    margin-right: 0;
+  }
+}
+@media (max-width: 700px) {
+  .mini-gallery li {
+    width: calc(33.3333333333% - 17px);
+  }
+  .mini-gallery li:nth-child(4n) {
+    width: calc(33.3333333333% - 17px);
+    margin-right: 17px;
+  }
+  .mini-gallery li:nth-child(3n) {
+    width: 33.3333333333%;
+    margin-right: 0;
+  }
+}
+@media (max-width: 450px) {
+  .mini-gallery .image img {
+    max-height: 75px;
+    height: 75px;
   }
 }
 
