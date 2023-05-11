@@ -1,0 +1,34 @@
+.custom-slider {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+
+  .swiper-slide {
+    max-width: 100%;
+    width: 100% !important;
+  }
+
+  &__navigation {
+    position: absolute;
+    padding: 16px;
+    background-color: #fff;
+    bottom: 1px;
+    right: 1px;
+    z-index: 5;
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 48px 48px;
+
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        z-index: 22;
+        position: absolute;
+        pointer-events: none;
+      }
+    }
+  }
+}

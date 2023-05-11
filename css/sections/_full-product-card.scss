@@ -13,6 +13,10 @@
   & + .slider {
     padding-top: 0;
   }
+  &__grid-left {
+    max-width: 100%;
+    width: 100%;
+  }
 
   @media (max-width: 1024px) {
     &__image {
