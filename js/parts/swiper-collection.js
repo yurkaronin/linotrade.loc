@@ -130,3 +130,58 @@ if (document.querySelector('.mySwiper-3')) {
   });
 
 };
+
+// большой слайдер
+if (document.querySelector('.custom-slider')) {
+  var swiper = new Swiper(".custom-slider .swiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+
+    slidesPerView: 1,
+    // loop: true,
+    navigation: {
+      nextEl: ".custom-slider .navigation-button-next",
+      prevEl: ".custom-slider .navigation-button-prev",
+    },
+    on: {
+      slideChange: function () {
+        setActiveThumbnail(this.activeIndex);
+      }
+    }
+  });
+
+  // Получение всех элементов .mini-gallery
+  var galleryEls = document.querySelectorAll('.mini-gallery .image');
+
+  // Функция для установки активного класса на миниатюру
+  function setActiveThumbnail(index) {
+    // Удаление активного класса со всех миниатюр
+    galleryEls.forEach(function (galleryEl) {
+      galleryEl.classList.remove('active');
+    });
+
+    // Добавление активного класса к текущей миниатюре
+    // Модульное деление используется из-за циклического переключения слайдов
+    var activeThumbnail = galleryEls[index % galleryEls.length];
+    activeThumbnail.classList.add('active');
+  }
+
+  // Установка активного класса на начальный слайд
+  setActiveThumbnail(swiper.activeIndex);
+
+  // Добавление обработчика события click на каждый элемент .mini-gallery
+  galleryEls.forEach(function (galleryEl, index) {
+    galleryEl.addEventListener('click', function (e) {
+      e.preventDefault();
+      // Переход к соответствующему слайду
+      // Индекс увеличивается на 1, т.к. Swiper начинается с индекса 1
+      swiper.slideTo(index + 1);
+    });
+  });
+}
+
+
