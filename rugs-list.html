@@ -11,6 +11,8 @@
 
   <link rel="stylesheet" href="./libs/normalize.min.css">
   <link rel="stylesheet" href="./css/style.css">
+  <!-- новый файл стилей  -->
+  <link rel="stylesheet" href="./css/custom.min.css">
 
 </head>
 
@@ -1297,29 +1299,76 @@
           <!-- правая часть  -->
           <div class="product-catalog__main">
             <!-- сортировка товаров-->
-            <div class="product-catalog__order sort-order">
-              <span class="sort-order__subtitle">Сортировать по: </span>
-              <ul class="list-reset">
-                <li class="sort-order__item">
-                  <a class="sort-order__link active" href="">Новинки</a>
-                </li>
-                <li class="sort-order__item">
-                  <a class="sort-order__link" href="">цена</a>
-                </li>
-              </ul>
 
-              <!-- <ul class="sort-sequence__list  list  flex">
-                <li><a class="sort-sequence__item  icon-up" title="По возрастанию" href="">По возрастанию</a></li>
-                <li><a class="sort-sequence__item  icon-down  active" title="По убыванию" href="">По убыванию</a></li>
-              </ul> -->
+            <!-- Модифицированный блок  -->
+            <div class="product-catalog__order sort-order">
+              <div class="product-catalog__order-grid">
+
+                <div class="sort-order__group">
+                  <span class="sort-order__subtitle">Сортировать по: </span>
+                  <ul class="list-reset">
+                    <li class="sort-order__item">
+                      <a class="sort-order__link active switching-sorting" href="#">Новинки</a>
+                    </li>
+                    <li class="sort-order__item">
+                      <a class="sort-order__link switching-sorting" href="#">цена</a>
+                    </li>
+                    <!-- порядок  -->
+                    <li class="sort-order__item">
+                      <!-- кнопка переключения порядка сотрировки  -->
+                      <button class="sort-order__button switch-sorting-order max-start" type="button"
+                        title="Переключить порядок сортировки товаров" data-sort-status="max-start">
+                        <svg viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect y="3" width="6" height="2" fill="currentColor" />
+                          <rect y="6" width="8" height="2" fill="currentColor" />
+                          <rect width="4" height="2" fill="currentColor" />
+                        </svg>
+                      </button>
+
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="sort-order__group">
+                  <span class="sort-order__subtitle">Вид карточки:</span>
+                  <ul class="sort-order__buttons-list">
+                    <li class="sort-order__buttons-item">
+
+                      <button class="sort-order__button switch-catalog-view" type="button"
+                        title="Переключиться на вид ПЛИТКА" data-catalog-view="catalog-view-tile">
+                        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="1" y="1" width="5" height="5" stroke="currentColor" stroke-width="2" />
+                          <rect x="10" y="1" width="5" height="5" stroke="currentColor" stroke-width="2" />
+                          <rect x="1" y="10" width="5" height="5" stroke="currentColor" stroke-width="2" />
+                          <rect x="10" y="10" width="5" height="5" stroke="currentColor" stroke-width="2" />
+                        </svg>
+
+                      </button>
+                    </li>
+
+                    <li class="sort-order__buttons-item">
+                      <button class="sort-order__button switch-catalog-view" type="button"
+                        title="Переключиться на вид СПИСОК" data-catalog-view="catalog-view-list">
+                        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="16" height="2" fill="currentColor" />
+                          <rect y="7" width="16" height="2" fill="currentColor" />
+                          <rect y="14" width="16" height="2" fill="currentColor" />
+                        </svg>
+
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
             </div>
             <!-- КОНЕЦ сортировка товаров -->
 
-            <div class="product-catalog__items-list">
+
+            <!-- список товаров ПЛИТКОЙ -->
+            <div class="view-tile">
               <ul class="product-catalog__card-list list-reset">
 
-                <!-- карточка Анонс товара  -->
                 <li class="product-card">
                   <!-- верхняя часть отдельно, потому что основная карточка - ссылка  -->
                   <div class="product-card__header">
@@ -1551,8 +1600,7 @@
 
                   </div>
                 </li>
-                <!-- КОНЕЦ карточка Анонс товара  -->
-                <!-- карточка Анонс товара  -->
+
                 <li class="product-card">
                   <!-- верхняя часть отдельно, потому что основная карточка - ссылка  -->
                   <div class="product-card__header">
@@ -1784,8 +1832,7 @@
 
                   </div>
                 </li>
-                <!-- КОНЕЦ карточка Анонс товара  -->
-                <!-- карточка Анонс товара  -->
+
                 <li class="product-card">
                   <!-- верхняя часть отдельно, потому что основная карточка - ссылка  -->
                   <div class="product-card__header">
@@ -2017,8 +2064,7 @@
 
                   </div>
                 </li>
-                <!-- КОНЕЦ карточка Анонс товара  -->
-                <!-- карточка Анонс товара  -->
+
                 <li class="product-card">
                   <!-- верхняя часть отдельно, потому что основная карточка - ссылка  -->
                   <div class="product-card__header">
@@ -2250,8 +2296,7 @@
 
                   </div>
                 </li>
-                <!-- КОНЕЦ карточка Анонс товара  -->
-                <!-- карточка Анонс товара  -->
+
                 <li class="product-card">
                   <!-- верхняя часть отдельно, потому что основная карточка - ссылка  -->
                   <div class="product-card__header">
@@ -2483,1475 +2528,1099 @@
 
                   </div>
                 </li>
-                <!-- КОНЕЦ карточка Анонс товара  -->
-                <!-- карточка Анонс товара  -->
-                <li class="product-card">
-                  <!-- верхняя часть отдельно, потому что основная карточка - ссылка  -->
-                  <div class="product-card__header">
-                    <a href="#" class="product-card__label product-card__label--action button"><span>Акция</span><span
-                        class="decorate"></span></a>
-                    <a href="#" class="product-card__label product-card__label--new button"><span>новинка</span><span
-                        class="decorate"></span></a>
-                    <!-- класс .add-favorite обязателен. по нему идёт поиск и сборка коллекции, для отслеживания клика  -->
-                    <a href="#"
-                      class="product-card__label product-card__label--heart button button--icon add-favorite"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
-                        <path stroke="#fff" stroke-width="2"
-                          d="m11.247 5.699.753.86.753-.86A5.063 5.063 0 0 1 16.5 4C19.047 4 21 5.936 21 8.395c0 1.514-.687 2.974-2.112 4.684-1.435 1.722-3.508 3.57-6.103 5.879l-.001.001-.784.7-.784-.7-.001-.001c-2.595-2.308-4.668-4.157-6.103-5.88C3.687 11.369 3 9.91 3 8.396 3 5.935 4.953 4 7.5 4c1.445 0 2.843.665 3.747 1.699Z" />
-                      </svg><span class="decorate"></span></a>
-                  </div>
-                  <!-- основная часть  -->
-                  <a class="product-card__link" href="#">
-                    <!-- картинка  -->
-                    <div class="product-card__image">
-                      <img src="./img/catalog/carpets/1.jpg" alt="фото товара" loading="lazy" width="256">
-                      <span class="product-card__image-label button"><span>В наличии</span><span
-                          class="decorate"></span></span>
-                    </div>
-                    <!-- подзаголовок  -->
-                    <div class="product-card__subtitle">Коллекция, может быть артикул</div>
-                    <!-- заголовок  -->
-                    <h3 class="product-card__title">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
-                  </a>
-                  <!-- нижняя часть -->
-                  <div class="product-card__footer">
-                    <span class="product-card__price">от 2 680 ₽</span>
-                    <button class="product-card__options" type="button">в 3х размерах</button>
-
-                    <!-- детали показываются при клике по кнопочке размеров -->
-                    <div class="product-card__details">
-                      <form action="javascript:void(0);">
-                        <ul class="catalog-filter list-reset">
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-
-
-                        </ul>
-                        <a class="button button--cart button--icon" href="#">
-                          <span>в корзину</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
-                            <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
-                              d="M18.273 4.5h2.454a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.272" />
-                            <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
-                              d="M20.273 17.5H9.04c-.453 0-.85-.305-.967-.742L4.47 3.242a1 1 0 0 0-.967-.742H.273M7.272 20.5h2M18.273 20.5h2M8.272 4.5h8M12.273 8.5v-8" />
-                          </svg>
-                          <span class="decorate"></span>
-                        </a>
-                      </form>
-                    </div>
-
-                  </div>
-                </li>
-                <!-- КОНЕЦ карточка Анонс товара  -->
-                <!-- карточка Анонс товара  -->
-                <li class="product-card">
-                  <!-- верхняя часть отдельно, потому что основная карточка - ссылка  -->
-                  <div class="product-card__header">
-                    <a href="#" class="product-card__label product-card__label--action button"><span>Акция</span><span
-                        class="decorate"></span></a>
-                    <a href="#" class="product-card__label product-card__label--new button"><span>новинка</span><span
-                        class="decorate"></span></a>
-                    <!-- класс .add-favorite обязателен. по нему идёт поиск и сборка коллекции, для отслеживания клика  -->
-                    <a href="#"
-                      class="product-card__label product-card__label--heart button button--icon add-favorite"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
-                        <path stroke="#fff" stroke-width="2"
-                          d="m11.247 5.699.753.86.753-.86A5.063 5.063 0 0 1 16.5 4C19.047 4 21 5.936 21 8.395c0 1.514-.687 2.974-2.112 4.684-1.435 1.722-3.508 3.57-6.103 5.879l-.001.001-.784.7-.784-.7-.001-.001c-2.595-2.308-4.668-4.157-6.103-5.88C3.687 11.369 3 9.91 3 8.396 3 5.935 4.953 4 7.5 4c1.445 0 2.843.665 3.747 1.699Z" />
-                      </svg><span class="decorate"></span></a>
-                  </div>
-                  <!-- основная часть  -->
-                  <a class="product-card__link" href="#">
-                    <!-- картинка  -->
-                    <div class="product-card__image">
-                      <img src="./img/catalog/carpets/1.jpg" alt="фото товара" loading="lazy" width="256">
-                      <span class="product-card__image-label button"><span>В наличии</span><span
-                          class="decorate"></span></span>
-                    </div>
-                    <!-- подзаголовок  -->
-                    <div class="product-card__subtitle">Коллекция, может быть артикул</div>
-                    <!-- заголовок  -->
-                    <h3 class="product-card__title">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
-                  </a>
-                  <!-- нижняя часть -->
-                  <div class="product-card__footer">
-                    <span class="product-card__price">от 2 680 ₽</span>
-                    <button class="product-card__options" type="button">в 3х размерах</button>
-
-                    <!-- детали показываются при клике по кнопочке размеров -->
-                    <div class="product-card__details">
-                      <form action="javascript:void(0);">
-                        <ul class="catalog-filter list-reset">
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-
-
-                        </ul>
-                        <a class="button button--cart button--icon" href="#">
-                          <span>в корзину</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
-                            <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
-                              d="M18.273 4.5h2.454a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.272" />
-                            <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
-                              d="M20.273 17.5H9.04c-.453 0-.85-.305-.967-.742L4.47 3.242a1 1 0 0 0-.967-.742H.273M7.272 20.5h2M18.273 20.5h2M8.272 4.5h8M12.273 8.5v-8" />
-                          </svg>
-                          <span class="decorate"></span>
-                        </a>
-                      </form>
-                    </div>
-
-                  </div>
-                </li>
-                <!-- КОНЕЦ карточка Анонс товара  -->
-                <!-- карточка Анонс товара  -->
-                <li class="product-card">
-                  <!-- верхняя часть отдельно, потому что основная карточка - ссылка  -->
-                  <div class="product-card__header">
-                    <a href="#" class="product-card__label product-card__label--action button"><span>Акция</span><span
-                        class="decorate"></span></a>
-                    <a href="#" class="product-card__label product-card__label--new button"><span>новинка</span><span
-                        class="decorate"></span></a>
-                    <!-- класс .add-favorite обязателен. по нему идёт поиск и сборка коллекции, для отслеживания клика  -->
-                    <a href="#"
-                      class="product-card__label product-card__label--heart button button--icon add-favorite"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
-                        <path stroke="#fff" stroke-width="2"
-                          d="m11.247 5.699.753.86.753-.86A5.063 5.063 0 0 1 16.5 4C19.047 4 21 5.936 21 8.395c0 1.514-.687 2.974-2.112 4.684-1.435 1.722-3.508 3.57-6.103 5.879l-.001.001-.784.7-.784-.7-.001-.001c-2.595-2.308-4.668-4.157-6.103-5.88C3.687 11.369 3 9.91 3 8.396 3 5.935 4.953 4 7.5 4c1.445 0 2.843.665 3.747 1.699Z" />
-                      </svg><span class="decorate"></span></a>
-                  </div>
-                  <!-- основная часть  -->
-                  <a class="product-card__link" href="#">
-                    <!-- картинка  -->
-                    <div class="product-card__image">
-                      <img src="./img/catalog/carpets/1.jpg" alt="фото товара" loading="lazy" width="256">
-                      <span class="product-card__image-label button"><span>В наличии</span><span
-                          class="decorate"></span></span>
-                    </div>
-                    <!-- подзаголовок  -->
-                    <div class="product-card__subtitle">Коллекция, может быть артикул</div>
-                    <!-- заголовок  -->
-                    <h3 class="product-card__title">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
-                  </a>
-                  <!-- нижняя часть -->
-                  <div class="product-card__footer">
-                    <span class="product-card__price">от 2 680 ₽</span>
-                    <button class="product-card__options" type="button">в 3х размерах</button>
-
-                    <!-- детали показываются при клике по кнопочке размеров -->
-                    <div class="product-card__details">
-                      <form action="javascript:void(0);">
-                        <ul class="catalog-filter list-reset">
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-
-
-                        </ul>
-                        <a class="button button--cart button--icon" href="#">
-                          <span>в корзину</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
-                            <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
-                              d="M18.273 4.5h2.454a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.272" />
-                            <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
-                              d="M20.273 17.5H9.04c-.453 0-.85-.305-.967-.742L4.47 3.242a1 1 0 0 0-.967-.742H.273M7.272 20.5h2M18.273 20.5h2M8.272 4.5h8M12.273 8.5v-8" />
-                          </svg>
-                          <span class="decorate"></span>
-                        </a>
-                      </form>
-                    </div>
-
-                  </div>
-                </li>
-                <!-- КОНЕЦ карточка Анонс товара  -->
-                <!-- карточка Анонс товара  -->
-                <li class="product-card">
-                  <!-- верхняя часть отдельно, потому что основная карточка - ссылка  -->
-                  <div class="product-card__header">
-                    <a href="#" class="product-card__label product-card__label--action button"><span>Акция</span><span
-                        class="decorate"></span></a>
-                    <a href="#" class="product-card__label product-card__label--new button"><span>новинка</span><span
-                        class="decorate"></span></a>
-                    <!-- класс .add-favorite обязателен. по нему идёт поиск и сборка коллекции, для отслеживания клика  -->
-                    <a href="#"
-                      class="product-card__label product-card__label--heart button button--icon add-favorite"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
-                        <path stroke="#fff" stroke-width="2"
-                          d="m11.247 5.699.753.86.753-.86A5.063 5.063 0 0 1 16.5 4C19.047 4 21 5.936 21 8.395c0 1.514-.687 2.974-2.112 4.684-1.435 1.722-3.508 3.57-6.103 5.879l-.001.001-.784.7-.784-.7-.001-.001c-2.595-2.308-4.668-4.157-6.103-5.88C3.687 11.369 3 9.91 3 8.396 3 5.935 4.953 4 7.5 4c1.445 0 2.843.665 3.747 1.699Z" />
-                      </svg><span class="decorate"></span></a>
-                  </div>
-                  <!-- основная часть  -->
-                  <a class="product-card__link" href="#">
-                    <!-- картинка  -->
-                    <div class="product-card__image">
-                      <img src="./img/catalog/carpets/1.jpg" alt="фото товара" loading="lazy" width="256">
-                      <span class="product-card__image-label button"><span>В наличии</span><span
-                          class="decorate"></span></span>
-                    </div>
-                    <!-- подзаголовок  -->
-                    <div class="product-card__subtitle">Коллекция, может быть артикул</div>
-                    <!-- заголовок  -->
-                    <h3 class="product-card__title">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
-                  </a>
-                  <!-- нижняя часть -->
-                  <div class="product-card__footer">
-                    <span class="product-card__price">от 2 680 ₽</span>
-                    <button class="product-card__options" type="button">в 3х размерах</button>
-
-                    <!-- детали показываются при клике по кнопочке размеров -->
-                    <div class="product-card__details">
-                      <form action="javascript:void(0);">
-                        <ul class="catalog-filter list-reset">
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-
-
-                        </ul>
-                        <a class="button button--cart button--icon" href="#">
-                          <span>в корзину</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
-                            <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
-                              d="M18.273 4.5h2.454a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.272" />
-                            <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
-                              d="M20.273 17.5H9.04c-.453 0-.85-.305-.967-.742L4.47 3.242a1 1 0 0 0-.967-.742H.273M7.272 20.5h2M18.273 20.5h2M8.272 4.5h8M12.273 8.5v-8" />
-                          </svg>
-                          <span class="decorate"></span>
-                        </a>
-                      </form>
-                    </div>
-
-                  </div>
-                </li>
-                <!-- КОНЕЦ карточка Анонс товара  -->
-                <!-- карточка Анонс товара  -->
-                <li class="product-card">
-                  <!-- верхняя часть отдельно, потому что основная карточка - ссылка  -->
-                  <div class="product-card__header">
-                    <a href="#" class="product-card__label product-card__label--action button"><span>Акция</span><span
-                        class="decorate"></span></a>
-                    <a href="#" class="product-card__label product-card__label--new button"><span>новинка</span><span
-                        class="decorate"></span></a>
-                    <!-- класс .add-favorite обязателен. по нему идёт поиск и сборка коллекции, для отслеживания клика  -->
-                    <a href="#"
-                      class="product-card__label product-card__label--heart button button--icon add-favorite"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
-                        <path stroke="#fff" stroke-width="2"
-                          d="m11.247 5.699.753.86.753-.86A5.063 5.063 0 0 1 16.5 4C19.047 4 21 5.936 21 8.395c0 1.514-.687 2.974-2.112 4.684-1.435 1.722-3.508 3.57-6.103 5.879l-.001.001-.784.7-.784-.7-.001-.001c-2.595-2.308-4.668-4.157-6.103-5.88C3.687 11.369 3 9.91 3 8.396 3 5.935 4.953 4 7.5 4c1.445 0 2.843.665 3.747 1.699Z" />
-                      </svg><span class="decorate"></span></a>
-                  </div>
-                  <!-- основная часть  -->
-                  <a class="product-card__link" href="#">
-                    <!-- картинка  -->
-                    <div class="product-card__image">
-                      <img src="./img/catalog/carpets/1.jpg" alt="фото товара" loading="lazy" width="256">
-                      <span class="product-card__image-label button"><span>В наличии</span><span
-                          class="decorate"></span></span>
-                    </div>
-                    <!-- подзаголовок  -->
-                    <div class="product-card__subtitle">Коллекция, может быть артикул</div>
-                    <!-- заголовок  -->
-                    <h3 class="product-card__title">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
-                  </a>
-                  <!-- нижняя часть -->
-                  <div class="product-card__footer">
-                    <span class="product-card__price">от 2 680 ₽</span>
-                    <button class="product-card__options" type="button">в 3х размерах</button>
-
-                    <!-- детали показываются при клике по кнопочке размеров -->
-                    <div class="product-card__details">
-                      <form action="javascript:void(0);">
-                        <ul class="catalog-filter list-reset">
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-
-
-                        </ul>
-                        <a class="button button--cart button--icon" href="#">
-                          <span>в корзину</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
-                            <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
-                              d="M18.273 4.5h2.454a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.272" />
-                            <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
-                              d="M20.273 17.5H9.04c-.453 0-.85-.305-.967-.742L4.47 3.242a1 1 0 0 0-.967-.742H.273M7.272 20.5h2M18.273 20.5h2M8.272 4.5h8M12.273 8.5v-8" />
-                          </svg>
-                          <span class="decorate"></span>
-                        </a>
-                      </form>
-                    </div>
-
-                  </div>
-                </li>
-                <!-- КОНЕЦ карточка Анонс товара  -->
-                <!-- карточка Анонс товара  -->
-                <li class="product-card">
-                  <!-- верхняя часть отдельно, потому что основная карточка - ссылка  -->
-                  <div class="product-card__header">
-                    <a href="#" class="product-card__label product-card__label--action button"><span>Акция</span><span
-                        class="decorate"></span></a>
-                    <a href="#" class="product-card__label product-card__label--new button"><span>новинка</span><span
-                        class="decorate"></span></a>
-                    <!-- класс .add-favorite обязателен. по нему идёт поиск и сборка коллекции, для отслеживания клика  -->
-                    <a href="#"
-                      class="product-card__label product-card__label--heart button button--icon add-favorite"><svg
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
-                        <path stroke="#fff" stroke-width="2"
-                          d="m11.247 5.699.753.86.753-.86A5.063 5.063 0 0 1 16.5 4C19.047 4 21 5.936 21 8.395c0 1.514-.687 2.974-2.112 4.684-1.435 1.722-3.508 3.57-6.103 5.879l-.001.001-.784.7-.784-.7-.001-.001c-2.595-2.308-4.668-4.157-6.103-5.88C3.687 11.369 3 9.91 3 8.396 3 5.935 4.953 4 7.5 4c1.445 0 2.843.665 3.747 1.699Z" />
-                      </svg><span class="decorate"></span></a>
-                  </div>
-                  <!-- основная часть  -->
-                  <a class="product-card__link" href="#">
-                    <!-- картинка  -->
-                    <div class="product-card__image">
-                      <img src="./img/catalog/carpets/1.jpg" alt="фото товара" loading="lazy" width="256">
-                      <span class="product-card__image-label button"><span>В наличии</span><span
-                          class="decorate"></span></span>
-                    </div>
-                    <!-- подзаголовок  -->
-                    <div class="product-card__subtitle">Коллекция, может быть артикул</div>
-                    <!-- заголовок  -->
-                    <h3 class="product-card__title">Ковер аврора 4168/a3/ar 4,0*5,0</h3>
-                  </a>
-                  <!-- нижняя часть -->
-                  <div class="product-card__footer">
-                    <span class="product-card__price">от 2 680 ₽</span>
-                    <button class="product-card__options" type="button">в 3х размерах</button>
-
-                    <!-- детали показываются при клике по кнопочке размеров -->
-                    <div class="product-card__details">
-                      <form action="javascript:void(0);">
-                        <ul class="catalog-filter list-reset">
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-                          <li class="product-card__details--grid">
-                            <span class="product-card__details--feature">120х180 см</span>
-                            <span class="product-card__details--total-number">28 шт.</span>
-                            <div class="input-number">
-                              <button class="input-number__button input-number__button--minus" type="button">
-                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
-                                </svg>
-                              </button>
-                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
-                              <button class="input-number__button input-number__button--plus" type="button">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                  xmlns="http://www.w3.org/2000/svg">
-                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
-                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
-                                  </rect>
-                                </svg>
-                              </button>
-                            </div>
-                            <span class="product-card__details--price">2 680 ₽</span>
-                          </li>
-
-
-                        </ul>
-                        <a class="button button--cart button--icon" href="#">
-                          <span>в корзину</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
-                            <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
-                              d="M18.273 4.5h2.454a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.272" />
-                            <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
-                              d="M20.273 17.5H9.04c-.453 0-.85-.305-.967-.742L4.47 3.242a1 1 0 0 0-.967-.742H.273M7.272 20.5h2M18.273 20.5h2M8.272 4.5h8M12.273 8.5v-8" />
-                          </svg>
-                          <span class="decorate"></span>
-                        </a>
-                      </form>
-                    </div>
-
-                  </div>
-                </li>
-                <!-- КОНЕЦ карточка Анонс товара  -->
-
 
               </ul>
-
-              <!-- большая и бледная кнопка -->
-              <a href="#" class="button button--ghost show-more-product-cards"><span>Показать еще</span><span
-                  class="decorate"></span></a>
             </div>
 
-            <div class="product-catalog__footer">
-              <!-- Пагинация -->
-              <div class="pagination">
-                <ul class="pagination__list list-reset">
-                  <li class="pagination__item">
-                    <a class="pagination__link button button--icon pagination__link--prev" href="#"
-                      title="Предыдущая страница">
-                      <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 1L2 8.68L10 17" stroke="white" stroke-width="2" />
+
+            <!-- список товаров ПЛИТКОЙ -->
+            <div class="view-list">
+              <ul class="product-catalog__card-list list-reset">
+
+                <li class="product-card card-simple">
+                  <div class="card-simple__grid">
+                    <!-- фото -->
+                    <div class="card-simple__image">
+                      <img src="./img/new/card-photo.jpg" alt="фото товара" loading="lazy" width="96">
+
+                      <a href="#"
+                        class="product-card__label product-card__label--heart button button--icon add-favorite"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.2474 5.69881L12 6.55896L12.7526 5.69881C13.6573 4.66486 15.0552 4 16.5 4C19.0472 4 21 5.93556 21 8.3951C21 9.90904 20.313 11.3688 18.888 13.0789C17.4527 14.8014 15.3803 16.6498 12.7854 18.958L12.7839 18.9593L12 19.6593L11.2161 18.9593L11.2146 18.958C8.61966 16.6498 6.54731 14.8014 5.112 13.0789C3.68704 11.3688 3 9.90904 3 8.3951C3 5.93556 4.95284 4 7.5 4C8.94478 4 10.3427 4.66486 11.2474 5.69881Z" stroke="white" stroke-width="2"/>
+                          </svg>
+                          <span class="decorate"></span></a>
+                    </div>
+                    <!-- детали -->
+                    <div class="card-simple__details">
+
+                      <span class="product-card__image-label button">
+                        <span>В наличии</span>
+                        <span class="decorate"></span>
+                      </span>
+                      <div class="product-card__subtitle">Название коллекции</div>
+                      <h3 class="product-card__title">ЛАМИНАТ AGT EFFECT PREMIUM PAMIR 12/33 V4</h3>
+                    </div>
+                    <!-- группа лейблов -->
+                    <div class="card-simple__label-group">
+                      <a href="#" class="product-card__label product-card__label--action button"><span>Акция</span><span
+                          class="decorate"></span></a>
+                      <a href="#" class="product-card__label product-card__label--new button"><span>новинка</span><span
+                          class="decorate"></span></a>
+                    </div>
+
+                    <div class="card-simple__right">
+                      <!-- цены -->
+                    <div class="card-simple__price-group">
+                      <span class="product-card__price">1 303,00 ₽/м2</span>
+                      <button class="product-card__options" type="button">в 3х размерах</button>
+                      <!-- детали показываются при клике по кнопочке размеров -->
+                    <div class="product-card__details">
+                      <form action="javascript:void(0);">
+                        <ul class="catalog-filter list-reset">
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+
+
+                        </ul>
+                        <a class="button button--cart button--icon" href="#">
+                          <span>в корзину</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
+                            <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                              d="M18.273 4.5h2.454a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.272" />
+                            <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                              d="M20.273 17.5H9.04c-.453 0-.85-.305-.967-.742L4.47 3.242a1 1 0 0 0-.967-.742H.273M7.272 20.5h2M18.273 20.5h2M8.272 4.5h8M12.273 8.5v-8" />
+                          </svg>
+                          <span class="decorate"></span>
+                        </a>
+                      </form>
+                    </div>
+                    </div>
+                    <!-- кнопка корзина -->
+                    <a class="button button--cart button-icon" href="#">
+                      <svg viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M18.2734 4H20.7284C21.3534 4 21.8254 4.566 21.7114 5.181L20.4234 12.181C20.3364 12.655 19.9224 13 19.4404 13H7.27344"
+                          stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M20.2734 17H9.04245C8.58945 17 8.19244 16.695 8.07544 16.258L4.47144 2.742C4.35444 2.304 3.95743 2 3.50443 2H0.273438"
+                          stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                        <path d="M7.27344 20H9.27344" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                        <path d="M18.2734 20H20.2734" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                        <path d="M8.27344 4H16.2734" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                        <path d="M12.2734 8V0" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
                       </svg>
+
                       <span class="decorate"></span>
                     </a>
-                  </li>
+                    </div>
 
-                  <li class="pagination__item"><a class="pagination__link button" href="#"><span>1</span><span
-                        class="decorate"></span></a></li>
-                  <li class="pagination__item"><a class="pagination__link button active" href="#"><span>2</span><span
-                        class="decorate"></span></a></li>
-                  <li class="pagination__item"><a class="pagination__link button" href="#"><span>3</span><span
-                        class="decorate"></span></a></li>
-                  <!-- <li class="pagination__item pagination__item--768"><a class="pagination__link button"
-                      href="#"><span>4</span><span class="decorate"></span></a></li>
-                  <li class="pagination__item pagination__item--1440"><a class="pagination__link button"
-                      href="#"><span>5</span><span class="decorate"></span></a></li> -->
-                  <li class="pagination__item"><a class="pagination__link pagination__link--dotted" href="#">...</a>
-                  </li>
-                  <li class="pagination__item"><a class="pagination__link button" href="#"><span>24</span><span
-                        class="decorate"></span></a></li>
-                  <li class="pagination__item"><a
-                      class="pagination__link button pagination__link--next button button--icon" href="#"
-                      title="Следующая страница">
-                      <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.999999 1L9 8.68L1 17" stroke="white" stroke-width="2" />
-                      </svg>
-                      <span class="decorate"></span>
-                    </a></li>
-                </ul>
-              </div>
-              <!-- КОНЕЦ Пагинация -->
-
-              <!-- показать по  -->
-              <div class="amount-to-show">
-                <span class="amount-to-show__label">Показывать по:</span>
-                <div class="custom-select" data-default="18">
-                  <div class="custom-select__selected">18</div>
-                  <div class="custom-select__options">
-                    <div class="custom-select__option" data-value="6">6</div>
-                    <div class="custom-select__option" data-value="9">9</div>
-                    <div class="custom-select__option" data-value="12">12</div>
-                    <div class="custom-select__option" data-value="18">18</div>
                   </div>
-                  <input class="visually-hidden" type="hidden" name="selecting-category" value="">
-                </div>
-              </div>
-              <!-- КОНЕЦ показать по  -->
+
+
+                </li>
+                <li class="product-card card-simple">
+                  <div class="card-simple__grid">
+                    <!-- фото -->
+                    <div class="card-simple__image">
+                      <img src="./img/new/card-photo.jpg" alt="фото товара" loading="lazy" width="96">
+
+                      <a href="#"
+                        class="product-card__label product-card__label--heart button button--icon add-favorite"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.2474 5.69881L12 6.55896L12.7526 5.69881C13.6573 4.66486 15.0552 4 16.5 4C19.0472 4 21 5.93556 21 8.3951C21 9.90904 20.313 11.3688 18.888 13.0789C17.4527 14.8014 15.3803 16.6498 12.7854 18.958L12.7839 18.9593L12 19.6593L11.2161 18.9593L11.2146 18.958C8.61966 16.6498 6.54731 14.8014 5.112 13.0789C3.68704 11.3688 3 9.90904 3 8.3951C3 5.93556 4.95284 4 7.5 4C8.94478 4 10.3427 4.66486 11.2474 5.69881Z" stroke="white" stroke-width="2"/>
+                          </svg>
+                          <span class="decorate"></span></a>
+                    </div>
+                    <!-- детали -->
+                    <div class="card-simple__details">
+
+                      <span class="product-card__image-label button">
+                        <span>В наличии</span>
+                        <span class="decorate"></span>
+                      </span>
+                      <div class="product-card__subtitle">Название коллекции</div>
+                      <h3 class="product-card__title">ЛАМИНАТ AGT EFFECT PREMIUM PAMIR 12/33 V4</h3>
+                    </div>
+                    <!-- группа лейблов -->
+                    <div class="card-simple__label-group">
+                      <a href="#" class="product-card__label product-card__label--action button"><span>Акция</span><span
+                          class="decorate"></span></a>
+                      <a href="#" class="product-card__label product-card__label--new button"><span>новинка</span><span
+                          class="decorate"></span></a>
+                    </div>
+
+                    <div class="card-simple__right">
+                      <!-- цены -->
+                    <div class="card-simple__price-group">
+                      <span class="product-card__price">1 303,00 ₽/м2</span>
+                      <button class="product-card__options" type="button">в 3х размерах</button>
+                      <!-- детали показываются при клике по кнопочке размеров -->
+                    <div class="product-card__details">
+                      <form action="javascript:void(0);">
+                        <ul class="catalog-filter list-reset">
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+
+
+                        </ul>
+                        <a class="button button--cart button--icon" href="#">
+                          <span>в корзину</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
+                            <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                              d="M18.273 4.5h2.454a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.272" />
+                            <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                              d="M20.273 17.5H9.04c-.453 0-.85-.305-.967-.742L4.47 3.242a1 1 0 0 0-.967-.742H.273M7.272 20.5h2M18.273 20.5h2M8.272 4.5h8M12.273 8.5v-8" />
+                          </svg>
+                          <span class="decorate"></span>
+                        </a>
+                      </form>
+                    </div>
+                    </div>
+                    <!-- кнопка корзина -->
+                    <a class="button button--cart button-icon" href="#">
+                      <svg viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M18.2734 4H20.7284C21.3534 4 21.8254 4.566 21.7114 5.181L20.4234 12.181C20.3364 12.655 19.9224 13 19.4404 13H7.27344"
+                          stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M20.2734 17H9.04245C8.58945 17 8.19244 16.695 8.07544 16.258L4.47144 2.742C4.35444 2.304 3.95743 2 3.50443 2H0.273438"
+                          stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                        <path d="M7.27344 20H9.27344" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                        <path d="M18.2734 20H20.2734" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                        <path d="M8.27344 4H16.2734" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                        <path d="M12.2734 8V0" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                      </svg>
+
+                      <span class="decorate"></span>
+                    </a>
+                    </div>
+
+                  </div>
+
+
+                </li>
+                <li class="product-card card-simple">
+                  <div class="card-simple__grid">
+                    <!-- фото -->
+                    <div class="card-simple__image">
+                      <img src="./img/new/card-photo.jpg" alt="фото товара" loading="lazy" width="96">
+
+                      <a href="#"
+                        class="product-card__label product-card__label--heart button button--icon add-favorite"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.2474 5.69881L12 6.55896L12.7526 5.69881C13.6573 4.66486 15.0552 4 16.5 4C19.0472 4 21 5.93556 21 8.3951C21 9.90904 20.313 11.3688 18.888 13.0789C17.4527 14.8014 15.3803 16.6498 12.7854 18.958L12.7839 18.9593L12 19.6593L11.2161 18.9593L11.2146 18.958C8.61966 16.6498 6.54731 14.8014 5.112 13.0789C3.68704 11.3688 3 9.90904 3 8.3951C3 5.93556 4.95284 4 7.5 4C8.94478 4 10.3427 4.66486 11.2474 5.69881Z" stroke="white" stroke-width="2"/>
+                          </svg>
+                          <span class="decorate"></span></a>
+                    </div>
+                    <!-- детали -->
+                    <div class="card-simple__details">
+
+                      <span class="product-card__image-label button">
+                        <span>В наличии</span>
+                        <span class="decorate"></span>
+                      </span>
+                      <div class="product-card__subtitle">Название коллекции</div>
+                      <h3 class="product-card__title">ЛАМИНАТ AGT EFFECT PREMIUM PAMIR 12/33 V4</h3>
+                    </div>
+                    <!-- группа лейблов -->
+                    <div class="card-simple__label-group">
+                      <a href="#" class="product-card__label product-card__label--action button"><span>Акция</span><span
+                          class="decorate"></span></a>
+                      <a href="#" class="product-card__label product-card__label--new button"><span>новинка</span><span
+                          class="decorate"></span></a>
+                    </div>
+
+                    <div class="card-simple__right">
+                      <!-- цены -->
+                    <div class="card-simple__price-group">
+                      <span class="product-card__price">1 303,00 ₽/м2</span>
+                      <button class="product-card__options" type="button">в 3х размерах</button>
+                      <!-- детали показываются при клике по кнопочке размеров -->
+                    <div class="product-card__details">
+                      <form action="javascript:void(0);">
+                        <ul class="catalog-filter list-reset">
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+
+
+                        </ul>
+                        <a class="button button--cart button--icon" href="#">
+                          <span>в корзину</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
+                            <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                              d="M18.273 4.5h2.454a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.272" />
+                            <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                              d="M20.273 17.5H9.04c-.453 0-.85-.305-.967-.742L4.47 3.242a1 1 0 0 0-.967-.742H.273M7.272 20.5h2M18.273 20.5h2M8.272 4.5h8M12.273 8.5v-8" />
+                          </svg>
+                          <span class="decorate"></span>
+                        </a>
+                      </form>
+                    </div>
+                    </div>
+                    <!-- кнопка корзина -->
+                    <a class="button button--cart button-icon" href="#">
+                      <svg viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M18.2734 4H20.7284C21.3534 4 21.8254 4.566 21.7114 5.181L20.4234 12.181C20.3364 12.655 19.9224 13 19.4404 13H7.27344"
+                          stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M20.2734 17H9.04245C8.58945 17 8.19244 16.695 8.07544 16.258L4.47144 2.742C4.35444 2.304 3.95743 2 3.50443 2H0.273438"
+                          stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                        <path d="M7.27344 20H9.27344" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                        <path d="M18.2734 20H20.2734" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                        <path d="M8.27344 4H16.2734" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                        <path d="M12.2734 8V0" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                      </svg>
+
+                      <span class="decorate"></span>
+                    </a>
+                    </div>
+
+                  </div>
+
+
+                </li>
+                <li class="product-card card-simple">
+                  <div class="card-simple__grid">
+                    <!-- фото -->
+                    <div class="card-simple__image">
+                      <img src="./img/new/card-photo.jpg" alt="фото товара" loading="lazy" width="96">
+
+                      <a href="#"
+                        class="product-card__label product-card__label--heart button button--icon add-favorite"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M11.2474 5.69881L12 6.55896L12.7526 5.69881C13.6573 4.66486 15.0552 4 16.5 4C19.0472 4 21 5.93556 21 8.3951C21 9.90904 20.313 11.3688 18.888 13.0789C17.4527 14.8014 15.3803 16.6498 12.7854 18.958L12.7839 18.9593L12 19.6593L11.2161 18.9593L11.2146 18.958C8.61966 16.6498 6.54731 14.8014 5.112 13.0789C3.68704 11.3688 3 9.90904 3 8.3951C3 5.93556 4.95284 4 7.5 4C8.94478 4 10.3427 4.66486 11.2474 5.69881Z" stroke="white" stroke-width="2"/>
+                          </svg>
+                          <span class="decorate"></span></a>
+                    </div>
+                    <!-- детали -->
+                    <div class="card-simple__details">
+
+                      <span class="product-card__image-label button">
+                        <span>В наличии</span>
+                        <span class="decorate"></span>
+                      </span>
+                      <div class="product-card__subtitle">Название коллекции</div>
+                      <h3 class="product-card__title">ЛАМИНАТ AGT EFFECT PREMIUM PAMIR 12/33 V4</h3>
+                    </div>
+                    <!-- группа лейблов -->
+                    <div class="card-simple__label-group">
+                      <a href="#" class="product-card__label product-card__label--action button"><span>Акция</span><span
+                          class="decorate"></span></a>
+                      <a href="#" class="product-card__label product-card__label--new button"><span>новинка</span><span
+                          class="decorate"></span></a>
+                    </div>
+
+                    <div class="card-simple__right">
+                      <!-- цены -->
+                    <div class="card-simple__price-group">
+                      <span class="product-card__price">1 303,00 ₽/м2</span>
+                      <button class="product-card__options" type="button">в 3х размерах</button>
+                      <!-- детали показываются при клике по кнопочке размеров -->
+                    <div class="product-card__details">
+                      <form action="javascript:void(0);">
+                        <ul class="catalog-filter list-reset">
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+                          <li class="product-card__details--grid">
+                            <span class="product-card__details--feature">120х180 см</span>
+                            <span class="product-card__details--total-number">28 шт.</span>
+                            <div class="input-number">
+                              <button class="input-number__button input-number__button--minus" type="button">
+                                <svg width="16" height="2" viewBox="0 0 16 2" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="16" width="2" height="16" transform="rotate(90 16 0)" fill="#67CB33"></rect>
+                                </svg>
+                              </button>
+                              <input class="input-number__input" type="text" value="1" data-prefix=" шт.">
+                              <button class="input-number__button input-number__button--plus" type="button">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <rect x="7" width="2" height="16" fill="#67CB33"></rect>
+                                  <rect x="16" y="7" width="2" height="16" transform="rotate(90 16 7)" fill="#67CB33">
+                                  </rect>
+                                </svg>
+                              </button>
+                            </div>
+                            <span class="product-card__details--price">2 680 ₽</span>
+                          </li>
+
+
+                        </ul>
+                        <a class="button button--cart button--icon" href="#">
+                          <span>в корзину</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" fill="none">
+                            <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                              d="M18.273 4.5h2.454a.999.999 0 0 1 .983 1.181l-1.288 7a1 1 0 0 1-.983.819H7.272" />
+                            <path stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+                              d="M20.273 17.5H9.04c-.453 0-.85-.305-.967-.742L4.47 3.242a1 1 0 0 0-.967-.742H.273M7.272 20.5h2M18.273 20.5h2M8.272 4.5h8M12.273 8.5v-8" />
+                          </svg>
+                          <span class="decorate"></span>
+                        </a>
+                      </form>
+                    </div>
+                    </div>
+                    <!-- кнопка корзина -->
+                    <a class="button button--cart button-icon" href="#">
+                      <svg viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M18.2734 4H20.7284C21.3534 4 21.8254 4.566 21.7114 5.181L20.4234 12.181C20.3364 12.655 19.9224 13 19.4404 13H7.27344"
+                          stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                        <path
+                          d="M20.2734 17H9.04245C8.58945 17 8.19244 16.695 8.07544 16.258L4.47144 2.742C4.35444 2.304 3.95743 2 3.50443 2H0.273438"
+                          stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                        <path d="M7.27344 20H9.27344" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                        <path d="M18.2734 20H20.2734" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                        <path d="M8.27344 4H16.2734" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                        <path d="M12.2734 8V0" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                      </svg>
+
+                      <span class="decorate"></span>
+                    </a>
+                    </div>
+
+                  </div>
+
+
+                </li>
+              </ul>
             </div>
 
 
+
+
+            <!-- большая и бледная кнопка -->
+            <a href="#" class="button button--ghost show-more-product-cards"><span>Показать еще</span><span
+                class="decorate"></span></a>
           </div>
-          <!-- КОНЕЦ правая часть -->
+
+          <div class="product-catalog__footer">
+            <!-- Пагинация -->
+            <div class="pagination">
+              <ul class="pagination__list list-reset">
+                <li class="pagination__item">
+                  <a class="pagination__link button button--icon pagination__link--prev" href="#"
+                    title="Предыдущая страница">
+                    <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1L2 8.68L10 17" stroke="white" stroke-width="2" />
+                    </svg>
+                    <span class="decorate"></span>
+                  </a>
+                </li>
+
+                <li class="pagination__item"><a class="pagination__link button" href="#"><span>1</span><span
+                      class="decorate"></span></a></li>
+                <li class="pagination__item"><a class="pagination__link button active" href="#"><span>2</span><span
+                      class="decorate"></span></a></li>
+                <li class="pagination__item"><a class="pagination__link button" href="#"><span>3</span><span
+                      class="decorate"></span></a></li>
+                <li class="pagination__item"><a class="pagination__link pagination__link--dotted" href="#">...</a>
+                </li>
+                <li class="pagination__item"><a class="pagination__link button" href="#"><span>24</span><span
+                      class="decorate"></span></a></li>
+                <li class="pagination__item"><a
+                    class="pagination__link button pagination__link--next button button--icon" href="#"
+                    title="Следующая страница">
+                    <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.999999 1L9 8.68L1 17" stroke="white" stroke-width="2" />
+                    </svg>
+                    <span class="decorate"></span>
+                  </a></li>
+              </ul>
+            </div>
+            <!-- КОНЕЦ Пагинация -->
+
+            <!-- показать по  -->
+            <div class="amount-to-show">
+              <span class="amount-to-show__label">Показывать по:</span>
+              <div class="custom-select" data-default="18">
+                <div class="custom-select__selected">18</div>
+                <div class="custom-select__options">
+                  <div class="custom-select__option" data-value="6">6</div>
+                  <div class="custom-select__option" data-value="9">9</div>
+                  <div class="custom-select__option" data-value="12">12</div>
+                  <div class="custom-select__option" data-value="18">18</div>
+                </div>
+                <input class="visually-hidden" type="hidden" name="selecting-category" value="">
+              </div>
+            </div>
+            <!-- КОНЕЦ показать по  -->
+          </div>
+
+
         </div>
+        <!-- КОНЕЦ правая часть -->
+      </div>
 
       </div>
 
@@ -4111,6 +3780,7 @@
   <!-- КОНЕЦ Подвал -->
 
   <script src="./js/scripts.js"></script>
+  <script src="./js/custom.js"></script>
 </body>
 
 </html>
